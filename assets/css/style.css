@@ -17,7 +17,7 @@ main>div.bannerTitle {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/assets/img/background4.jpg);
+    background-image: url(../img/background4.jpg);
     /* opacity:.3; */
     padding: 15vh 0px 20px 0px;
 }
