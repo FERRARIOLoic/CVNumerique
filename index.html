@@ -29,16 +29,19 @@
                     <div class="row collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav justify-content-center">
                             <li class="col text-center nav-item">
-                                <a href="#presentation" class="text-black text-decoration-none">Présentation</a>
+                                <a href="#presentation" class="text-black text-decoration-none">Qui suis-je ?</a>
                             </li>
                             <li class="col text-center nav-item">
-                                <a href="#parcours" class="text-black text-decoration-none">Parcours</a>
+                                <a href="#parcours" class="text-black text-decoration-none">Mon parcours</a>
                             </li>
                             <li class="col text-center nav-item">
-                                <a href="#competences" class="text-dark text-decoration-none">Compétences</a>
+                                <a href="#competences" class="text-dark text-decoration-none">Je sais faire...</a>
                             </li>
                             <li class="col text-center nav-item">
-                                <a href="#realisations" class="text-black text-decoration-none">Réalisations</a>
+                                <a href="#realisations" class="text-black text-decoration-none">J'ai fait...</a>
+                            </li>
+                            <li class="col text-center nav-item">
+                                <a href="#centres_interets" class="text-black text-decoration-none">En plus...</a>
                             </li>
                         </ul>
                     </div>
@@ -78,7 +81,7 @@
             <!-- PRESENTATION -->
             <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="presentation">
                 <div class="col-11 img-thumbnail borderRadius shadow">
-                    <div class="fs-1">Présentation</div>
+                    <div class="fs-1">Qui suis-je ?</div>
                     <div class="row m-3 py-3">
                         <div class="col-sm-2 align-self-center text-center">
                             <img class="rounded-circle img-thumbnail img-fluid shadow" src="assets/img/loic_carre.jpg"
@@ -112,24 +115,95 @@
             <!-- PARCOURS -->
             <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="parcours">
                 <div class="col-11  img-thumbnail borderRadius shadow">
-                    <div class="fs-1">Parcours</div>
+                    <div class="fs-1">Mon parcours</div>
                     <div class="row m-3 py-3">
-                        <div class="col-md">
-                            <div class="col text-center h3">Expériences professionnelles</div>
-                            <div class="col-md">2017- ce jour</div>
-                            <div class="col-md offset-1">Technicien / Responsable Support formation</div>
-                            <div class="col-md">2012 - 2017</div>
-                            <div class="col-md offset-1">Technicien SAV en Téléphonie Mobile</div>
-                            <div class="col-md">2011 - 2012</div>
-                            <div class="col-md offset-1">Responsable SAV en informatique - XXB Consulting</div>
+                        <div class="row">
+                            <div class="col border border-3 borderRadius bg-primary">
+                                <div class="col text-center h3">Expériences professionnelles</div>
+                                <div class="carousel my-carousel carousel--translate">
+                                    <input class="carousel__activator" type="radio" name="carousel" id="A"
+                                        checked="checked" />
+                                    <input class="carousel__activator" type="radio" name="carousel" id="B" />
+                                    <input class="carousel__activator" type="radio" name="carousel" id="C" />
+                                    <div class="carousel__controls">
+                                        <label class="carousel__control carousel__control--backward" for="C"></label>
+                                        <label class="carousel__control carousel__control--forward" for="B"></label>
+                                    </div>
+                                    <div class="carousel__controls">
+                                        <label class="carousel__control carousel__control--backward" for="A"></label>
+                                        <label class="carousel__control carousel__control--forward" for="C"></label>
+                                    </div>
+                                    <div class="carousel__controls">
+                                        <label class="carousel__control carousel__control--backward" for="B"></label>
+                                        <label class="carousel__control carousel__control--forward" for="A"></label>
+                                    </div>
+                                    <div class="carousel__track">
+                                        <li class="carousel__slide">A
+                                            <div class="col-md">2017- ce jour</div>
+                                            <div class="col-md offset-1">Technicien / Responsable Support formation
+                                            </div>
+                                        </li>
+                                        <li class="carousel__slide">B
+                                            <div class="col-md">2012 - 2017</div>
+                                            <div class="col-md offset-1">Technicien SAV en Téléphonie Mobile</div>
+                                        </li>
+                                        <li class="carousel__slide">C
+                                            <div class="col-md">2011 - 2012</div>
+                                            <div class="col-md offset-1">Responsable SAV en informatique - XXB
+                                                Consulting</div>
+                                        </li>
+                                    </div>
+                                    <div class="carousel__indicators">
+                                        <label class="carousel__indicator" for="A"></label>
+                                        <label class="carousel__indicator" for="B"></label>
+                                        <label class="carousel__indicator" for="C"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col border border-3 borderRadius bg-primary">
+                                <div class="col text-center h3">Formations</div>
+                                <div class="carousel my-carousel carousel--translate">
+                                    <input class="carousel__activator" type="radio" name="carousel" id="D"
+                                        checked="checked" />
+                                    <input class="carousel__activator" type="radio" name="carousel" id="E" />
+                                    <input class="carousel__activator" type="radio" name="carousel" id="F" />
+                                    <div class="carousel__controls">
+                                        <label class="carousel__control carousel__control--backward" for="F"></label>
+                                        <label class="carousel__control carousel__control--forward" for="E"></label>
+                                    </div>
+                                    <div class="carousel__controls">
+                                        <label class="carousel__control carousel__control--backward" for="D"></label>
+                                        <label class="carousel__control carousel__control--forward" for="F"></label>
+                                    </div>
+                                    <div class="carousel__controls">
+                                        <label class="carousel__control carousel__control--backward" for="E"></label>
+                                        <label class="carousel__control carousel__control--forward" for="D"></label>
+                                    </div>
+                                    <div class="carousel__track">
+                                        <li class="carousel__slide">A
+                                            <div class="col-md">Avril 2022 - ce jour</div>
+                                            <div class="col-md offset-1">Formation Développeur Web / Web Mobile - La
+                                                Manu Amiens</div>
+                                        </li>
+                                        <li class="carousel__slide">B
+                                            <div class="col-md">2012 - 2017</div>
+                                            <div class="col-md offset-1">Technicien SAV en Téléphonie Mobile</div>
+                                        </li>
+                                        <li class="carousel__slide">C
+                                            <div class="col-md">2011 - 2012</div>
+                                            <div class="col-md offset-1">Responsable SAV en informatique - XXB
+                                                Consulting</div>
+                                        </li>
+                                    </div>
+                                    <div class="carousel__indicators">
+                                        <label class="carousel__indicator" for="D"></label>
+                                        <label class="carousel__indicator" for="E"></label>
+                                        <label class="carousel__indicator" for="F"></label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md">
-                            <div class="col text-center h3">Formations</div>
-                            <div class="col-md">Avril 2022 - ce jour</div>
-                            <div class="col-md offset-1">Formation Développeur Web / Web Mobile - La Manu Amiens</div>
-                        </div>
-                    </div>
-                    <div class="row">
+
                     </div>
                 </div>
             </div>
@@ -137,7 +211,7 @@
             <!-- COMPETENCES -->
             <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="competences">
                 <div class="col-11 img-thumbnail borderRadius shadow">
-                    <div class="fs-1">Compétences</div>
+                    <div class="fs-1">Je sais faire...</div>
                     <div class="row text-center m-3 py-3">
                         <div class="col-sm">
                             <div class="imgKnownHtml" style="height:60px;"></div>
@@ -182,7 +256,7 @@
             <!-- REALISATIONS -->
             <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="realisations">
                 <div class="col-11 img-thumbnail borderRadius shadow">
-                    <div class="fs-1">Réalisations</div>
+                    <div class="fs-1">J'ai fait...</div>
                     <div class="row m-3 py-3">
                         <div class="row border borderRadius">Avant la formation
                             <div class="col-md-4 text-center align-self-center">
@@ -201,56 +275,63 @@
                         </div>
                     </div>
                     <div class="row m-3 py-3">
-                        <div class="col-md-4 text-center align-self-center">
-                            <div class="col h1">
-                                Astuces
+                        <div class="row border borderRadius">Pendant la formation
+                            <div class="col-md-4 text-center align-self-center">
+                                <div class="h3">
+                                    Création du visuel d'un lecteur audio version desktop
+                                </div>
                             </div>
-                            <div class="col fs-6">
-                                <p class="fw-bold">créé en autodidacte de 2015 à 2022</p>
-                                <p>HTML5, PHP4 à PHP7, CSS3</p>
+                            <div class="col-md-6 align-self-center p-5">
+                                <img class="img-thumbnail img-fluid rounded shadow"
+                                    src="assets/img/revisite_lecteur_desktop.jpg" alt="Loïc FERRARIO">
                             </div>
-                        </div>
-                        <div class="col-md-6 align-self-center p-5">
-                            <img class="img-thumbnail img-fluid rounded shadow" src="assets/img/astucesPreview.jpg"
-                                alt="Loïc FERRARIO">
+
                         </div>
                     </div>
                 </div>
             </div>
+    </div>
 
-            
-            <!-- CENTRES D'INTERET -->
-            <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="parcours">
-                <div class="col-11  img-thumbnail borderRadius shadow">
-                    <div class="fs-1">Centres d'interêt</div>
-                    <div class="row m-3 py-3">
-                        <div class="col-md">
-                            <div class="col text-center h3">Activités</div>
-                            <div class="col-md">2017- ce jour</div>
-                            <div class="col-md offset-1">Technicien / Responsable Support formation</div>
-                            <div class="col-md">2012 - 2017</div>
-                            <div class="col-md offset-1">Technicien SAV en Téléphonie Mobile</div>
-                            <div class="col-md">2011 - 2012</div>
-                            <div class="col-md offset-1">Responsable SAV en informatique - XXB Consulting</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                    </div>
+
+    <!-- CENTRES D'INTERET -->
+    <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="centres_interets">
+        <div class="col-11  img-thumbnail borderRadius shadow">
+            <div class="fs-1">En plus...</div>
+            <div class="row m-3 py-3">
+                <div class="col-md">
+                    <div class="col-md">Bricolage</div>
+                    <div class="col-md">Dessin</div>
+                    <div class="col-md">Réparations</div>
                 </div>
             </div>
-
-        </main>
-
-
-        <!-- FOOTER -->
-        <footer id="site-footer" class="navbar fluid-bottom text-center">
-            <div class="row container-fluid bg-secondary bg-gradient bg-opacity-50 justify-content-evenly">
-                <div class="col-md">&#169;FERRARIOLoic-04/2022</div>
-                <div class="col-sm">Accueil</div>
-                <div class="col-sm">Nous contacter</div>
-                <div class="col-sm">Plan du site</div>
+            <div class="row">
             </div>
-        </footer>
+        </div>
+    </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="site-footer" class="navbar fluid-bottom text-center">
+        <div class="row container-fluid  bg-secondary bg-gradient bg-opacity-50 justify-content-evenly">
+            <div class="col-10">
+                <div class="row ">
+                    <div class="col-md">&#169;FERRARIOLoic-04/2022</div>
+                    <div class="col-sm">Accueil</div>
+                    <div class="col-sm">Nous contacter</div>
+                    <div class="col-sm">Plan du site</div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="row text-end">
+                    <div class="col"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="col"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="col"><i class="fa-brands fa-github"></i></div>
+                </div>
+            </div>
+        </div>
+    </footer>
     </div>
 
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'
