@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital@1&display=swap');
+
+
+
+body {
+    overflow-x:hidden ;
+    font-family: 'Istok Web', sans-serif;
+}
+
+#site-header {
+    max-height: 5vh;
+}
+
+.header,
+main>div.bannerTitle {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/img/background4.jpg);
+    /* opacity:.3; */
+    padding: 15vh 0px 20px 0px;
+}
+
+.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.heightKnown {
+    height:15vh;
+}
+.imgKnownHtml{
+    filter: grayscale(1);
+    background: url(/assets/img/html5.svg) no-repeat center;
+}
+.imgKnownHtml:hover{
+    filter: grayscale(0);
+    background: url(/assets/img/html5.svg) no-repeat center;
+    animation: imgKnown 1s ease 0s 1 normal both;
+    animation: appear 1s ease 0s 1 reverse both;
+    animation: zoom .2s ease 0s 1 reverse both;
+}
+@keyframes appear {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}@keyframes zoom {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.3);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.imgKnownCss{
+    filter: grayscale(1);
+    background: url(/assets/img/css3.svg) no-repeat center;
+}
+.imgKnownCss:hover{
+    filter: grayscale(0);
+    background: url(/assets/img/css3.svg) no-repeat center;
+    animation: zoom .2s ease 0s 1 reverse both;
+}
+.imgKnownPhp{
+    filter: grayscale(1);
+    background: url(/assets/img/php.svg) no-repeat center;
+}
+.imgKnownPhp:hover{
+    filter: grayscale(0);
+    background: url(/assets/img/php.svg) no-repeat center;
+    animation: zoom .2s ease 0s 1 reverse both;
+}
+.imgKnownJs{
+    filter: grayscale(1);
+    background: url(/assets/img/js.svg) no-repeat center;
+}
+.imgKnownJs:hover{
+    filter: grayscale(0);
+    background: url(/assets/img/js.svg) no-repeat center;
+    animation: zoom .2s ease 0s 1 reverse both;
+}
+.imgKnownMysql{
+    filter: grayscale(1);
+    background: url(/assets/img/mysql.svg) no-repeat center;
+}
+.imgKnownMysql:hover{
+    filter: grayscale(0);
+    background: url(/assets/img/mysql.svg) no-repeat center;
+    animation: zoom .2s ease 0s 1 reverse both;
+}
+.imgKnownBootstrap{
+    filter: grayscale(1);
+    background: url(/assets/img/bootstrap.svg) no-repeat center;
+}
+.imgKnownBootstrap:hover{
+    filter: grayscale(0);
+    background: url(/assets/img/bootstrap.svg) no-repeat center;
+    animation: zoom .2s ease 0s 1 reverse both;
+}
+.imgKnownVsc{
+    filter: grayscale(1);
+    background: url(/assets/img/VisualStudiocode.svg) no-repeat center;
+}
+.imgKnownVsc:hover{
+    filter: grayscale(0);
+    background: url(/assets/img/VisualStudiocode.svg) no-repeat center;
+    animation: zoom .2s ease 0s 1 reverse both;
+}
+.imgKnownWordpress{
+    filter: grayscale(1);
+    background: url(/assets/img/wordpress.svg) no-repeat center;
+}
+.imgKnownWordpress:hover{
+    filter: grayscale(0);
+    background: url(/assets/img/wordpress.svg) no-repeat center;
+    animation: zoom .2s ease 0s 1 reverse both;
+}
+.imgKnownSymfony{
+    filter: grayscale(1);
+    background: url(/assets/img/symfony.svg) no-repeat center;
+}
+.imgKnownSymfony:hover{
+    filter: grayscale(0);
+    background: url(/assets/img/symfony.svg) no-repeat center;
+    animation: zoom .2s ease 0s 1 reverse both;
+}
+@keyframes imgKnown {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.borderRadius{
+    border:3px;
+    border-radius:25px;
+}
