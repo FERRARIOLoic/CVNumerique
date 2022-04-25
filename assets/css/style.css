@@ -206,11 +206,11 @@ main>div.bannerTitle {
   border-radius: 25px;
 }
 .jobSociety{
-  height:15vh;
+  height:10vh;
 }
 
 .imgSociety{
-  max-width:12vh;
+  max-width:8vh;
 }
 
 
@@ -240,10 +240,11 @@ main>div.bannerTitle {
 #carousel {
   overflow: hidden;
   /* width: 600px; */
-  height: 60vh;
+  height: 55vh;
   border-radius: 5px;
   background-color: #fff;
-  /* box-shadow: 1px 1px 10px 10px #ebebeb inset; */
+  -webkit-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15); 
+box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15);
 }
 
 .p-wrapper {
