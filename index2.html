@@ -11,19 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="text/javascript" src="assets/js/scrollToTop.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-
-
     <title>FERRARIO Loïc - CV Numérique</title>
 </head>
 
 <body>
 
+
     <header id="site-header">
-        <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light shadow">
+        <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid ">
                 <a class="navbar-brand" href="#top"><i class=" text-secondary fa-solid fa-house-chimney"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -68,17 +64,17 @@
                 </div>
             </div>
             <div class="row text-center h4 text-light pt-5">
-                <div class="col">
+                <div class="col-sm">
                     <i class="fa-solid fa-code"></i>
-                    <div class="col">Front-end</div>
+                    <div class="col-sm">Front-end</div>
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <i class="fa-solid fa-database"></i>
-                    <div class="col">Back-end</div>
+                    <div class="col-sm">Back-end</div>
                 </div>
-                <div class="col">
+                <div class="col-sm">
                     <i class="fa-solid fa-mobile-screen-button"></i>
-                    <div class="col">Mobile</div>
+                    <div class="col-sm">Mobile</div>
                 </div>
             </div>
         </div>
@@ -117,7 +113,7 @@
                 </div>
             </div>
         </div>
-
+        
         <!-- PARCOURS -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="parcours">
             <div class="col-11  img-thumbnail borderRadius25px shadow">
@@ -229,7 +225,7 @@
         </div>
 
 
-
+        
         <!-- COMPETENCES -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="competences">
             <div class="col-11 img-thumbnail borderRadius25px shadow">
@@ -275,65 +271,69 @@
             </div>
         </div>
 
-
+        
         <!-- REALISATIONS -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="realisations">
             <div class="col-11 img-thumbnail borderRadius25px shadow">
                 <div class="fs-1 p-2">J'ai fait...</div>
-                <div class="row shadow borderRadius5px doneBG m-4 py-3">
-                    <div class="fs-3">Avant la formation</div>
-                    <div class="col-md text-center align-self-center">
-                        <div class="col h1">
-                            Astuces
+                <div class="row m-3 py-3">
+                    <div class="row shadow borderRadius5px doneBG">
+                        <div class="fs-3 p-3">Avant la formation</div>
+                        <div class="col-md text-center align-self-center">
+                            <div class="col h1">
+                                Astuces
+                            </div>
+                            <div class="col fs-6">
+                                <p class="fw-bold">créé en autodidacte de 2015 à 2022</p>
+                                <p>HTML5, PHP4 à PHP7, CSS3</p>
+                            </div>
                         </div>
-                        <div class="col fs-6">
-                            <p class="fw-bold">créé en autodidacte de 2015 à 2022</p>
-                            <p>HTML5, PHP4 à PHP7, CSS3</p>
+                        <div class="col-md align-self-center p-5">
+                            <img class="img-thumbnail img-fluid rounded shadow" src="assets/img/astucesPreview.jpg"
+                                alt="Astuces - Site de formation des boutiques en France">
                         </div>
-                        <div class="col">
-                            <a target="_blank" href="https://astuces.save.co/">Visiter le site</a>
-                        </div>
-                    </div>
-                    <div class="col-md align-self-center p-5">
-                        <img class="img-thumbnail img-fluid rounded shadow" src="assets/img/astucesPreview.jpg"
-                            alt="Astuces - Site de formation des boutiques en France">
                     </div>
                 </div>
-                <div class="row shadow borderRadius5px doneBG m-4 py-3">
-                    <div class="fs-3">Pendant la formation</div>
+                <div class="row m-3 py-3">
+                    <div class="row borderRadius5px doneBG">
+                        <div class="row ">
+                            <div class="fs-3">Pendant la formation</div>
 
-                    <div class="row text-center">
-                        <div class="col-md text-center align-self-center">
-                            <p class="h3">
-                                Création de Cards
-                            </p>
-                            <p>HTML5 / CSS3</p>
-                        </div>
-                        <div class="col-md align-self-center p-5">
-                            <img class="img-thumbnail img-fluid rounded shadow" src="assets/img/exercice_cards.jpg"
-                                alt="Création de Cartes sur le sujet de notre choix (HTML5)">
+                            <div class="row text-center">
+                                <div class="col-md text-center align-self-center">
+                                    <p class="h3">
+                                        Création de Cards
+                                    </p>
+                                    <p>HTML5 / CSS3</p>
+                                </div>
+                                <div class="col-md align-self-center p-5">
+                                    <img class="img-thumbnail img-fluid rounded shadow"
+                                        src="assets/img/exercice_cards.jpg"
+                                        alt="Création de Cartes sur le sujet de notre choix (HTML5)">
+                                </div>
+                            </div>
+
+                            <div class="row text-center">
+                                <div class="col-md text-center align-self-center">
+                                    <p class="h3">
+                                        Visuel d'un lecteur audio<br>version desktop
+                                    </p>
+                                    <p>Adobe XD</p>
+                                </div>
+                                <div class="col-md align-self-center p-5">
+                                    <img class="img-thumbnail img-fluid rounded shadow"
+                                        src="assets/img/revisite_lecteur_desktop.jpg"
+                                        alt="Création du visuel d'un lecteur audio version Desktop">
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-
-                    <div class="row text-center">
-                        <div class="col-md text-center align-self-center">
-                            <p class="h3">
-                                Visuel d'un lecteur audio<br>version desktop
-                            </p>
-                            <p>Adobe XD</p>
-                        </div>
-                        <div class="col-md align-self-center p-5">
-                            <img class="img-thumbnail img-fluid rounded shadow"
-                                src="assets/img/revisite_lecteur_desktop.jpg"
-                                alt="Création du visuel d'un lecteur audio version Desktop">
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
 
-
+        
         <!-- CENTRES D'INTERET -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="centres_interets">
             <div class="col-11  img-thumbnail borderRadius25px shadow">
@@ -351,30 +351,25 @@
 
     </main>
 
-
+    
     <!-- FOOTER -->
     <footer id="site-footer" class="container-fluid">
-        <div class="row bg-secondary bg-gradient bg-opacity-50">
-            <div class="col">
+        <div class="row bg-secondary bg-gradient bg-opacity-50 justify-content-evenly">
+            <div class="col-11">
                 <div class="row">
-                    <div class="col-md copyright">&#169;FERRARIOLoic-04/2022</div>
+                    <div class="col-md-3 copyright">&#169;FERRARIOLoic-04/2022</div>
                 </div>
             </div>
-            <div class="col-4 bg-primary">
-                <div class="row text-center">
-                    <div class="col"><i class="fa-solid fa-envelope"></i></div>
-                    <div class="col"><i class="fa-brands fa-linkedin"></i></div>
-                    <div class="col"><i class="fa-brands fa-github"></i></div>
+            <div class="col-1 bg-primary">
+                <div class="row text-end">
+                    <div class="col-1"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="col-1"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="col-1"><i class="fa-brands fa-github"></i></div>
                 </div>
             </div>
         </div>
     </footer>
 
-
-    <!-- SCROLL TO TOP -->
-    <div>
-        <button onclick="retourHaut()" id="haut" title="Retour haut de page"><i class="buttonScrollTop fa-solid fa-arrow-up"></i></button>
-    </div>
 
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'
         integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous'>

@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,6 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital@1&display=swap');
-
 
 
 body {
@@ -172,36 +170,60 @@ main>div.bannerTitle {
 
 .borderRadius25px {
   border: 3px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
+
 .borderRadius5px {
   border-radius: 5px;
 }
-.jobSociety{
-  height:10vh;
+
+.jobSociety {
+  height: 10vh;
 }
 
-.imgSociety{
-  max-width:8vh;
+.imgSociety {
+  max-width: 8vh;
 }
 
 .doneBG {
-  background-color:#f2f7ff;
+  background-color: #f2f7ff;
+}
+
+.copyright {
+  font-size: smaller;
+font-style: italic;
 }
 
 
+
+
+/* SCROLL TO TOP */
+html {
+  scroll-behavior: smooth;
+  }
+  #haut {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 0px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #AECAFF;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 18px;
+  }
+  #haut:hover {
+  background-color: #0F4C81;
+  }
 
 
 
 /* CAROUSEL EXPERIENCES PROFESSIONNELLES */
 
-
-#container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
 
 #carousel,
 #navigation {
@@ -212,7 +234,7 @@ main>div.bannerTitle {
 #carousel {
   overflow: hidden;
   /* width: 600px; */
-  height: 55vh;
+  height: 50vh;
   background-color: #f2f7ff;
   /* -webkit-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15); 
 box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15); */
@@ -250,7 +272,7 @@ box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0
   position: relative;
   width: inherit;
   height: inherit;
-  padding: 48px;
+  padding: 40px;
 }
 
 #navigation {
