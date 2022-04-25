@@ -1,9 +1,17 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital@1&display=swap');
 
 
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: 'Istok Web', sans-serif;
 }
 
@@ -17,7 +25,7 @@ main>div.bannerTitle {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/assets/img/background4.jpg);
+  background-image: url(../img/background4.jpg);
   /* opacity:.3; */
   padding: 15vh 0px 20px 0px;
 }
@@ -68,12 +76,12 @@ main>div.bannerTitle {
 
 .imgKnownHtml {
   filter: grayscale(1);
-  background: url(/assets/img/html5.svg) no-repeat center;
+  background: url(../img/html5.svg) no-repeat center;
 }
 
 .imgKnownHtml:hover {
   filter: grayscale(0);
-  background: url(/assets/img/html5.svg) no-repeat center;
+  background: url(../img/html5.svg) no-repeat center;
   animation: imgKnown 1s ease 0s 1 normal both;
   animation: appear 1s ease 0s 1 reverse both;
   animation: zoom .2s ease 0s 1 reverse both;
@@ -105,89 +113,89 @@ main>div.bannerTitle {
 
 .imgKnownCss {
   filter: grayscale(1);
-  background: url(/assets/img/css3.svg) no-repeat center;
+  background: url(../img/css3.svg) no-repeat center;
 }
 
 .imgKnownCss:hover {
   filter: grayscale(0);
-  background: url(/assets/img/css3.svg) no-repeat center;
+  background: url(../img/css3.svg) no-repeat center;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
 .imgKnownPhp {
   filter: grayscale(1);
-  background: url(/assets/img/php.svg) no-repeat center;
+  background: url(../img/php.svg) no-repeat center;
 }
 
 .imgKnownPhp:hover {
   filter: grayscale(0);
-  background: url(/assets/img/php.svg) no-repeat center;
+  background: url(../img/php.svg) no-repeat center;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
 .imgKnownJs {
   filter: grayscale(1);
-  background: url(/assets/img/js.svg) no-repeat center;
+  background: url(../img/js.svg) no-repeat center;
 }
 
 .imgKnownJs:hover {
   filter: grayscale(0);
-  background: url(/assets/img/js.svg) no-repeat center;
+  background: url(../img/js.svg) no-repeat center;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
 .imgKnownMysql {
   filter: grayscale(1);
-  background: url(/assets/img/mysql.svg) no-repeat center;
+  background: url(../img/mysql.svg) no-repeat center;
 }
 
 .imgKnownMysql:hover {
   filter: grayscale(0);
-  background: url(/assets/img/mysql.svg) no-repeat center;
+  background: url(../img/mysql.svg) no-repeat center;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
 .imgKnownBootstrap {
   filter: grayscale(1);
-  background: url(/assets/img/bootstrap.svg) no-repeat center;
+  background: url(../img/bootstrap.svg) no-repeat center;
 }
 
 .imgKnownBootstrap:hover {
   filter: grayscale(0);
-  background: url(/assets/img/bootstrap.svg) no-repeat center;
+  background: url(../img/bootstrap.svg) no-repeat center;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
 .imgKnownVsc {
   filter: grayscale(1);
-  background: url(/assets/img/VisualStudiocode.svg) no-repeat center;
+  background: url(../img/VisualStudiocode.svg) no-repeat center;
 }
 
 .imgKnownVsc:hover {
   filter: grayscale(0);
-  background: url(/assets/img/VisualStudiocode.svg) no-repeat center;
+  background: url(../img/VisualStudiocode.svg) no-repeat center;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
 .imgKnownWordpress {
   filter: grayscale(1);
-  background: url(/assets/img/wordpress.svg) no-repeat center;
+  background: url(../img/wordpress.svg) no-repeat center;
 }
 
 .imgKnownWordpress:hover {
   filter: grayscale(0);
-  background: url(/assets/img/wordpress.svg) no-repeat center;
+  background: url(../img/wordpress.svg) no-repeat center;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
 .imgKnownSymfony {
   filter: grayscale(1);
-  background: url(/assets/img/symfony.svg) no-repeat center;
+  background: url(../img/symfony.svg) no-repeat center;
 }
 
 .imgKnownSymfony:hover {
   filter: grayscale(0);
-  background: url(/assets/img/symfony.svg) no-repeat center;
+  background: url(../img/symfony.svg) no-repeat center;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
@@ -218,11 +226,7 @@ main>div.bannerTitle {
 
 
 /* CAROUSEL EXPERIENCES PROFESSIONNELLES */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 #container {
   display: flex;
