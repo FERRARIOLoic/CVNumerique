@@ -117,221 +117,302 @@
                 <div class="col-11  img-thumbnail borderRadius shadow">
                     <div class="fs-1">Mon parcours</div>
                     <div class="row m-3 py-3">
-                        <div class="row">
-                            <div class="col border border-3 borderRadius bg-primary">
-                                <div class="col text-center h3">Expériences professionnelles</div>
-                                <div class="carousel my-carousel carousel--translate">
-                                    <input class="carousel__activator" type="radio" name="carousel" id="A"
-                                        checked="checked" />
-                                    <input class="carousel__activator" type="radio" name="carousel" id="B" />
-                                    <input class="carousel__activator" type="radio" name="carousel" id="C" />
-                                    <div class="carousel__controls">
-                                        <label class="carousel__control carousel__control--backward" for="C"></label>
-                                        <label class="carousel__control carousel__control--forward" for="B"></label>
-                                    </div>
-                                    <div class="carousel__controls">
-                                        <label class="carousel__control carousel__control--backward" for="A"></label>
-                                        <label class="carousel__control carousel__control--forward" for="C"></label>
-                                    </div>
-                                    <div class="carousel__controls">
-                                        <label class="carousel__control carousel__control--backward" for="B"></label>
-                                        <label class="carousel__control carousel__control--forward" for="A"></label>
-                                    </div>
-                                    <div class="carousel__track">
-                                        <li class="carousel__slide">A
-                                            <div class="col-md">2017- ce jour</div>
-                                            <div class="col-md offset-1">Technicien / Responsable Support formation
+
+                        <div id="container-fluid">
+                            <div class="row">
+
+                                <input hidden type="radio" name="carousel-control" id="button_a" checked />
+                                <input hidden type="radio" name="carousel-control" id="button_b" />
+                                <input hidden type="radio" name="carousel-control" id="button_c" />
+                                <input hidden type="radio" name="carousel-control" id="button_d" />
+
+
+                                <div id="navigation" class="col-md-2 align-self-center">
+                                    <label for="button_a" class="label_a shadow rounded"> <span>2017 - ce jour</span>
+                                    </label>
+                                    <label for="button_b" class="label_b shadow rounded"> <span>2012 - 2017</span>
+                                    </label>
+                                    <label for="button_c" class="label_c shadow rounded"> <span>2011 - 2012</span>
+                                    </label>
+                                    <label for="button_d" class="label_d shadow rounded"> <span>d</span> </label>
+                                </div> <!-- // #navigation -->
+                                <div id="carousel" class="col-md-10 shadow rounded">
+                                    <div class="p-wrapper">
+
+                                        <section class="panel_a">
+                                            <div class="jobSociety row">
+                                                <div class="col-sm-2 text-end align-self-center">
+                                                    <img class="imgSociety" src="assets/img/save.jpg">
+                                                </div>
+                                                <div class="col-sm-10 align-self-center">
+                                                    <h1>Point Services Mobiles / Save Store</h1>
+                                                </div>
+                                                
                                             </div>
-                                        </li>
-                                        <li class="carousel__slide">B
-                                            <div class="col-md">2012 - 2017</div>
-                                            <div class="col-md offset-1">Technicien SAV en Téléphonie Mobile</div>
-                                        </li>
-                                        <li class="carousel__slide">C
-                                            <div class="col-md">2011 - 2012</div>
-                                            <div class="col-md offset-1">Responsable SAV en informatique - XXB
-                                                Consulting</div>
-                                        </li>
+                                            <div class="row">
+                                                <h3>Technicien SAV / Responsable Support formation</h3>
+                                                <div class="col offset-1">
+                                                    <p>
+                                                        Diagnostics, réparations, reprogrammations de smartphones,
+                                                        tablettes, accessoires <br>(agréments Samsung, Huawei,
+                                                        Xiaomi, Apple)
+                                                    </p>
+                                                    <P>
+                                                        Conception, développement et gestion du
+                                                        site
+                                                        de
+                                                        formation/gestion des boutiques en France
+                                                    </P>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <section class="panel_b">
+                                            <div class="jobSociety row">
+                                                <div class="col-sm-2 text-end align-self-center">
+                                                    <img class="imgSociety" src="assets/img/psm_old.jpg">
+                                                </div>
+                                                <div class="col-sm-10 align-self-center">
+                                                    <h1>Point Services Mobiles</h1>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <h3>Technicien SAV en Téléphonie Mobile</h3>
+                                                <div class="col offset-1">
+                                                    <p>
+                                                        Diagnostics, réparations, reprogrammations de smartphones,
+                                                        tablettes,
+                                                        accessoires (agréments Samsung, Sony, Nokia, Huaweï)
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </section>
+
+                                        <section class="panel_c">
+                                            <div class="jobSociety row">
+                                                <div class="col-sm-2 text-end align-self-center">
+                                                    <!-- <img class="imgSociety" src="assets/img/xxb.jpg"> -->
+                                                </div>
+                                                <div class="col-sm-10 align-self-center">
+                                                    <h1>XXB Consulting</h1>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <h3>Responsable SAV en informatique</h3>
+                                                <div class="col offset-1">
+                                                    <p>
+                                                        Diagnostics, Réparations, installation d'ordinateurs fixes et
+                                                        portables
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <h3>Installateur Numéricable</h3>
+                                                <div class="col offset-1">
+                                                    <p>
+                                                        Installation, paramétrage des équipements Numéricable (modem,
+                                                        routeur,
+                                                        décodeur télévision)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <section class="panel_d">
+                                            <div class="row">
+
+                                            </div>
+                                            <h2>Panel d</h2>
+                                            <p>Aenean maximus accumsan mauris. Praesent rutrum vitae purus et mattis.
+                                                Nunc
+                                                at mi et diam pulvinar euismod. Curabitur interdum, leo quis tincidunt
+                                                pharetra, risus nisl mollis velit, interdum consectetur justo orci in
+                                                nisi.
+                                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                                                cubilia Curae; Phasellus elit turpis, tincidunt non dui et, molestie
+                                                maximus
+                                                nisl. Duis pretium eros sed ultricies convallis. Pellentesque vitae
+                                                tempor
+                                                lorem, eu laoreet metus. Vivamus sit amet lorem libero. Vestibulum
+                                                tristique
+                                                ligula in gravida volutpat. Sed facilisis ipsum velit, et pharetra nisi
+                                                ullamcorper ut. Maecenas purus dui, tincidunt non ipsum vel, bibendum
+                                                aliquam elit. Cras rutrum velit diam, semper aliquet libero posuere nec.
+                                            </p>
+                                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                                fames ac
+                                                turpis egestas. Donec ut eleifend lacus. Sed fringilla ullamcorper
+                                                justo,
+                                                porttitor cursus nisl. Sed et mi aliquet, rutrum erat at, porttitor
+                                                felis.
+                                                Mauris consequat mauris id posuere dictum. Proin nec congue purus, nec
+                                                rhoncus justo. Cras sit amet neque eu ex feugiat auctor at dignissim
+                                                augue.
+                                                Sed commodo tellus id erat lobortis, sit amet elementum felis commodo.
+                                                Ut
+                                                massa diam, tristique vel lacinia sed, vulputate eget mauris. Fusce
+                                                lacinia
+                                                bibendum iaculis.</p>
+                                        </section>
+
+                                    </div> <!-- // .p-wrapper -->
+                                </div> <!-- // #carousel -->
+
+
+
+
+                            </div> <!-- // #container -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMPETENCES -->
+                <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="competences">
+                    <div class="col-11 img-thumbnail borderRadius shadow">
+                        <div class="fs-1">Je sais faire...</div>
+                        <div class="row text-center m-3 py-3">
+                            <div class="col-sm">
+                                <div class="imgKnownHtml" style="height:60px;"></div>
+                                <div>HTML</div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="imgKnownCss" style="height:60px;"></div>
+                                <div>CSS</div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="imgKnownJs" style="height:60px;"></div>
+                                <div>Javascript</div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="imgKnownBootstrap" style="height:60px;"></div>
+                                <div>Bootstrap</div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="imgKnownMysql" style="height:60px;"></div>
+                                <div>MySQL</div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="imgKnownPhp" style="height:60px;"></div>
+                                <div>PHP</div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="imgKnownWordpress" style="height:60px;"></div>
+                                <div>Wordpress</div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="imgKnownVsc" style="height:60px;"></div>
+                                <div>Visual Studio Code</div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="imgKnownSymfony" style="height:60px;"></div>
+                                <div>Symfony</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REALISATIONS -->
+                <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="realisations">
+                    <div class="col-11 img-thumbnail borderRadius shadow">
+                        <div class="fs-1">J'ai fait...</div>
+                        <div class="row m-3 py-3">
+                            <div class="row border borderRadius">
+                                <div class="fs-3">Avant la formation</div>
+                                <div class="col-md text-center align-self-center">
+                                    <div class="col h1">
+                                        Astuces
                                     </div>
-                                    <div class="carousel__indicators">
-                                        <label class="carousel__indicator" for="A"></label>
-                                        <label class="carousel__indicator" for="B"></label>
-                                        <label class="carousel__indicator" for="C"></label>
+                                    <div class="col fs-6">
+                                        <p class="fw-bold">créé en autodidacte de 2015 à 2022</p>
+                                        <p>HTML5, PHP4 à PHP7, CSS3</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col border border-3 borderRadius bg-primary">
-                                <div class="col text-center h3">Formations</div>
-                                <div class="carousel my-carousel carousel--translate">
-                                    <input class="carousel__activator" type="radio" name="carousel" id="D"
-                                        checked="checked" />
-                                    <input class="carousel__activator" type="radio" name="carousel" id="E" />
-                                    <input class="carousel__activator" type="radio" name="carousel" id="F" />
-                                    <div class="carousel__controls">
-                                        <label class="carousel__control carousel__control--backward" for="F"></label>
-                                        <label class="carousel__control carousel__control--forward" for="E"></label>
-                                    </div>
-                                    <div class="carousel__controls">
-                                        <label class="carousel__control carousel__control--backward" for="D"></label>
-                                        <label class="carousel__control carousel__control--forward" for="F"></label>
-                                    </div>
-                                    <div class="carousel__controls">
-                                        <label class="carousel__control carousel__control--backward" for="E"></label>
-                                        <label class="carousel__control carousel__control--forward" for="D"></label>
-                                    </div>
-                                    <div class="carousel__track">
-                                        <li class="carousel__slide">A
-                                            <div class="col-md">Avril 2022 - ce jour</div>
-                                            <div class="col-md offset-1">Formation Développeur Web / Web Mobile - La
-                                                Manu Amiens</div>
-                                        </li>
-                                        <li class="carousel__slide">B
-                                            <div class="col-md">2012 - 2017</div>
-                                            <div class="col-md offset-1">Technicien SAV en Téléphonie Mobile</div>
-                                        </li>
-                                        <li class="carousel__slide">C
-                                            <div class="col-md">2011 - 2012</div>
-                                            <div class="col-md offset-1">Responsable SAV en informatique - XXB
-                                                Consulting</div>
-                                        </li>
-                                    </div>
-                                    <div class="carousel__indicators">
-                                        <label class="carousel__indicator" for="D"></label>
-                                        <label class="carousel__indicator" for="E"></label>
-                                        <label class="carousel__indicator" for="F"></label>
-                                    </div>
+                                <div class="col-md align-self-center p-5">
+                                    <img class="img-thumbnail img-fluid rounded shadow"
+                                        src="assets/img/astucesPreview.jpg" alt="Loïc FERRARIO">
                                 </div>
                             </div>
                         </div>
+                        <div class="row m-3 py-3">
+                            <div class="row border borderRadius">
+                                <div class="row ">
+                                    <div class="fs-3">Pendant la formation</div>
+                                    <div class="row text-center">
+                                        <div class="col-md text-center align-self-center">
+                                            <p class="h3">
+                                                Visuel d'un lecteur audio<br>version desktop
+                                            </p>
+                                            <p>Adobe XD</p>
+                                        </div>
+                                        <div class="col-md align-self-center p-5">
+                                            <img class="img-thumbnail img-fluid rounded shadow"
+                                                src="assets/img/revisite_lecteur_desktop.jpg" alt="Loïc FERRARIO">
+                                        </div>
+                                    </div>
 
+                                    <div class="row text-center">
+                                        <div class="col-md text-center align-self-center">
+                                            <p class="h3">
+                                                Création de Cards
+                                            </p>
+                                            <p>HTML / CSS</p>
+                                        </div>
+                                        <div class="col-md align-self-center p-5">
+                                            <img class="img-thumbnail img-fluid rounded shadow"
+                                                src="assets/img/revisite_lecteur_desktop.jpg" alt="Loïc FERRARIO">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- COMPETENCES -->
-            <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="competences">
-                <div class="col-11 img-thumbnail borderRadius shadow">
-                    <div class="fs-1">Je sais faire...</div>
-                    <div class="row text-center m-3 py-3">
-                        <div class="col-sm">
-                            <div class="imgKnownHtml" style="height:60px;"></div>
-                            <div>HTML</div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="imgKnownCss" style="height:60px;"></div>
-                            <div>CSS</div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="imgKnownJs" style="height:60px;"></div>
-                            <div>Javascript</div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="imgKnownBootstrap" style="height:60px;"></div>
-                            <div>Bootstrap</div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="imgKnownMysql" style="height:60px;"></div>
-                            <div>MySQL</div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="imgKnownPhp" style="height:60px;"></div>
-                            <div>PHP</div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="imgKnownWordpress" style="height:60px;"></div>
-                            <div>Wordpress</div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="imgKnownVsc" style="height:60px;"></div>
-                            <div>Visual Studio Code</div>
-                        </div>
-                        <div class="col-sm">
-                            <div class="imgKnownSymfony" style="height:60px;"></div>
-                            <div>Symfony</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- REALISATIONS -->
-            <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="realisations">
-                <div class="col-11 img-thumbnail borderRadius shadow">
-                    <div class="fs-1">J'ai fait...</div>
+            <!-- CENTRES D'INTERET -->
+            <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="centres_interets">
+                <div class="col-11  img-thumbnail borderRadius shadow">
+                    <div class="fs-1">En plus...</div>
                     <div class="row m-3 py-3">
-                        <div class="row border borderRadius">Avant la formation
-                            <div class="col-md-4 text-center align-self-center">
-                                <div class="col h1">
-                                    Astuces
-                                </div>
-                                <div class="col fs-6">
-                                    <p class="fw-bold">créé en autodidacte de 2015 à 2022</p>
-                                    <p>HTML5, PHP4 à PHP7, CSS3</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 align-self-center p-5">
-                                <img class="img-thumbnail img-fluid rounded shadow" src="assets/img/astucesPreview.jpg"
-                                    alt="Loïc FERRARIO">
-                            </div>
+                        <div class="col-md">
+                            <div class="col-md">Bricolage</div>
+                            <div class="col-md">Dessin</div>
+                            <div class="col-md">Réparations</div>
                         </div>
                     </div>
-                    <div class="row m-3 py-3">
-                        <div class="row border borderRadius">Pendant la formation
-                            <div class="col-md-4 text-center align-self-center">
-                                <div class="h3">
-                                    Création du visuel d'un lecteur audio version desktop
-                                </div>
-                            </div>
-                            <div class="col-md-6 align-self-center p-5">
-                                <img class="img-thumbnail img-fluid rounded shadow"
-                                    src="assets/img/revisite_lecteur_desktop.jpg" alt="Loïc FERRARIO">
-                            </div>
-
-                        </div>
+                    <div class="row">
                     </div>
                 </div>
             </div>
-    </div>
+
+        </main>
 
 
-    <!-- CENTRES D'INTERET -->
-    <div class="bg-secondary bg-gradiant bg-opacity-10 row justify-content-center py-5" id="centres_interets">
-        <div class="col-11  img-thumbnail borderRadius shadow">
-            <div class="fs-1">En plus...</div>
-            <div class="row m-3 py-3">
-                <div class="col-md">
-                    <div class="col-md">Bricolage</div>
-                    <div class="col-md">Dessin</div>
-                    <div class="col-md">Réparations</div>
+        <!-- FOOTER -->
+        <footer id="site-footer" class="navbar fluid-bottom text-center">
+            <div class="row container-fluid  bg-secondary bg-gradient bg-opacity-50 justify-content-evenly">
+                <div class="col-10">
+                    <div class="row ">
+                        <div class="col-md">&#169;FERRARIOLoic-04/2022</div>
+                        <div class="col-sm">Accueil</div>
+                        <div class="col-sm">Nous contacter</div>
+                        <div class="col-sm">Plan du site</div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="row text-end">
+                        <div class="col"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="col"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="col"><i class="fa-brands fa-github"></i></div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-            </div>
-        </div>
-    </div>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer id="site-footer" class="navbar fluid-bottom text-center">
-        <div class="row container-fluid  bg-secondary bg-gradient bg-opacity-50 justify-content-evenly">
-            <div class="col-10">
-                <div class="row ">
-                    <div class="col-md">&#169;FERRARIOLoic-04/2022</div>
-                    <div class="col-sm">Accueil</div>
-                    <div class="col-sm">Nous contacter</div>
-                    <div class="col-sm">Plan du site</div>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="row text-end">
-                    <div class="col"><i class="fa-solid fa-envelope"></i></div>
-                    <div class="col"><i class="fa-brands fa-linkedin"></i></div>
-                    <div class="col"><i class="fa-brands fa-github"></i></div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
     </div>
 
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'
