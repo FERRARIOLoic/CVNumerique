@@ -209,9 +209,12 @@ main>div.bannerTitle {
   }
 }
 
-.borderRadius {
+.borderRadius25px {
   border: 3px;
   border-radius: 25px;
+}
+.borderRadius5px {
+  border-radius: 5px;
 }
 .jobSociety{
   height:10vh;
@@ -219,6 +222,10 @@ main>div.bannerTitle {
 
 .imgSociety{
   max-width:8vh;
+}
+
+.doneBG {
+  background-color:#f2f7ff;
 }
 
 
@@ -245,10 +252,9 @@ main>div.bannerTitle {
   overflow: hidden;
   /* width: 600px; */
   height: 55vh;
-  border-radius: 5px;
-  background-color: #fff;
-  -webkit-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15); 
-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15);
+  background-color: #f2f7ff;
+  /* -webkit-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15); 
+box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15); */
 }
 
 .p-wrapper {
@@ -306,7 +312,7 @@ box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0
 
 [class^="label_"]:hover {
   color: #000000;
-  background-color: #ffeed9;
+  background-color: #BCC0C4;
 }
 
 #button_a:checked~#navigation .label_a,
@@ -315,5 +321,5 @@ box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0
 #button_d:checked~#navigation .label_d {
   cursor: default;
   color: #fff;
-  background-color: #BCC0C4;
+  background-color: #aecaff;
 }
