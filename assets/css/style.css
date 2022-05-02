@@ -33,17 +33,14 @@ main>div.bannerTitle {
   height: 15vh;
 }
 
-.imgKnownHtml {
-  filter: grayscale(1);
-  background: url(../img/html5.svg) no-repeat center;
-}
+@keyframes imgKnown {
+  0% {
+    opacity: 0;
+  }
 
-.imgKnownHtml:hover {
-  filter: grayscale(0);
-  background: url(../img/html5.svg) no-repeat center;
-  animation: imgKnown 1s ease 0s 1 normal both;
-  animation: appear 1s ease 0s 1 reverse both;
-  animation: zoom .2s ease 0s 1 reverse both;
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes appear {
@@ -70,103 +67,90 @@ main>div.bannerTitle {
   }
 }
 
-.imgKnownCss {
-  filter: grayscale(1);
-  background: url(../img/css3.svg) no-repeat center;
+
+.imgKnownHtml:hover {
+  filter: grayscale(0);
+  background: url(../img/html5.svg) no-repeat center;
+  background-size: 3em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
 }
 
 .imgKnownCss:hover {
   filter: grayscale(0);
   background: url(../img/css3.svg) no-repeat center;
+  background-size: 3em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
-.imgKnownPhp {
-  filter: grayscale(1);
-  background: url(../img/php.svg) no-repeat center;
-}
-
-.imgKnownPhp:hover {
-  filter: grayscale(0);
-  background: url(../img/php.svg) no-repeat center;
-  animation: zoom .2s ease 0s 1 reverse both;
-}
-
-.imgKnownJs {
-  filter: grayscale(1);
-  background: url(../img/js.svg) no-repeat center;
-}
 
 .imgKnownJs:hover {
   filter: grayscale(0);
   background: url(../img/js.svg) no-repeat center;
+  background-size: 3em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
-.imgKnownMysql {
-  filter: grayscale(1);
-  background: url(../img/mysql.svg) no-repeat center;
+
+.imgKnownBootstrap:hover {
+  filter: grayscale(0);
+  background: url(../img/bootstrap.svg) no-repeat center;
+  background-size: 3.3em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
 }
 
 .imgKnownMysql:hover {
   filter: grayscale(0);
   background: url(../img/mysql.svg) no-repeat center;
+  background-size: 6em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
-.imgKnownBootstrap {
-  filter: grayscale(1);
-  background: url(../img/bootstrap.svg) no-repeat center;
-}
-
-.imgKnownBootstrap:hover {
+.imgKnownPhp:hover {
   filter: grayscale(0);
-  background: url(../img/bootstrap.svg) no-repeat center;
+  background: url(../img/php.svg) no-repeat center;
+  background-size: 4em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
   animation: zoom .2s ease 0s 1 reverse both;
-}
-
-.imgKnownVsc {
-  filter: grayscale(1);
-  background: url(../img/VisualStudiocode.svg) no-repeat center;
-}
-
-.imgKnownVsc:hover {
-  filter: grayscale(0);
-  background: url(../img/VisualStudiocode.svg) no-repeat center;
-  animation: zoom .2s ease 0s 1 reverse both;
-}
-
-.imgKnownWordpress {
-  filter: grayscale(1);
-  background: url(../img/wordpress.svg) no-repeat center;
 }
 
 .imgKnownWordpress:hover {
   filter: grayscale(0);
   background: url(../img/wordpress.svg) no-repeat center;
+  background-size: 3.1em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
-.imgKnownSymfony {
-  filter: grayscale(1);
-  background: url(../img/symfony.svg) no-repeat center;
+.imgKnownVsc:hover {
+  filter: grayscale(0);
+  background: url(../img/VisualStudiocode.svg) no-repeat center;
+  background-size: 3.1em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
 }
 
 .imgKnownSymfony:hover {
   filter: grayscale(0);
   background: url(../img/symfony.svg) no-repeat center;
+  background-size: 3.2em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
   animation: zoom .2s ease 0s 1 reverse both;
 }
 
-@keyframes imgKnown {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 .borderRadius25px {
   border: 3px;
@@ -191,7 +175,7 @@ main>div.bannerTitle {
 
 .copyright {
   font-size: smaller;
-font-style: italic;
+  font-style: italic;
 }
 
 
@@ -200,8 +184,9 @@ font-style: italic;
 /* SCROLL TO TOP */
 html {
   scroll-behavior: smooth;
-  }
-  #haut {
+}
+
+#haut {
   display: none;
   position: fixed;
   bottom: 25px;
@@ -215,10 +200,11 @@ html {
   padding: 15px;
   border-radius: 15px;
   font-size: 18px;
-  }
-  #haut:hover {
+}
+
+#haut:hover {
   background-color: #0F4C81;
-  }
+}
 
 
 
@@ -267,16 +253,22 @@ box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0
   transform: translateY(-300%);
 }
 
+#button_e:checked~#carousel .p-wrapper {
+  -webkit-transform: translateY(-400%);
+  transform: translateY(-400%);
+}
+
+#button_f:checked~#carousel .p-wrapper {
+  -webkit-transform: translateY(-500%);
+  transform: translateY(-500%);
+}
+
 [class^="panel_"] {
   overflow: auto;
   position: relative;
   width: inherit;
   height: inherit;
   padding: 40px;
-}
-
-#navigation {
-  /* margin-left: 24px; */
 }
 
 [class^="label_"] {
@@ -301,8 +293,59 @@ box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0
 #button_a:checked~#navigation .label_a,
 #button_b:checked~#navigation .label_b,
 #button_c:checked~#navigation .label_c,
-#button_d:checked~#navigation .label_d {
+#button_d:checked~#navigation .label_d,
+#button_e:checked~#navigation .label_e,
+#button_f:checked~#navigation .label_f {
   cursor: default;
   color: #fff;
   background-color: #aecaff;
+}
+
+
+
+
+
+/* DATA PROGRESS */
+
+
+@keyframes growProgressBar {
+
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 5rem;
+  --fg: #369;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  /* content: counter(percentage) '%'; */
 }
