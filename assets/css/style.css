@@ -67,6 +67,11 @@ main>div.bannerTitle {
   }
 }
 
+/* EN COURS !!!
+.imgKnownHtml { 
+  background: url(../img/html5.svg) no-repeat center;
+  z-index: 2;
+} */
 
 .imgKnownHtml:hover {
   filter: grayscale(0);
