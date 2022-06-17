@@ -5,21 +5,25 @@
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel="shortcut icon" type="image/jpg" href="assets/img/loic_carre.jpg" />
+    <link rel="shortcut icon" type="image/jpg" href="public/assets/img/loic_carre.jpg" />
     <meta name="description" content="CV numérique de Loïc FERRARIO" />
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="public/assets/js/scrollToTop.js"></script>
+    <link rel="stylesheet" href="public/assets/css/style2.css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+
     <title>FERRARIO Loïc - CV Numérique</title>
 </head>
 
 <body>
 
-
     <header id="site-header">
-        <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light shadow">
             <div class="container-fluid ">
                 <a class="navbar-brand" href="#top"><i class=" text-secondary fa-solid fa-house-chimney"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -55,26 +59,30 @@
         <!-- BANNER NAME -->
         <div class="row bannerTitle text-center text-light">
             <div class="row align-self-center">
-                <div class="col-md-6 display-3 align-self-center">
+                <div class="col-md-6 display-3 align-self-center text-center">
                     <strong>FERRARIO Loïc</strong>
+                    <div class="row ">
+                        <div class="col-md-5 fs-6 ">06.82.61.43.74</div>
+                        <div class="col-md-7 fs-6 text-center">ferrarioloic.web@gmail.com</div>
+                    </div>
                 </div>
                 <div class="col-md-6 display-6 align-self-center">
                     <strong>Développeur Web / Web Mobile</strong>
                     <!-- TITRE PROFESSIONNEL d'ETAT DEVELOPPEUR WEB WEB MOBILE RNCP -->
                 </div>
             </div>
-            <div class="row text-center h4 text-light pt-5">
-                <div class="col-sm">
+            <div class="row text-center h4 pt-5">
+                <div class="col">
                     <i class="fa-solid fa-code"></i>
-                    <div class="col-sm">Front-end</div>
+                    <div class="col">Front-end</div>
                 </div>
-                <div class="col-sm">
+                <div class="col">
                     <i class="fa-solid fa-database"></i>
-                    <div class="col-sm">Back-end</div>
+                    <div class="col">Back-end</div>
                 </div>
-                <div class="col-sm">
+                <div class="col">
                     <i class="fa-solid fa-mobile-screen-button"></i>
-                    <div class="col-sm">Mobile</div>
+                    <div class="col">Mobile</div>
                 </div>
             </div>
         </div>
@@ -85,22 +93,25 @@
             <div class="col-11 img-thumbnail borderRadius25px shadow">
                 <div class="fs-1 p-2">Qui suis-je ?</div>
                 <div class="row m-3 py-3">
-                    <div class="col-sm-2 align-self-center text-center">
-                        <img class="rounded-circle img-thumbnail img-fluid shadow" src="assets/img/loic_carre.jpg"
+                    <div class="col-sm-2 align-self-center text-center py-3">
+                        <img class="rounded-circle img-thumbnail img-fluid shadow" src="public/assets/img/loic_carre.jpg"
                             alt="Loïc FERRARIO">
                     </div>
                     <div class="col-sm-10 align-self-center">
+                        <div class="col text-center">
+                            <h4>&Agrave; coeur vaillant rien d'impossible</h4>
+                        </div>
                         <span>
                             Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
                             développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
                             autodidacte
                             <br>
-                            Après 7 années de pratique, dont 5 ans professionnellement en activité secondaire, je
+                            Après 7 années de pratique, dont 5 ans professionnellement, je
                             souhaite
                             désormais en faire mon activité principale
                             <br>
-                            J'ai donc entrepris, afin d'actualiser mes connaissances actuelles et d'avoir un
-                            apprentissage
+                            J'ai donc entrepris, afin d'actualiser mes connaissances et d'avoir un
+                            parcours d'apprentissage
                             professionnel,
                             une formation de développeur Web / Web Mobile au sein de La Manu Amiens, en reconversion
                             professionnelle
@@ -113,28 +124,38 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- PARCOURS -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="parcours">
             <div class="col-11  img-thumbnail borderRadius25px shadow">
                 <div class="fs-1 p-2">Mon parcours</div>
                 <div class="row m-3 py-3">
-
                     <div class="container-fluid">
                         <div class="row">
 
                             <input hidden type="radio" name="carousel-control" id="button_a" checked />
                             <input hidden type="radio" name="carousel-control" id="button_b" />
                             <input hidden type="radio" name="carousel-control" id="button_c" />
+                            <input hidden type="radio" name="carousel-control" id="button_d" />
+                            <input hidden type="radio" name="carousel-control" id="button_e" />
+                            <input hidden type="radio" name="carousel-control" id="button_f" />
 
 
                             <div id="navigation" class="col-md-3 align-self-center">
-                                <label for="button_a" class="label_a shadow rounded m-3"> <span>2017 - ce
+                                Emplois
+                                <label for="button_a" class="label_a shadow rounded m-2"> <span>2017 - ce
                                         jour</span>
                                 </label>
-                                <label for="button_b" class="label_b shadow rounded m-3"> <span>2012 - 2017</span>
+                                <label for="button_b" class="label_b shadow rounded m-2"> <span>2012 - 2017</span>
                                 </label>
-                                <label for="button_c" class="label_c shadow rounded m-3"> <span>2011 - 2012</span>
+                                <label for="button_c" class="label_c shadow rounded m-2"> <span>2011 - 2012</span>
+                                </label>
+                                Formations
+                                <label for="button_d" class="label_d shadow rounded m-2"> <span>2006</span>
+                                </label>
+                                <label for="button_e" class="label_e shadow rounded m-2"> <span>2004</span>
+                                </label>
+                                <label for="button_f" class="label_f shadow rounded m-2"> <span>2002</span>
                                 </label>
                             </div> <!-- // #navigation -->
                             <div id="carousel" class="col-md-9 shadow rounded">
@@ -159,10 +180,10 @@
                                         </div>
                                         <div class="jobSociety row">
                                             <div class="col-sm-1 align-self-center">
-                                                <img class="imgSociety" src="assets/img/save.png">
+                                                <img class="imgSociety" src="public/assets/img/save.png">
                                             </div>
                                             <div class="col-sm align-self-center">
-                                                <h4>Point Services Mobiles / Save Store</h4>
+                                                <h4><i>Point Services Mobiles / Save Store</i></h4>
                                             </div>
 
                                         </div>
@@ -181,10 +202,10 @@
                                         </div>
                                         <div class="jobSociety row ">
                                             <div class="col-sm-1 align-self-center">
-                                                <img class="imgSociety" src="assets/img/psm_old.jpg">
+                                                <img class="imgSociety" src="public/assets/img/psm_old.jpg">
                                             </div>
                                             <div class="col-sm-11 align-self-center">
-                                                <h4>Point Services Mobiles</h4>
+                                                <h4><i>Point Services Mobiles</i></h4>
                                             </div>
                                         </div>
                                     </section>
@@ -194,7 +215,8 @@
                                             <h3>Responsable SAV en informatique</h3>
                                             <div class="col offset-1">
                                                 <p>
-                                                    Diagnostics, Réparations, installation d'ordinateurs fixes et
+                                                    Assemblage, Paramétrage, Diagnostic, Réparation d'ordinateurs fixes
+                                                    et
                                                     portables
                                                 </p>
                                             </div>
@@ -212,7 +234,44 @@
                                         </div>
                                         <div class="jobSociety row">
                                             <div class="col-sm align-self-bottom">
-                                                <h4>XXB Consulting</h4>
+                                                <h4><i>XXB Consulting</i></h4>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="panel_d">
+                                        <div class="row">
+                                            <h3>Programmeur système</h3>
+
+                                        </div>
+                                        <div class="jobSociety row">
+                                            <div class="col-sm align-self-center">
+                                                <h4><i>Educatel</i></h4>
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+                                    <section class="panel_e">
+                                        <div class="row">
+                                            <h3>Terminale Science et Technique de l'industrie</h3>
+
+                                        </div>
+                                        <div class="jobSociety row ">
+                                            <div class="col-sm-11 align-self-center">
+                                                <h4><i>Gaston Monnerville, Cahors (46)</i></h4>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                    <section class="panel_f">
+                                        <div class="row">
+                                            <h3>Baccalauréat STL (Science et Techniques de Laboratoires)</h3>
+                                            <br>
+                                            <h4>Spécialité Biochimie Génie Biologique</h4>
+                                        </div>
+                                        <div class="jobSociety row">
+                                            <div class="col-sm align-self-bottom">
+                                                <h4><i>Sainte Marie de Nevers, Toulouse (31)</i></h4>
                                             </div>
                                         </div>
                                     </section>
@@ -225,122 +284,208 @@
         </div>
 
 
-        
+
         <!-- COMPETENCES -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="competences">
             <div class="col-11 img-thumbnail borderRadius25px shadow">
                 <div class="fs-1 p-2">Je sais faire...</div>
                 <div class="row text-center m-3 py-3">
                     <div class="col-sm">
-                        <div class="imgKnownHtml" style="height:60px;"></div>
+                        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:45" class="imgKnownHtml"></div>
                         <div>HTML</div>
                     </div>
                     <div class="col-sm">
-                        <div class="imgKnownCss" style="height:60px;"></div>
+                        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:30" class="imgKnownCss"></div>
                         <div>CSS</div>
                     </div>
                     <div class="col-sm">
-                        <div class="imgKnownJs" style="height:60px;"></div>
+                        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:20" class="imgKnownJs"></div>
                         <div>Javascript</div>
                     </div>
                     <div class="col-sm">
-                        <div class="imgKnownBootstrap" style="height:60px;"></div>
+                        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:30" class="imgKnownBootstrap"></div>
                         <div>Bootstrap</div>
                     </div>
                     <div class="col-sm">
-                        <div class="imgKnownMysql" style="height:60px;"></div>
+                        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:30" class="imgKnownMysql"></div>
                         <div>MySQL</div>
                     </div>
                     <div class="col-sm">
-                        <div class="imgKnownPhp" style="height:60px;"></div>
+                        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:35" class="imgKnownPhp"></div>
                         <div>PHP</div>
                     </div>
                     <div class="col-sm">
-                        <div class="imgKnownWordpress" style="height:60px;"></div>
+                        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:10" class="imgKnownWordpress"></div>
                         <div>Wordpress</div>
                     </div>
                     <div class="col-sm">
-                        <div class="imgKnownVsc" style="height:60px;"></div>
+                        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:20" class="imgKnownVsc"></div>
                         <div>Visual Studio Code</div>
                     </div>
                     <div class="col-sm">
-                        <div class="imgKnownSymfony" style="height:60px;"></div>
+                        <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                            style="--value:10" class="imgKnownSymfony"></div>
                         <div>Symfony</div>
                     </div>
                 </div>
             </div>
         </div>
 
-        
+
+
+
         <!-- REALISATIONS -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="realisations">
             <div class="col-11 img-thumbnail borderRadius25px shadow">
                 <div class="fs-1 p-2">J'ai fait...</div>
-                <div class="row m-3 py-3">
-                    <div class="row shadow borderRadius5px doneBG">
-                        <div class="fs-3 p-3">Avant la formation</div>
-                        <div class="col-md text-center align-self-center">
-                            <div class="col h1">
-                                Astuces
-                            </div>
-                            <div class="col fs-6">
-                                <p class="fw-bold">créé en autodidacte de 2015 à 2022</p>
-                                <p>HTML5, PHP4 à PHP7, CSS3</p>
-                            </div>
+                <div class="row shadow borderRadius5px doneBG m-4 py-3">
+                    <div class='creations'>
+                        <!-- CAROUSEL CREATIONS -->
+                    </div>
+                    <div class="fs-3">Avant la formation</div>
+                    <div class="col-md text-center align-self-center">
+                        <div class="col h1">
+                            Astuces
                         </div>
-                        <div class="col-md align-self-center p-5">
-                            <img class="img-thumbnail img-fluid rounded shadow" src="assets/img/astucesPreview.jpg"
-                                alt="Astuces - Site de formation des boutiques en France">
+                        <div class="col fs-6">
+                            <p class="fw-bold">créé en autodidacte de 2015 à 2022</p>
+                            <p>HTML5, PHP4 à PHP7, CSS3</p>
                         </div>
+                        <div class="col">
+                            <a target="_blank" href="https://astuces.save.co/">Visiter le site</a>
+                        </div>
+                    </div>
+                    <div class="col-md align-self-center p-5">
+                        <img class="img-thumbnail img-fluid rounded shadow" src="public/assets/img/astucesPreview.jpg"
+                            alt="Astuces - Site de formation des boutiques en France">
                     </div>
                 </div>
-                <div class="row m-3 py-3">
-                    <div class="row borderRadius5px doneBG">
-                        <div class="row ">
-                            <div class="fs-3">Pendant la formation</div>
+                <div class="row shadow borderRadius5px doneBG m-4 py-3">
+                    <div class="fs-3">Pendant la formation</div>
 
-                            <div class="row text-center">
-                                <div class="col-md text-center align-self-center">
-                                    <p class="h3">
-                                        Création de Cards
-                                    </p>
-                                    <p>HTML5 / CSS3</p>
-                                </div>
-                                <div class="col-md align-self-center p-5">
-                                    <img class="img-thumbnail img-fluid rounded shadow"
-                                        src="assets/img/exercice_cards.jpg"
-                                        alt="Création de Cartes sur le sujet de notre choix (HTML5)">
-                                </div>
-                            </div>
-
-                            <div class="row text-center">
-                                <div class="col-md text-center align-self-center">
-                                    <p class="h3">
-                                        Visuel d'un lecteur audio<br>version desktop
-                                    </p>
-                                    <p>Adobe XD</p>
-                                </div>
-                                <div class="col-md align-self-center p-5">
-                                    <img class="img-thumbnail img-fluid rounded shadow"
-                                        src="assets/img/revisite_lecteur_desktop.jpg"
-                                        alt="Création du visuel d'un lecteur audio version Desktop">
-                                </div>
-                            </div>
-
+                    <div class="row text-center">
+                        <div class="col-md text-center align-self-center">
+                            <p class="h3">
+                                Création de Cards
+                            </p>
+                            <p>HTML5 / CSS3</p>
+                        </div>
+                        <div class="col-md align-self-center p-5">
+                            <img class="img-thumbnail img-fluid rounded shadow" src="public/assets/img/exercice_cards.jpg"
+                                alt="Création de Cartes sur le sujet de notre choix (HTML5)">
                         </div>
                     </div>
+
+                    <div class="row text-center">
+                        <div class="col-md text-center align-self-center">
+                            <p class="h3">
+                                Visuel d'un lecteur audio<br>version desktop
+                            </p>
+                            <p>Adobe XD</p>
+                        </div>
+                        <div class="col-md align-self-center p-5">
+                            <img class="img-thumbnail img-fluid rounded shadow"
+                                src="public/assets/img/revisite_lecteur_desktop.jpg"
+                                alt="Création du visuel d'un lecteur audio version Desktop">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-        
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner  offset-1 col-10 text-center">
+                <div class="carousel-item active">
+                    <img src="public/assets/img/astucesPreview.jpg" class="d-block w-75 text-center" alt="Astuces, création en autodidacte">
+                    <div class="carousel-caption d-none d-md-block text-black border rounded bg-secondary">
+                        <h5>Astuces</h5>
+                        <p class="fw-bold">créé en autodidacte de 2015 à 2022</p>
+                        <p>HTML5, PHP4 à PHP7, CSS3</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="public/assets/img/exercice_cards.jpg" class="d-block w-100" alt="Création de Cards sur le thème de notre choix">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+        <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5">
+            <div class="col-11 scroller img-thumbnail borderRadius25px shadow">
+                <div class="row item">
+                    <div class="col-md text-center align-self-center">
+                        <div class="col h1">
+                            Astuces
+                        </div>
+                        <div class="col fs-6">
+                            <p class="fw-bold">créé en autodidacte de 2015 à 2022</p>
+                            <p>HTML5, PHP4 à PHP7, CSS3</p>
+                        </div>
+                        <div class="col">
+                            <a target="_blank" href="https://astuces.save.co/">Visiter le site</a>
+                        </div>
+                    </div>
+                    <div class="col-md align-self-center p-5">
+                        <img class="img-thumbnail img-fluid rounded shadow" src="public/assets/img/astucesPreview.jpg"
+                            alt="Astuces - Site de formation des boutiques en France">
+                    </div>
+                </div>
+                <div class="row item">
+                    Item 2
+                </div>
+                <div class="row item">
+                    Item 3
+                </div>
+            </div>
+        </div>
+
         <!-- CENTRES D'INTERET -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="centres_interets">
             <div class="col-11  img-thumbnail borderRadius25px shadow">
                 <div class="fs-1 p-2">En plus...</div>
                 <div class="row m-3 py-3 text-center">
-                    <div class="col-md">Bricolage</div>
                     <div class="col-md">Dessin</div>
+                    <div class="col-md">Dessin</div>
+                    <div class="col-md">Bricolage</div>
                     <div class="col-md">Réparations</div>
                 </div>
                 <div class="row">
@@ -351,29 +496,38 @@
 
     </main>
 
-    
+
     <!-- FOOTER -->
     <footer id="site-footer" class="container-fluid">
-        <div class="row bg-secondary bg-gradient bg-opacity-50 justify-content-evenly">
-            <div class="col-11">
+        <div class="row bg-secondary bg-gradient bg-opacity-50">
+            <div class="col-8">
                 <div class="row">
-                    <div class="col-md-3 copyright">&#169;FERRARIOLoic-04/2022</div>
+                    <div class="col-md copyright">&#169;FERRARIOLoic-04/2022</div>
                 </div>
             </div>
-            <div class="col-1 bg-primary">
-                <div class="row text-end">
-                    <div class="col-1"><i class="fa-solid fa-envelope"></i></div>
-                    <div class="col-1"><i class="fa-brands fa-linkedin"></i></div>
-                    <div class="col-1"><i class="fa-brands fa-github"></i></div>
+            <div class="col-4">
+                <div class="row text-center">
+                    <div class="col"><a target="_blank" href="mailto:ferrarioloic.web@gmail.com"><i
+                                class="text-black fa-solid fa-envelope"></i></a></div>
+                    <div class="col"><a target="_blank"
+                            href="https://www.linkedin.com/in/lo%C3%AFc-ferrario-bba4b3182/"><i
+                                class="text-black fa-brands fa-linkedin"></i></a></div>
+                    <div class="col"><i class="fa-brands fa-github"></i></div>
                 </div>
             </div>
         </div>
     </footer>
 
 
+    <!-- SCROLL TO TOP -->
+    <div>
+        <button onclick="retourHaut()" id="haut" title="Retour haut de page"><i
+                class="buttonScrollTop fa-solid fa-arrow-up"></i></button>
+    </div>
+
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'
         integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous'>
-    </script>
+        </script>
 </body>
 
 </html>
