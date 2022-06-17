@@ -5,18 +5,15 @@
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel="shortcut icon" type="image/jpg" href="assets/img/loic_carre.jpg" />
+    <link rel="shortcut icon" type="image/jpg" href="public/assets/img/loic_carre.jpg" />
     <meta name="description" content="CV numérique de Loïc FERRARIO" />
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="text/javascript" src="assets/js/scrollToTop.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-
+    <script type="text/javascript" src="public/assets/js/scrollToTop.js"></script>
+    <link rel="stylesheet" href="public/assets/css/style2.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-
-
     <title>FERRARIO Loïc - CV Numérique</title>
 </head>
 
@@ -71,7 +68,7 @@
                     <!-- TITRE PROFESSIONNEL d'ETAT DEVELOPPEUR WEB WEB MOBILE RNCP -->
                 </div>
             </div>
-            <div class="row text-center h4 text-light pt-5">
+            <div class="row text-center h4 pt-5">
                 <div class="col">
                     <i class="fa-solid fa-code"></i>
                     <div class="col">Front-end</div>
@@ -94,8 +91,8 @@
                 <div class="fs-1 p-2">Qui suis-je ?</div>
                 <div class="row m-3 py-3">
                     <div class="col-sm-2 align-self-center text-center py-3">
-                        <img class="rounded-circle img-thumbnail img-fluid shadow" src="assets/img/loic_carre.jpg"
-                            alt="Loïc FERRARIO">
+                        <img class="rounded-circle img-thumbnail img-fluid shadow"
+                            src="public/assets/img/loic_carre.jpg" alt="Loïc FERRARIO">
                     </div>
                     <div class="col-sm-10 align-self-center">
                         <div class="col text-center">
@@ -106,12 +103,12 @@
                             développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
                             autodidacte
                             <br>
-                            Après 7 années de pratique, dont 5 ans professionnellement en activité secondaire, je
+                            Après 7 années de pratique, dont 5 ans professionnellement, je
                             souhaite
                             désormais en faire mon activité principale
                             <br>
-                            J'ai donc entrepris, afin d'actualiser mes connaissances actuelles et d'avoir un
-                            apprentissage
+                            J'ai donc entrepris, afin d'actualiser mes connaissances et d'avoir un
+                            parcours d'apprentissage
                             professionnel,
                             une formation de développeur Web / Web Mobile au sein de La Manu Amiens, en reconversion
                             professionnelle
@@ -180,7 +177,7 @@
                                         </div>
                                         <div class="jobSociety row">
                                             <div class="col-sm-1 align-self-center">
-                                                <img class="imgSociety" src="assets/img/save.png">
+                                                <img class="imgSociety" src="public/assets/img/save.png">
                                             </div>
                                             <div class="col-sm align-self-center">
                                                 <h4><i>Point Services Mobiles / Save Store</i></h4>
@@ -202,7 +199,7 @@
                                         </div>
                                         <div class="jobSociety row ">
                                             <div class="col-sm-1 align-self-center">
-                                                <img class="imgSociety" src="assets/img/psm_old.jpg">
+                                                <img class="imgSociety" src="public/assets/img/psm_old.jpg">
                                             </div>
                                             <div class="col-sm-11 align-self-center">
                                                 <h4><i>Point Services Mobiles</i></h4>
@@ -286,6 +283,8 @@
 
 
         <!-- COMPETENCES -->
+
+        <!--- REFAIRE EN JS ADDEVENTLISTENER !!! -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="competences">
             <div class="col-11 img-thumbnail borderRadius25px shadow">
                 <div class="fs-1 p-2">Je sais faire...</div>
@@ -340,13 +339,179 @@
         </div>
 
 
+
+
         <!-- REALISATIONS -->
+
+
+        <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center" id="realisations">
+            <div class="col-11 img-thumbnail borderRadius25px shadow">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="fs-1">Réalisations...</div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1" title="Astuces"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2" title="Les cards en responsive"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3" title="Le maquettage"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4" title="Le javascript"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 5" title="Les API"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                            aria-label="Slide 6" title="Wordpress"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                            aria-label="Slide 7" title="Le E-commerce"></button>
+                        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                            aria-label="Slide 8" title=""></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                            aria-label="Slide 9" title=""></button> -->
+                    </div>
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-12 offset-md-1 col-md-6 p-3">
+                                    <img src="public/assets/img/astucesPreview.jpg"
+                                        class="d-block mh-100 w-100 text-center" alt="Astuces, création en autodidacte">
+                                </div>
+                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                    <p class="fs-2">Astuces</p>
+                                    <p class="fw-bold">Projet personnel de 2015 à 2017</p>
+                                    <p class="fw-bold px-3">Site de formation professionnel des boutiques en France de
+                                        2017 à nos jours</p>
+                                    <p>HTML5, CSS3, PHP4->PHP7</p>
+                                    <p><i>Réalisé en autodidacte avant la formation</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 offset-md-1 col-md-6 p-3">
+                                    <img src="public/assets/img/exercice_cards.jpg"
+                                        class="d-block mh-100 w-100 text-center"
+                                        alt="Exercice HTML CSS, réalisation de cards en version responsive">
+                                </div>
+                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                    <p class="fs-2">Les Cards en responsive</p>
+                                    <p class="fw-bold">Réalisation de cartes en responsive sur le thème de notre choix
+                                    </p>
+                                    <p>HTML5, CSS3</p>
+                                    <p><i>Réalisé en avril</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 offset-md-1 col-md-6 p-3">
+                                    <img src="public/assets/img/revisite_lecteur_desktop.jpg"
+                                        class="d-block mh-100 w-100 text-center"
+                                        alt="Exercice de maquettage - Réalisation d'un lecteur audio en version desktop">
+                                </div>
+                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                    <p class="fs-2">Le maquettage</p>
+                                    <p class="fw-bold">Réalisation de la maquette d'un lecteur audio en version Desktop
+                                    </p>
+                                    <p>Adobe XD</p>
+                                    <p><i>Réalisé en avril</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 offset-md-1 col-md-6 p-3">
+                                    <img src="public/assets/img/shifumiHyena.jpg"
+                                        class="d-block mh-100 w-100 text-center"
+                                        alt="Exercice javascript - Réalisation d'un Shifumi en javascript">
+                                </div>
+                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                    <p class="fs-2">Le Javascript</p>
+                                    <p class="fw-bold">Réalisation d'un Shifumi en Javascript
+                                    </p>
+                                    <p>HTML, CSS, Javascript</p>
+                                    <p><i>Réalisé en mai</i></p>
+                                    <p><a target="_blank" href="https://ferrarioloic.github.io/Shifumi/">Aller jouer</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 offset-md-1 col-md-6 p-3">
+                                    <img src="public/assets/img/tmmdb.jpg" class="d-block mh-100 w-100 text-center"
+                                        alt="Exercice sur les API - récupération et affichage de données depuis l'API de TMDB">
+                                </div>
+                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                    <p class="fs-2">Les API</p>
+                                    <p class="fw-bold">Récupération et traitement des données récupérées depuis l'API de
+                                        TMDB
+                                    </p>
+                                    <p>HTML, CSS, Javascript</p>
+                                    <p><i>Réalisé en mai</i></p>
+                                    <p><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter la
+                                            page</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 offset-md-1 col-md-6 p-3">
+                                    <img src="public/assets/img/wordpressDoudouDoc.jpg"
+                                        class="d-block mh-100 w-100 text-center"
+                                        alt="Exercice sur Wordpress - Création d'un projet sur le thème de notre choix">
+                                </div>
+                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                    <p class="fs-2">Wordpress</p>
+                                    <p class="fw-bold">Création d'un projet Wordpress sur le thème de notre choix
+                                    </p>
+                                    <p>HTML, CSS, Javascript</p>
+                                    <p><i>Réalisé en mai</i></p>
+                                    <p><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter la
+                                            page</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 offset-md-1 col-md-6 p-3">
+                                    <img src="public/assets/img/loic_carre.jpg"
+                                        class="d-block mh-50 mw-100 text-center"
+                                        alt="Exercice sur Wordpress - Création d'un projet sur le thème de notre choix">
+                                </div>
+                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                    <p class="fs-2">Le E-commerce</p>
+                                    <p class="fw-bold">Création d'un projet de E commerce en "OnePage"
+                                    </p>
+                                    <p>HTML, CSS, Javascript</p>
+                                    <p><i>Réalisé en mai</i></p>
+                                    <p><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter la page</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev h-100" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next h-100" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 
+
+
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="realisations">
             <div class="col-11 img-thumbnail borderRadius25px shadow">
                 <div class="fs-1 p-2">J'ai fait...</div>
                 <div class="row shadow borderRadius5px doneBG m-4 py-3">
                     <div class='creations'>
-                        <!-- CAROUSEL CREATIONS -->
                     </div>
                     <div class="fs-3">Avant la formation</div>
                     <div class="col-md text-center align-self-center">
@@ -362,7 +527,7 @@
                         </div>
                     </div>
                     <div class="col-md align-self-center p-5">
-                        <img class="img-thumbnail img-fluid rounded shadow" src="assets/img/astucesPreview.jpg"
+                        <img class="img-thumbnail img-fluid rounded shadow" src="public/assets/img/astucesPreview.jpg"
                             alt="Astuces - Site de formation des boutiques en France">
                     </div>
                 </div>
@@ -377,7 +542,8 @@
                             <p>HTML5 / CSS3</p>
                         </div>
                         <div class="col-md align-self-center p-5">
-                            <img class="img-thumbnail img-fluid rounded shadow" src="assets/img/exercice_cards.jpg"
+                            <img class="img-thumbnail img-fluid rounded shadow"
+                                src="public/assets/img/exercice_cards.jpg"
                                 alt="Création de Cartes sur le sujet de notre choix (HTML5)">
                         </div>
                     </div>
@@ -391,14 +557,15 @@
                         </div>
                         <div class="col-md align-self-center p-5">
                             <img class="img-thumbnail img-fluid rounded shadow"
-                                src="assets/img/revisite_lecteur_desktop.jpg"
+                                src="public/assets/img/revisite_lecteur_desktop.jpg"
                                 alt="Création du visuel d'un lecteur audio version Desktop">
                         </div>
                     </div>
 
                 </div>
             </div>
-        </div>
+        </div> -->
+
 
 
         <!-- CENTRES D'INTERET -->
@@ -450,7 +617,8 @@
 
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'
         integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM' crossorigin='anonymous'>
-    </script>
+        </script>
+    <script src="public/assets/js/script.js"></script>
 </body>
 
 </html>

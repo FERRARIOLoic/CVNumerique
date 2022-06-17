@@ -283,6 +283,8 @@
 
 
         <!-- COMPETENCES -->
+
+        <!--- REFAIRE EN JS ADDEVENTLISTENER !!! -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="competences">
             <div class="col-11 img-thumbnail borderRadius25px shadow">
                 <div class="fs-1 p-2">Je sais faire...</div>
@@ -348,44 +350,26 @@
                     <div class="fs-1">Réalisations...</div>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                            class="active" aria-current="true" aria-label="Slide 1" title="Astuces"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
+                            aria-label="Slide 2" title="Les cards en responsive"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                            aria-label="Slide 3" title="Le maquettage"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
+                            aria-label="Slide 4" title="Le javascript"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                            aria-label="Slide 5"></button>
+                            aria-label="Slide 5" title="Les API"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-                            aria-label="Slide 6"></button>
+                            aria-label="Slide 6" title="Wordpress"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
-                            aria-label="Slide 7"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
-                            aria-label="Slide 8"></button>
+                            aria-label="Slide 7" title="Le E-commerce"></button>
+                        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                            aria-label="Slide 8" title=""></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
-                            aria-label="Slide 9"></button>
+                            aria-label="Slide 9" title=""></button> -->
                     </div>
-                    <div class="carousel-inner col-10 text-center">
+                    <div class="carousel-inner text-center">
                         <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-12 offset-md-1 col-md-6 p-3">
-                                    <img src="public/assets/img/shifumiHyena.jpg"
-                                        class="d-block mh-100 w-100 text-center"
-                                        alt="Exercice javascript - Réalisation d'un Shifumi en javascript">
-                                </div>
-                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Exercice sur le Javascript</p>
-                                    <p class="fw-bold">Réalisation de d'un Shifumi en Javascript
-                                    </p>
-                                    <p>HTML, CSS, Javascript</p>
-                                    <p><i>Réalisé en mai</i></p>
-                                    <p><a target="_blank" href="https://ferrarioloic.github.io/Shifumi/">Aller jouer</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-12 offset-md-1 col-md-6 p-3">
                                     <img src="public/assets/img/astucesPreview.jpg"
@@ -409,7 +393,7 @@
                                         alt="Exercice HTML CSS, réalisation de cards en version responsive">
                                 </div>
                                 <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Exercice sur les Cards</p>
+                                    <p class="fs-2">Les Cards en responsive</p>
                                     <p class="fw-bold">Réalisation de cartes en responsive sur le thème de notre choix
                                     </p>
                                     <p>HTML5, CSS3</p>
@@ -425,7 +409,7 @@
                                         alt="Exercice de maquettage - Réalisation d'un lecteur audio en version desktop">
                                 </div>
                                 <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Exercice sur le maquettage</p>
+                                    <p class="fs-2">Le maquettage</p>
                                     <p class="fw-bold">Réalisation de la maquette d'un lecteur audio en version Desktop
                                     </p>
                                     <p>Adobe XD</p>
@@ -441,8 +425,8 @@
                                         alt="Exercice javascript - Réalisation d'un Shifumi en javascript">
                                 </div>
                                 <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Exercice sur le Javascript</p>
-                                    <p class="fw-bold">Réalisation de d'un Shifumi en Javascript
+                                    <p class="fs-2">Le Javascript</p>
+                                    <p class="fw-bold">Réalisation d'un Shifumi en Javascript
                                     </p>
                                     <p>HTML, CSS, Javascript</p>
                                     <p><i>Réalisé en mai</i></p>
@@ -458,7 +442,7 @@
                                         alt="Exercice sur les API - récupération et affichage de données depuis l'API de TMDB">
                                 </div>
                                 <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Exercice sur les API</p>
+                                    <p class="fs-2">Les API</p>
                                     <p class="fw-bold">Récupération et traitement des données récupérées depuis l'API de
                                         TMDB
                                     </p>
@@ -477,13 +461,30 @@
                                         alt="Exercice sur Wordpress - Création d'un projet sur le thème de notre choix">
                                 </div>
                                 <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Exercice sur Wordpress</p>
+                                    <p class="fs-2">Wordpress</p>
                                     <p class="fw-bold">Création d'un projet Wordpress sur le thème de notre choix
                                     </p>
                                     <p>HTML, CSS, Javascript</p>
                                     <p><i>Réalisé en mai</i></p>
                                     <p><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter la
                                             page</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-12 offset-md-1 col-md-6 p-3">
+                                    <img src="public/assets/img/loic_carre.jpg"
+                                        class="d-block mh-50 mw-100 text-center"
+                                        alt="Exercice sur Wordpress - Création d'un projet sur le thème de notre choix">
+                                </div>
+                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                    <p class="fs-2">Le E-commerce</p>
+                                    <p class="fw-bold">Création d'un projet de E commerce en "OnePage"
+                                    </p>
+                                    <p>HTML, CSS, Javascript</p>
+                                    <p><i>Réalisé en mai</i></p>
+                                    <p><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter la page</a></p>
                                 </div>
                             </div>
                         </div>
@@ -497,7 +498,7 @@
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
-                    </button> -->
+                    </button>
                 </div>
             </div>
         </div>

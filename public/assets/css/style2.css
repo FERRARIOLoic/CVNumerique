@@ -21,21 +21,28 @@ body {
 }
 
 @media screen and (max-width:576px) {
-  #realisations, #carouselExampleCaptions {
+
+  #realisations,
+  #carouselExampleCaptions {
     height: 550px;
   }
-  
+
 }
 
 
 @media screen and (min-width:576px) {
-  #realisations, #carouselExampleCaptions {
+
+  #realisations,
+  #carouselExampleCaptions {
     height: 500px;
-    overflow:hidden;
+    overflow: hidden;
   }
-  
+
 }
 
+.carousel-item {
+  height: 100%;
+}
 
 #site-header {
   max-height: 5vh;
