@@ -30,7 +30,8 @@ body {
 
 @media screen and (min-width:576px) {
   #realisations, #carouselExampleCaptions {
-    height: 400px;
+    height: 500px;
+    overflow:hidden;
   }
   
 }
