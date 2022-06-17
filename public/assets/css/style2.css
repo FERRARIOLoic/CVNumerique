@@ -16,15 +16,39 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../img/deepSea.jpg);
-  opacity:.9;
+  opacity: .9;
   padding: 15vh 0px 20px 0px;
 }
+
+@media screen and (max-width:576px) {
+  #realisations, #carouselExampleCaptions {
+    height: 550px;
+  }
+  
+}
+
+
+@media screen and (min-width:576px) {
+  #realisations, #carouselExampleCaptions {
+    height: 400px;
+  }
+  
+}
+
 
 #site-header {
   max-height: 5vh;
 }
 
+/* 
+.carousel-control-next,
+.carousel-control-prev {
+  color: #000;
+} */
 
+.carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
 
 .heightKnown {
   height: 15vh;
