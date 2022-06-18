@@ -254,10 +254,10 @@ html {
 #carousel {
   overflow: hidden;
   /* width: 600px; */
-  height: 50vh;
+  /* height: 50vh; */
   background-color: #f2f7ff;
-  /* -webkit-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15); 
-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15); */
+  -webkit-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15); 
+box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15);
 }
 
 .p-wrapper {
@@ -414,4 +414,17 @@ div[role="progressbar"]::before {
   /* To start with */
   background-color: #EDF2F7;
   /* For demo */
+}
+
+.jobWorkVue {
+  animation: animJobWork 1.5s ease 0s 1 normal both;
+}
+@keyframes animJobWork {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
