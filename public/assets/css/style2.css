@@ -21,6 +21,12 @@ body {
   padding: 15vh 0px 20px 0px;
 }
 
+.nav-link,
+.progress-bar {
+  text-decoration: none;
+  color: #214177;
+}
+
 #presentation,
 #parcours,
 #realisations,
@@ -31,16 +37,26 @@ body {
 
 @media screen and (max-width:576px) {
 
+  .imgProfile {
+    width: 70%;
+  }
+
   #realisations,
   #carouselExampleCaptions {
     height: 550px;
   }
 
   .imgCapacity {
-    width:150%;
+    width: 150%;
   }
-  .progress{
-    height:20px;
+
+  .progress {
+    height: 20px;
+  }
+
+  .imgRealisations {
+    text-align: center;
+    /* max-height: 230px; */
   }
 }
 
@@ -53,11 +69,17 @@ body {
   }
 
   .imgCapacity {
-    width:100%;
+    width: 100%;
   }
-  .progress{
-    width:70%;
-    height:20px;
+
+  .progress {
+    width: 70%;
+    height: 20px;
+  }
+
+  .imgRealisations {
+    text-align: center;
+    max-height: 300px;
   }
 }
 
@@ -444,6 +466,7 @@ div[role="progressbar"]::before {
 .jobWorkVueBox {
   background-color: #638cce93;
 }
+
 
 .jobWorkVue {
   animation: animJobWork 1.5s ease 0s 1 normal both;
