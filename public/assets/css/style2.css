@@ -46,6 +46,13 @@ body {
   background-image: url(../img/hamburger-menu-svgrepo-com.svg)!important;
 }
 
+/* #btnChoose{
+  background-color: #ffffff30;
+  color: #ffffff;
+  border-color: #000000;
+  box-shadow: inset 0 0 0 0px #ffffff;
+} */
+
 @media screen and (max-width:576px) {
 
   .navbar{

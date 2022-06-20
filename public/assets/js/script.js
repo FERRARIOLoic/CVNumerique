@@ -10,16 +10,8 @@ btnChoose.forEach(element => {
         //fonction while case
         switch (element.dataset.value) {
             case 'job3':
-                jobWorkVue.innerHTML = `
-                <div class="jobWorkVue">
-                <div class="row p-3">
-                    <div class="col-12 col-md-3">
-                        <h5>2017 - à ce jour</h5>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <H3>Technicien SAV / Responsable Support formation</H3>
-                    </div>
-                </div>
+                jobWorkVue3.innerHTML = `
+                <div class="jobWorkVue px-2">
                 <div class="row">
                     <div class="col-12">
                         <p>
@@ -40,23 +32,18 @@ btnChoose.forEach(element => {
                         <img class="imgSociety" src="public/assets/img/save.png">
                     </div>
                     <div class="col-9 col-md-10 align-self-center">
-                        <h4><i>Point Services Mobiles / Save Store</i></h4>
+                        <h5><i>Point Services Mobiles / Save Store</i></h5>
                     </div>
                 </div>
                 </div>
                 `;
+                jobWorkVue2.innerHTML = ``;
+                jobWorkVue1.innerHTML = ``;
                 break;
             case 'job2':
-                jobWorkVue.innerHTML = `
-                <div class="jobWorkVue">
-                <div class="row p-3">
-                    <div class="col-12 col-md-3">
-                        <h5>2012 - 2017</h5>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <H3>Technicien SAV en Téléphonie Mobile</H3>
-                    </div>
-                </div>
+                jobWorkVue3.innerHTML = ``;
+                jobWorkVue2.innerHTML = `
+                <div class="jobWorkVue px-2">
                 <div class="row">
                     <div class="col-12">
                     <p>
@@ -76,18 +63,13 @@ btnChoose.forEach(element => {
                 </div>
                 </div>
                 `;
+                jobWorkVue1.innerHTML = ``;
                 break;
             case 'job1':
-                jobWorkVue.innerHTML = `
-                <div class="jobWorkVue">
-                <div class="row p-3">
-                    <div class="col-12 col-md-3">
-                        <h5>2011 - 2012</h5>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <H3>Responsable SAV en informatique</H3>
-                    </div>
-                </div>
+                jobWorkVue3.innerHTML = ``;
+                jobWorkVue2.innerHTML = ``;
+                jobWorkVue1.innerHTML = `
+                <div class="jobWorkVue px-2">
                 <div class="row">
                     <div class="col-12">
                     <p>
@@ -112,16 +94,8 @@ btnChoose.forEach(element => {
                 break;
             //case school
             case 'school4':
-                jobWorkVue.innerHTML = `
-                <div class="jobWorkVue">
-                <div class="row p-3">
-                    <div class="col-12 col-md-3">
-                        <h5>Mars à Octobre 2022</h5>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <H3>Formation développeur Web/Web Mobile</H3>
-                    </div>
-                </div>
+                jobWorkVueS4.innerHTML = `
+                <div class="jobWorkVue px-2">
                 <div class="row">
                     <div class="col-12">
                         <p>
@@ -141,18 +115,13 @@ btnChoose.forEach(element => {
                 </div>
                 </div>
                 `;
+                jobWorkVueS3.innerHTML = ``;
+                jobWorkVueS2.innerHTML = ``;
                 break;
             case 'school3':
-                jobWorkVue.innerHTML = `
-                <div class="jobWorkVue">
-                <div class="row p-3">
-                    <div class="col-12 col-md-3">
-                        <h5>2006</h5>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <H3>Formation de Programmeur système</H3>
-                    </div>
-                </div>
+                jobWorkVueS4.innerHTML = ``;
+                jobWorkVueS3.innerHTML = `
+                <div class="jobWorkVue px-2">
                 <div class="row">
                     <div class="col-12">
                         <p>
@@ -172,22 +141,16 @@ btnChoose.forEach(element => {
                 </div>
                 </div>
                 `;
+                jobWorkVueS2.innerHTML = ``;
                 break;
             case 'school2':
-                jobWorkVue.innerHTML = `
-                <div class="jobWorkVue">
-                    <div class="row p-3">
-                        <div class="col-12 col-md-3">
-                            <h5>2002</h5>
-                        </div>
-                        <div class="col-12 col-md-9">
-                            <H3>Baccalauréat STL</h3> 
-                            <h5>Spécialité Biochimie Génie Biologique</H6>
-                        </div>
-                    </div>
+                jobWorkVueS4.innerHTML = ``;
+                jobWorkVueS3.innerHTML = ``;
+                jobWorkVueS2.innerHTML = `
+                <div class="jobWorkVue px-2">
                     <div class="row">
                         <div class="col-12">
-                            
+                            Spécialité Biochimie Génie Biologique
                         </div>
                     </div>
                     <div class="jobSociety row">
