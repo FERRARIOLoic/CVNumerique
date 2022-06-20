@@ -11,6 +11,7 @@
 body {
   /* overflow-x: hidden; */
   font-family: 'Istok Web', sans-serif;
+  color: white;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -20,6 +21,14 @@ body {
   padding: 15vh 0px 20px 0px;
 }
 
+#presentation,
+#parcours,
+#realisations,
+#carouselExampleCaptions,
+.img-thumbnail {
+  Background-color: rgba(255, 255, 255, 0.20);
+}
+
 @media screen and (max-width:576px) {
 
   #realisations,
@@ -27,8 +36,13 @@ body {
     height: 550px;
   }
 
+  .imgCapacity {
+    width:150%;
+  }
+  .progress{
+    height:20px;
+  }
 }
-
 
 @media screen and (min-width:576px) {
 
@@ -38,6 +52,13 @@ body {
     overflow: hidden;
   }
 
+  .imgCapacity {
+    width:100%;
+  }
+  .progress{
+    width:70%;
+    height:20px;
+  }
 }
 
 .carousel-item {
@@ -256,8 +277,8 @@ html {
   /* width: 600px; */
   /* height: 50vh; */
   background-color: #f2f7ff;
-  -webkit-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15); 
-box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.15), 0px 0px 3px 3px rgba(0,0,0,0.15);
+  -webkit-box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.15), 0px 0px 3px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.15), 0px 0px 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 .p-wrapper {
@@ -416,15 +437,24 @@ div[role="progressbar"]::before {
   /* For demo */
 }
 
+#carouselExampleCaptions {
+  background: none;
+}
+
+.jobWorkVueBox {
+  background-color: #638cce93;
+}
+
 .jobWorkVue {
   animation: animJobWork 1.5s ease 0s 1 normal both;
 }
-@keyframes animJobWork {
-	0% {
-		opacity: 0;
-	}
 
-	100% {
-		opacity: 1;
-	}
+@keyframes animJobWork {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

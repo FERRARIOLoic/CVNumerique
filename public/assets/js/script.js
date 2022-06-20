@@ -36,10 +36,10 @@ btnChoose.forEach(element => {
                     </div>
                 </div>
                 <div class="jobSociety row">
-                    <div class="col-3 align-self-center">
+                    <div class="col-3 col-md-2 text-center align-self-center">
                         <img class="imgSociety" src="public/assets/img/save.png">
                     </div>
-                    <div class="col-9 align-self-center">
+                    <div class="col-9 col-md-10 align-self-center">
                         <h4><i>Point Services Mobiles / Save Store</i></h4>
                     </div>
                 </div>
@@ -67,10 +67,10 @@ btnChoose.forEach(element => {
                     </div>
                 </div>
                 <div class="jobSociety row ">
-                    <div class="col-3 align-self-center">
+                    <div class="col-3 col-md-2 text-center align-self-center">
                         <img class="imgSociety" src="public/assets/img/psm_old.jpg">
                     </div>
-                    <div class="col-9 align-self-center">
+                    <div class="col-9 col-md-10 align-self-center">
                         <h4><i>Point Services Mobiles</i></h4>
                     </div>
                 </div>
@@ -163,10 +163,10 @@ btnChoose.forEach(element => {
                     </div>
                 </div>
                 <div class="jobSociety row">
-                    <div class="col-3 align-self-center">
+                    <div class="col-3 col-md-2 text-center align-self-center">
                         <img class="imgSociety" src="public/assets/img/educatel.png">
                     </div>
-                    <div class="col-9 align-self-center">
+                    <div class="col-9 col-md-10 align-self-center">
                         <h4><i>Educatel</i></h4>
                     </div>
                 </div>
@@ -191,10 +191,10 @@ btnChoose.forEach(element => {
                         </div>
                     </div>
                     <div class="jobSociety row">
-                        <div class="col-3 align-self-center">
+                        <div class="col-3 col-md-2 text-center align-self-center">
                             <img class="imgSociety" src="public/assets/img/lycee.png">
                         </div>
-                        <div class="col-9 align-self-center">
+                        <div class="col-9 col-md-10 align-self-center">
                             <h4><i>Sainte Marie de Nevers (Toulouse)</i></h4>
                         </div>
                         </div>
