@@ -18,13 +18,21 @@ body {
   background-size: cover;
   background-image: url(../img/deepSea.jpg);
   opacity: .9;
-  padding: 15vh 0px 20px 0px;
+  padding: 15vh 0px 0px 0px;
 }
 
+.navbar{
+  /* background-position: center center; */
+  /* background-attachment: ; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/background-navbar.jpg);
+  /* opacity: .5; */
+}
 .nav-link,
 .progress-bar {
   text-decoration: none;
-  color: #214177;
+  color: #ffffff;
 }
 
 #presentation,
@@ -34,9 +42,20 @@ body {
 .img-thumbnail {
   Background-color: rgba(255, 255, 255, 0.20);
 }
+.navbar-toggler-icon{
+  background-image: url(../img/hamburger-menu-svgrepo-com.svg)!important;
+}
 
 @media screen and (max-width:576px) {
 
+  .navbar{
+    /* background-position: center center; */
+    /* background-attachment: ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/background-navbar.jpg);
+    /* opacity: .8; */
+  }
   .imgProfile {
     width: 70%;
   }
@@ -62,6 +81,14 @@ body {
 
 @media screen and (min-width:576px) {
 
+  .navbar{
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/background-navbar.jpg);
+    opacity: .8;
+  }
   #realisations,
   #carouselExampleCaptions {
     height: 500px;
