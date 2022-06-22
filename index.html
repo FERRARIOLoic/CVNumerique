@@ -60,15 +60,15 @@
         <div class="row bannerTitle text-center text-light">
             <div class="row align-self-center">
                 <div class="col-md-6 display-3 align-self-center text-center">
-                    <strong>Loïc FERRARIO</strong>
+                    <span>Loïc FERRARIO</span>
                 </div>
                 <div class="col-md-6 display-6 align-self-center pt-5 pt-md-0">
-                    <strong>Développeur Web / Web Mobile</strong>
-                    <h6><i>RNCP 31114, Niveau 5, Bac+2</i></h6>
+                    <span class="fs-4 fw-bold">Développeur Web / Web Mobile</span>
+                    <p class="fs-6"><i>RNCP 31114, Niveau 5, Bac+2</i></p>
                     <!-- TITRE PROFESSIONNEL d'ETAT DEVELOPPEUR WEB WEB MOBILE RNCP -->
                 </div>
             </div>
-            <div class="row text-center h4 pt-1">
+            <div class="row text-center h4 pt-1 pt-md-4">
                 <div class="col">
                     <i class="fa-solid fa-code"></i>
                     <div class="col">Front-end</div>
@@ -88,7 +88,7 @@
         <div class=" row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="presentation">
 
             <div class="col-11 img-thumbnail borderRadius25px shadow">
-                <div class="fs-1 p-2">Qui suis-je ?</div>
+                <div class="titleCategory">Qui suis-je ?</div>
                 <div class="row m-3 py-3">
                     <div class="col-sm-2 align-self-center text-center pb-5 py-md-3">
                         <img class="rounded-circle img-thumbnail img-fluid shadow imgProfile"
@@ -123,43 +123,51 @@
         <!-- PARCOURS -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="parcours">
             <div class="col-11  img-thumbnail borderRadius25px shadow">
-                <div class="fs-1 p-2">Mon parcours</div>
+                <div class="titleCategory">Mon parcours</div>
                 <div class="row m-3 py-3">
                     <div class="container-fluid">
                         <div id="navigation" class="align-self-center">
-                            <strong>Emplois</strong>
-                            <label id="btnChoose" data-value="job3"
-                                class="label_a shadow rounded my-2 pt-1">
+                            <span class="fs-3"><strong>Emplois</strong></span>
+                            <label id="btnChoose" data-value="job3" class="label_a shadow rounded my-2 pt-1">
                                 <h6><strong>Technicien SAV / Responsable Support formation</strong></h6>
-                                <span>2017 - ce jour</span>
+                                <div class="row">
+                                    <div class=" offset-2 col-8"><span>2017 - ce jour</span></div>
+                                    <div class="col-1 text-start"><i class="fa-solid fa-caret-down"></i></div>
+                                </div>
                                 <div class="jobWorkVueBox mt-4 shadow rounded ">
                                     <div id="jobWorkVue3" class="jobWorkVue p-wrapper align-self-center ">
                                     </div>
                                 </div>
                             </label>
 
-                            <label id="btnChoose" data-value="job2"
-                                class="label_b shadow rounded my-2 pt-1">
+                            <label id="btnChoose" data-value="job2" class="label_b shadow rounded my-2 pt-1">
                                 <h6><strong>Technicien SAV en Téléphonie mobile</strong></h6>
-                                <span>2012 - 2017</span>
+                                <div class="row">
+                                    <div class=" offset-2 col-8"><span>2012 - 2017</span></div>
+                                    <div class="col-1 text-start"><i class="fa-solid fa-caret-down"></i></div>
+                                </div>
                                 <div class="jobWorkVueBox mt-4 shadow rounded ">
                                     <div id="jobWorkVue2" class="jobWorkVue p-wrapper align-self-center ">
                                     </div>
                                 </div>
                             </label>
-                            <label id="btnChoose" data-value="job1"
-                                class="label_c shadow rounded my-2 pt-1">
+                            <label id="btnChoose" data-value="job1" class="label_c shadow rounded my-2 pt-1">
                                 <h6><strong>Responsable SAV en Informatique</strong></h6>
-                                <span>2011 - 2012</span>
+                                <div class="row">
+                                    <div class=" offset-2 col-8"><span>2011 - 2012</span></div>
+                                    <div class="col-1 text-start"><i class="fa-solid fa-caret-down"></i></div>
+                                </div>
                                 <div class="jobWorkVueBox mt-4 shadow rounded ">
                                     <div id="jobWorkVue1" class="jobWorkVue p-wrapper align-self-center ">
                                     </div>
                                 </div>
-                            </label>
-                            <strong>Diplômes / Formations</strong>
+                            </label><span class="fs-3"><strong>Diplômes / Formations</strong></span>
                             <label id="btnChoose" data-value="school4" class="label_d shadow rounded my-2 pt-1">
                                 <h6><strong>Formation Web / Web Mobile</strong></h6>
-                                <span>2022</span>
+                                <div class="row">
+                                    <div class=" offset-2 col-8"><span>2022</span></div>
+                                    <div class="col-1 text-start"><i class="fa-solid fa-caret-down"></i></div>
+                                </div>
                                 <div class="jobWorkVueBox mt-4 shadow rounded ">
                                     <div id="jobWorkVueS4" class="jobWorkVue p-wrapper align-self-center ">
                                     </div>
@@ -167,7 +175,10 @@
                             </label>
                             <label id="btnChoose" data-value="school3" class="label_d shadow rounded my-2 pt-1">
                                 <h6><strong>Formation Programmeur système</strong></h6>
-                                <span>2006</span>
+                                <div class="row">
+                                    <div class=" offset-2 col-8"><span>2006</span></div>
+                                    <div class="col-1 text-start"><i class="fa-solid fa-caret-down"></i></div>
+                                </div>
                                 <div class="jobWorkVueBox mt-4 shadow rounded ">
                                     <div id="jobWorkVueS3" class="jobWorkVue p-wrapper align-self-center ">
                                     </div>
@@ -175,7 +186,10 @@
                             </label>
                             <label id="btnChoose" data-value="school2" class="label_e shadow rounded my-2 pt-1">
                                 <h6><strong>Baccalauréat STL</strong></h6>
-                                <span>2002</span>
+                                <div class="row">
+                                    <div class=" offset-2 col-8"><span>2002</span></div>
+                                    <div class="col-1 text-start"><i class="fa-solid fa-caret-down"></i></div>
+                                </div>
                                 <div class="jobWorkVueBox mt-4 shadow rounded ">
                                     <div id="jobWorkVueS2" class="jobWorkVue p-wrapper align-self-center ">
                                     </div>
@@ -190,123 +204,123 @@
 
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="competences">
             <div class="col-11 img-thumbnail borderRadius25px shadow">
-                <div class="fs-1 p-2">Je sais faire...</div>
+                <div class="titleCategory">Je sais faire...</div>
                 <div class="row text-center m-3 py-3">
-                    <div class="col-12 col-md-3 pt-3">
-                        <div class="row">
-                            <div class="col-2 col-md-3 align-self-center text-center text-md-end">
+                    <div class="col-4 col-md pt-3 pt-md-0">
+                        <div class="row h-100 pt-3 pt-md-0">
+                            <div class="col-12 align-self-center text-center">
                                 <img src="public/assets/img/html5.svg" alt="HTML5" class="imgCapacity">
                             </div>
-                            <div class="col-10 col-md-9 text-start align-self-center">
-                                HTML
-                                <div class="progress text-start">
+                            <div class="col-12 text-center align-self-center">
+                                HTML5
+                                <!-- <div class="progress text-start">
                                     <div class="progress-bar text-start p-1" style="width:60%">60%</div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 pt-3">
-                        <div class="row">
-                            <div class="col-2 col-md-3 align-self-center text-center text-md-end">
+                    <div class="col-4 col-md pt-3 pt-md-0">
+                        <div class="row h-100 pt-3 pt-md-0">
+                            <div class="col-12 align-self-center text-center">
                                 <img src="public/assets/img/css3.svg" alt="CSS3" class="imgCapacity">
                             </div>
-                            <div class="col-10 col-md-9 text-start align-self-center">
-                                CSS
-                                <div class="progress text-start">
+                            <div class="col-12 text-center align-self-center">
+                                css3
+                                <!-- <div class="progress text-start">
                                     <div class="progress-bar text-start p-1" style="width:40%">40%</div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 pt-3">
-                        <div class="row">
-                            <div class="col-2 col-md-3 align-self-center text-center text-md-end">
+                    <div class="col-4 col-md pt-3 pt-md-0">
+                        <div class="row h-100 pt-3 pt-md-0">
+                            <div class="col-12 align-self-center text-center">
                                 <img src="public/assets/img/js.svg" alt="Javascript" class="imgCapacity">
                             </div>
-                            <div class="col-10 col-md-9 text-start align-self-center">
+                            <div class="col-12 text-center align-self-center">
                                 Javascript
-                                <div class="progress text-start">
+                                <!-- <div class="progress text-start">
                                     <div class="progress-bar text-start p-1" style="width:25%">25%</div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 pt-3">
-                        <div class="row">
-                            <div class="col-2 col-md-3 align-self-center text-center text-md-end">
+                    <div class="col-4 col-md pt-3 pt-md-0">
+                        <div class="row h-100 pt-3 pt-md-0">
+                            <div class="col-12 align-self-center text-center">
                                 <img src="public/assets/img/bootstrap.svg" alt="Bootstrap" class="imgCapacity">
                             </div>
-                            <div class="col-10 col-md-9 text-start align-self-center">
+                            <div class="col-12 text-center align-self-center">
                                 Bootstrap
-                                <div class="progress text-start">
+                                <!-- <div class="progress text-start">
                                     <div class="progress-bar text-start p-1" style="width:30%">30%</div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 pt-3">
-                        <div class="row">
-                            <div class="col-2 col-md-3 align-self-center text-center text-md-end">
+                    <div class="col-4 col-md pt-3 pt-md-0">
+                        <div class="row h-100 pt-3 pt-md-0">
+                            <div class="col-12 align-self-center text-center">
                                 <img src="public/assets/img/mysql.png" alt="MySQL" class="imgCapacity">
                             </div>
-                            <div class="col-10 col-md-9 text-start align-self-center">
+                            <div class="col-12 text-center align-self-center">
                                 MySQL
-                                <div class="progress text-start">
+                                <!-- <div class="progress text-start">
                                     <div class="progress-bar text-start p-1" style="width:35%">35%</div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 pt-3">
-                        <div class="row">
-                            <div class="col-2 col-md-3 align-self-center text-center text-md-end">
+                    <div class="col-4 col-md pt-3 pt-md-0">
+                        <div class="row h-100 pt-3 pt-md-0">
+                            <div class="col-12 align-self-center text-center">
                                 <img src="public/assets/img/php.svg" alt="PHP" class="imgCapacity">
                             </div>
-                            <div class="col-10 col-md-9 text-start align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 PHP
-                                <div class="progress text-start">
+                                <!-- <div class="progress text-start">
                                     <div class="progress-bar text-start p-1" style="width:45%">45%</div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 pt-3">
-                        <div class="row">
-                            <div class="col-2 col-md-3 align-self-center text-center text-md-end">
+                    <div class="col-4 col-md pt-3 pt-md-0">
+                        <div class="row h-100 pt-3 pt-md-0">
+                            <div class="col-12 align-self-center text-center">
                                 <img src="public/assets/img/wordpress.svg" alt="Wordpress" class="imgCapacity">
                             </div>
-                            <div class="col-10 col-md-9 text-start align-self-center">
+                            <div class="col-12 text-center align-self-center">
                                 Wordpress
-                                <div class="progress text-start">
+                                <!-- <div class="progress text-start">
                                     <div class="progress-bar text-start p-1" style="width:20%">20%</div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 pt-3">
-                        <div class="row">
-                            <div class="col-2 col-md-3 align-self-center text-center text-md-end">
+                    <div class="col-4 col-md pt-3 pt-md-0">
+                        <div class="row h-100 pt-3 pt-md-0">
+                            <div class="col-12 align-self-center text-center">
                                 <img src="public/assets/img/VisualStudiocode.svg" alt="Visual Studio Code"
                                     class="imgCapacity">
                             </div>
-                            <div class="col-10 col-md-9 text-start align-self-center">
+                            <div class="col-12 text-center align-self-center">
                                 VSCode
-                                <div class="progress text-start">
+                                <!-- <div class="progress text-start">
                                     <div class="progress-bar text-start p-1" style="width:30%">30%</div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3 pt-3">
-                        <div class="row">
-                            <div class="col-2 col-md-3 align-self-center text-center text-md-end">
+                    <div class="col-4 col-md pt-3 pt-md-0">
+                        <div class="row h-100 pt-3 pt-md-0">
+                            <div class="col-12 align-self-center text-center">
                                 <img src="public/assets/img/symfony.svg" alt="Symfony" class="imgCapacity">
                             </div>
-                            <div class="col-10 col-md-9 text-start align-self-center">
+                            <div class="col-12 text-center align-self-center">
                                 Symfony
-                                <div class="progress text-start">
+                                <!-- <div class="progress text-start">
                                     <div class="progress-bar text-start p-1" style="width:20%">20%</div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -323,181 +337,191 @@
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="realisations">
             <div class="col-11 img-thumbnail borderRadius25px shadow">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="fs-1 p-2">Réalisations...</div>
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1" title="Astuces"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2" title="Les cards en responsive"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3" title="Le maquettage"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                            aria-label="Slide 4" title="Le javascript"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                            aria-label="Slide 5" title="Les API"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-                            aria-label="Slide 6" title="Wordpress"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
-                            aria-label="Slide 7" title="Le E-commerce"></button>
-                        <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
-                            aria-label="Slide 8" title=""></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
-                            aria-label="Slide 9" title=""></button> -->
-                    </div>
-                    <div class="carousel-inner text-center">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-12 offset-md-1 col-md-6 p-3">
-                                    <img src="public/assets/img/astucesPreview.jpg"
-                                        class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
-                                        alt="Astuces, création en autodidacte">
-                                </div>
-                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Astuces</p>
-                                    <p class="fw-bold">Projet personnel de 2015 à 2017</p>
-                                    <p class="fw-bold px-3">Site de formation professionnel des boutiques en France de
-                                        2017 à nos jours</p>
-                                    <p>HTML5, CSS3, PHP4->PHP7</p>
-                                    <p><i>Réalisé en autodidacte avant la formation</i></p>
-                                </div>
+                    <div class="titleCategory">Réalisations...</div>
+                    <div class="row text-center m-3 py-3">
+                        <div class="col-12 ">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1" title="Astuces"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2" title="Les cards en responsive"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3" title="Le maquettage"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                    aria-label="Slide 4" title="Le javascript"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                    aria-label="Slide 5" title="Les API"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                                    aria-label="Slide 6" title="Wordpress"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                                    aria-label="Slide 7" title="Le E-commerce"></button>
+                                <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8" title=""></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9" title=""></button> -->
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-12 offset-md-1 col-md-6 p-3">
-                                    <img src="public/assets/img/exercice_cards.jpg"
-                                        class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
-                                        alt="Exercice HTML CSS, réalisation de cards en version responsive">
+                            <div class="carousel-inner text-center">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-12 offset-md-1 col-md-6 p-3">
+                                            <img src="public/assets/img/astucesPreview.jpg"
+                                                class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
+                                                alt="Astuces, création en autodidacte">
+                                        </div>
+                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                            <p class="fs-2">Astuces</p>
+                                            <p class="fw-bold">Projet personnel de 2015 à 2017</p>
+                                            <p class="fw-bold px-3">Site de formation professionnel des boutiques en
+                                                France de
+                                                2017 à nos jours</p>
+                                            <p>HTML5, CSS3, PHP4->PHP7</p>
+                                            <p><i>Réalisé en autodidacte avant la formation</i></p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Les Cards en responsive</p>
-                                    <p class="fw-bold">Réalisation de cartes en responsive sur le thème de notre choix
-                                    </p>
-                                    <p>HTML5, CSS3</p>
-                                    <p><i>Réalisé en avril</i></p>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12 offset-md-1 col-md-6 p-3">
+                                            <img src="public/assets/img/exercice_cards.jpg"
+                                                class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
+                                                alt="Exercice HTML CSS, réalisation de cards en version responsive">
+                                        </div>
+                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                            <p class="fs-2">Les Cards en responsive</p>
+                                            <p class="fw-bold">Réalisation de cartes en responsive sur le thème de notre
+                                                choix
+                                            </p>
+                                            <p>HTML5, CSS3</p>
+                                            <p><i>Réalisé en avril</i></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-12 offset-md-1 col-md-6 p-3">
-                                    <img src="public/assets/img/revisite_lecteur_desktop.jpg"
-                                        class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
-                                        alt="Exercice de maquettage - Réalisation d'un lecteur audio en version desktop">
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12 offset-md-1 col-md-6 p-3">
+                                            <img src="public/assets/img/revisite_lecteur_desktop.jpg"
+                                                class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
+                                                alt="Exercice de maquettage - Réalisation d'un lecteur audio en version desktop">
+                                        </div>
+                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                            <p class="fs-2">Le maquettage</p>
+                                            <p class="fw-bold">Réalisation de la maquette d'un lecteur audio en version
+                                                Desktop
+                                            </p>
+                                            <p>Adobe XD</p>
+                                            <p><i>Réalisé en avril</i></p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Le maquettage</p>
-                                    <p class="fw-bold">Réalisation de la maquette d'un lecteur audio en version Desktop
-                                    </p>
-                                    <p>Adobe XD</p>
-                                    <p><i>Réalisé en avril</i></p>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12 offset-md-1 col-md-6 p-3">
+                                            <img src="public/assets/img/shifumiHyena.jpg"
+                                                class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
+                                                alt="Exercice javascript - Réalisation d'un Shifumi en javascript">
+                                        </div>
+                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                            <p class="fs-2">Le Javascript</p>
+                                            <p class="fw-bold">Réalisation d'un Shifumi en Javascript
+                                            </p>
+                                            <p>HTML, CSS, Javascript</p>
+                                            <p><i>Réalisé en mai</i></p>
+                                            <p><a target="_blank" href="https://ferrarioloic.github.io/Shifumi/">Aller
+                                                    jouer</a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-12 offset-md-1 col-md-6 p-3">
-                                    <img src="public/assets/img/shifumiHyena.jpg"
-                                        class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
-                                        alt="Exercice javascript - Réalisation d'un Shifumi en javascript">
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12 offset-md-1 col-md-6 p-3">
+                                            <img src="public/assets/img/tmmdb.jpg"
+                                                class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
+                                                alt="Exercice sur les API - récupération et affichage de données depuis l'API de TMDB">
+                                        </div>
+                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                            <p class="fs-2">Les API</p>
+                                            <p class="fw-bold">Récupération et traitement des données récupérées depuis
+                                                l'API de
+                                                TMDB
+                                            </p>
+                                            <p>HTML, CSS, Javascript</p>
+                                            <p><i>Réalisé en mai</i></p>
+                                            <p><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter
+                                                    la
+                                                    page</a></p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Le Javascript</p>
-                                    <p class="fw-bold">Réalisation d'un Shifumi en Javascript
-                                    </p>
-                                    <p>HTML, CSS, Javascript</p>
-                                    <p><i>Réalisé en mai</i></p>
-                                    <p><a target="_blank" href="https://ferrarioloic.github.io/Shifumi/">Aller jouer</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-12 offset-md-1 col-md-6 p-3">
-                                    <img src="public/assets/img/tmmdb.jpg"
-                                        class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
-                                        alt="Exercice sur les API - récupération et affichage de données depuis l'API de TMDB">
-                                </div>
-                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Les API</p>
-                                    <p class="fw-bold">Récupération et traitement des données récupérées depuis l'API de
-                                        TMDB
-                                    </p>
-                                    <p>HTML, CSS, Javascript</p>
-                                    <p><i>Réalisé en mai</i></p>
-                                    <p><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter la
-                                            page</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-12 offset-md-1 col-md-6 p-3">
-                                    <img src="public/assets/img/wordpressDoudouDoc.jpg"
-                                        class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
-                                        alt="Exercice sur Wordpress - Création d'un projet sur le thème de notre choix">
-                                </div>
-                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Wordpress</p>
-                                    <p class="fw-bold">Création d'un projet Wordpress sur le thème de notre choix
-                                    </p>
-                                    <p>HTML, CSS, Javascript</p>
-                                    <p><i>Réalisé en mai</i></p>
-                                    <!-- <p><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter la
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-12 offset-md-1 col-md-6 p-3">
+                                            <img src="public/assets/img/wordpressDoudouDoc.jpg"
+                                                class="imgRealisations d-block mh-100 w-100 text-center borderRadius25px"
+                                                alt="Exercice sur Wordpress - Création d'un projet sur le thème de notre choix">
+                                        </div>
+                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                            <p class="fs-2">Wordpress</p>
+                                            <p class="fw-bold">Création d'un projet Wordpress sur le thème de notre
+                                                choix
+                                            </p>
+                                            <p>HTML, CSS, Javascript</p>
+                                            <p><i>Réalisé en mai</i></p>
+                                            <!-- <p><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter la
                                             page</a></p> -->
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row align-self-center">
-                                <div class="col-12 offset-md-1 col-md-6 p-3 align-self-center">
-                                    <img src="public/assets/img/ecommerce.png"
-                                        class="imgRealisations d-block mh-100 w-100 borderRadius25px"
-                                        alt="Exercice sur Wordpress - Création d'un projet sur le thème de notre choix">
-                                </div>
-                                <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                    <p class="fs-2">Le E-commerce</p>
-                                    <p class="fw-bold">Création d'un projet de E commerce en "OnePage"
-                                    </p>
-                                    <p>HTML, CSS, Javascript</p>
-                                    <p><i>Réalisé en mai</i></p>
-                                    <!-- <p><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter la
+                                <div class="carousel-item">
+                                    <div class="row align-self-center">
+                                        <div class="col-12 offset-md-1 col-md-6 p-3 align-self-center">
+                                            <img src="public/assets/img/ecommerce.png"
+                                                class="imgRealisations d-block mh-100 w-100 borderRadius25px"
+                                                alt="Exercice sur Wordpress - Création d'un projet sur le thème de notre choix">
+                                        </div>
+                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
+                                            <p class="fs-2">Le E-commerce</p>
+                                            <p class="fw-bold">Création d'un projet de E commerce en "OnePage"
+                                            </p>
+                                            <p>HTML, CSS, Javascript</p>
+                                            <p><i>Réalisé en mai</i></p>
+                                            <!-- <p><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter la
                                             page</a></p> -->
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <button class="carousel-control-prev h-100" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next h-100" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
-                    <button class="carousel-control-prev h-100" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next h-100" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </div>
         </div>
+    </main>
 
 
 
-        <!-- CENTRES D'INTERET -->
-        <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="centres_interets">
-            <div class="col-11  img-thumbnail borderRadius25px shadow">
-                <div class="fs-1 p-2">En plus...</div>
-                <div class="row m-3 py-3 text-center">
-                    <div class="col-6 col-md-3 p-2">Dessin</div>
-                    <div class="col-6 col-md-3 p-2">Création</div>
-                    <div class="col-6 col-md-3 p-2">Bricolage</div>
-                    <div class="col-6 col-md-3 p-2">Réparations</div>
-                </div>
-                <div class="row">
-                </div>
+    <!-- CENTRES D'INTERET -->
+    <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="centres_interets">
+        <div class="col-11 img-thumbnail borderRadius25px shadow">
+            <div class="titleCategory">En plus...</div>
+            <div class="row m-3 py-3 text-center">
+                <div class="col-6 col-md-3 p-2">Dessin</div>
+                <div class="col-6 col-md-3 p-2">Création</div>
+                <div class="col-6 col-md-3 p-2">Bricolage</div>
+                <div class="col-6 col-md-3 p-2">Réparations</div>
+            </div>
+            <div class="row">
             </div>
         </div>
+    </div>
 
 
     </main>
@@ -506,25 +530,24 @@
     <!-- FOOTER -->
     <footer id="site-footer" class="container-fluid">
         <div class="row bg-secondary bg-gradient bg-opacity-50">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-8 order-2 order-md-1 align-self-center">
                 <div class="row">
                     <div class="col-md copyright">&#169;FERRARIOLoic-04/2022</div>
                 </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 order-1">
                 <div class="row text-center">
                     <div class="col">
-                        <a target="_blank" href="tel:+33 6 82 61 43 74"><i class="text-white fas fa-phone-alt"></i></a>
+                        <a target="_blank" href="tel:+33 6 82 61 43 74" class="fs-1"><i class="text-white fas fa-phone-alt"></i></a>
                     </div>
                     <div class="col">
-                        <a target="_blank" href="mailto:ferrarioloic.web@gmail.com"><i
+                        <a target="_blank" href="mailto:ferrarioloic.web@gmail.com" class="fs-1"><i
                                 class="text-white fa-solid fa-envelope"></i></a>
                     </div>
-                    <div class="col"><a target="_blank"
-                            href="https://www.linkedin.com/in/lo%C3%AFc-ferrario-bba4b3182/"><i
+                    <div class="col"><a target="_blank" href="https://www.linkedin.com/in/lo%C3%AFc-ferrario-bba4b3182/" class="fs-1"><i
                                 class="text-white fa-brands fa-linkedin"></i></a></div>
                     <div class="col">
-                        <a target="_blank" href="" class="text-white"><i class="text-white fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://github.com/FERRARIOLoic" class="fs-1"><i class="text-white fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>

@@ -69,11 +69,11 @@ body {
 
   #realisations,
   #carouselExampleCaptions {
-    height: 550px;
+    height: 100%;
   }
 
   .imgCapacity {
-    width: 150%;
+    width: 70%;
   }
 
   .progress {
@@ -83,6 +83,9 @@ body {
   .imgRealisations {
     text-align: center;
     /* max-height: 230px; */
+  }
+  .imgFooter{
+    width:100%;
   }
 }
 
@@ -103,7 +106,7 @@ body {
   }
 
   .imgCapacity {
-    width: 100%;
+    width: 50%;
   }
 
   .progress {
@@ -115,6 +118,13 @@ body {
     text-align: center;
     max-height: 300px;
   }
+  .imgFooter{
+    width:100%;
+  }
+}
+
+.titleCategory{
+  font-size: 40px;
 }
 
 .carousel-item {
