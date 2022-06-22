@@ -29,6 +29,36 @@ body {
   background-image: url(../img/background-navbar.jpg);
   /* opacity: .5; */
 }
+
+.navbarScrollHide{
+  animation: animHideNavbar 1s ease 0s 1 normal forwards;
+}
+@keyframes animHideNavbar {
+0% {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+100% {
+  opacity: 0;
+  transform: translateY(-250px);
+}
+}
+.navbarScrollShow{
+  animation: animShowNavbar 0.3s ease 0s 1 normal forwards;
+}
+@keyframes animShowNavbar {
+0% {
+  opacity: 0;
+  transform: translateY(-250px);
+}
+
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
 .nav-link,
 .progress-bar {
   text-decoration: none;
@@ -524,4 +554,12 @@ div[role="progressbar"]::before {
   100% {
     opacity: 1;
   }
+}
+
+
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
 }
