@@ -107,7 +107,11 @@ body {
   }
 
   .titleName {
-    font-size:30px;
+    font-size: 30px;
+  }
+
+  .titleJob {
+    font-size: 12px;
   }
 
   .imgProfile {
@@ -148,6 +152,14 @@ body {
     opacity: .8;
     flex-direction: column;
     align-items: initial;
+  }
+
+  .titleName {
+    font-size: 50px;
+  }
+
+  .titleJob {
+    font-size: 30px;
   }
 
   .container-fluid {
