@@ -4,14 +4,12 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
 
 body {
-  /* overflow-x: hidden; */
-  font-family: 'Tangerine', cursive;
+  font-family: 'Kalam', cursive;
 
-  /* font-family: 'Barlow', sans-serif; */
   color:#0F4C81;
   background-position: center center;
   background-attachment: fixed;
@@ -96,7 +94,7 @@ body {
 } */
 
 
-.navbar {
+.navbarAppear {
   animation: AppearFromTop 1s ease 0s 1 normal both;
 }
 .titleName,
