@@ -13,11 +13,93 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
+let btnMenuChoose = document.querySelectorAll('#btnMenuChoose');
+
+btnMenuChoose.forEach(element => {
+    element.addEventListener('mouseout', () => {
+        btnMenuInfo.innerHTML = ``;
+    })
+})
+
+btnMenuChoose.forEach(element => {
+    element.addEventListener('mouseover', () => {
+        // console.log(element.dataset.value);
+
+        //fonction while case
+        switch (element.dataset.value) {
+            case 'logo':
+                btnMenuInfo.innerHTML = `
+                <div class="row jobWorkVue">
+                    <div class="col-12">
+                        <p>
+                            &Agrave; coeur vaillant rien d'impossible
+                        </p>
+                    </div>
+                </div>
+                `;
+                break;
+                case 'presentation':
+                    btnMenuInfo.innerHTML = `
+                    <div class="row jobWorkVue">
+                        <div class="col-12">
+                            <p>
+                                Découvrez qui je suis et comment j'en suis arrivé ici
+                            </p>
+                        </div>
+                    </div>
+                    `;
+                    break;
+            case 'experiences':
+                btnMenuInfo.innerHTML = `
+                        <div class="row jobWorkVue">
+                            <div class="col-12">
+                                <p>
+                                    Mes expériences de travail
+                                </p>
+                            </div>
+                        </div>
+                        `;
+                break;
+            case 'formations':
+                btnMenuInfo.innerHTML = `
+                                <div class="row jobWorkVue">
+                                    <div class="col-12">
+                                        <p>
+                                            Mes formations
+                                        </p>
+                                    </div>
+                                </div>
+                                `;
+                break;
+            case 'competences':
+                btnMenuInfo.innerHTML = `
+                                    <div class="row jobWorkVue">
+                                        <div class="col-12">
+                                            <p>
+                                                Mes compétences
+                                            </p>
+                                        </div>
+                                    </div>
+                                    `;
+                break;
+            case 'more':
+                btnMenuInfo.innerHTML = `
+                                        <div class="row jobWorkVue">
+                                            <div class="col-12">
+                                                <p>
+                                                    Un peu plus de moi
+                                                </p>
+                                            </div>
+                                        </div>
+                                        `;
+                break;
+        }
+    })
+})
 
 
 
 let btnChoose = document.querySelectorAll('#btnChoose');
-console.log(btnChoose);
 
 btnChoose.forEach(element => {
     element.addEventListener('click', () => {

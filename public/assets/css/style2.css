@@ -6,63 +6,74 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&display=swap');
 
 
 body {
   /* overflow-x: hidden; */
   font-family: 'Istok Web', sans-serif;
-  color: white;
+
+  /* font-family: 'Barlow', sans-serif; */
+  color: green;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/deepSea.jpg);
+  background-image: url(../img/);
   opacity: .9;
   padding: 15vh 0px 0px 0px;
 }
 
-.navbar{
+.navbar {
   /* background-position: center center; */
   /* background-attachment: ; */
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/background-navbar.jpg);
-  /* opacity: .5; */
+  background-image: url(../img/);
+  background-color: rgba(255, 255, 0, 0.5);
 }
 
-.navbarScrollHide{
+.navbar>.container-fluid {
+
+  align-items: initial;
+}
+
+.navbarScrollHide {
   animation: animHideNavbar 1s ease 0s 1 normal forwards;
 }
+
 @keyframes animHideNavbar {
-0% {
-  opacity: 1;
-  transform: translateY(0);
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
 }
 
-100% {
-  opacity: 0;
-  transform: translateY(-250px);
-}
-}
-.navbarScrollShow{
+.navbarScrollShow {
   animation: animShowNavbar 0.3s ease 0s 1 normal forwards;
 }
-@keyframes animShowNavbar {
-0% {
-  opacity: 0;
-  transform: translateY(-250px);
-}
 
-100% {
-  opacity: 1;
-  transform: translateY(0);
-}
+@keyframes animShowNavbar {
+  0% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .nav-link,
 .progress-bar {
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(0, 0, 255, 0.5);
 }
 
 #presentation,
@@ -72,8 +83,9 @@ body {
 .img-thumbnail {
   Background-color: rgba(255, 255, 255, 0.20);
 }
-.navbar-toggler-icon{
-  background-image: url(../img/hamburger-menu-svgrepo-com.svg)!important;
+
+.navbar-toggler-icon {
+  background-image: url(../img/hamburger-menu-svgrepo-com.svg) !important;
 }
 
 /* #btnChoose{
@@ -85,16 +97,21 @@ body {
 
 @media screen and (max-width:576px) {
 
-  .navbar{
+  .navbar {
     /* background-position: center center; */
     /* background-attachment: ; */
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/background-navbar.jpg);
+    background-image: url(../img/);
     /* opacity: .8; */
   }
+
+  .titleName {
+    font-size:30px;
+  }
+
   .imgProfile {
-    width: 70%;
+    width: 100%;
   }
 
   #realisations,
@@ -114,21 +131,34 @@ body {
     text-align: center;
     /* max-height: 230px; */
   }
-  .imgFooter{
-    width:100%;
+
+  .imgFooter {
+    width: 100%;
   }
 }
 
 @media screen and (min-width:576px) {
 
-  .navbar{
+  .navbar {
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/background-navbar.jpg);
+    background-image: url(../img/);
     opacity: .8;
+    flex-direction: column;
+    align-items: initial;
   }
+
+  .container-fluid {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .imgProfile {
+    width: 50%;
+  }
+
   #realisations,
   #carouselExampleCaptions {
     height: 500px;
@@ -148,12 +178,13 @@ body {
     text-align: center;
     max-height: 300px;
   }
-  .imgFooter{
-    width:100%;
+
+  .imgFooter {
+    width: 100%;
   }
 }
 
-.titleCategory{
+.titleCategory {
   font-size: 40px;
 }
 
@@ -557,9 +588,12 @@ div[role="progressbar"]::before {
 }
 
 
-.scrolled-down{
-  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
 }
-.scrolled-up{
-  transform:translateY(0); transition: all 0.3s ease-in-out;
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
 }
