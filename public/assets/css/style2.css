@@ -4,14 +4,12 @@
   box-sizing: border-box;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
 
 body {
   /* overflow-x: hidden; */
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Tangerine', cursive;
 
   /* font-family: 'Barlow', sans-serif; */
   color:#0F4C81;
@@ -21,7 +19,6 @@ body {
   background-size: cover;
   background-image: url(../img/);
   opacity: .9;
-  padding: 15vh 0px 0px 0px;
 }
 .imgProfile {
   color:#0F4C81;
@@ -98,8 +95,102 @@ body {
   box-shadow: inset 0 0 0 0px #ffffff;
 } */
 
+
+.navbar {
+  animation: AppearFromTop 1s ease 0s 1 normal both;
+}
+.titleName,
+.titleJob {
+  animation: AppearFromTop 1s ease 0.5s 1 normal both;
+}
+@keyframes AppearFromTop {
+	0% {
+		opacity: 0;
+		transform: rotateX(70deg);
+		transform-origin: top;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
+}
+.menu1 {
+  animation: bounceFromRight 1s ease 1s 1 normal both;
+}
+.menu2 {
+  animation: bounceFromRight 1s ease 1.2s 1 normal both;
+}
+.menu3 {
+  animation: bounceFromRight 1s ease 1.4s 1 normal both;
+}
+.menu4 {
+  animation: bounceFromRight 1s ease 1.6s 1 normal both;
+}
+.menu5 {
+  animation: bounceFromRight 1s ease 1.8s 1 normal both;
+}
+.menu6 {
+  animation: bounceFromRight 1s ease 2s 1 normal both;
+}
+@keyframes bounceFromRight {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateX(68px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateX(32px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateX(8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:576px) {
 
+  body {
+  padding: 9vh 0px 0px 0px;
+  }
   .navbar {
     /* background-position: center center; */
     /* background-attachment: ; */
@@ -146,6 +237,9 @@ body {
 
 @media screen and (min-width:576px) {
 
+  body {
+    padding: 19vh 0px 0px 0px;
+    }
   .navbar {
     background-position: center center;
     background-attachment: fixed;

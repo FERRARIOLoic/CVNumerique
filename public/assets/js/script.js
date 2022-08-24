@@ -113,7 +113,16 @@ btnMenuChoose.forEach(element => {
 let btnChoose = document.querySelectorAll('#btnChoose');
 
 btnChoose.forEach(element => {
-    element.addEventListener('click', () => {
+    element.addEventListener('mouseout', () => {
+        jobWorkVue1.innerHTML = ``;
+        jobWorkVue2.innerHTML = ``;
+        jobWorkVue3.innerHTML = ``;
+    })
+})
+
+
+btnChoose.forEach(element => {
+    element.addEventListener('mouseover', () => {
         // console.log(element.dataset.value);
 
 
