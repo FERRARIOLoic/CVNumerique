@@ -14,7 +14,7 @@ body {
   font-family: 'Istok Web', sans-serif;
 
   /* font-family: 'Barlow', sans-serif; */
-  color: green;
+  color:#0F4C81;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -23,7 +23,10 @@ body {
   opacity: .9;
   padding: 15vh 0px 0px 0px;
 }
-
+.imgProfile {
+  color:#0F4C81;
+  box-shadow: 0px 1px 10px;
+}
 .navbar {
   /* background-position: center center; */
   /* background-attachment: ; */
@@ -155,11 +158,11 @@ body {
   }
 
   .titleName {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .titleJob {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .container-fluid {

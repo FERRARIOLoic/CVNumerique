@@ -38,60 +38,71 @@ btnMenuChoose.forEach(element => {
                 </div>
                 `;
                 break;
-                case 'presentation':
-                    btnMenuInfo.innerHTML = `
-                    <div class="row jobWorkVue">
-                        <div class="col-12">
-                            <p>
-                                Découvrez qui je suis et comment j'en suis arrivé ici
-                            </p>
-                        </div>
+            case 'presentation':
+                btnMenuInfo.innerHTML = `
+                <div class="row jobWorkVue">
+                    <div class="col-12">
+                        <p>
+                            Découvrez qui je suis et comment j'en suis arrivé ici
+                        </p>
                     </div>
-                    `;
-                    break;
+                </div>
+                `;
+                break;
             case 'experiences':
                 btnMenuInfo.innerHTML = `
-                        <div class="row jobWorkVue">
-                            <div class="col-12">
-                                <p>
-                                    Mes expériences de travail
-                                </p>
-                            </div>
-                        </div>
-                        `;
+                <div class="row jobWorkVue">
+                    <div class="col-12">
+                        <p>
+                            Mes expériences de travail...
+                        </p>
+                    </div>
+                </div>
+                `;
                 break;
             case 'formations':
                 btnMenuInfo.innerHTML = `
-                                <div class="row jobWorkVue">
-                                    <div class="col-12">
-                                        <p>
-                                            Mes formations
-                                        </p>
-                                    </div>
-                                </div>
-                                `;
+                <div class="row jobWorkVue">
+                    <div class="col-12">
+                        <p>
+                            Les formations que j'ai faites...
+                        </p>
+                    </div>
+                </div>
+                `;
                 break;
             case 'competences':
                 btnMenuInfo.innerHTML = `
-                                    <div class="row jobWorkVue">
-                                        <div class="col-12">
-                                            <p>
-                                                Mes compétences
-                                            </p>
-                                        </div>
-                                    </div>
-                                    `;
+                <div class="row jobWorkVue">
+                    <div class="col-12">
+                        <p>
+                            Ce que je sais faire...
+                        </p>
+                    </div>
+                </div>
+                `;
                 break;
             case 'more':
                 btnMenuInfo.innerHTML = `
-                                        <div class="row jobWorkVue">
-                                            <div class="col-12">
-                                                <p>
-                                                    Un peu plus de moi
-                                                </p>
-                                            </div>
-                                        </div>
-                                        `;
+                <div class="row jobWorkVue">
+                    <div class="col-12">
+                        <p>
+                            Pour en connaître un peu plus de moi...
+                        </p>
+                    </div>
+                </div>
+                `;
+                break;
+            case 'contact':
+                btnMenuInfo.innerHTML = `
+                <div class="row jobWorkVue">
+                    <div class="col-12">
+                        <p>
+                            On travaille ensemble...
+                        </p>
+                    </div>
+                </div>
+                `;
                 break;
         }
     })
