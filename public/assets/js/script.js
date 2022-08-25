@@ -4,12 +4,10 @@ window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").classList.add('navbarScrollShow');
-        document.getElementById("navbar").classList.add('navbarAppear');
         document.getElementById("navbar").classList.remove('navbarScrollHide');
     } else {
         document.getElementById("navbar").classList.add('navbarScrollHide');
         document.getElementById("navbar").classList.remove('navbarScrollShow');
-        document.getElementById("navbar").classList.remove('navbarAppear');
         document.getElementById("navbarSupportedContent").classList.remove('show');
     }
     prevScrollpos = currentScrollPos;
@@ -62,23 +60,12 @@ btnMenuChoose.forEach(element => {
                 </div>
                 `;
                 break;
-            case 'formations':
+            case 'parcours':
                 btnMenuInfo.innerHTML = `
                 <div class="row jobWorkVue">
                     <div class="col-12">
                         <p>
-                            Les formations que j'ai faites...
-                        </p>
-                    </div>
-                </div>
-                `;
-                break;
-            case 'competences':
-                btnMenuInfo.innerHTML = `
-                <div class="row jobWorkVue">
-                    <div class="col-12">
-                        <p>
-                            Ce que je sais faire...
+                            Mon expériences professionnelles et mes formations...
                         </p>
                     </div>
                 </div>

@@ -39,7 +39,7 @@ body {
 }
 
 .navbarScrollHide {
-  animation: animHideNavbar 1s ease 0s 1 normal forwards;
+  animation: animHideNavbar 0.5s ease 0s 1 normal forwards;
 }
 
 @keyframes animHideNavbar {
@@ -54,8 +54,21 @@ body {
   }
 }
 
+
 .navbarScrollShow {
-  animation: animShowNavbar 0.3s ease 0s 1 normal forwards;
+  animation: animShowNavbar 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes animHideNavbar {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
 }
 
 @keyframes animShowNavbar {
@@ -95,10 +108,6 @@ body {
   box-shadow: inset 0 0 0 0px #ffffff;
 } */
 
-
-.navbarAppear {
-  animation: AppearFromTop 1s ease 0s 1 normal both;
-}
 
 .titleName,
 .titleJob {
@@ -145,34 +154,44 @@ body {
   animation: appearFromTop 1s ease 2.6s 1 normal both;
 }
 
-.menu1,
+.appearFromBottom {
+  animation: appearFromBottom 1s ease 0s 1 normal both;
+}
+
 .appearFromBottom1 {
+  animation: appearFromBottom 1s ease 0.2s 1 normal both;
+}
+
+.appearFromBottom2 {
+  animation: appearFromBottom 1s ease 0.4s 1 normal both;
+}
+
+.appearFromBottom3 {
+  animation: appearFromBottom 1s ease 0.6s 1 normal both;
+}
+
+.appearFromBottom4 {
+  animation: appearFromBottom 1s ease 0.8s 1 normal both;
+}
+
+.appearFromBottom5 {
   animation: appearFromBottom 1s ease 1s 1 normal both;
 }
 
-.menu2,
-.appearFromBottom2 {
+.appearFromBottom6 {
   animation: appearFromBottom 1s ease 1.2s 1 normal both;
 }
 
-.menu3,
-.appearFromBottom3 {
+.appearFromBottom7 {
   animation: appearFromBottom 1s ease 1.4s 1 normal both;
 }
 
-.menu4,
-.appearFromBottom4 {
+.appearFromBottom8 {
   animation: appearFromBottom 1s ease 1.6s 1 normal both;
 }
 
-.menu5,
-.appearFromBottom5 {
+.appearFromBottom9 {
   animation: appearFromBottom 1s ease 1.8s 1 normal both;
-}
-
-.menu6,
-.appearFromBottom6 {
-  animation: appearFromBottom 1s ease 2s 1 normal both;
 }
 
 .appearFromBottom7 {
@@ -187,14 +206,135 @@ body {
   animation: appearFromBottom 1s ease 2.6s 1 normal both;
 }
 
+.appearFromRight {
+  animation: appearFromRight 1s ease 0s 1 normal both;
+}
+
+.appearFromRight1 {
+  animation: appearFromRight 1s ease 1s 1 normal both;
+}
+
+.appearFromRight2 {
+  animation: appearFromRight 1s ease 1.2s 1 normal both;
+}
+
+.appearFromRight3 {
+  animation: appearFromRight 1s ease 1.4s 1 normal both;
+}
+
+.appearFromRight4 {
+  animation: appearFromRight 1s ease 1.6s 1 normal both;
+}
+
+.appearFromRight5 {
+  animation: appearFromRight 1s ease 1.8s 1 normal both;
+}
+
+.appearFromRight6 {
+  animation: appearFromRight 1s ease 2s 1 normal both;
+}
+
+.appearFromRight7 {
+  animation: appearFromRight 1s ease 2.2s 1 normal both;
+}
+
+.appearFromRight8 {
+  animation: appearFromRight 1s ease 2.4s 1 normal both;
+}
+
+.appearFromRight9 {
+  animation: appearFromRight 1s ease 2.6s 1 normal both;
+}
+
+.appearFromLeft {
+  animation: appearFromLeft 1s ease 0s 1 normal both;
+}
+
+.appearFromLeft1 {
+  animation: appearFromLeft 1s ease 1s 1 normal both;
+}
+
+.appearFromLeft2 {
+  animation: appearFromLeft 1s ease 1.2s 1 normal both;
+}
+
+.appearFromLeft3 {
+  animation: appearFromLeft 1s ease 1.4s 1 normal both;
+}
+
+.appearFromLeft4 {
+  animation: appearFromLeft 1s ease 1.6s 1 normal both;
+}
+
+.appearFromLeft5 {
+  animation: appearFromLeft 1s ease 1.8s 1 normal both;
+}
+
+.appearFromLeft6 {
+  animation: appearFromLeft 1s ease 2s 1 normal both;
+}
+
+.appearFromLeft7 {
+  animation: appearFromLeft 1s ease 2.2s 1 normal both;
+}
+
+.appearFromLeft8 {
+  animation: appearFromLeft 1s ease 2.4s 1 normal both;
+}
+
+.appearFromLeft9 {
+  animation: appearFromLeft 1s ease 2.6s 1 normal both;
+}
+
+.fadeFromTop {
+  animation: fadeFromTop 1s ease 0s 1 normal both;
+}
+
+.fadeFromTop1 {
+  animation: fadeFromTop 1s ease 0.2s 1 normal both;
+}
+
+.fadeFromTop2 {
+  animation: fadeFromTop 1s ease 0.4s 1 normal both;
+}
+
+.fadeFromTop3 {
+  animation: fadeFromTop 1s ease 0.6s 1 normal both;
+}
+
+.fadeFromTop4 {
+  animation: fadeFromTop 1s ease 0.8s 1 normal both;
+}
+
+.fadeFromTop5 {
+  animation: fadeFromTop 1s ease 1s 1 normal both;
+}
+
+.fadeFromTop6 {
+  animation: fadeFromTop 1s ease 1.2s 1 normal both;
+}
+
+.fadeFromTop7 {
+  animation: fadeFromTop 1s ease 1.4s 1 normal both;
+}
+
+.fadeFromTop8 {
+  animation: fadeFromTop 1s ease 1.6s 1 normal both;
+}
+
+.fadeFromTop9 {
+  animation: fadeFromTop 1s ease 1.8s 1 normal both;
+}
+
+
+
 .slideOutTop1 {
   animation: slideOutTop 1s ease 0s 1 normal both;
-  display:none;
+  display: none;
 }
 
 #boxPresentation {
   background-color: rgb(200, 255, 200);
-  animation: appearFromTop 1s ease 0s 1 normal both;
 }
 
 #boxExperiences {
@@ -206,29 +346,6 @@ body {
 }
 
 
-.job1 {
-  animation: appearFromLeft 1s ease 0s 1 normal both;
-}
-
-.jobText1 {
-  animation: appearFromRight 1s ease 0.4s 1 normal both;
-}
-
-.job2 {
-  animation: appearFromLeft 1s ease 1s 1 normal both;
-}
-
-.jobText2 {
-  animation: appearFromRight 1s ease 1.4s 1 normal both;
-}
-
-.job3 {
-  animation: appearFromLeft 1s ease 2s 1 normal both;
-}
-
-.jobText3 {
-  animation: appearFromRight 1s ease 2.4s 1 normal both;
-}
 
 .imgRealisations {
   animation: scaleFwdCenter 1s ease 0.5s 1 normal both;

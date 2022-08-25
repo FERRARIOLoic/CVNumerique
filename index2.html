@@ -22,7 +22,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-9 offset-md-1 col-md-10 ">
-                        <div class="row align-self-center appearFromTop1">
+                        <div class="row align-self-center appearFromTop">
                             <div class="col-12 col-md-6 text-center titleName align-self-center">
                                 FERRARIO Loïc
                             </div>
@@ -41,23 +41,23 @@
                     </div>
                 </div>
                 <div class="row collapse navbar-collapse " id="navbarSupportedContent">
-                    <div id="btnMenuChoose" data-value="presentation" class="col-12 col-md-2 menu1">
+                    <div id="btnMenuChoose" data-value="presentation" class="col-12 col-md-2 fadeFromTop1">
                         <a class="nav-link" href="#presentation">&Agrave; propos de moi</a>
                     </div>
-                    <div id="btnMenuChoose" data-value="experiences" class="col-12 col-md-2 menu2">
+                    <div id="btnMenuChoose" data-value="experiences" class="col-12 col-md-2 fadeFromTop2">
                         <a class="nav-link" href="#experiences">Mes expériences</a>
                     </div>
-                    <div id="btnMenuChoose" data-value="formations" class="col-12 col-md-2 menu3">
-                        <a class="nav-link" href="#formations">Mes formations</a>
+                    <div id="btnMenuChoose" data-value="parcours" class="col-12 col-md-2 fadeFromTop3">
+                        <a class="nav-link" href="#parcours">Mon parcours</a>
                     </div>
-                    <div id="btnMenuChoose" data-value="competences" class="col-12 col-md-2 menu4">
-                        <a class="nav-link" href="#competences">Mes compétences</a>
-                    </div>
-                    <div id="btnMenuChoose" data-value="realisations" class="col-12 col-md-2 menu5">
+                    <div id="btnMenuChoose" data-value="realisations" class="col-12 col-md-2 fadeFromTop4">
                         <a class="nav-link" href="#realisations">Mes réalisations</a>
                     </div>
-                    <div id="btnMenuChoose" data-value="more" class="col-12 col-md-2 menu5">
+                    <div id="btnMenuChoose" data-value="more" class="col-12 col-md-2 fadeFromTop5">
                         <a class="nav-link" href="#more">Un peu plus...</a>
+                    </div>
+                    <div id="btnMenuChoose" data-value="contact" class="col-12 col-md-2 fadeFromTop6">
+                        <a class="nav-link" href="#contact">Me contacter</a>
                     </div>
                 </div>
             </div>
@@ -71,9 +71,9 @@
     <main id="site-content" role="main" class="container-fluid">
 
         <!-- PRESENTATION -->
-        <div class=" row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="presentation">
+        <div id="presentation" class=" row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5">
 
-            <div id="boxPresentation" class="col-11 img-thumbnail borderRadius25px shadow">
+            <div id="boxPresentation" class="col-11 img-thumbnail borderRadius25px shadow  appearFromBottom">
                 <div class="titleCategory">&Agrave; propos de moi</div>
                 <div class="row m-3 py-3">
                     <div class="col-12 offset-md-1 col-md-10 align-self-center">
@@ -90,140 +90,143 @@
 
 
         <!-- PARCOURS -->
-        <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="experiences">
-            <div id="boxExperiences" class="col-11  img-thumbnail borderRadius25px shadow">
-                <div class="titleCategory">Mes expériences</div>
+        <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="parcours">
+            <div id="boxExperiences" class="col-11  img-thumbnail borderRadius25px shadow appearFromBottom">
+                <div class="titleCategory">Mon parcours</div>
+                <div class="row">
+                    <div class="col-6">
 
-                <div class="row m-3 py-3">
-                    <div class="container-fluid">
-                        <div id="navigation" class="align-self-center">
-                            <!------------- JOB 1 --------->
-                            <div class="row my-4">
-                                <div class="col-12 col-md-2 job1 text-end fs-5 py-2">
-                                    2017 - ce jour
-                                </div>
-                                <div class="col-12 col-md-10">
-                                    <div class="row">
-                                        <div id="btnChoose" data-value="job1" class="col-12 jobText1">
-                                            <p><strong>Technicien SAV / Responsable Support formation</strong>
-                                                <br><i>Point Services Mobiles / Save Store</i>
-                                            </p>
-                                        </div>
-                                        <div id="jobWorkVue1" class="jobWorkVue p-wrapper align-self-center "></div>
-                                    </div>
-                                </div>
+                        <div class="row m-3 py-3">
+                            <div class="container-fluid">
+                                <div class="col-12 text-center fs-3 appearFromTop">Mes formations</div>
                             </div>
-                            <!------------- JOB 2 --------->
-                            <div class="row my-4">
-                                <div class="col-12 col-md-2 job2 text-end fs-5 py-2">
-                                    2012 - 2017
-                                </div>
-                                <div class="col-12 col-md-10">
-                                    <div class="row">
-                                        <div id="btnChoose" data-value="job2" class="col-12 jobText2">
-                                            <p><strong>Technicien SAV en Téléphonie mobile</strong>
-                                                <br><i>Point Services Mobiles</i>
-                                            </p>
-                                        </div>
-                                        <div class="col-12">
-                                            <div id="jobWorkVue2" class="jobWorkVue p-wrapper align-self-center ">
-                                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+
+                        <div class="row m-3 py-3">
+                            <div class="container-fluid">
+                                <div class="col-12 text-center fs-3 appearFromTop">Mes expériences</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-5 px-2 text-end">
+                                <div class="row">
+                                    <div id="btnChoose" data-value="school1" class="col-12 appearFromRight1">
+                                        <p><strong>Formation Web / Web Mobile</strong>
+                                            <br><i>La Manu Amiens</i>
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <div id="jobWorkVueS1" class="jobWorkVue p-wrapper align-self-center ">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!------------- JOB 3 --------->
-                            <div class="row my-4">
-                                <div class="col-12 col-md-2 job3 text-end fs-5 py-2">
-                                    2011 - 2012
+                            <div class="col-2 col-md-2 job1 text-center fs-5 py-2 appearFromBottom">
+                                2022
+                            </div>
+                            <div class="col-5"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5"></div>
+                            <div class="col-2 col-md-2 job1 text-center fs-5 py-2 appearFromBottom1">
+                                2017 - ce jour
+                            </div>
+                            <div class="col-5">
+                                <div class="row">
+                                    <div id="btnChoose" data-value="job1" class="col-12 appearFromLeft2">
+                                        <p><strong>Technicien SAV / Responsable Support formation</strong>
+                                            <br><i>Point Services Mobiles / Save Store</i>
+                                        </p>
+                                    </div>
+                                    <div id="jobWorkVue1" class="jobWorkVue p-wrapper align-self-center ">
+                                    </div>
                                 </div>
-                                <div class="col-12 col-md-10">
-                                    <div class="row">
-                                        <div id="btnChoose" data-value="job3" class="col-12 jobText3">
-                                            <p><strong>Responsable SAV en Informatique</strong>
-                                                <br><i>XXB Consulting</i>
-                                            </p>
-                                        </div>
-                                        <div class="col-12">
-                                            <div id="jobWorkVue3" class="jobWorkVue p-wrapper align-self-center ">
-                                            </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5"></div>
+                            <div class="col-2 col-md-2 job1 text-center fs-5 py-2 appearFromBottom2">
+                                2012 - 2017
+                            </div>
+                            <div class="col-5">
+                                <div class="row">
+                                    <div id="btnChoose" data-value="job2" class="col-12 appearFromLeft3">
+                                        <p><strong>Technicien SAV en Téléphonie mobile</strong>
+                                            <br><i>Point Services Mobiles</i>
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <div id="jobWorkVue2" class="jobWorkVue p-wrapper align-self-center ">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="formations">
-            <div id="boxExperiences" class="col-11  img-thumbnail borderRadius25px shadow">
-                <div class="titleCategory">Mes formations</div>
-
-                <div class="row m-3 py-3">
-                    <div class="container-fluid">
-                        <div id="navigation" class="align-self-center">
-                            <!------------- SHOOL 1 --------->
-                            <div class="row my-4">
-                                <div class="col-12 col-md-2 job1 text-end fs-5 py-2">
-                                    2011 - 2012
-                                </div>
-                                <div class="col-12 col-md-10">
-                                    <div class="row">
-                                        <div id="btnChoose" data-value="school1" class="col-12 jobText1">
-                                            <p><strong>Formation Web / Web Mobile</strong>
-                                                <br><i>La Manu Amiens</i>
-                                            </p>
-                                        </div>
-                                        <div class="col-12">
-                                            <div id="jobWorkVueS1" class="jobWorkVue p-wrapper align-self-center ">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="row">
+                            <div class="col-5"></div>
+                            <div class="col-2 col-md-2 job1 text-center fs-5 py-2 appearFromBottom3">
+                                2011 - 2012
                             </div>
-                            <!------------- SCHOOL 2 --------->
-                            <div class="row my-4">
-                                <div class="col-12 col-md-2 job2 text-end fs-5 py-2">
-                                    2006
-                                </div>
-                                <div class="col-12 col-md-10">
-                                    <div class="row">
-                                        <div id="btnChoose" data-value="school2" class="col-12 jobText2">
-                                            <p><strong>Programmeur Système</strong>
-                                                <br><i>Educatel</i>
-                                            </p>
-                                        </div>
-                                        <div class="col-12">
-                                            <div id="jobWorkVueS2" class="jobWorkVue p-wrapper align-self-center ">
-                                            </div>
-                                        </div>
+                            <div class="col-5">
+                                <div class="row">
+                                    <div id="btnChoose" data-value="job3" class="col-12 appearFromLeft4">
+                                        <p><strong>Responsable SAV en Informatique</strong>
+                                            <br><i>XXB Consulting</i>
+                                        </p>
                                     </div>
-                                </div>
-                            </div>
-                            <!------------- SCHOOL 3 --------->
-                            <div class="row my-4">
-                                <div class="col-12 col-md-2 job3 text-end fs-5 py-2">
-                                    2002
-                                </div>
-                                <div class="col-12 col-md-10">
-                                    <div class="row">
-                                        <div id="btnChoose" data-value="school3" class="col-12 jobText3">
-                                            <p><strong>Baccalauréat STL</strong> (Science et Techniques de Laboratoires)
-                                                <br><i>Sainte Marie de Nevers (Toulouse)</i>
-                                            </p>
-                                        </div>
-                                        <div class="col-12">
-                                            <div id="jobWorkVueS3" class="jobWorkVue p-wrapper align-self-center ">
-                                            </div>
+                                    <div class="col-12">
+                                        <div id="jobWorkVue3" class="jobWorkVue p-wrapper align-self-center ">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-5 text-end">
+                                <div class="row">
+                                    <div id="btnChoose" data-value="school2" class="col-12 appearFromRight5">
+                                        <p><strong>Programmeur Système</strong>
+                                            <br><i>Educatel</i>
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <div id="jobWorkVueS2" class="jobWorkVue p-wrapper align-self-center ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 col-md-2 job1 text-center fs-5 py-2 appearFromBottom4">
+                                2006
+                            </div>
+                            <div class="col-5"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5 text-end">
+                                <div class="row">
+                                    <div id="btnChoose" data-value="school3" class="col-12 appearFromRight6">
+                                        <p><strong>Baccalauréat STL</strong> (Science et Techniques de
+                                            Laboratoires)
+                                            <br><i>Sainte Marie de Nevers (Toulouse)</i>
+                                        </p>
+                                    </div>
+                                    <div class="col-12">
+                                        <div id="jobWorkVueS3" class="jobWorkVue p-wrapper align-self-center ">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 col-md-2 job1 text-center fs-5 py-2 appearFromBottom5">
+                                2002
+                            </div>
+                            <div class="col-5"></div>
+                        </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
@@ -231,7 +234,7 @@
 
 
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="competences">
-            <div id="boxExperiences" class="col-11 img-thumbnail borderRadius25px shadow">
+            <div id="boxExperiences" class="col-11 img-thumbnail borderRadius25px shadow appearFromBottom">
                 <div class="titleCategory">Mes compétences</div>
                 <div class="row text-center m-3 py-3">
                     <div class="col-4 col-md pt-3 pt-md-0">
@@ -360,7 +363,7 @@
 
         <!-- CENTRES D'INTERET -->
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="realisations">
-            <div id="boxExperiences" class="col-11  img-thumbnail borderRadius25px shadow">
+            <div id="boxExperiences" class="col-11  img-thumbnail borderRadius25px shadow appearFromBottom">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="titleCategory">Réalisations...</div>
                     <div class="row text-center m-3 py-3">
@@ -394,11 +397,13 @@
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
                                             <p class="fs-2 appearFromTop1">Astuces</p>
                                             <p class="fw-bold appearFromTop2">Projet personnel de 2015 à 2017</p>
-                                            <p class="fw-bold px-3 appearFromTop3">Site de formation professionnel des boutiques en
+                                            <p class="fw-bold px-3 appearFromTop3">Site de formation professionnel
+                                                des boutiques en
                                                 France de
                                                 2017 à nos jours</p>
                                             <p class=" appearFromTop4">HTML5, CSS3, PHP4->PHP7</p>
-                                            <p class=" appearFromTop5"><i>Réalisé en autodidacte avant la formation</i></p>
+                                            <p class=" appearFromTop5"><i>Réalisé en autodidacte avant la
+                                                    formation</i></p>
                                         </div>
                                     </div>
                                 </div>
@@ -411,7 +416,8 @@
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
                                             <p class="fs-2 appearFromTop1">Les Cards en responsive</p>
-                                            <p class="fw-bold appearFromTop2">Réalisation de cartes en responsive sur le thème de notre
+                                            <p class="fw-bold appearFromTop2">Réalisation de cartes en responsive
+                                                sur le thème de notre
                                                 choix
                                             </p>
                                             <p class="appearFromTop3">HTML5, CSS3</p>
@@ -428,7 +434,8 @@
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
                                             <p class="fs-2 appearFromTop1">Le maquettage</p>
-                                            <p class="fw-bold appearFromTop2">Réalisation de la maquette d'un lecteur audio en version
+                                            <p class="fw-bold appearFromTop2">Réalisation de la maquette d'un
+                                                lecteur audio en version
                                                 Desktop
                                             </p>
                                             <p class="appearFromTop3">Adobe XD</p>
@@ -449,7 +456,8 @@
                                             </p>
                                             <p class=" appearFromTop3">HTML, CSS, Javascript</p>
                                             <p class=" appearFromTop4"><i>Réalisé en mai</i></p>
-                                            <p class=" appearFromTop5"><a target="_blank" href="https://ferrarioloic.github.io/Shifumi/">Aller
+                                            <p class=" appearFromTop5"><a target="_blank"
+                                                    href="https://ferrarioloic.github.io/Shifumi/">Aller
                                                     jouer</a>
                                             </p>
                                         </div>
@@ -464,13 +472,15 @@
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
                                             <p class="fs-2 appearFromTop1">Les API</p>
-                                            <p class="fw-bold appearFromTop2">Récupération et traitement des données récupérées depuis
+                                            <p class="fw-bold appearFromTop2">Récupération et traitement des données
+                                                récupérées depuis
                                                 l'API de
                                                 TMDB
                                             </p>
                                             <p class=" appearFromTop3">HTML, CSS, Javascript</p>
                                             <p class=" appearFromTop4"><i>Réalisé en mai</i></p>
-                                            <p class=" appearFromTop5"><a target="_blank" href="https://ferrarioloic.github.io/TMMDB/">Consulter
+                                            <p class=" appearFromTop5"><a target="_blank"
+                                                    href="https://ferrarioloic.github.io/TMMDB/">Consulter
                                                     la
                                                     page</a></p>
                                         </div>
@@ -485,7 +495,8 @@
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
                                             <p class="fs-2 appearFromTop1">Wordpress</p>
-                                            <p class="fw-bold appearFromTop2">Création d'un projet Wordpress sur le thème de notre
+                                            <p class="fw-bold appearFromTop2">Création d'un projet Wordpress sur le
+                                                thème de notre
                                                 choix
                                             </p>
                                             <p class=" appearFromTop3">HTML, CSS, Javascript</p>
@@ -504,7 +515,8 @@
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
                                             <p class="fs-2 appearFromTop1">Le E-commerce</p>
-                                            <p class="fw-bold appearFromTop2">Création d'un projet de E commerce en "OnePage"
+                                            <p class="fw-bold appearFromTop2">Création d'un projet de E commerce en
+                                                "OnePage"
                                             </p>
                                             <p class=" appearFromTop3">HTML, CSS, Javascript</p>
                                             <p class=" appearFromTop4"><i>Réalisé en mai</i></p>
@@ -531,9 +543,9 @@
 
 
         </div>
-        
+
         <div class="row bg-secondary bg-gradiant bg-opacity-10 justify-content-center py-5" id="more">
-            <div id="boxExperiences" class="col-11 img-thumbnail borderRadius25px shadow">
+            <div id="boxExperiences" class="col-11 img-thumbnail borderRadius25px shadow appearFromBottom">
                 <div class="titleCategory">Un peu plus...</div>
                 <div class="row m-3 py-3 text-center">
                     <div class="col-6 col-md-3 p-2">Dessin</div>
