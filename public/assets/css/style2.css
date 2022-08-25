@@ -105,7 +105,11 @@ body {
   animation: AppearFromTop 1s ease 0.5s 1 normal both;
 }
 
-.appearFromTop1{
+.appearFromTop {
+  animation: appearFromTop 1s ease 0s 1 normal both;
+}
+
+.appearFromTop1 {
   animation: appearFromTop 1s ease 1s 1 normal both;
 }
 
@@ -142,7 +146,7 @@ body {
 }
 
 .menu1,
-.appearFromBottom1{
+.appearFromBottom1 {
   animation: appearFromBottom 1s ease 1s 1 normal both;
 }
 
@@ -170,23 +174,33 @@ body {
 .appearFromBottom6 {
   animation: appearFromBottom 1s ease 2s 1 normal both;
 }
+
 .appearFromBottom7 {
   animation: appearFromBottom 1s ease 2.2s 1 normal both;
 }
+
 .appearFromBottom8 {
   animation: appearFromBottom 1s ease 2.4s 1 normal both;
 }
+
 .appearFromBottom9 {
   animation: appearFromBottom 1s ease 2.6s 1 normal both;
+}
+
+.slideOutTop1 {
+  animation: slideOutTop 1s ease 0s 1 normal both;
+  display:none;
 }
 
 #boxPresentation {
   background-color: rgb(200, 255, 200);
   animation: appearFromTop 1s ease 0s 1 normal both;
 }
+
 #boxExperiences {
   background-color: rgb(220, 230, 255);
 }
+
 .textPresentation {
   animation: AppearFromTop 1s ease 0.5s 1 normal both;
 }
@@ -195,24 +209,31 @@ body {
 .job1 {
   animation: appearFromLeft 1s ease 0s 1 normal both;
 }
+
 .jobText1 {
   animation: appearFromRight 1s ease 0.4s 1 normal both;
 }
+
 .job2 {
   animation: appearFromLeft 1s ease 1s 1 normal both;
 }
+
 .jobText2 {
   animation: appearFromRight 1s ease 1.4s 1 normal both;
 }
+
 .job3 {
   animation: appearFromLeft 1s ease 2s 1 normal both;
 }
+
 .jobText3 {
   animation: appearFromRight 1s ease 2.4s 1 normal both;
 }
+
 .imgRealisations {
   animation: scaleFwdCenter 1s ease 0.5s 1 normal both;
 }
+
 /*------------- ANIMATIONS ---------*/
 @keyframes fadeFromTop {
   0% {
@@ -224,17 +245,20 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-}@keyframes fadeFromBottom {
-	0% {
-		opacity: 0;
-		transform: translateY(50px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
 }
+
+@keyframes fadeFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes appearFromTop {
   0% {
     opacity: 0;
@@ -248,37 +272,41 @@ body {
     transform-origin: top;
   }
 }
+
 @keyframes appearFromBottom {
-	0% {
-		opacity: 0;
-		transform: translateY(250px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
 
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}@keyframes appearFromRight {
-	0% {
-		opacity: 0;
-		transform: translateX(250px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-@keyframes appearFromLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-250px);
-	}
 
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+@keyframes appearFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes bounceFromRight {
@@ -324,60 +352,72 @@ body {
     transform: translateX(0);
   }
 }
+
 @keyframes bounceFromLeft {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateX(-250px);
-	}
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateX(-250px);
+  }
 
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateX(0);
-	}
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
 
-	55% {
-		animation-timing-function: ease-in;
-		transform: translateX(-68px);
-	}
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(-68px);
+  }
 
-	72% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
 
-	81% {
-		animation-timing-function: ease-in;
-		transform: translateX(-28px);
-	}
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(-28px);
+  }
 
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
 
-	95% {
-		animation-timing-function: ease-in;
-		transform: translateX(-8px);
-	}
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(-8px);
+  }
 
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateX(0);
-	}
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
 }
+
 @keyframes scaleFwdCenter {
-	0% {
-		transform: scale(0);
-	}
+  0% {
+    transform: scale(0);
+  }
 
-	100% {
-		transform: scale(1);
-	}
+  100% {
+    transform: scale(1);
+  }
 }
 
+@keyframes slideOutTop {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
+  100% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
+}
 
 
 
@@ -486,7 +526,7 @@ body {
   .imgRealisations {
     text-align: center;
     max-height: 300px;
-    max-width:100%;
+    max-width: 100%;
   }
 
   .imgFooter {
@@ -884,9 +924,8 @@ div[role="progressbar"]::before {
 
 
 .jobWorkVue {
-  animation: animJobWork 1.5s ease 0s 1 normal both;
-  animation: AppearFromTop 1.2s ease 0s 1 normal both;
-  font-size:13px;
+  /* animation: animJobWork 1.5s ease 0s 1 normal both; */
+  font-size: 13px;
 }
 
 @keyframes animJobWork {

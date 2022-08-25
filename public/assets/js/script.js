@@ -135,31 +135,25 @@ btnMenuChoose.forEach(element => {
                 En reconversion professionnelle, je recherche donc un emploi de Développeur Web / Web Mobile Full Stack, Front End, Back End
                 </span>
                 `;
-                document.getElementById("textPresentation").classList.remove('textPresentation');
-                jobWorkVue1.innerHTML = ``;
-                jobWorkVue2.innerHTML = ``;
-                jobWorkVue3.innerHTML = ``;
-                jobWorkVueS1.innerHTML = ``;
-                jobWorkVueS2.innerHTML = ``;
-                jobWorkVueS3.innerHTML = ``;
                 break;
-                case 'experiences':
-                    textPresentation.innerHTML = ``;
-                    jobWorkVue1.innerHTML = ``;
-                    jobWorkVue2.innerHTML = ``;
-                    jobWorkVue3.innerHTML = ``;
-                    jobWorkVueS1.innerHTML = ``;
-                    jobWorkVueS2.innerHTML = ``;
-                    jobWorkVueS3.innerHTML = ``;
-                    break;
+            case 'experiences':
+                textPresentation.innerHTML = ``;
+                break;
         }
     })
 })
 
 
 boxPresentation.addEventListener('mouseover', () => {
+    document.getElementById("textPresentation").classList.remove('slideOutTop1');
+    document.getElementById("jobWorkVue1").classList.add('slideOutTop1');
+    document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
+    document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
+    document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
+    document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
+    document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
     textPresentation.innerHTML = `
-    <span id="textPresentationShow" class="textPresentation">
+    <span class="textPresentation">
         Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
         développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
         autodidacte
@@ -175,22 +169,14 @@ boxPresentation.addEventListener('mouseover', () => {
         En reconversion professionnelle, je recherche donc un emploi de Développeur Web / Web Mobile Full Stack, Front End, Back End
         </span>
         `;
-        document.getElementById("textPresentationShow").classList.remove('textPresentation');
+})
+boxPresentation.addEventListener('mouseout', () => {
+    document.getElementById("textPresentation").classList.add('slideOutTop1');
 })
 
 
 
 let btnChoose = document.querySelectorAll('#btnChoose');
-
-// btnChoose.forEach(element => {
-//     element.addEventListener('mouseout', () => {
-//         jobWorkVue1.innerHTML = ``;
-//         jobWorkVue2.innerHTML = ``;
-//         jobWorkVue3.innerHTML = ``;
-//     })
-// })
-
-
 btnChoose.forEach(element => {
     element.addEventListener('mouseover', () => {
         // console.log(element.dataset.value);
@@ -199,6 +185,8 @@ btnChoose.forEach(element => {
         //fonction while case
         switch (element.dataset.value) {
             case 'job1':
+                document.getElementById("jobWorkVue1").classList.add('appearFromTop');
+                document.getElementById("jobWorkVue1").classList.remove('slideOutTop1');
                 jobWorkVue1.innerHTML = `
                 <div id="job1Text" class="jobWorkVue px-md-2">
                     <i>Diagnostics, réparations, reprogrammations de smartphones,
@@ -210,8 +198,12 @@ btnChoose.forEach(element => {
                     formation des boutiques en France</i>
                 </div>
                 `;
+                document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
+                document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
                 break;
             case 'job2':
+                document.getElementById("jobWorkVue2").classList.add('appearFromTop');
+                document.getElementById("jobWorkVue2").classList.remove('slideOutTop1');
                 jobWorkVue2.innerHTML = `
                 <div id="job2Text" class="jobWorkVue px-2">
                 <div class="row">
@@ -223,8 +215,12 @@ btnChoose.forEach(element => {
                 </div>
                 </div>
                 `;
+                document.getElementById("jobWorkVue1").classList.add('slideOutTop1');
+                document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
                 break;
             case 'job3':
+                document.getElementById("jobWorkVue3").classList.add('appearFromTop');
+                document.getElementById("jobWorkVue3").classList.remove('slideOutTop1');
                 jobWorkVue3.innerHTML = `
                 <div id="job3Text" class="jobWorkVue px-2">
                 <div class="row">
@@ -235,9 +231,13 @@ btnChoose.forEach(element => {
                 </div>
                 </div>
                 `;
+                document.getElementById("jobWorkVue1").classList.add('slideOutTop1');
+                document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
                 break;
             //case school
             case 'school1':
+                document.getElementById("jobWorkVueS1").classList.add('appearFromTop');
+                document.getElementById("jobWorkVueS1").classList.remove('slideOutTop1');
                 jobWorkVueS1.innerHTML = `
                 <div id="school1Text" class="jobWorkVue px-md-2">
                     <div class="row">
@@ -247,8 +247,12 @@ btnChoose.forEach(element => {
                     </div>
                 </div>
                 `;
+                document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
+                document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
                 break;
             case 'school2':
+                document.getElementById("jobWorkVueS2").classList.add('appearFromTop');
+                document.getElementById("jobWorkVueS2").classList.remove('slideOutTop1');
                 jobWorkVueS2.innerHTML = `
                 <div id="school2Text" class="jobWorkVue px-2">
                     <div class="row">
@@ -258,8 +262,12 @@ btnChoose.forEach(element => {
                     </div>
                 </div>
                 `;
+                document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
+                document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
                 break;
             case 'school3':
+                document.getElementById("jobWorkVueS3").classList.add('appearFromTop');
+                document.getElementById("jobWorkVueS3").classList.remove('slideOutTop1');
                 jobWorkVueS3.innerHTML = `
                 <div id="school3Text" class="jobWorkVue px-2">
                     <div class="row">
@@ -269,17 +277,16 @@ btnChoose.forEach(element => {
                     </div>
                 </div>
                     `;
+                    document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
+                    document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
                 break;
         }
-        document.getElementById("job1Text").classList.remove('jobWorkVue');
-        document.getElementById("job2Text").classList.remove('jobWorkVue');
-        document.getElementById("job3Text").classList.remove('jobWorkVue');
-        document.getElementById("school1Text").classList.remove('jobWorkVue');
-        document.getElementById("school2Text").classList.remove('jobWorkVue');
-        document.getElementById("school3Text").classList.remove('jobWorkVue');
     })
-
-
 }
 )
 
+btnChoose.forEach(element => {
+    element.addEventListener('mouseout', () => {
+
+    })
+})
