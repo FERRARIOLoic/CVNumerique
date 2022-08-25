@@ -187,17 +187,13 @@ btnChoose.forEach(element => {
                 <div class="jobWorkVue px-2">
                 <div class="row">
                     <div class="col-12">
-                        <p>
                             <i>Diagnostics, réparations, reprogrammations de smartphones,
                             tablettes, accessoires <br>(agréments Samsung, Huawei,
-                            Xiaomi, Apple)</i>
-                        </p>
-                        <P>
-                            <i>Conception, développement et gestion du
+                            Xiaomi, Apple)
+                            <br>Conception, développement et gestion du
                             site
                             de
-                            formation/gestion des boutiques en France</i>
-                        </P>
+                            formation des boutiques en France</i>
                     </div>
                 </div>
                 </div>
@@ -229,80 +225,40 @@ btnChoose.forEach(element => {
                 `;
                 break;
             //case school
-            case 'school4':
-                jobWorkVueS4.innerHTML = `
+            case 'school1':
+                jobWorkVueS1.innerHTML = `
                 <div class="jobWorkVue px-2">
-                <div class="row">
-                    <div class="col-12">
-                        <p>
-                            La Manu Amiens est une école de formation de
-                            développement web et de développement mobile.
-                            Elle est située à Amiens, en France.
-                        </p>
+                    <div class="row">
+                        <div class="col-12">
+                            <i>Apprentissage des langages HTML5, CSS3, Javascript, PHP8</i>
+                        </div>
                     </div>
-                </div>
-                <div class="jobSociety row">
-                    <div class="col-4 align-self-center">
-                        <img class="imgSociety" src="public/assets/img/laManu.jpg">
-                    </div>
-                    <div class="col-8 align-self-center">
-                        <h4><i>La Manu Amiens</i></h4>
-                    </div>
-                </div>
                 </div>
                 `;
-                jobWorkVueS3.innerHTML = ``;
-                jobWorkVueS2.innerHTML = ``;
-                break;
-            case 'school3':
-                jobWorkVueS4.innerHTML = ``;
-                jobWorkVueS3.innerHTML = `
-                <div class="jobWorkVue px-2">
-                <div class="row">
-                    <div class="col-12">
-                        <p>
-                            Apprentissage de la programmation en C# et
-                            en JavaScript.
-
-                        </p>
-                    </div>
-                </div>
-                <div class="jobSociety row">
-                    <div class="col-3 col-md-2 text-center align-self-center">
-                        <img class="imgSociety" src="public/assets/img/educatel.png">
-                    </div>
-                    <div class="col-9 col-md-10 align-self-center">
-                        <h4><i>Educatel</i></h4>
-                    </div>
-                </div>
-                </div>
-                `;
-                jobWorkVueS2.innerHTML = ``;
                 break;
             case 'school2':
-                jobWorkVueS4.innerHTML = ``;
-                jobWorkVueS3.innerHTML = ``;
                 jobWorkVueS2.innerHTML = `
                 <div class="jobWorkVue px-2">
                     <div class="row">
                         <div class="col-12">
-                            Spécialité Biochimie Génie Biologique
+                            <i>Apprentissage de la programmation en C#</i>
                         </div>
                     </div>
-                    <div class="jobSociety row">
-                        <div class="col-3 col-md-2 text-center align-self-center">
-                            <img class="imgSociety" src="public/assets/img/lycee.png">
+                </div>
+                `;
+                break;
+            case 'school3':
+                jobWorkVueS3.innerHTML = `
+                <div class="jobWorkVue px-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <i>Spécialité Biochimie Génie Biologique</i>
                         </div>
-                        <div class="col-9 col-md-10 align-self-center">
-                            <h4><i>Sainte Marie de Nevers (Toulouse)</i></h4>
-                        </div>
-                        </div>
-                        </div>
+                    </div>
+                </div>
                     `;
                 break;
-
         }
-
     })
 
 

@@ -30,7 +30,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../img/);
-  background-color: rgba(80, 255, 80);
+  background-color: rgb(80, 255, 80);
 }
 
 .navbar>.container-fluid {
@@ -130,6 +130,12 @@ body {
   animation: appearFromBottom 1s ease 2s 1 normal both;
 }
 
+#boxPresentation {
+  background-color: rgb(200, 255, 200);
+}
+#boxExperiences {
+  background-color: rgb(220, 230, 255);
+}
 #textPresentation {
   animation: fadeFromTop 1s ease 0s 1 normal both;
 }
