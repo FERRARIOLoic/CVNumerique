@@ -111,16 +111,68 @@ btnMenuChoose.forEach(element => {
 })
 
 
+btnMenuChoose.forEach(element => {
+    element.addEventListener('click', () => {
+        // console.log(element.dataset.value);
 
-let btnChoose = document.querySelectorAll('#btnChoose');
-
-btnChoose.forEach(element => {
-    element.addEventListener('mouseout', () => {
+        //fonction while case
+        switch (element.dataset.value) {
+            case 'presentation':
+                textPresentation.innerHTML = `
+                Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
+                développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
+                autodidacte
+                <br>
+                Après 7 années de pratique, dont 5 ans professionnellement, je
+                souhaite
+                désormais en faire mon activité principale
+                <br>
+                Afin d'actualiser mes connaissances et d'avoir un
+                parcours d'apprentissage professionnel, j'ai entrepris une formation de développeur Web / Web Mobile au
+                sein de La Manu Amiens
+                <br>
+                En reconversion professionnelle, je recherche donc un emploi de Développeur Web / Web Mobile Full Stack, Front End, Back End
+                `;
+                break;
+        }
         jobWorkVue1.innerHTML = ``;
         jobWorkVue2.innerHTML = ``;
         jobWorkVue3.innerHTML = ``;
     })
 })
+
+
+boxPresentation.addEventListener('mouseover', () => {
+    textPresentation.innerHTML = `
+    <span class="">
+        Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
+        développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
+        autodidacte
+        <br>
+        Après 7 années de pratique, dont 5 ans professionnellement, je
+        souhaite
+        désormais en faire mon activité principale
+        <br>
+        Afin d'actualiser mes connaissances et d'avoir un
+        parcours d'apprentissage professionnel, j'ai entrepris une formation de développeur Web / Web Mobile au
+        sein de La Manu Amiens
+        <br>
+        En reconversion professionnelle, je recherche donc un emploi de Développeur Web / Web Mobile Full Stack, Front End, Back End
+        </span>
+        `;
+})
+
+
+
+let btnChoose = document.querySelectorAll('#btnChoose');
+
+// btnChoose.forEach(element => {
+//     element.addEventListener('mouseout', () => {
+//         jobWorkVue1.innerHTML = ``;
+//         jobWorkVue2.innerHTML = ``;
+//         jobWorkVue3.innerHTML = ``;
+//     })
+// })
 
 
 btnChoose.forEach(element => {
@@ -130,84 +182,47 @@ btnChoose.forEach(element => {
 
         //fonction while case
         switch (element.dataset.value) {
+            case 'job1':
+                jobWorkVue1.innerHTML = `
+                <div class="jobWorkVue px-2">
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            <i>Diagnostics, réparations, reprogrammations de smartphones,
+                            tablettes, accessoires <br>(agréments Samsung, Huawei,
+                            Xiaomi, Apple)</i>
+                        </p>
+                        <P>
+                            <i>Conception, développement et gestion du
+                            site
+                            de
+                            formation/gestion des boutiques en France</i>
+                        </P>
+                    </div>
+                </div>
+                </div>
+                `;
+                break;
+            case 'job2':
+                jobWorkVue2.innerHTML = `
+                <div class="jobWorkVue px-2">
+                <div class="row">
+                    <div class="col-12">
+                        <i>Diagnostics, réparations, reprogrammations de smartphones,
+                        tablettes,
+                        accessoires (agréments Samsung, Sony, Nokia, Huaweï)</i>
+                    </div>
+                </div>
+                </div>
+                `;
+                break;
             case 'job3':
                 jobWorkVue3.innerHTML = `
                 <div class="jobWorkVue px-2">
                 <div class="row">
                     <div class="col-12">
-                        <p>
-                            Diagnostics, réparations, reprogrammations de smartphones,
-                            tablettes, accessoires <br>(agréments Samsung, Huawei,
-                            Xiaomi, Apple)
-                        </p>
-                        <P>
-                            Conception, développement et gestion du
-                            site
-                            de
-                            formation/gestion des boutiques en France
-                        </P>
-                    </div>
-                </div>
-                <div class="jobSociety row">
-                    <div class="col-3 col-md-2 text-center align-self-center">
-                        <img class="imgSociety" src="public/assets/img/save.png">
-                    </div>
-                    <div class="col-9 col-md-10 align-self-center">
-                        <h5><i>Point Services Mobiles / Save Store</i></h5>
-                    </div>
-                </div>
-                </div>
-                `;
-                jobWorkVue2.innerHTML = ``;
-                jobWorkVue1.innerHTML = ``;
-                break;
-            case 'job2':
-                jobWorkVue3.innerHTML = ``;
-                jobWorkVue2.innerHTML = `
-                <div class="jobWorkVue px-2">
-                <div class="row">
-                    <div class="col-12">
-                    <p>
-                    Diagnostics, réparations, reprogrammations de smartphones,
-                    tablettes,
-                    accessoires (agréments Samsung, Sony, Nokia, Huaweï)
-                </p>
-                    </div>
-                </div>
-                <div class="jobSociety row ">
-                    <div class="col-3 col-md-2 text-center align-self-center">
-                        <img class="imgSociety" src="public/assets/img/psm_old.jpg">
-                    </div>
-                    <div class="col-9 col-md-10 align-self-center">
-                        <h4><i>Point Services Mobiles</i></h4>
-                    </div>
-                </div>
-                </div>
-                `;
-                jobWorkVue1.innerHTML = ``;
-                break;
-            case 'job1':
-                jobWorkVue3.innerHTML = ``;
-                jobWorkVue2.innerHTML = ``;
-                jobWorkVue1.innerHTML = `
-                <div class="jobWorkVue px-2">
-                <div class="row">
-                    <div class="col-12">
-                    <p>
-                    Assemblage, Paramétrage, Diagnostic, Réparation d'ordinateurs fixes
-                    et
-                    portables
-                </p>
-                <p>
-                Installation, paramétrage des équipements Numéricable (modem,
-                routeur,
-                décodeur télévision)
-            </p>
-                    </div>
-                </div>
-                <div class="jobSociety row">
-                    <div class="col-sm align-self-bottom">
-                        <h4><i>XXB Consulting</i></h4>
+                        <i>Assemblage, Paramétrage, Diagnostic, Réparation d'ordinateurs fixes et portables<br>
+                        Installation, paramétrage des équipements Numéricable (modem, routeur, décodeur télévision)</i>
                     </div>
                 </div>
                 </div>
