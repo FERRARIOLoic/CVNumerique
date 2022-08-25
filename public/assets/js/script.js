@@ -119,6 +119,7 @@ btnMenuChoose.forEach(element => {
         switch (element.dataset.value) {
             case 'presentation':
                 textPresentation.innerHTML = `
+                <span class="titleName">
                 Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
                 développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
                 autodidacte
@@ -132,19 +133,33 @@ btnMenuChoose.forEach(element => {
                 sein de La Manu Amiens
                 <br>
                 En reconversion professionnelle, je recherche donc un emploi de Développeur Web / Web Mobile Full Stack, Front End, Back End
+                </span>
                 `;
+                document.getElementById("textPresentation").classList.remove('textPresentation');
+                jobWorkVue1.innerHTML = ``;
+                jobWorkVue2.innerHTML = ``;
+                jobWorkVue3.innerHTML = ``;
+                jobWorkVueS1.innerHTML = ``;
+                jobWorkVueS2.innerHTML = ``;
+                jobWorkVueS3.innerHTML = ``;
                 break;
+                case 'experiences':
+                    textPresentation.innerHTML = ``;
+                    jobWorkVue1.innerHTML = ``;
+                    jobWorkVue2.innerHTML = ``;
+                    jobWorkVue3.innerHTML = ``;
+                    jobWorkVueS1.innerHTML = ``;
+                    jobWorkVueS2.innerHTML = ``;
+                    jobWorkVueS3.innerHTML = ``;
+                    break;
         }
-        jobWorkVue1.innerHTML = ``;
-        jobWorkVue2.innerHTML = ``;
-        jobWorkVue3.innerHTML = ``;
     })
 })
 
 
 boxPresentation.addEventListener('mouseover', () => {
     textPresentation.innerHTML = `
-    <span class="">
+    <span id="textPresentationShow" class="textPresentation">
         Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
         développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
         autodidacte
@@ -160,6 +175,7 @@ boxPresentation.addEventListener('mouseover', () => {
         En reconversion professionnelle, je recherche donc un emploi de Développeur Web / Web Mobile Full Stack, Front End, Back End
         </span>
         `;
+        document.getElementById("textPresentationShow").classList.remove('textPresentation');
 })
 
 
@@ -184,24 +200,20 @@ btnChoose.forEach(element => {
         switch (element.dataset.value) {
             case 'job1':
                 jobWorkVue1.innerHTML = `
-                <div class="jobWorkVue px-2">
-                <div class="row">
-                    <div class="col-12">
-                            <i>Diagnostics, réparations, reprogrammations de smartphones,
-                            tablettes, accessoires <br>(agréments Samsung, Huawei,
-                            Xiaomi, Apple)
-                            <br>Conception, développement et gestion du
-                            site
-                            de
-                            formation des boutiques en France</i>
-                    </div>
-                </div>
+                <div id="job1Text" class="jobWorkVue px-md-2">
+                    <i>Diagnostics, réparations, reprogrammations de smartphones,
+                    tablettes, accessoires <br>(agréments Samsung, Huawei,
+                    Xiaomi, Apple)
+                    <br>Conception, développement et gestion du
+                    site
+                    de
+                    formation des boutiques en France</i>
                 </div>
                 `;
                 break;
             case 'job2':
                 jobWorkVue2.innerHTML = `
-                <div class="jobWorkVue px-2">
+                <div id="job2Text" class="jobWorkVue px-2">
                 <div class="row">
                     <div class="col-12">
                         <i>Diagnostics, réparations, reprogrammations de smartphones,
@@ -214,7 +226,7 @@ btnChoose.forEach(element => {
                 break;
             case 'job3':
                 jobWorkVue3.innerHTML = `
-                <div class="jobWorkVue px-2">
+                <div id="job3Text" class="jobWorkVue px-2">
                 <div class="row">
                     <div class="col-12">
                         <i>Assemblage, Paramétrage, Diagnostic, Réparation d'ordinateurs fixes et portables<br>
@@ -227,7 +239,7 @@ btnChoose.forEach(element => {
             //case school
             case 'school1':
                 jobWorkVueS1.innerHTML = `
-                <div class="jobWorkVue px-2">
+                <div id="school1Text" class="jobWorkVue px-md-2">
                     <div class="row">
                         <div class="col-12">
                             <i>Apprentissage des langages HTML5, CSS3, Javascript, PHP8</i>
@@ -238,7 +250,7 @@ btnChoose.forEach(element => {
                 break;
             case 'school2':
                 jobWorkVueS2.innerHTML = `
-                <div class="jobWorkVue px-2">
+                <div id="school2Text" class="jobWorkVue px-2">
                     <div class="row">
                         <div class="col-12">
                             <i>Apprentissage de la programmation en C#</i>
@@ -249,7 +261,7 @@ btnChoose.forEach(element => {
                 break;
             case 'school3':
                 jobWorkVueS3.innerHTML = `
-                <div class="jobWorkVue px-2">
+                <div id="school3Text" class="jobWorkVue px-2">
                     <div class="row">
                         <div class="col-12">
                             <i>Spécialité Biochimie Génie Biologique</i>
@@ -259,6 +271,12 @@ btnChoose.forEach(element => {
                     `;
                 break;
         }
+        document.getElementById("job1Text").classList.remove('jobWorkVue');
+        document.getElementById("job2Text").classList.remove('jobWorkVue');
+        document.getElementById("job3Text").classList.remove('jobWorkVue');
+        document.getElementById("school1Text").classList.remove('jobWorkVue');
+        document.getElementById("school2Text").classList.remove('jobWorkVue');
+        document.getElementById("school3Text").classList.remove('jobWorkVue');
     })
 
 

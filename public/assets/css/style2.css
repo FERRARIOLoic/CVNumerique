@@ -105,52 +105,92 @@ body {
   animation: AppearFromTop 1s ease 0.5s 1 normal both;
 }
 
+.appearFromTop1{
+  animation: appearFromTop 1s ease 1s 1 normal both;
+}
 
-.menu1 {
+.appearFromTop2 {
+  animation: appearFromTop 1s ease 1.2s 1 normal both;
+}
+
+.appearFromTop3 {
+  animation: appearFromTop 1s ease 1.4s 1 normal both;
+}
+
+.appearFromTop4 {
+  animation: appearFromTop 1s ease 1.6s 1 normal both;
+}
+
+.appearFromTop5 {
+  animation: appearFromTop 1s ease 1.8s 1 normal both;
+}
+
+.appearFromTop6 {
+  animation: appearFromTop 1s ease 2s 1 normal both;
+}
+
+.appearFromTop7 {
+  animation: appearFromTop 1s ease 2.2s 1 normal both;
+}
+
+.appearFromTop8 {
+  animation: appearFromTop 1s ease 2.4s 1 normal both;
+}
+
+.appearFromTop9 {
+  animation: appearFromTop 1s ease 2.6s 1 normal both;
+}
+
+.menu1,
+.appearFromBottom1{
   animation: appearFromBottom 1s ease 1s 1 normal both;
 }
 
-.menu2 {
+.menu2,
+.appearFromBottom2 {
   animation: appearFromBottom 1s ease 1.2s 1 normal both;
 }
 
-.menu3 {
+.menu3,
+.appearFromBottom3 {
   animation: appearFromBottom 1s ease 1.4s 1 normal both;
 }
 
-.menu4 {
+.menu4,
+.appearFromBottom4 {
   animation: appearFromBottom 1s ease 1.6s 1 normal both;
 }
 
-.menu5 {
+.menu5,
+.appearFromBottom5 {
   animation: appearFromBottom 1s ease 1.8s 1 normal both;
 }
 
-.menu6 {
+.menu6,
+.appearFromBottom6 {
   animation: appearFromBottom 1s ease 2s 1 normal both;
+}
+.appearFromBottom7 {
+  animation: appearFromBottom 1s ease 2.2s 1 normal both;
+}
+.appearFromBottom8 {
+  animation: appearFromBottom 1s ease 2.4s 1 normal both;
+}
+.appearFromBottom9 {
+  animation: appearFromBottom 1s ease 2.6s 1 normal both;
 }
 
 #boxPresentation {
   background-color: rgb(200, 255, 200);
+  animation: appearFromTop 1s ease 0s 1 normal both;
 }
 #boxExperiences {
   background-color: rgb(220, 230, 255);
 }
-#textPresentation {
-  animation: fadeFromTop 1s ease 0s 1 normal both;
+.textPresentation {
+  animation: AppearFromTop 1s ease 0.5s 1 normal both;
 }
 
-@keyframes fadeFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .job1 {
   animation: appearFromLeft 1s ease 0s 1 normal both;
@@ -170,9 +210,32 @@ body {
 .jobText3 {
   animation: appearFromRight 1s ease 2.4s 1 normal both;
 }
-
+.imgRealisations {
+  animation: scaleFwdCenter 1s ease 0.5s 1 normal both;
+}
 /*------------- ANIMATIONS ---------*/
-@keyframes AppearFromTop {
+@keyframes fadeFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}@keyframes fadeFromBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes appearFromTop {
   0% {
     opacity: 0;
     transform: rotateX(70deg);
@@ -304,7 +367,15 @@ body {
 		transform: translateX(0);
 	}
 }
+@keyframes scaleFwdCenter {
+	0% {
+		transform: scale(0);
+	}
 
+	100% {
+		transform: scale(1);
+	}
+}
 
 
 
@@ -343,7 +414,7 @@ body {
 
   #realisations,
   #carouselExampleCaptions {
-    height: 100%;
+    /* height: 100%; */
   }
 
   .imgCapacity {
@@ -356,7 +427,7 @@ body {
 
   .imgRealisations {
     text-align: center;
-    /* max-height: 230px; */
+    max-width: 100%;
   }
 
   .imgFooter {
@@ -399,7 +470,7 @@ body {
 
   #realisations,
   #carouselExampleCaptions {
-    height: 500px;
+    /* height: 500px; */
     overflow: hidden;
   }
 
@@ -415,6 +486,7 @@ body {
   .imgRealisations {
     text-align: center;
     max-height: 300px;
+    max-width:100%;
   }
 
   .imgFooter {
