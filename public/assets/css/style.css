@@ -4,68 +4,89 @@
   box-sizing: border-box;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 
 body {
-  /* overflow-x: hidden; */
-  font-family: 'Istok Web', sans-serif;
-  
-  /* font-family: 'Barlow', sans-serif; */
-  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+  color: #0F4C81;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/deepSea.jpg);
+  background-image: url(../img/);
   opacity: .9;
-  padding: 15vh 0px 0px 0px;
 }
 
-.navbar{
+.imgProfile {
+  color: #0F4C81;
+  box-shadow: 0px 1px 10px;
+}
+
+.navbar {
   /* background-position: center center; */
   /* background-attachment: ; */
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/background-navbar.jpg);
-  /* opacity: .5; */
+  background-image: url(../img/);
+  background-color: rgb(80, 255, 80);
 }
 
-.navbarScrollHide{
-  animation: animHideNavbar 1s ease 0s 1 normal forwards;
+.navbar>.container-fluid {
+
+  align-items: initial;
 }
+
+.navbarScrollHide {
+  animation: animHideNavbar 0.5s ease 0s 1 normal forwards;
+}
+
 @keyframes animHideNavbar {
-0% {
-  opacity: 1;
-  transform: translateY(0);
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
 }
 
-100% {
-  opacity: 0;
-  transform: translateY(-250px);
+
+.navbarScrollShow {
+  animation: animShowNavbar 0.5s ease 0s 1 normal forwards;
 }
+
+@keyframes animHideNavbar {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
 }
-.navbarScrollShow{
-  animation: animShowNavbar 0.3s ease 0s 1 normal forwards;
-}
+
 @keyframes animShowNavbar {
-0% {
-  opacity: 0;
-  transform: translateY(-250px);
-}
+  0% {
+    opacity: 0;
+    transform: translateY(-250px);
+  }
 
-100% {
-  opacity: 1;
-  transform: translateY(0);
-}
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .nav-link,
 .progress-bar {
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(0, 0, 255, 0.5);
 }
 
 #presentation,
@@ -75,8 +96,9 @@ body {
 .img-thumbnail {
   Background-color: rgba(255, 255, 255, 0.20);
 }
-.navbar-toggler-icon{
-  background-image: url(../img/hamburger-menu-svgrepo-com.svg)!important;
+
+.navbar-toggler-icon {
+  background-image: url(../img/hamburger-menu-svgrepo-com.svg) !important;
 }
 
 /* #btnChoose{
@@ -86,23 +108,615 @@ body {
   box-shadow: inset 0 0 0 0px #ffffff;
 } */
 
+
+.titleName,
+.titleJob {
+  animation: AppearFromTop 1s ease 0.5s 1 normal both;
+}
+
+.appearFromTopPresentation {
+  animation: appearFromTopPresentation 1s ease 0s 1 normal both;
+}
+
+.slideOutTopPresentation {
+  animation: slideOutTopPresentation 1s ease 0s 1 normal both;
+}
+
+@keyframes appearFromTopPresentation {
+  0% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+    height: 0px;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    height: 150px;
+  }
+}
+
+@keyframes slideOutTopPresentation {
+  0% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    height: 150px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+    height: 0px;
+  }
+}
+
+.appearFromTopMenu {
+  animation: appearFromTopMenu 1s ease 0s 1 normal both;
+}
+.appearFromTopMenu1 {
+  animation: appearFromTopMenu 1s ease 1s 1 normal both;
+}
+
+.slideOutTopMenu {
+  animation: slideOutTopMenu 1s ease 0s 1 normal both;
+}
+
+@keyframes appearFromTopMenu {
+  0% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+    height: 0px;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    height: 30px;
+  }
+}
+
+@keyframes slideOutTopMenu {
+  0% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    height: 30px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+    height: 0px;
+  }
+}
+
+
+.appearFromTop {
+  animation: appearFromTop 1s ease 0s 1 normal both;
+}
+
+.appearFromTop1 {
+  animation: appearFromTop 1s ease 1s 1 normal both;
+}
+
+.appearFromTop2 {
+  animation: appearFromTop 1s ease 1.2s 1 normal both;
+}
+
+.appearFromTop3 {
+  animation: appearFromTop 1s ease 1.4s 1 normal both;
+}
+
+.appearFromTop4 {
+  animation: appearFromTop 1s ease 1.6s 1 normal both;
+}
+
+.appearFromTop5 {
+  animation: appearFromTop 1s ease 1.8s 1 normal both;
+}
+
+.appearFromTop6 {
+  animation: appearFromTop 1s ease 2s 1 normal both;
+}
+
+.appearFromTop7 {
+  animation: appearFromTop 1s ease 2.2s 1 normal both;
+}
+
+.appearFromTop8 {
+  animation: appearFromTop 1s ease 2.4s 1 normal both;
+}
+
+.appearFromTop9 {
+  animation: appearFromTop 1s ease 2.6s 1 normal both;
+}
+
+.appearFromBottom {
+  animation: appearFromBottom 1s ease 0s 1 normal both;
+}
+
+.appearFromBottom1 {
+  animation: appearFromBottom 1s ease 0.2s 1 normal both;
+}
+
+.appearFromBottom2 {
+  animation: appearFromBottom 1s ease 0.4s 1 normal both;
+}
+
+.appearFromBottom3 {
+  animation: appearFromBottom 1s ease 0.6s 1 normal both;
+}
+
+.appearFromBottom4 {
+  animation: appearFromBottom 1s ease 0.8s 1 normal both;
+}
+
+.appearFromBottom5 {
+  animation: appearFromBottom 1s ease 1s 1 normal both;
+}
+
+.appearFromBottom6 {
+  animation: appearFromBottom 1s ease 1.2s 1 normal both;
+}
+
+.appearFromBottom7 {
+  animation: appearFromBottom 1s ease 1.4s 1 normal both;
+}
+
+.appearFromBottom8 {
+  animation: appearFromBottom 1s ease 1.6s 1 normal both;
+}
+
+.appearFromBottom9 {
+  animation: appearFromBottom 1s ease 1.8s 1 normal both;
+}
+
+.appearFromBottom7 {
+  animation: appearFromBottom 1s ease 2.2s 1 normal both;
+}
+
+.appearFromBottom8 {
+  animation: appearFromBottom 1s ease 2.4s 1 normal both;
+}
+
+.appearFromBottom9 {
+  animation: appearFromBottom 1s ease 2.6s 1 normal both;
+}
+
+.appearFromRight {
+  animation: appearFromRight 1s ease 0s 1 normal both;
+}
+
+.appearFromRight1 {
+  animation: appearFromRight 1s ease 1s 1 normal both;
+}
+
+.appearFromRight2 {
+  animation: appearFromRight 1s ease 1.2s 1 normal both;
+}
+
+.appearFromRight3 {
+  animation: appearFromRight 1s ease 1.4s 1 normal both;
+}
+
+.appearFromRight4 {
+  animation: appearFromRight 1s ease 1.6s 1 normal both;
+}
+
+.appearFromRight5 {
+  animation: appearFromRight 1s ease 1.8s 1 normal both;
+}
+
+.appearFromRight6 {
+  animation: appearFromRight 1s ease 2s 1 normal both;
+}
+
+.appearFromRight7 {
+  animation: appearFromRight 1s ease 2.2s 1 normal both;
+}
+
+.appearFromRight8 {
+  animation: appearFromRight 1s ease 2.4s 1 normal both;
+}
+
+.appearFromRight9 {
+  animation: appearFromRight 1s ease 2.6s 1 normal both;
+}
+
+.appearFromLeft {
+  animation: appearFromLeft 1s ease 0s 1 normal both;
+}
+
+.appearFromLeft1 {
+  animation: appearFromLeft 1s ease 1s 1 normal both;
+}
+
+.appearFromLeft2 {
+  animation: appearFromLeft 1s ease 1.2s 1 normal both;
+}
+
+.appearFromLeft3 {
+  animation: appearFromLeft 1s ease 1.4s 1 normal both;
+}
+
+.appearFromLeft4 {
+  animation: appearFromLeft 1s ease 1.6s 1 normal both;
+}
+
+.appearFromLeft5 {
+  animation: appearFromLeft 1s ease 1.8s 1 normal both;
+}
+
+.appearFromLeft6 {
+  animation: appearFromLeft 1s ease 2s 1 normal both;
+}
+
+.appearFromLeft7 {
+  animation: appearFromLeft 1s ease 2.2s 1 normal both;
+}
+
+.appearFromLeft8 {
+  animation: appearFromLeft 1s ease 2.4s 1 normal both;
+}
+
+.appearFromLeft9 {
+  animation: appearFromLeft 1s ease 2.6s 1 normal both;
+}
+
+.fadeFromTop {
+  animation: fadeFromTop 1s ease 0s 1 normal both;
+}
+
+.fadeFromTop1 {
+  animation: fadeFromTop 1s ease 0.2s 1 normal both;
+}
+
+.fadeFromTop2 {
+  animation: fadeFromTop 1s ease 0.4s 1 normal both;
+}
+
+.fadeFromTop3 {
+  animation: fadeFromTop 1s ease 0.6s 1 normal both;
+}
+
+.fadeFromTop4 {
+  animation: fadeFromTop 1s ease 0.8s 1 normal both;
+}
+
+.fadeFromTop5 {
+  animation: fadeFromTop 1s ease 1s 1 normal both;
+}
+
+.fadeFromTop6 {
+  animation: fadeFromTop 1s ease 1.2s 1 normal both;
+}
+
+.fadeFromTop7 {
+  animation: fadeFromTop 1s ease 1.4s 1 normal both;
+}
+
+.fadeFromTop8 {
+  animation: fadeFromTop 1s ease 1.6s 1 normal both;
+}
+
+.fadeFromTop9 {
+  animation: fadeFromTop 1s ease 1.8s 1 normal both;
+}
+.fadeFromBottom {
+  animation: fadeFromBottom 0.5s ease 0s 1 normal both;
+}
+.fadeOutBack {
+  animation: fadeOutBack 1s ease 0s 1 normal both;
+}
+.fadeInCenter {
+  animation: fadeInCenter 1s ease 0s 1 normal both;
+}
+.fadeOutCenter {
+  animation: fadeOutCenter 1s ease 0s 1 normal both;
+}
+
+
+.slideOutTop1 {
+  animation: slideOutTop 1s ease 0s 1 normal both;
+}
+
+#boxPresentation,
+#boxParcours,
+#boxCompetences,
+#boxRealisations,
+#boxMore {
+  background-color: rgb(220, 230, 255);
+}
+
+.textPresentation {
+  animation: AppearFromTop 1s ease 0.5s 1 normal both;
+}
+
+.hide {
+  display:none;
+}
+
+
+.imgRealisations {
+  animation: scaleFwdCenter 1s ease 0.5s 1 normal both;
+}
+
+.scaleInFwd{
+  animation: scaleInFwd 1s ease 0s 1 normal both;
+}
+@keyframes scaleInFwd {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.hide {
+  display:none;
+}
+/*------------- ANIMATIONS ---------*/
+@keyframes fadeFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInCenter {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeOutCenter {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes fadeOutBack {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+}
+
+@keyframes appearFromTop {
+  0% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+    height: 0px;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    height: 100px;
+  }
+}
+
+@keyframes appearFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appearFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceFromRight {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateX(250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(68px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(32px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceFromLeft {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  38% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  55% {
+    animation-timing-function: ease-in;
+    transform: translateX(-68px);
+  }
+
+  72% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  81% {
+    animation-timing-function: ease-in;
+    transform: translateX(-28px);
+  }
+
+  90% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+
+  95% {
+    animation-timing-function: ease-in;
+    transform: translateX(-8px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleFwdCenter {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slideOutTop {
+  0% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    height: 100px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+    height: 0px;
+  }
+}
+
+
 @media screen and (max-width:576px) {
 
-  .navbar{
+  body {
+    padding: 9vh 0px 0px 0px;
+  }
+
+  .navbar {
     /* background-position: center center; */
     /* background-attachment: ; */
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/background-navbar.jpg);
+    background-image: url(../img/);
     /* opacity: .8; */
   }
+
+  .navbar-toggler-icon {
+    background-image: url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+  }
+
+  .titleName {
+    font-size: 30px;
+  }
+
+  .titleJob {
+    font-size: 12px;
+  }
+
   .imgProfile {
-    width: 70%;
+    width: 100%;
   }
 
   #realisations,
   #carouselExampleCaptions {
-    height: 100%;
+    /* height: 100%; */
   }
 
   .imgCapacity {
@@ -115,26 +729,50 @@ body {
 
   .imgRealisations {
     text-align: center;
-    /* max-height: 230px; */
+    max-width: 100%;
   }
-  .imgFooter{
-    width:100%;
+
+  .imgFooter {
+    width: 100%;
   }
 }
 
 @media screen and (min-width:576px) {
 
-  .navbar{
+  body {
+    padding: 19vh 0px 0px 0px;
+  }
+
+  .navbar {
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../img/background-navbar.jpg);
-    opacity: .8;
+    background-image: url(../img/);
+    flex-direction: column;
+    align-items: initial;
   }
+
+  .titleName {
+    font-size: 40px;
+  }
+
+  .titleJob {
+    font-size: 25px;
+  }
+
+  .container-fluid {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .imgProfile {
+    width: 50%;
+  }
+
   #realisations,
   #carouselExampleCaptions {
-    height: 500px;
+    /* height: 500px; */
     overflow: hidden;
   }
 
@@ -150,13 +788,15 @@ body {
   .imgRealisations {
     text-align: center;
     max-height: 300px;
+    max-width: 100%;
   }
-  .imgFooter{
-    width:100%;
+
+  .imgFooter {
+    width: 100%;
   }
 }
 
-.titleCategory{
+.titleCategory {
   font-size: 40px;
 }
 
@@ -546,7 +1186,8 @@ div[role="progressbar"]::before {
 
 
 .jobWorkVue {
-  animation: animJobWork 1.5s ease 0s 1 normal both;
+  /* animation: animJobWork 1.5s ease 0s 1 normal both; */
+  font-size: 13px;
 }
 
 @keyframes animJobWork {
@@ -560,9 +1201,12 @@ div[role="progressbar"]::before {
 }
 
 
-.scrolled-down{
-  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
 }
-.scrolled-up{
-  transform:translateY(0); transition: all 0.3s ease-in-out;
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
 }

@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&display=swap');
+
+
+body {
+  /* overflow-x: hidden; */
+  font-family: 'Istok Web', sans-serif;
+  
+  /* font-family: 'Barlow', sans-serif; */
+  color: white;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/deepSea.jpg);
+  opacity: .9;
+  padding: 15vh 0px 0px 0px;
+}
+
+.navbar{
+  /* background-position: center center; */
+  /* background-attachment: ; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/background-navbar.jpg);
+  /* opacity: .5; */
+}
+
+.navbarScrollHide{
+  animation: animHideNavbar 1s ease 0s 1 normal forwards;
+}
+@keyframes animHideNavbar {
+0% {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+100% {
+  opacity: 0;
+  transform: translateY(-250px);
+}
+}
+.navbarScrollShow{
+  animation: animShowNavbar 0.3s ease 0s 1 normal forwards;
+}
+@keyframes animShowNavbar {
+0% {
+  opacity: 0;
+  transform: translateY(-250px);
+}
+
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.nav-link,
+.progress-bar {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#presentation,
+#parcours,
+#realisations,
+#carouselExampleCaptions,
+.img-thumbnail {
+  Background-color: rgba(255, 255, 255, 0.20);
+}
+.navbar-toggler-icon{
+  background-image: url(../img/hamburger-menu-svgrepo-com.svg)!important;
+}
+
+/* #btnChoose{
+  background-color: #ffffff30;
+  color: #ffffff;
+  border-color: #000000;
+  box-shadow: inset 0 0 0 0px #ffffff;
+} */
+
+@media screen and (max-width:576px) {
+
+  .navbar{
+    /* background-position: center center; */
+    /* background-attachment: ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/background-navbar.jpg);
+    /* opacity: .8; */
+  }
+  .imgProfile {
+    width: 70%;
+  }
+
+  #realisations,
+  #carouselExampleCaptions {
+    height: 100%;
+  }
+
+  .imgCapacity {
+    width: 70%;
+  }
+
+  .progress {
+    height: 20px;
+  }
+
+  .imgRealisations {
+    text-align: center;
+    /* max-height: 230px; */
+  }
+  .imgFooter{
+    width:100%;
+  }
+}
+
+@media screen and (min-width:576px) {
+
+  .navbar{
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/background-navbar.jpg);
+    opacity: .8;
+  }
+  #realisations,
+  #carouselExampleCaptions {
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .imgCapacity {
+    width: 50%;
+  }
+
+  .progress {
+    width: 70%;
+    height: 20px;
+  }
+
+  .imgRealisations {
+    text-align: center;
+    max-height: 300px;
+  }
+  .imgFooter{
+    width:100%;
+  }
+}
+
+.titleCategory{
+  font-size: 40px;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+#site-header {
+  max-height: 5vh;
+}
+
+/* 
+.carousel-control-next,
+.carousel-control-prev {
+  color: #000;
+} */
+
+.carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
+
+.heightKnown {
+  height: 15vh;
+}
+
+@keyframes imgKnown {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* EN COURS !!!
+.imgKnownHtml { 
+  background: url(../img/html5.svg) no-repeat center;
+  z-index: 2;
+} */
+
+.imgKnownHtml:hover {
+  filter: grayscale(0);
+  background: url(../img/html5.svg) no-repeat center;
+  background-size: 3em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
+}
+
+.imgKnownCss:hover {
+  filter: grayscale(0);
+  background: url(../img/css3.svg) no-repeat center;
+  background-size: 3em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
+}
+
+
+.imgKnownJs:hover {
+  filter: grayscale(0);
+  background: url(../img/js.svg) no-repeat center;
+  background-size: 3em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
+}
+
+
+.imgKnownBootstrap:hover {
+  filter: grayscale(0);
+  background: url(../img/bootstrap.svg) no-repeat center;
+  background-size: 3.3em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
+}
+
+.imgKnownMysql:hover {
+  filter: grayscale(0);
+  background: url(../img/mysql.svg) no-repeat center;
+  background-size: 6em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
+}
+
+.imgKnownPhp:hover {
+  filter: grayscale(0);
+  background: url(../img/php.svg) no-repeat center;
+  background-size: 4em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
+}
+
+.imgKnownWordpress:hover {
+  filter: grayscale(0);
+  background: url(../img/wordpress.svg) no-repeat center;
+  background-size: 3.1em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
+}
+
+.imgKnownVsc:hover {
+  filter: grayscale(0);
+  background: url(../img/VisualStudiocode.svg) no-repeat center;
+  background-size: 3.1em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
+}
+
+.imgKnownSymfony:hover {
+  filter: grayscale(0);
+  background: url(../img/symfony.svg) no-repeat center;
+  background-size: 3.2em;
+  animation: imgKnown 1s ease 0s 1 normal both;
+  animation: appear 1s ease 0s 1 reverse both;
+  animation: zoom .2s ease 0s 1 reverse both;
+}
+
+
+.borderRadius25px {
+  border: 3px;
+  border-radius: 15px;
+}
+
+.borderRadius5px {
+  border-radius: 5px;
+}
+
+.jobSociety {
+  height: 10vh;
+}
+
+.imgSociety {
+  max-width: 8vh;
+}
+
+.doneBG {
+  background-color: #f2f7ff;
+}
+
+.copyright {
+  font-size: smaller;
+  font-style: italic;
+}
+
+
+
+
+/* SCROLL TO TOP */
+html {
+  scroll-behavior: smooth;
+}
+
+#haut {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 0px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #AECAFF;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+#haut:hover {
+  background-color: #0F4C81;
+}
+
+
+
+/* CAROUSEL EXPERIENCES PROFESSIONNELLES */
+
+
+#carousel,
+#navigation {
+  flex: initial;
+  display: block;
+}
+
+#carousel {
+  overflow: hidden;
+  /* width: 600px; */
+  /* height: 50vh; */
+  background-color: #f2f7ff;
+  -webkit-box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.15), 0px 0px 3px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.15), 0px 0px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.p-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+#button_a:checked~#carousel .p-wrapper {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+#button_b:checked~#carousel .p-wrapper {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+#button_c:checked~#carousel .p-wrapper {
+  -webkit-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+#button_d:checked~#carousel .p-wrapper {
+  -webkit-transform: translateY(-300%);
+  transform: translateY(-300%);
+}
+
+#button_e:checked~#carousel .p-wrapper {
+  -webkit-transform: translateY(-400%);
+  transform: translateY(-400%);
+}
+
+#button_f:checked~#carousel .p-wrapper {
+  -webkit-transform: translateY(-500%);
+  transform: translateY(-500%);
+}
+
+[class^="panel_"] {
+  overflow: auto;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  padding: 40px;
+}
+
+[class^="label_"] {
+  display: block;
+  cursor: pointer;
+  margin: 8px 0;
+  /* width: 32px;
+  height: 32px; */
+  line-height: 32px;
+  text-align: center;
+  border-radius: 4px;
+  color: #aaa;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+[class^="label_"]:hover {
+  color: #000000;
+  background-color: #BCC0C4;
+}
+
+#button_a:checked~#navigation .label_a,
+#button_b:checked~#navigation .label_b,
+#button_c:checked~#navigation .label_c,
+#button_d:checked~#navigation .label_d,
+#button_e:checked~#navigation .label_e,
+#button_f:checked~#navigation .label_f {
+  cursor: default;
+  color: #fff;
+  background-color: #aecaff;
+}
+
+
+
+
+
+/* DATA PROGRESS */
+
+
+@keyframes growProgressBar {
+
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 5rem;
+  --fg: #369;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  /* content: counter(percentage) '%'; */
+}
+
+
+/*------------- CAROUSEL I DID ---------*/
+
+.creations {
+  max-width: 100%;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.creations .done {
+  margin-right: 20px
+}
+
+/*------------- CAROUSEL I DID ---------*/
+.testimonials {
+  /* max-width: 800px; */
+  /* margin: auto; */
+}
+
+.scroller {
+  overflow-x: scroll;
+  display: flex;
+}
+
+.item {
+  min-width: 100%;
+  min-height: 200px;
+  /* To start with */
+  background-color: #EDF2F7;
+  /* For demo */
+}
+
+#carouselExampleCaptions {
+  background: none;
+}
+
+.jobWorkVueBox {
+  background-color: #638cce93;
+}
+
+
+.jobWorkVue {
+  animation: animJobWork 1.5s ease 0s 1 normal both;
+}
+
+@keyframes animJobWork {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}

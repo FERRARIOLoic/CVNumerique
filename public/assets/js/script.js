@@ -17,10 +17,10 @@ window.onscroll = function () {
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
-        rect.top > 0 &&
-        rect.left > 0 &&
-        rect.bottom < (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right < (window.innerWidth || document.documentElement.clientWidth)
+        rect.top >= -30 &&
+        rect.left >= -30 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
 
     );
 }
@@ -29,12 +29,12 @@ const boxPresentation = document.querySelector('#boxPresentation');
 document.addEventListener('scroll', function () {
     if (isInViewport(boxPresentation)) {
         document.getElementById("boxPresentation").classList.add('fadeInCenter');
-        document.getElementById("boxPresentation").classList.remove('fadeFromBottom');
+        document.getElementById("boxPresentation").classList.remove('fadeOutCenter');
     }
     else {
 
         document.getElementById("boxPresentation").classList.remove('fadeInCenter');
-        document.getElementById("boxPresentation").classList.add('fadeFromBottom');
+        document.getElementById("boxPresentation").classList.add('fadeOutCenter');
 
     }
 }, {
@@ -45,12 +45,12 @@ const boxParcours = document.querySelector('#boxParcours');
 document.addEventListener('scroll', function () {
     if (isInViewport(boxParcours)) {
         document.getElementById("boxParcours").classList.add('fadeInCenter');
-        document.getElementById("boxParcours").classList.remove('fadeFromBottom');
+        document.getElementById("boxParcours").classList.remove('fadeOutCenter');
     }
     else {
 
         document.getElementById("boxParcours").classList.remove('fadeInCenter');
-        document.getElementById("boxParcours").classList.add('fadeFromBottom');
+        document.getElementById("boxParcours").classList.add('fadeOutCenter');
 
     }
 }, {
@@ -61,13 +61,13 @@ document.addEventListener('scroll', function () {
 const boxCompetences = document.querySelector('#boxCompetences');
 document.addEventListener('scroll', function () {
     if (isInViewport(boxCompetences)) {
-        document.getElementById("boxCompetences").classList.add('appearFromRight');
-        document.getElementById("boxCompetences").classList.remove('fadeFromBottom');
+        document.getElementById("boxCompetences").classList.add('fadeInCenter');
+        document.getElementById("boxCompetences").classList.remove('fadeOutBack');
     }
     else {
 
-        document.getElementById("boxCompetences").classList.remove('appearFromRight');
-        document.getElementById("boxCompetences").classList.add('fadeFromBottom');
+        document.getElementById("boxCompetences").classList.remove('fadeInCenter');
+        document.getElementById("boxCompetences").classList.add('fadeOutBack');
 
     }
 }, {
@@ -78,13 +78,13 @@ document.addEventListener('scroll', function () {
 const boxRealisations = document.querySelector('#boxRealisations');
 document.addEventListener('scroll', function () {
     if (isInViewport(boxRealisations)) {
-        document.getElementById("boxRealisations").classList.add('appearFromRight');
-        document.getElementById("boxRealisations").classList.remove('fadeFromBottom');
+        document.getElementById("boxRealisations").classList.add('fadeInCenter');
+        document.getElementById("boxRealisations").classList.remove('fadeOutCenter');
     }
     else {
 
-        document.getElementById("boxRealisations").classList.remove('appearFromRight');
-        document.getElementById("boxRealisations").classList.add('fadeFromBottom');
+        document.getElementById("boxRealisations").classList.remove('fadeInCenter');
+        document.getElementById("boxRealisations").classList.add('fadeOutCenter');
 
     }
 }, {
@@ -95,13 +95,13 @@ document.addEventListener('scroll', function () {
 const boxMore = document.querySelector('#boxMore');
 document.addEventListener('scroll', function () {
     if (isInViewport(boxMore)) {
-        document.getElementById("boxMore").classList.add('appearFromRight');
-        document.getElementById("boxMore").classList.remove('fadeFromBottom');
+        document.getElementById("boxMore").classList.add('fadeInCenter');
+        document.getElementById("boxMore").classList.remove('fadeOutCenter');
     }
     else {
 
-        document.getElementById("boxMore").classList.remove('appearFromRight');
-        document.getElementById("boxMore").classList.add('fadeFromBottom');
+        document.getElementById("boxMore").classList.remove('fadeInCenter');
+        document.getElementById("boxMore").classList.add('fadeOutCenter');
 
     }
 }, {
@@ -238,9 +238,6 @@ btnMenuChoose.forEach(element => {
                 En reconversion professionnelle, je recherche donc un emploi de Développeur Web / Web Mobile Full Stack, Front End, Back End
                 </span>
                 `;
-                break;
-            case 'experiences':
-                textPresentation.innerHTML = ``;
                 break;
         }
     })
