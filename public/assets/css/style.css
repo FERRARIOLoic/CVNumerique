@@ -11,12 +11,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 
   color: #0F4C81;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/);
-  opacity: .9;
 }
 
 .imgProfile {
@@ -416,7 +410,7 @@ body {
   animation: fadeOutBack 1s ease 0s 1 normal both;
 }
 .fadeInCenter {
-  animation: fadeInCenter 1s ease 0s 1 normal both;
+  animation: fadeInCenter 1s ease 0.3s 1 normal both;
 }
 .fadeOutCenter {
   animation: fadeOutCenter 1s ease 0s 1 normal both;
