@@ -109,10 +109,95 @@ body {
 } */
 
 
+
 .titleName,
 .titleJob {
   animation: AppearFromTop 1s ease 0.5s 1 normal both;
 }
+
+.appearFromTopPresentation {
+  animation: appearFromTopPresentation 1s ease 0s 1 normal both;
+}
+
+.slideOutTopPresentation {
+  animation: slideOutTopPresentation 1s ease 0s 1 normal both;
+}
+
+@keyframes appearFromTopPresentation {
+  0% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+    height: 0px;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    height: 100%;
+  }
+}
+
+@keyframes slideOutTopPresentation {
+  0% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    height: 150px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+    height: 0px;
+  }
+}
+
+.appearFromTopMenu {
+  animation: appearFromTopMenu 1s ease 0s 1 normal both;
+}
+.appearFromTopMenu1 {
+  animation: appearFromTopMenu 1s ease 1s 1 normal both;
+}
+
+.slideOutTopMenu {
+  animation: slideOutTopMenu 1s ease 0s 1 normal both;
+}
+
+@keyframes appearFromTopMenu {
+  0% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+    height: 0px;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    height: 30px;
+  }
+}
+
+@keyframes slideOutTopMenu {
+  0% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+    height: 30px;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+    height: 0px;
+  }
+}
+
 
 .appearFromTop {
   animation: appearFromTop 1s ease 0s 1 normal both;
@@ -330,7 +415,6 @@ body {
 
 .slideOutTop1 {
   animation: slideOutTop 1s ease 0s 1 normal both;
-  display: none;
 }
 
 #boxPresentation {
@@ -381,12 +465,14 @@ body {
     opacity: 0;
     transform: rotateX(70deg);
     transform-origin: top;
+    height: 0px;
   }
 
   100% {
     opacity: 1;
     transform: rotateX(0deg);
     transform-origin: top;
+    height: 100%;
   }
 }
 
@@ -523,19 +609,21 @@ body {
     transform: scale(1);
   }
 }
-
 @keyframes slideOutTop {
   0% {
     opacity: 1;
-    transform: translateY(0);
+    transform: rotateX(0deg);
+    transform-origin: top;
+    height: 100px;
   }
 
   100% {
     opacity: 0;
-    transform: translateY(-250px);
+    transform: rotateX(70deg);
+    transform-origin: top;
+    height: 0px;
   }
 }
-
 
 
 @media screen and (max-width:576px) {

@@ -16,16 +16,11 @@ window.onscroll = function () {
 let btnMenuChoose = document.querySelectorAll('#btnMenuChoose');
 
 btnMenuChoose.forEach(element => {
-    element.addEventListener('mouseout', () => {
-        btnMenuInfo.innerHTML = ``;
-    })
-})
-
-btnMenuChoose.forEach(element => {
     element.addEventListener('mouseover', () => {
         // console.log(element.dataset.value);
 
-        //fonction while case
+        document.getElementById("btnMenuInfo").classList.remove('slideOutTopMenu');
+        document.getElementById("btnMenuInfo").classList.add('appearFromTopMenu');
         switch (element.dataset.value) {
             case 'logo':
                 btnMenuInfo.innerHTML = `
@@ -49,28 +44,39 @@ btnMenuChoose.forEach(element => {
                 </div>
                 `;
                 break;
-            case 'experiences':
+                case 'parcours':
+                    btnMenuInfo.innerHTML = `
+                    <div class="row jobWorkVue">
+                        <div class="col-12">
+                            <p>
+                                Mon expériences professionnelles et mes formations...
+                            </p>
+                        </div>
+                    </div>
+                    `;
+                    break;
+            case 'competences':
                 btnMenuInfo.innerHTML = `
                 <div class="row jobWorkVue">
                     <div class="col-12">
                         <p>
-                            Mes expériences de travail...
+                            Ce que je sais faire...
                         </p>
                     </div>
                 </div>
                 `;
                 break;
-            case 'parcours':
-                btnMenuInfo.innerHTML = `
-                <div class="row jobWorkVue">
-                    <div class="col-12">
-                        <p>
-                            Mon expériences professionnelles et mes formations...
-                        </p>
+                case 'realisations':
+                    btnMenuInfo.innerHTML = `
+                    <div class="row jobWorkVue">
+                        <div class="col-12">
+                            <p>
+                                Les projets que j'ai réalisé...
+                            </p>
+                        </div>
                     </div>
-                </div>
-                `;
-                break;
+                    `;
+                    break;
             case 'more':
                 btnMenuInfo.innerHTML = `
                 <div class="row jobWorkVue">
@@ -96,6 +102,13 @@ btnMenuChoose.forEach(element => {
         }
     })
 })
+btnMenuChoose.forEach(element => {
+    element.addEventListener('mouseout', () => {
+        document.getElementById("btnMenuInfo").classList.add('slideOutTopMenu');
+        document.getElementById("btnMenuInfo").classList.remove('appearFromTopMenu');
+        btnMenuInfo.innerHTML = ``;
+    })
+})
 
 
 btnMenuChoose.forEach(element => {
@@ -105,8 +118,16 @@ btnMenuChoose.forEach(element => {
         //fonction while case
         switch (element.dataset.value) {
             case 'presentation':
+                document.getElementById("textPresentation").classList.remove('slideOutTopPresentation');
+                document.getElementById("textPresentation").classList.add('appearFromTopPresentation');
+                document.getElementById("jobWorkVue1").classList.add('slideOutTop1');
+                document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
+                document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
+                document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
+                document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
+                document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
                 textPresentation.innerHTML = `
-                <span class="titleName">
+                <span id="BoxTextPresentation" class="titleName">
                 Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
                 développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
                 autodidacte
@@ -132,7 +153,8 @@ btnMenuChoose.forEach(element => {
 
 
 boxPresentation.addEventListener('mouseover', () => {
-    document.getElementById("textPresentation").classList.remove('slideOutTop1');
+    document.getElementById("textPresentation").classList.remove('slideOutTopPresentation');
+    document.getElementById("textPresentation").classList.add('appearFromTopPresentation');
     document.getElementById("jobWorkVue1").classList.add('slideOutTop1');
     document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
     document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
@@ -158,7 +180,8 @@ boxPresentation.addEventListener('mouseover', () => {
         `;
 })
 boxPresentation.addEventListener('mouseout', () => {
-    document.getElementById("textPresentation").classList.add('slideOutTop1');
+    document.getElementById("textPresentation").classList.add('slideOutTopPresentation');
+    document.getElementById("textPresentation").classList.remove('appearFromTopPresentation');
 })
 
 
@@ -185,8 +208,6 @@ btnChoose.forEach(element => {
                     formation des boutiques en France</i>
                 </div>
                 `;
-                document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
-                document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
                 break;
             case 'job2':
                 document.getElementById("jobWorkVue2").classList.add('appearFromTop');
@@ -202,8 +223,6 @@ btnChoose.forEach(element => {
                 </div>
                 </div>
                 `;
-                document.getElementById("jobWorkVue1").classList.add('slideOutTop1');
-                document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
                 break;
             case 'job3':
                 document.getElementById("jobWorkVue3").classList.add('appearFromTop');
@@ -218,8 +237,6 @@ btnChoose.forEach(element => {
                 </div>
                 </div>
                 `;
-                document.getElementById("jobWorkVue1").classList.add('slideOutTop1');
-                document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
                 break;
             //case school
             case 'school1':
@@ -234,8 +251,6 @@ btnChoose.forEach(element => {
                     </div>
                 </div>
                 `;
-                document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
-                document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
                 break;
             case 'school2':
                 document.getElementById("jobWorkVueS2").classList.add('appearFromTop');
@@ -249,8 +264,6 @@ btnChoose.forEach(element => {
                     </div>
                 </div>
                 `;
-                document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
-                document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
                 break;
             case 'school3':
                 document.getElementById("jobWorkVueS3").classList.add('appearFromTop');
@@ -264,8 +277,6 @@ btnChoose.forEach(element => {
                     </div>
                 </div>
                     `;
-                    document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
-                    document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
                 break;
         }
     })
@@ -274,6 +285,17 @@ btnChoose.forEach(element => {
 
 btnChoose.forEach(element => {
     element.addEventListener('mouseout', () => {
-
+        document.getElementById("jobWorkVue1").classList.remove('appearFromTop');
+        document.getElementById("jobWorkVue2").classList.remove('appearFromTop');
+        document.getElementById("jobWorkVue3").classList.remove('appearFromTop');
+        document.getElementById("jobWorkVueS1").classList.remove('appearFromTop');
+        document.getElementById("jobWorkVueS2").classList.remove('appearFromTop');
+        document.getElementById("jobWorkVueS3").classList.remove('appearFromTop');
+        document.getElementById("jobWorkVue1").classList.add('slideOutTop1');
+        document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
+        document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
+        document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
+        document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
+        document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
     })
 })
