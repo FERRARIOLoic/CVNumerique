@@ -13,8 +13,103 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
-let btnMenuChoose = document.querySelectorAll('#btnMenuChoose');
 
+function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top > 0 &&
+        rect.left > 0 &&
+        rect.bottom < (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right < (window.innerWidth || document.documentElement.clientWidth)
+
+    );
+}
+
+const boxPresentation = document.querySelector('#boxPresentation');
+document.addEventListener('scroll', function () {
+    if (isInViewport(boxPresentation)) {
+        document.getElementById("boxPresentation").classList.add('fadeInCenter');
+        document.getElementById("boxPresentation").classList.remove('fadeFromBottom');
+    }
+    else {
+
+        document.getElementById("boxPresentation").classList.remove('fadeInCenter');
+        document.getElementById("boxPresentation").classList.add('fadeFromBottom');
+
+    }
+}, {
+    passive: true
+});
+
+const boxParcours = document.querySelector('#boxParcours');
+document.addEventListener('scroll', function () {
+    if (isInViewport(boxParcours)) {
+        document.getElementById("boxParcours").classList.add('fadeInCenter');
+        document.getElementById("boxParcours").classList.remove('fadeFromBottom');
+    }
+    else {
+
+        document.getElementById("boxParcours").classList.remove('fadeInCenter');
+        document.getElementById("boxParcours").classList.add('fadeFromBottom');
+
+    }
+}, {
+    passive: true
+});
+
+
+const boxCompetences = document.querySelector('#boxCompetences');
+document.addEventListener('scroll', function () {
+    if (isInViewport(boxCompetences)) {
+        document.getElementById("boxCompetences").classList.add('appearFromRight');
+        document.getElementById("boxCompetences").classList.remove('fadeFromBottom');
+    }
+    else {
+
+        document.getElementById("boxCompetences").classList.remove('appearFromRight');
+        document.getElementById("boxCompetences").classList.add('fadeFromBottom');
+
+    }
+}, {
+    passive: true
+});
+
+
+const boxRealisations = document.querySelector('#boxRealisations');
+document.addEventListener('scroll', function () {
+    if (isInViewport(boxRealisations)) {
+        document.getElementById("boxRealisations").classList.add('appearFromRight');
+        document.getElementById("boxRealisations").classList.remove('fadeFromBottom');
+    }
+    else {
+
+        document.getElementById("boxRealisations").classList.remove('appearFromRight');
+        document.getElementById("boxRealisations").classList.add('fadeFromBottom');
+
+    }
+}, {
+    passive: true
+});
+
+
+const boxMore = document.querySelector('#boxMore');
+document.addEventListener('scroll', function () {
+    if (isInViewport(boxMore)) {
+        document.getElementById("boxMore").classList.add('appearFromRight');
+        document.getElementById("boxMore").classList.remove('fadeFromBottom');
+    }
+    else {
+
+        document.getElementById("boxMore").classList.remove('appearFromRight');
+        document.getElementById("boxMore").classList.add('fadeFromBottom');
+
+    }
+}, {
+    passive: true
+});
+
+
+let btnMenuChoose = document.querySelectorAll('#btnMenuChoose');
 btnMenuChoose.forEach(element => {
     element.addEventListener('mouseover', () => {
         // console.log(element.dataset.value);
@@ -44,8 +139,8 @@ btnMenuChoose.forEach(element => {
                 </div>
                 `;
                 break;
-                case 'parcours':
-                    btnMenuInfo.innerHTML = `
+            case 'parcours':
+                btnMenuInfo.innerHTML = `
                     <div class="row jobWorkVue">
                         <div class="col-12">
                             <p>
@@ -54,7 +149,7 @@ btnMenuChoose.forEach(element => {
                         </div>
                     </div>
                     `;
-                    break;
+                break;
             case 'competences':
                 btnMenuInfo.innerHTML = `
                 <div class="row jobWorkVue">
@@ -66,8 +161,8 @@ btnMenuChoose.forEach(element => {
                 </div>
                 `;
                 break;
-                case 'realisations':
-                    btnMenuInfo.innerHTML = `
+            case 'realisations':
+                btnMenuInfo.innerHTML = `
                     <div class="row jobWorkVue">
                         <div class="col-12">
                             <p>
@@ -76,7 +171,7 @@ btnMenuChoose.forEach(element => {
                         </div>
                     </div>
                     `;
-                    break;
+                break;
             case 'more':
                 btnMenuInfo.innerHTML = `
                 <div class="row jobWorkVue">
@@ -299,3 +394,6 @@ btnChoose.forEach(element => {
         document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
     })
 })
+
+
+

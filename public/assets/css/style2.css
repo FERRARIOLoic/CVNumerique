@@ -109,7 +109,6 @@ body {
 } */
 
 
-
 .titleName,
 .titleJob {
   animation: AppearFromTop 1s ease 0.5s 1 normal both;
@@ -135,7 +134,7 @@ body {
     opacity: 1;
     transform: rotateX(0deg);
     transform-origin: top;
-    height: 100%;
+    height: 150px;
   }
 }
 
@@ -410,18 +409,26 @@ body {
 .fadeFromTop9 {
   animation: fadeFromTop 1s ease 1.8s 1 normal both;
 }
-
+.fadeFromBottom {
+  animation: fadeFromBottom 0.5s ease 0s 1 normal both;
+}
+.fadeOutBack {
+  animation: fadeOutBack 1s ease 0s 1 normal both;
+}
+.fadeInCenter {
+  animation: fadeInCenter 1s ease 0s 1 normal both;
+}
 
 
 .slideOutTop1 {
   animation: slideOutTop 1s ease 0s 1 normal both;
 }
 
-#boxPresentation {
-  background-color: rgb(200, 255, 200);
-}
-
-#boxExperiences {
+#boxPresentation,
+#boxParcours,
+#boxCompetences,
+#boxRealisations,
+#boxMore {
   background-color: rgb(220, 230, 255);
 }
 
@@ -429,12 +436,30 @@ body {
   animation: AppearFromTop 1s ease 0.5s 1 normal both;
 }
 
+.hide {
+  display:none;
+}
 
 
 .imgRealisations {
   animation: scaleFwdCenter 1s ease 0.5s 1 normal both;
 }
 
+.scaleInFwd{
+  animation: scaleInFwd 1s ease 0s 1 normal both;
+}
+@keyframes scaleInFwd {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+.hide {
+  display:none;
+}
 /*------------- ANIMATIONS ---------*/
 @keyframes fadeFromTop {
   0% {
@@ -458,6 +483,16 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}@keyframes fadeOutBack {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
 }
 
 @keyframes appearFromTop {
@@ -472,7 +507,7 @@ body {
     opacity: 1;
     transform: rotateX(0deg);
     transform-origin: top;
-    height: 100%;
+    height: 100px;
   }
 }
 
@@ -623,6 +658,14 @@ body {
     transform-origin: top;
     height: 0px;
   }
+}@keyframes fadeInCenter {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 
