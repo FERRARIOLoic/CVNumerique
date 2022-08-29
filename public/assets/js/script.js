@@ -17,7 +17,7 @@ window.onscroll = function () {
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
-        rect.top >= -2000 &&
+        rect.top >= 0 &&
         rect.left >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
@@ -361,7 +361,7 @@ btnChoose.forEach(element => {
                     <br>Conception, développement et gestion du
                     site
                     de
-                    formation des boutiques en France</i>
+                    formation des boutiques</i>
                 </div>
                 `;
                 break;
@@ -400,9 +400,10 @@ btnChoose.forEach(element => {
                 document.getElementById("jobWorkVueS1").classList.remove('slideOutTop1');
                 jobWorkVueS1.innerHTML = `
                 <div id="school1Text" class="jobWorkVue px-md-2">
-                    <div class="row">
-                        <div class="col-12">
-                            <i>Apprentissage des langages HTML5, CSS3, Javascript, PHP8</i>
+                    <div class="row text-end">
+                        <div class="col-12 text-end">
+                            <p><i>Apprentissage des langages HTML5, CSS3, Javascript, PHP8</i></p>
+                            <p><i>Apprentissage de Wordpress</i></p>
                         </div>
                     </div>
                 </div>
@@ -414,7 +415,7 @@ btnChoose.forEach(element => {
                 jobWorkVueS2.innerHTML = `
                 <div id="school2Text" class="jobWorkVue px-2">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 tet-end">
                             <i>Apprentissage de la programmation en C#</i>
                         </div>
                     </div>
@@ -427,7 +428,7 @@ btnChoose.forEach(element => {
                 jobWorkVueS3.innerHTML = `
                 <div id="school3Text" class="jobWorkVue px-2">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 text-end">
                             <i>Spécialité Biochimie Génie Biologique</i>
                         </div>
                     </div>
