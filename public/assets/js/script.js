@@ -17,7 +17,7 @@ window.onscroll = function () {
 function isInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
-        rect.top >= 100 &&
+        rect.top >= -2000 &&
         rect.left >= 0 &&
         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
