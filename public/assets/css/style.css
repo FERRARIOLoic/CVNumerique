@@ -826,6 +826,18 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+  color:#0F4C81;
+}
+
+.searchImg {
+  width: 25px;
+  height: 25px;
+}
+.contact{
+  font-size:15px;
+}
 .titleCategory {
   font-size: 40px;
 }
