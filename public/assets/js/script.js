@@ -403,7 +403,7 @@ btnChoose.forEach(element => {
                     <div class="row text-end">
                         <div class="col-12 text-end">
                             <p><i>Apprentissage des langages HTML5, CSS3, Javascript, PHP8</i></p>
-                            <p><i>Apprentissage de Wordpress</i></p>
+                            <p><i>Prise en main de Wordpress, Symfony</i></p>
                         </div>
                     </div>
                 </div>
