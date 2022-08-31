@@ -387,3 +387,133 @@ btnChoose.forEach(element => {
 
 
 
+
+
+
+let language = document.querySelectorAll('#language');
+language.forEach(element => {
+    element.addEventListener('mouseover', () => {
+        // console.log(element.dataset.value);
+
+
+        //fonction while case
+        switch (element.dataset.value) {
+            case 'html':
+                document.getElementById("htmlSkill").classList.add('appearFromTopLanguage');
+                document.getElementById("htmlSkill").classList.remove('slideOutTopLanguage');
+                htmlSkill.innerHTML = `
+                    <div class="progress text-center my-2 align-self-center">
+                        <div class="progress-bar p-2 align-self-center" style="width:50%">50%</div>
+                    </div>
+                `;
+                break;
+            case 'css':
+                document.getElementById("cssSkill").classList.add('appearFromTopLanguage');
+                document.getElementById("cssSkill").classList.remove('slideOutTopLanguage');
+                cssSkill.innerHTML = `
+                    <div class="progress">
+                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                    </div>`;
+                break;
+            case 'javascript':
+                document.getElementById("javascriptSkill").classList.add('appearFromTopLanguage');
+                document.getElementById("javascriptSkill").classList.remove('slideOutTopLanguage');
+                javascriptSkill.innerHTML = `
+                    <div class="progress">
+                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                    </div>`;
+                break;
+            case 'php':
+                document.getElementById("phpSkill").classList.add('appearFromTopLanguage');
+                document.getElementById("phpSkill").classList.remove('slideOutTopLanguage');
+                phpSkill.innerHTML = `
+                    <div class="progress">
+                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                    </div>`;
+                break;
+            case 'bootstrap':
+                document.getElementById("bootstrapSkill").classList.add('appearFromTopLanguage');
+                document.getElementById("bootstrapSkill").classList.remove('slideOutTopLanguage');
+                bootstrapSkill.innerHTML = `
+                    <div class="progress">
+                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                    </div>`;
+                break;
+            case 'symfony':
+                document.getElementById("symfonySkill").classList.add('appearFromTopLanguage');
+                document.getElementById("symfonySkill").classList.remove('slideOutTopLanguage');
+                symfonySkill.innerHTML = `
+                    <div class="progress">
+                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                    </div>`;
+                break;
+            case 'wordpress':
+                document.getElementById("wordpressSkill").classList.add('appearFromTopLanguage');
+                document.getElementById("wordpressSkill").classList.remove('slideOutTopLanguage');
+                wordpressSkill.innerHTML = `
+                    <div class="progress">
+                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                    </div>`;
+                break;
+            case 'mysql':
+                document.getElementById("mysqlSkill").classList.add('appearFromTopLanguage');
+                document.getElementById("mysqlSkill").classList.remove('slideOutTopLanguage');
+                mysqlSkill.innerHTML = `
+                    <div class="progress">
+                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                    </div>`;
+                break;
+            case 'adobexd':
+                document.getElementById("adobexdSkill").classList.add('appearFromTopLanguage');
+                document.getElementById("adobexdSkill").classList.remove('slideOutTopLanguage');
+                adobexdSkill.innerHTML = `
+                    <div class="progress">
+                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                    </div>`;
+                break;
+            case 'figma':
+                document.getElementById("figmaSkill").classList.add('appearFromTopLanguage');
+                document.getElementById("figmaSkill").classList.remove('slideOutTopLanguage');
+                figmaSkill.innerHTML = `
+                    <div class="progress">
+                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                    </div>`;
+                break;
+            case 'vscode':
+                document.getElementById("vscodeSkill").classList.add('appearFromTopLanguage');
+                document.getElementById("vscodeSkill").classList.remove('slideOutTopLanguage');
+                vscodeSkill.innerHTML = `
+                    <div class="progress">
+                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                    </div>`;
+                break;
+        }
+    })
+})
+
+language.forEach(element => {
+    element.addEventListener('mouseout', () => {
+        document.getElementById("htmlSkill").classList.remove('appearFromTopLanguage');
+        document.getElementById("htmlSkill").classList.add('slideOutTopLanguage');
+        document.getElementById("cssSkill").classList.remove('appearFromTopLanguage');
+        document.getElementById("cssSkill").classList.add('slideOutTopLanguage');
+        document.getElementById("javascriptSkill").classList.remove('appearFromTopLanguage');
+        document.getElementById("javascriptSkill").classList.add('slideOutTopLanguage');
+        document.getElementById("phpSkill").classList.remove('appearFromTopLanguage');
+        document.getElementById("phpSkill").classList.add('slideOutTopLanguage');
+        document.getElementById("bootstrapSkill").classList.remove('appearFromTopLanguage');
+        document.getElementById("bootstrapSkill").classList.add('slideOutTopLanguage');
+        document.getElementById("symfonySkill").classList.remove('appearFromTopLanguage');
+        document.getElementById("symfonySkill").classList.add('slideOutTopLanguage');
+        document.getElementById("wordpressSkill").classList.remove('appearFromTopLanguage');
+        document.getElementById("wordpressSkill").classList.add('slideOutTopLanguage');
+        document.getElementById("mysqlSkill").classList.remove('appearFromTopLanguage');
+        document.getElementById("mysqlSkill").classList.add('slideOutTopLanguage');
+        document.getElementById("adobexdSkill").classList.remove('appearFromTopLanguage');
+        document.getElementById("adobexdSkill").classList.add('slideOutTopLanguage');
+        document.getElementById("figmaSkill").classList.remove('appearFromTopLanguage');
+        document.getElementById("figmaSkill").classList.add('slideOutTopLanguage');
+        document.getElementById("vscodeSkill").classList.remove('appearFromTopLanguage');
+        document.getElementById("vscodeSkill").classList.add('slideOutTopLanguage');
+    })
+})
