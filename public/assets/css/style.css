@@ -32,6 +32,10 @@ body {
   align-items: initial;
 }
 
+.imgSmall {
+  width: 25px;
+}
+
 .navbarScrollHide {
   animation: animHideNavbar 0.5s ease 0s 1 normal forwards;
 }
@@ -95,7 +99,7 @@ body {
   background-image: url(../img/hamburger-menu-svgrepo-com.svg) !important;
 }
 
-.btnChooseRight{
+.btnChooseRight {
   justify-content: flex-end;
 }
 
@@ -117,6 +121,7 @@ body {
 .appearFromTopMenu {
   animation: appearFromTopMenu 1s ease 0s 1 normal both;
 }
+
 .appearFromTopMenu1 {
   animation: appearFromTopMenu 1s ease 1s 1 normal both;
 }
@@ -369,22 +374,38 @@ body {
 .fadeFromTop9 {
   animation: fadeFromTop 1s ease 1.8s 1 normal both;
 }
+
 .fadeFromBottom {
   animation: fadeFromBottom 0.5s ease 0s 1 normal both;
 }
+
 .fadeOutBack {
   animation: fadeOutBack 1s ease 0s 1 normal both;
 }
+
 .fadeInCenter {
   animation: fadeInCenter 1s ease 0.3s 1 normal both;
 }
+
 .fadeOutCenter {
   animation: fadeOutCenter 1s ease 0s 1 normal both;
 }
 
+.shakeVertical {
+  animation: shakeVertical 4s ease 0s infinite normal both;
+}
 
 .slideOutTop1 {
   animation: slideOutTop 1s ease 0s 1 normal both;
+}
+
+.flipScaleUp {
+  -webkit-animation: flipScaleUp 0.5s linear both;
+  animation: flipScaleUp 0.5s linear both;
+}
+.flipScaleDown {
+	-webkit-animation: flipScaleDown 0.5s linear both;
+	        animation: flipScaleDown 0.5s linear both;
 }
 
 #boxPresentation,
@@ -400,7 +421,7 @@ body {
 }
 
 .hide {
-  display:none;
+  display: none;
 }
 
 
@@ -408,21 +429,24 @@ body {
   animation: scaleFwdCenter 1s ease 0.5s 1 normal both;
 }
 
-.scaleInFwd{
+.scaleInFwd {
   animation: scaleInFwd 1s ease 0s 1 normal both;
 }
-@keyframes scaleInFwd {
-	0% {
-		transform: scale(0);
-	}
 
-	100% {
-		transform: scale(1);
-	}
+@keyframes scaleInFwd {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
+
 .hide {
-  display:none;
+  display: none;
 }
+
 /*------------- ANIMATIONS ---------*/
 @keyframes fadeFromTop {
   0% {
@@ -447,34 +471,37 @@ body {
     transform: translateY(0);
   }
 }
+
 @keyframes fadeInCenter {
-	0% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 0;
+  }
 
-	100% {
-		opacity: 1;
-	}
+  100% {
+    opacity: 1;
+  }
 }
+
 @keyframes fadeOutCenter {
-	0% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 1;
+  }
 
-	100% {
-		opacity: 0;
-	}
+  100% {
+    opacity: 0;
+  }
 }
-@keyframes fadeOutBack {
-	0% {
-		opacity: 1;
-		transform: scale(1);
-	}
 
-	100% {
-		opacity: 0;
-		transform: scale(0.6);
-	}
+@keyframes fadeOutBack {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
 }
 
 @keyframes appearFromTop {
@@ -626,6 +653,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes slideOutTop {
   0% {
     opacity: 1;
@@ -642,6 +670,75 @@ body {
   }
 }
 
+@keyframes shakeVertical {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+
+  80% {
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+
+
+@keyframes flipScaleUp {
+  0% {
+    -webkit-transform: scale(1) rotateX(0);
+            transform: scale(1) rotateX(0);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotateX(-90deg);
+            transform: scale(2.5) rotateX(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateX(-180deg);
+            transform: scale(1) rotateX(-180deg);
+  }
+}
+@keyframes flipScaleDown {
+  0% {
+    -webkit-transform: scale(1) rotateX(0);
+            transform: scale(1) rotateX(0);
+  }
+  50% {
+    -webkit-transform: scale(0.4) rotateX(90deg);
+            transform: scale(0.4) rotateX(90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateX(180deg);
+            transform: scale(1) rotateX(180deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:576px) {
 
@@ -652,7 +749,7 @@ body {
       transform-origin: top;
       height: 0px;
     }
-  
+
     100% {
       opacity: 1;
       transform: rotateX(0deg);
@@ -660,7 +757,7 @@ body {
       height: 520px;
     }
   }
-  
+
   @keyframes slideOutTopPresentation {
     0% {
       opacity: 1;
@@ -668,7 +765,7 @@ body {
       transform-origin: top;
       height: 520px;
     }
-  
+
     100% {
       opacity: 0;
       transform: rotateX(70deg);
@@ -676,12 +773,13 @@ body {
       height: 0px;
     }
   }
-  #btnChoose{
+
+  #btnChoose {
     background-color: #ffffff6e;
     box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
-    border-radius:0px 10px 10px 0px;
-    margin:5px;
-    width:95%;
+    border-radius: 0px 10px 10px 0px;
+    margin: 5px;
+    width: 95%;
   }
 
   body {
@@ -745,7 +843,7 @@ body {
       transform-origin: top;
       height: 0px;
     }
-  
+
     100% {
       opacity: 1;
       transform: rotateX(0deg);
@@ -753,7 +851,7 @@ body {
       height: 150px;
     }
   }
-  
+
   @keyframes slideOutTopPresentation {
     0% {
       opacity: 1;
@@ -761,7 +859,7 @@ body {
       transform-origin: top;
       height: 150px;
     }
-  
+
     100% {
       opacity: 0;
       transform: rotateX(70deg);
@@ -769,13 +867,15 @@ body {
       height: 0px;
     }
   }
-  #btnChoose{
+
+  #btnChoose {
     background-color: #ffffff6e;
     box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin:5px;
-    width:90%;
+    margin: 5px;
+    width: 90%;
   }
+
   body {
     padding: 19vh 0px 0px 0px;
   }
@@ -835,16 +935,18 @@ body {
 
 a {
   text-decoration: none;
-  color:#0F4C81;
+  color: #0F4C81;
 }
 
 .searchImg {
   width: 25px;
   height: 25px;
 }
-.contact{
-  font-size:15px;
+
+.contact {
+  font-size: 15px;
 }
+
 .titleCategory {
   font-size: 40px;
 }

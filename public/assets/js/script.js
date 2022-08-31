@@ -191,7 +191,7 @@ btnMenuChoose.forEach(element => {
                 document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
                 document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
                 textPresentation.innerHTML = `
-                <span id="BoxTextPresentation" class="titleName">
+                <span class="textPresentation">
                 Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
                 développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
                 autodidacte
@@ -223,7 +223,7 @@ boxPresentation.addEventListener('mouseover', () => {
     document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
     document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
     textPresentation.innerHTML = `
-    <span class="textPresentation">
+    <span  class="textPresentation">
         Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
         développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
         autodidacte
@@ -256,6 +256,8 @@ btnChoose.forEach(element => {
         //fonction while case
         switch (element.dataset.value) {
             case 'job1':
+                document.getElementById("job1Img").classList.remove('shakeVertical');
+                document.getElementById("job1Img").classList.add('flipScaleUp');
                 document.getElementById("jobWorkVue1").classList.add('appearFromTop');
                 document.getElementById("jobWorkVue1").classList.remove('slideOutTop1');
                 jobWorkVue1.innerHTML = `
@@ -271,6 +273,8 @@ btnChoose.forEach(element => {
                 `;
                 break;
             case 'job2':
+                document.getElementById("job2Img").classList.remove('shakeVertical');
+                document.getElementById("job2Img").classList.add('flipScaleUp');
                 document.getElementById("jobWorkVue2").classList.add('appearFromTop');
                 document.getElementById("jobWorkVue2").classList.remove('slideOutTop1');
                 jobWorkVue2.innerHTML = `
@@ -286,6 +290,8 @@ btnChoose.forEach(element => {
                 `;
                 break;
             case 'job3':
+                document.getElementById("job3Img").classList.remove('shakeVertical');
+                document.getElementById("job3Img").classList.add('flipScaleUp');
                 document.getElementById("jobWorkVue3").classList.add('appearFromTop');
                 document.getElementById("jobWorkVue3").classList.remove('slideOutTop1');
                 jobWorkVue3.innerHTML = `
@@ -301,6 +307,8 @@ btnChoose.forEach(element => {
                 break;
             //case school
             case 'school1':
+                document.getElementById("school1Img").classList.remove('shakeVertical');
+                document.getElementById("school1Img").classList.add('flipScaleUp');
                 document.getElementById("jobWorkVueS1").classList.add('appearFromTop');
                 document.getElementById("jobWorkVueS1").classList.remove('slideOutTop1');
                 jobWorkVueS1.innerHTML = `
@@ -315,6 +323,8 @@ btnChoose.forEach(element => {
                 `;
                 break;
             case 'school2':
+                document.getElementById("school2Img").classList.remove('shakeVertical');
+                document.getElementById("school2Img").classList.add('flipScaleUp');
                 document.getElementById("jobWorkVueS2").classList.add('appearFromTop');
                 document.getElementById("jobWorkVueS2").classList.remove('slideOutTop1');
                 jobWorkVueS2.innerHTML = `
@@ -328,6 +338,8 @@ btnChoose.forEach(element => {
                 `;
                 break;
             case 'school3':
+                document.getElementById("school3Img").classList.remove('shakeVertical');
+                document.getElementById("school3Img").classList.add('flipScaleUp');
                 document.getElementById("jobWorkVueS3").classList.add('appearFromTop');
                 document.getElementById("jobWorkVueS3").classList.remove('slideOutTop1');
                 jobWorkVueS3.innerHTML = `
@@ -346,6 +358,18 @@ btnChoose.forEach(element => {
 
 btnChoose.forEach(element => {
     element.addEventListener('mouseout', () => {
+        document.getElementById("job1Img").classList.remove('flipScaleUp');
+        document.getElementById("job1Img").classList.add('shakeVertical');
+        document.getElementById("job2Img").classList.remove('flipScaleUp');
+        document.getElementById("job2Img").classList.add('shakeVertical');
+        document.getElementById("job3Img").classList.remove('flipScaleUp');
+        document.getElementById("job3Img").classList.add('shakeVertical');
+        document.getElementById("school1Img").classList.remove('flipScaleUp');
+        document.getElementById("school1Img").classList.add('shakeVertical');
+        document.getElementById("school2Img").classList.remove('flipScaleUp');
+        document.getElementById("school2Img").classList.add('shakeVertical');
+        document.getElementById("school3Img").classList.remove('flipScaleUp');
+        document.getElementById("school3Img").classList.add('shakeVertical');
         document.getElementById("jobWorkVue1").classList.remove('appearFromTop');
         document.getElementById("jobWorkVue2").classList.remove('appearFromTop');
         document.getElementById("jobWorkVue3").classList.remove('appearFromTop');
