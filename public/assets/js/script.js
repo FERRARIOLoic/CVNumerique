@@ -399,15 +399,17 @@ language.forEach(element => {
         //fonction while case
         switch (element.dataset.value) {
             case 'html':
+                document.getElementById("htmlImg").classList.add('jelloHorizontal');
                 document.getElementById("htmlSkill").classList.add('appearFromTopLanguage');
                 document.getElementById("htmlSkill").classList.remove('slideOutTopLanguage');
-                htmlSkill.innerHTML = `
-                    <div class="progress text-center my-2 align-self-center">
-                        <div class="progress-bar p-2 align-self-center" style="width:50%">50%</div>
-                    </div>
-                `;
+                // htmlSkill.innerHTML = `
+                //     <div class="progress text-center my-2 align-self-center">
+                //         <div class="progress-bar p-2 align-self-center" style="width:50%">50%</div>
+                //     </div>
+                // `;
                 break;
             case 'css':
+                document.getElementById("htmlImg").classList.add('jelloHorizontal');
                 document.getElementById("cssSkill").classList.add('appearFromTopLanguage');
                 document.getElementById("cssSkill").classList.remove('slideOutTopLanguage');
                 cssSkill.innerHTML = `
@@ -416,6 +418,7 @@ language.forEach(element => {
                     </div>`;
                 break;
             case 'javascript':
+                document.getElementById("htmlImg").classList.add('jelloHorizontal');
                 document.getElementById("javascriptSkill").classList.add('appearFromTopLanguage');
                 document.getElementById("javascriptSkill").classList.remove('slideOutTopLanguage');
                 javascriptSkill.innerHTML = `
@@ -424,6 +427,7 @@ language.forEach(element => {
                     </div>`;
                 break;
             case 'php':
+                document.getElementById("htmlImg").classList.add('jelloHorizontal');
                 document.getElementById("phpSkill").classList.add('appearFromTopLanguage');
                 document.getElementById("phpSkill").classList.remove('slideOutTopLanguage');
                 phpSkill.innerHTML = `
@@ -432,6 +436,7 @@ language.forEach(element => {
                     </div>`;
                 break;
             case 'bootstrap':
+                document.getElementById("htmlImg").classList.add('jelloHorizontal');
                 document.getElementById("bootstrapSkill").classList.add('appearFromTopLanguage');
                 document.getElementById("bootstrapSkill").classList.remove('slideOutTopLanguage');
                 bootstrapSkill.innerHTML = `
@@ -440,6 +445,7 @@ language.forEach(element => {
                     </div>`;
                 break;
             case 'symfony':
+                document.getElementById("htmlImg").classList.add('jelloHorizontal');
                 document.getElementById("symfonySkill").classList.add('appearFromTopLanguage');
                 document.getElementById("symfonySkill").classList.remove('slideOutTopLanguage');
                 symfonySkill.innerHTML = `
@@ -448,6 +454,7 @@ language.forEach(element => {
                     </div>`;
                 break;
             case 'wordpress':
+                document.getElementById("htmlImg").classList.add('jelloHorizontal');
                 document.getElementById("wordpressSkill").classList.add('appearFromTopLanguage');
                 document.getElementById("wordpressSkill").classList.remove('slideOutTopLanguage');
                 wordpressSkill.innerHTML = `
@@ -456,6 +463,7 @@ language.forEach(element => {
                     </div>`;
                 break;
             case 'mysql':
+                document.getElementById("htmlImg").classList.add('jelloHorizontal');
                 document.getElementById("mysqlSkill").classList.add('appearFromTopLanguage');
                 document.getElementById("mysqlSkill").classList.remove('slideOutTopLanguage');
                 mysqlSkill.innerHTML = `
@@ -464,6 +472,7 @@ language.forEach(element => {
                     </div>`;
                 break;
             case 'adobexd':
+                document.getElementById("htmlImg").classList.add('jelloHorizontal');
                 document.getElementById("adobexdSkill").classList.add('appearFromTopLanguage');
                 document.getElementById("adobexdSkill").classList.remove('slideOutTopLanguage');
                 adobexdSkill.innerHTML = `
@@ -472,6 +481,7 @@ language.forEach(element => {
                     </div>`;
                 break;
             case 'figma':
+                document.getElementById("htmlImg").classList.add('jelloHorizontal');
                 document.getElementById("figmaSkill").classList.add('appearFromTopLanguage');
                 document.getElementById("figmaSkill").classList.remove('slideOutTopLanguage');
                 figmaSkill.innerHTML = `
@@ -480,6 +490,7 @@ language.forEach(element => {
                     </div>`;
                 break;
             case 'vscode':
+                document.getElementById("htmlImg").classList.add('jelloHorizontal');
                 document.getElementById("vscodeSkill").classList.add('appearFromTopLanguage');
                 document.getElementById("vscodeSkill").classList.remove('slideOutTopLanguage');
                 vscodeSkill.innerHTML = `
