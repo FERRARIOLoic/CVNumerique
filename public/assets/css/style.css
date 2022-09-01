@@ -443,10 +443,10 @@ body {
 }
 
 .fadeOutCenter {
-  animation: fadeOutCenter 1s ease 0s 1 normal both;
+  animation: fadeOutCenter 0.5s ease 0s 1 normal both;
 }
 .fadeInCenter {
-  animation: fadeInCenter 1s ease 0s 1 normal both;
+  animation: fadeInCenter 0.5s ease 0s 1 normal both;
 }
 @keyframes fadeInCenter {
 	0% {
