@@ -18,20 +18,10 @@
 
 <body>
     <header id="site-header">
-        <nav id="navbar" class="fixed-top navbar navbar-expand-lg navbar-light shadow">
+        <nav id="navbar" class="fixed-top navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-9 offset-md-1 col-md-10 ">
-                        <div class="row align-self-center">
-                            <div class="col-12 col-md-6 text-center titleName align-self-center">
-                                <h1>FERRARIO Loïc</h1>
-                            </div>
-                            <div class="col-12 col-md-6 text-center titleJob align-self-center">
-                                Développeur Web Full Stack
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 col-md-1  align-self-center">
+                    <div class="col-3 col-md-0  align-self-center">
                         <a class="navbar-brand" href="#top"><i class="text-light fa-solid fa-house-chimney"></i></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -71,9 +61,25 @@
     <main id="site-content" role="main" class="container-fluid">
 
         <!-- PRESENTATION -->
+        <div id="presentation" class=" row bg-gradiant bg-opacity-10 justify-content-center pt-1 pb-5">
+            <div id="boxName" class="col-10 img-thumbnail borderRadius25px">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center align-self-center">
+                        <div class="titleCategory p-3 align-self-center"><h1>FERRARIO Loïc</h1></div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center align-self-center">
+                        <div class="titleCategory p-3"><h2>Développeur Web</h2></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- PRESENTATION -->
         <div id="presentation" class=" row bg-gradiant bg-opacity-10 justify-content-center py-5">
-            <div id="boxPresentation" class="col-11 img-thumbnail borderRadius25px shadow">
-                <div class="titleCategory">&Agrave; propos de moi</div>
+            <div id="boxPresentation" class="col-10 img-thumbnail borderRadius25px">
+                <div class="titleCategory p-3">&Agrave; propos de moi</div>
                 <div class="row m-3 py-3">
                     <div class="col-12 offset-md-1 col-md-10 align-self-center">
                         <div class="col text-center pb-3">
@@ -90,8 +96,8 @@
 
         <!-- PARCOURS -->
         <div class="row bg-gradiant bg-opacity-10 justify-content-center py-5" id="parcours">
-            <div id="boxParcours" class="col-11  img-thumbnail borderRadius25px shadow">
-                <div class="titleCategory">Mon parcours</div>
+            <div id="boxParcours" class="col-10  img-thumbnail borderRadius25px">
+                <div class="titleCategory p-3">Mon parcours</div>
                 <div class="row">
                     <div class="col-12 col-md-6 order-3 order-md-1">
                         <div class="row m-3 py-3">
@@ -114,7 +120,9 @@
                                     <div id="btnChoose" data-value="school1" class="col-12 text-end pt-3">
                                         <p id="school1"><strong>Formation Web / Web Mobile</strong>
                                             <br><i>La Manu, Amiens</i>
-                                            <img id="school1Img" class="imgSmall shakeVertical" src="public/assets/img/down-arrow.png" alt="Afficher plus d'informations" title="Afficher plus d'informations">
+                                            <img id="school1Img" class="imgSmall shakeVertical"
+                                                src="public/assets/img/down-arrow.png"
+                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
                                         </p>
                                         <div id="jobWorkVueS1" class="jobWorkVue p-wrapper align-self-center ">
                                         </div>
@@ -139,7 +147,9 @@
                                         <p id="job1">
                                             <strong>Technicien SAV / Responsable Support formation</strong>
                                             <br>
-                                            <img id="job1Img" class="imgSmall shakeVertical" src="public/assets/img/down-arrow.png" alt="Afficher plus d'informations" title="Afficher plus d'informations">
+                                            <img id="job1Img" class="imgSmall shakeVertical"
+                                                src="public/assets/img/down-arrow.png"
+                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
                                             <i>Point Services Mobiles / Save Store</i>
                                         </p>
                                         <div id="jobWorkVue1" class="jobWorkVue p-wrapper align-self-center">
@@ -156,7 +166,9 @@
                                     <div id="btnChoose" data-value="job2" class="col-12 pt-3">
                                         <p id="job2"><strong>Technicien SAV en Téléphonie mobile</strong>
                                             <br>
-                                            <img id="job2Img" class="imgSmall shakeVertical" src="public/assets/img/down-arrow.png" alt="Afficher plus d'informations" title="Afficher plus d'informations">
+                                            <img id="job2Img" class="imgSmall shakeVertical"
+                                                src="public/assets/img/down-arrow.png"
+                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
                                             <i>Point Services Mobiles</i>
                                         </p>
                                         <div id="jobWorkVue2" class="jobWorkVue p-wrapper align-self-center ">
@@ -173,7 +185,9 @@
                                     <div id="btnChoose" data-value="job3" class="col-12 pt-3">
                                         <p id="job3"><strong>Responsable SAV en Informatique</strong>
                                             <br>
-                                            <img id="job3Img" class="imgSmall shakeVertical" src="public/assets/img/down-arrow.png" alt="Afficher plus d'informations" title="Afficher plus d'informations">
+                                            <img id="job3Img" class="imgSmall shakeVertical"
+                                                src="public/assets/img/down-arrow.png"
+                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
                                             <i>XXB Consulting</i>
                                         </p>
                                         <div id="jobWorkVue3" class="jobWorkVue p-wrapper align-self-center ">
@@ -190,7 +204,9 @@
                                     <div id="btnChoose" data-value="school2" class="col-12 pt-3">
                                         <p id="school2"><strong>Programmeur Système</strong>
                                             <br><i>Educatel</i>
-                                            <img id="school2Img" class="imgSmall shakeVertical" src="public/assets/img/down-arrow.png" alt="Afficher plus d'informations" title="Afficher plus d'informations">
+                                            <img id="school2Img" class="imgSmall shakeVertical"
+                                                src="public/assets/img/down-arrow.png"
+                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
                                         </p>
                                         <div id="jobWorkVueS2" class="jobWorkVue p-wrapper align-self-center ">
                                         </div>
@@ -207,7 +223,9 @@
                                         <p id="school3"><strong>Baccalauréat STL</strong> (Science et Techniques de
                                             Laboratoires)
                                             <br><i>Sainte Marie de Nevers, Toulouse</i>
-                                            <img id="school3Img" id="school3Img" class="imgSmall shakeVertical" src="public/assets/img/down-arrow.png" alt="Afficher plus d'informations" title="Afficher plus d'informations">
+                                            <img id="school3Img" id="school3Img" class="imgSmall shakeVertical"
+                                                src="public/assets/img/down-arrow.png"
+                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
                                         </p>
                                         <div id="jobWorkVueS3" class="jobWorkVue p-wrapper align-self-center ">
                                         </div>
@@ -227,8 +245,8 @@
 
 
         <div class="row bg-gradiant bg-opacity-10 justify-content-center py-5" id="competences">
-            <div id="boxCompetences" class="col-11 img-thumbnail borderRadius25px shadow">
-                <div class="titleCategory">Mes compétences</div>
+            <div id="boxCompetences" class="col-10 img-thumbnail borderRadius25px">
+                <div class="titleCategory p-3">Mes compétences</div>
                 <div class="row text-center m-3 py-3">
                     <div class="col-4 col-md pt-3 pt-md-0">
                         <div id="language" data-value="html" class="row h-100 pt-3 pt-md-0">
@@ -253,7 +271,8 @@
                     <div class="col-4 col-md pt-3 pt-md-0">
                         <div id="language" data-value="javascript" class="row h-100 pt-3 pt-md-0">
                             <div id="javascript" class="col-12 align-self-center text-center logoImg">
-                                <img id="javascriptLogo" src="public/assets/img/javascript.svg" alt="Javascript" class="imgCapacity">
+                                <img id="javascriptLogo" src="public/assets/img/javascript.svg" alt="Javascript"
+                                    class="imgCapacity">
                             </div>
                             <div class="col-12 text-center align-self-center">
                                 Javascript
@@ -273,7 +292,8 @@
                     <div class="col-4 col-md pt-3 pt-md-0">
                         <div id="language" data-value="bootstrap" class="row h-100 pt-3 pt-md-0">
                             <div id="bootstrap5" class="col-12 align-self-center text-center logoImg">
-                                <img id="bootstrapLogo" src="public/assets/img/bootstrap.svg" alt="Bootstrap" class="imgCapacity">
+                                <img id="bootstrapLogo" src="public/assets/img/bootstrap.svg" alt="Bootstrap"
+                                    class="imgCapacity">
                             </div>
                             <div class="col-12 text-center align-self-center">
                                 Bootstrap
@@ -283,7 +303,8 @@
                     <div class="col-4 col-md pt-3 pt-md-0">
                         <div id="language" data-value="symfony" class="row h-100 pt-3 pt-md-0">
                             <div id="symfony" class="col-12 align-self-center text-center logoImg">
-                                <img id="symfonyLogo" src="public/assets/img/symfony.svg" alt="Symfony" class="imgCapacity">
+                                <img id="symfonyLogo" src="public/assets/img/symfony.svg" alt="Symfony"
+                                    class="imgCapacity">
                             </div>
                             <div class="col-12 text-center align-self-center">
                                 Symfony
@@ -293,7 +314,8 @@
                     <div class="col-4 col-md pt-3 pt-md-0">
                         <div id="language" data-value="wordpress" class="row h-100 pt-3 pt-md-0">
                             <div id="wordpress" class="col-12 align-self-center text-center logoImg">
-                                <img id="wordpressLogo" src="public/assets/img/wordpress.svg" alt="Wordpress" class="imgCapacity">
+                                <img id="wordpressLogo" src="public/assets/img/wordpress.svg" alt="Wordpress"
+                                    class="imgCapacity">
                             </div>
                             <div class="col-12 text-center align-self-center">
                                 Wordpress
@@ -313,7 +335,8 @@
                     <div class="col-4 col-md pt-3 pt-md-0">
                         <div id="language" data-value="adobexd" class="row h-100 pt-3 pt-md-0">
                             <div id="adobexd" class="col-12 align-self-center text-center logoImg">
-                                <img id="adobexdLogo" src="public/assets/img/adobexd.png" alt="Adobe XD" class="imgCapacity">
+                                <img id="adobexdLogo" src="public/assets/img/adobexd.png" alt="Adobe XD"
+                                    class="imgCapacity">
                             </div>
                             <div class="col-12 text-center align-self-center">
                                 Adobe XD
@@ -333,7 +356,8 @@
                     <div class="col-4 col-md pt-3 pt-md-0">
                         <div id="language" data-value="vscode" class="row h-100 pt-3 pt-md-0">
                             <div id="vscode" class="col-12 align-self-center text-center logoImg">
-                                <img id="vscodeLogo" src="public/assets/img/vscode.svg" alt="VSCode" class="imgCapacity">
+                                <img id="vscodeLogo" src="public/assets/img/vscode.svg" alt="VSCode"
+                                    class="imgCapacity">
                             </div>
                             <div class="col-12 text-center align-self-center">
                                 VSCode
@@ -348,9 +372,9 @@
 
         <!-- CENTRES D'INTERET -->
         <div class="row bg-gradiant bg-opacity-10 justify-content-center py-5" id="realisations">
-            <div id="boxRealisations" class="col-11  img-thumbnail borderRadius25px shadow">
+            <div id="boxRealisations" class="col-10  img-thumbnail borderRadius25px">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="titleCategory">Réalisations...</div>
+                    <div class="titleCategory p-3">Réalisations...</div>
                     <div class="row text-center m-3 py-3">
                         <div class="col-12 ">
                             <div class="carousel-indicators">
@@ -382,7 +406,8 @@
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
                                             <p class="fs-2 appearFromTopMenu1">Astuces</p>
                                             <p class="fw-bold appearFromTopMenu1">Projet personnel de 2015 à 2017</p>
-                                            <p class="fw-bold px-3 appearFromTopMenu1">Site de E-learning des boutiques Save depuis 2017</p>
+                                            <p class="fw-bold px-3 appearFromTopMenu1">Site de E-learning des boutiques
+                                                Save depuis 2017</p>
                                             <p class=" appearFromTopMenu1">HTML5, CSS3, PHP4->PHP7</p>
                                             <p class=" appearFromTopMenu1"><i>Réalisé en autodidacte avant la
                                                     formation</i></p>
@@ -452,7 +477,8 @@
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
                                             <p class="fs-2 appearFromTopMenu1">Les API</p>
-                                            <p class="fw-bold appearFromTopMenu1">Traitement des données depuis l'API de TMDB
+                                            <p class="fw-bold appearFromTopMenu1">Traitement des données depuis l'API de
+                                                TMDB
                                             </p>
                                             <p class=" appearFromTopMenu1">HTML, CSS, Javascript</p>
                                             <p class=" appearFromTopMenu1"><i>Réalisé en mai</i></p>
@@ -520,8 +546,8 @@
         </div>
 
         <div class="row bg-gradiant bg-opacity-10 justify-content-center py-5" id="more">
-            <div id="boxMore" class="col-11 img-thumbnail borderRadius25px shadow">
-                <div class="titleCategory">Un peu plus...</div>
+            <div id="boxMore" class="col-10 img-thumbnail borderRadius25px">
+                <div class="titleCategory p-3">Un peu plus...</div>
                 <div class="row m-3 py-3 text-center">
                     <div class="col-6 col-md-3 p-2">Dessin</div>
                     <div class="col-6 col-md-3 p-2">Création</div>
@@ -534,32 +560,30 @@
         </div>
 
         <div class="row bg-gradiant bg-opacity-10 justify-content-center py-5" id="contact">
-            <div id="boxMore" class="col-11 img-thumbnail borderRadius25px shadow">
-                <div class="titleCategory">Me contacter</div>
+            <div id="boxMore" class="col-10 img-thumbnail borderRadius25px">
+                <div class="titleCategory p-3">Me contacter</div>
                 <div class="row m-3 py-3 text-center">
-                    <div class="col-12 col-md-3 p-2">
+                    <div class="col-12 col-md-3 p-2 align-self-center">
                         <a target="_blank" href="tel:+33 6 82 61 43 74">
-                            <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                             <lord-icon src="https://cdn.lordicon.com/hcndxtmn.json" trigger="hover"
                                 class="searchImg m-2" alt="Me contacter par téléphone"
                                 title="me contacter par téléphone">
-                            </lord-icon><span class="contact align-self-center">06.82.61.43.74</span>
+                            </lord-icon><span class="contact">06.82.61.43.74</span>
                         </a>
                     </div>
-                    <div class="col-12 col-md-3 p-2">
+                    <div class="col-12 col-md-3 p-2 align-self-center">
                         <a target="_blank" href="mailto:ferrarioloic.web@gmail.com">
-                            <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                             <lord-icon src="https://cdn.lordicon.com/ricptrwi.json" trigger="hover"
                                 class="searchImg m-2" alt="Envoyer un mail" title="M'envoyer un mail">
                             </lord-icon>
-                            <span class="contact align-self-center">ferrarioloic.web@gmail.com</span>
+                            <span class="contact">ferrarioloic.web@gmail.com</span>
                         </a>
                     </div>
-                    <div class="col-12 col-md-3 p-2">
+                    <div class="col-12 col-md-3 p-2 align-self-center">
                         <a target="_blank" href="https://www.linkedin.com/in/FERRARIOloic"><img class="searchImg m-2"
                                 src="public/assets/img/linkedin.png">FERRARIOloic</a>
                     </div>
-                    <div class="col-12 col-md-3 p-2">
+                    <div class="col-12 col-md-3 p-2 align-self-center">
                         <a target="_blank" href="https://github.com/FERRARIOLoic"><img class="searchImg m-2"
                                 src="public/assets/img/github.png">FERRARIOLoic</a>
                     </div>
@@ -582,6 +606,7 @@
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
         integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p'
         crossorigin='anonymous'></script>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
     <script src='public/assets/js/script.js'></script>
 </body>
 

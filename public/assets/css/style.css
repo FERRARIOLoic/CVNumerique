@@ -4,13 +4,12 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
 body {
   font-family: 'Montserrat', sans-serif;
-
-  color: #0F4C81;
+  color: rgb(72, 0, 94);
 }
 
 .imgProfile {
@@ -24,7 +23,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../img/);
-  background-color: rgb(155, 255, 155);
+  background-color:  rgb(45, 200, 45, 0.7);
+  box-shadow:rgb(200, 200, 200, 0.5) 0 5px 5px;
 }
 
 .navbar>.container-fluid {
@@ -84,7 +84,10 @@ body {
 .nav-link,
 .progress-bar {
   text-decoration: none;
-  color: rgba(0, 0, 255, 0.5);
+  color: rgb(72, 0, 94);
+}
+.nav-link:hover{
+  color: rgb(195, 0, 255);
 }
 
 #presentation,
@@ -409,12 +412,15 @@ body {
   animation: flipScaleDown 0.5s linear both;
 }
 
+#boxName,
 #boxPresentation,
 #boxParcours,
 #boxCompetences,
 #boxRealisations,
 #boxMore {
-  background-color: rgb(220, 230, 255);
+  background-color: rgb(200, 200, 200, 0.5);
+  /* border:0.2px solid #dcdcdc; */
+  box-shadow:rgb(200, 203, 200, 0.3) 5px 5px 5px;
 }
 
 .textPresentation {
@@ -1450,6 +1456,7 @@ div[role="progressbar"]::before {
 
 .jobWorkVue {
   font-size: 13px;
+  z-index: 10;
 }
 
 @keyframes animJobWork {
