@@ -399,104 +399,126 @@ language.forEach(element => {
         //fonction while case
         switch (element.dataset.value) {
             case 'html':
-                document.getElementById("htmlImg").classList.add('jelloHorizontal');
-                document.getElementById("htmlSkill").classList.add('appearFromTopLanguage');
-                document.getElementById("htmlSkill").classList.remove('slideOutTopLanguage');
-                // htmlSkill.innerHTML = `
-                //     <div class="progress text-center my-2 align-self-center">
-                //         <div class="progress-bar p-2 align-self-center" style="width:50%">50%</div>
-                //     </div>
-                // `;
+                document.getElementById("htmlLogo").classList.add('fadeOutCenter');
+                html.innerHTML = `
+                    <div id="htmlImg" class="progress-circle small text-center" data-value="45" id="jauge_2">
+                        <div class="progress-masque">
+                            <div class="progress-barre"></div>
+                            <div class="progress-sup50"></div>
+                        </div>
+                    </div>`;
+                document.getElementById("htmlImg").classList.add('fadeInCenter');
                 break;
             case 'css':
-                document.getElementById("htmlImg").classList.add('jelloHorizontal');
-                document.getElementById("cssSkill").classList.add('appearFromTopLanguage');
-                document.getElementById("cssSkill").classList.remove('slideOutTopLanguage');
-                cssSkill.innerHTML = `
-                    <div class="progress">
-                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                document.getElementById("cssLogo").classList.add('fadeOutCenter');
+                css.innerHTML = `
+                    <div id="cssImg" class="progress-circle small text-center" data-value="30" id="jauge_2">
+                        <div class="progress-masque">
+                            <div class="progress-barre"></div>
+                            <div class="progress-sup50"></div>
+                        </div>
                     </div>`;
+                document.getElementById("cssImg").classList.add('fadeInCenter');
                 break;
             case 'javascript':
-                document.getElementById("htmlImg").classList.add('jelloHorizontal');
-                document.getElementById("javascriptSkill").classList.add('appearFromTopLanguage');
-                document.getElementById("javascriptSkill").classList.remove('slideOutTopLanguage');
-                javascriptSkill.innerHTML = `
-                    <div class="progress">
-                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                document.getElementById("javascriptLogo").classList.add('fadeOutCenter');
+                javascript.innerHTML = `
+                    <div id="javascriptImg" class="progress-circle small text-center" data-value="25" id="jauge_2">
+                        <div class="progress-masque">
+                            <div class="progress-barre"></div>
+                            <div class="progress-sup50"></div>
+                        </div>
                     </div>`;
+                document.getElementById("javascriptImg").classList.add('fadeInCenter');
                 break;
             case 'php':
-                document.getElementById("htmlImg").classList.add('jelloHorizontal');
-                document.getElementById("phpSkill").classList.add('appearFromTopLanguage');
-                document.getElementById("phpSkill").classList.remove('slideOutTopLanguage');
-                phpSkill.innerHTML = `
-                    <div class="progress">
-                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                document.getElementById("phpLogo").classList.add('fadeOutCenter');
+                php.innerHTML = `
+                    <div id="phpImg" class="progress-circle small text-center" data-value="40" id="jauge_2">
+                        <div class="progress-masque">
+                            <div class="progress-barre"></div>
+                            <div class="progress-sup50"></div>
+                        </div>
                     </div>`;
+                document.getElementById("phpImg").classList.add('fadeInCenter');
                 break;
             case 'bootstrap':
-                document.getElementById("htmlImg").classList.add('jelloHorizontal');
-                document.getElementById("bootstrapSkill").classList.add('appearFromTopLanguage');
-                document.getElementById("bootstrapSkill").classList.remove('slideOutTopLanguage');
-                bootstrapSkill.innerHTML = `
-                    <div class="progress">
-                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                document.getElementById("bootstrapLogo").classList.add('fadeOutCenter');
+                console.log('test');
+                bootstrap5.innerHTML = `
+                    <div id="bootstrapImg" class="progress-circle small text-center" data-value="40" id="jauge_2">
+                        <div class="progress-masque">
+                            <div class="progress-barre"></div>
+                            <div class="progress-sup50"></div>
+                        </div>
                     </div>`;
+                document.getElementById("bootstrapImg").classList.add('fadeInCenter');
                 break;
             case 'symfony':
-                document.getElementById("htmlImg").classList.add('jelloHorizontal');
-                document.getElementById("symfonySkill").classList.add('appearFromTopLanguage');
-                document.getElementById("symfonySkill").classList.remove('slideOutTopLanguage');
-                symfonySkill.innerHTML = `
-                    <div class="progress">
-                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                document.getElementById("symfonyLogo").classList.add('fadeOutCenter');
+                symfony.innerHTML = `
+                    <div id="symfonyImg" class="progress-circle small text-center" data-value="20" id="jauge_2">
+                        <div class="progress-masque">
+                            <div class="progress-barre"></div>
+                            <div class="progress-sup50"></div>
+                        </div>
                     </div>`;
+                document.getElementById("symfonyImg").classList.add('fadeInCenter');
                 break;
             case 'wordpress':
-                document.getElementById("htmlImg").classList.add('jelloHorizontal');
-                document.getElementById("wordpressSkill").classList.add('appearFromTopLanguage');
-                document.getElementById("wordpressSkill").classList.remove('slideOutTopLanguage');
-                wordpressSkill.innerHTML = `
-                    <div class="progress">
-                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                document.getElementById("wordpressLogo").classList.add('fadeOutCenter');
+                wordpress.innerHTML = `
+                    <div id="wordpressImg" class="progress-circle small text-center" data-value="25" id="jauge_2">
+                        <div class="progress-masque">
+                            <div class="progress-barre"></div>
+                            <div class="progress-sup50"></div>
+                        </div>
                     </div>`;
+                document.getElementById("wordpressImg").classList.add('fadeInCenter');
                 break;
             case 'mysql':
-                document.getElementById("htmlImg").classList.add('jelloHorizontal');
-                document.getElementById("mysqlSkill").classList.add('appearFromTopLanguage');
-                document.getElementById("mysqlSkill").classList.remove('slideOutTopLanguage');
-                mysqlSkill.innerHTML = `
-                    <div class="progress">
-                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                document.getElementById("mysqlLogo").classList.add('fadeOutCenter');
+                mysql.innerHTML = `
+                    <div id="mysqlImg" class="progress-circle small text-center" data-value="30" id="jauge_2">
+                        <div class="progress-masque">
+                            <div class="progress-barre"></div>
+                            <div class="progress-sup50"></div>
+                        </div>
                     </div>`;
+                document.getElementById("mysqlImg").classList.add('fadeInCenter');
                 break;
             case 'adobexd':
-                document.getElementById("htmlImg").classList.add('jelloHorizontal');
-                document.getElementById("adobexdSkill").classList.add('appearFromTopLanguage');
-                document.getElementById("adobexdSkill").classList.remove('slideOutTopLanguage');
-                adobexdSkill.innerHTML = `
-                    <div class="progress">
-                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                document.getElementById("adobexdLogo").classList.add('fadeOutCenter');
+                adobexd.innerHTML = `
+                    <div id="adobexdImg" class="progress-circle small text-center" data-value="35" id="jauge_2">
+                        <div class="progress-masque">
+                            <div class="progress-barre"></div>
+                            <div class="progress-sup50"></div>
+                        </div>
                     </div>`;
+                document.getElementById("adobexdImg").classList.add('fadeInCenter');
                 break;
             case 'figma':
-                document.getElementById("htmlImg").classList.add('jelloHorizontal');
-                document.getElementById("figmaSkill").classList.add('appearFromTopLanguage');
-                document.getElementById("figmaSkill").classList.remove('slideOutTopLanguage');
-                figmaSkill.innerHTML = `
-                    <div class="progress">
-                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                document.getElementById("figmaLogo").classList.add('fadeOutCenter');
+                figma.innerHTML = `
+                    <div id="figmaImg" class="progress-circle small text-center" data-value="40" id="jauge_2">
+                        <div class="progress-masque">
+                            <div class="progress-barre"></div>
+                            <div class="progress-sup50"></div>
+                        </div>
                     </div>`;
+                document.getElementById("figmaImg").classList.add('fadeInCenter');
                 break;
             case 'vscode':
-                document.getElementById("htmlImg").classList.add('jelloHorizontal');
-                document.getElementById("vscodeSkill").classList.add('appearFromTopLanguage');
-                document.getElementById("vscodeSkill").classList.remove('slideOutTopLanguage');
-                vscodeSkill.innerHTML = `
-                    <div class="progress">
-                        <div class="progress-bar p-1" style="width:30%">30%</div>
+                document.getElementById("vscodeLogo").classList.add('fadeOutCenter');
+                vscode.innerHTML = `
+                    <div id="vscodeImg" class="progress-circle small text-center" data-value="40" id="jauge_2">
+                        <div class="progress-masque">
+                            <div class="progress-barre"></div>
+                            <div class="progress-sup50"></div>
+                        </div>
                     </div>`;
+                document.getElementById("vscodeImg").classList.add('fadeInCenter');
                 break;
         }
     })
@@ -504,27 +526,17 @@ language.forEach(element => {
 
 language.forEach(element => {
     element.addEventListener('mouseout', () => {
-        document.getElementById("htmlSkill").classList.remove('appearFromTopLanguage');
-        document.getElementById("htmlSkill").classList.add('slideOutTopLanguage');
-        document.getElementById("cssSkill").classList.remove('appearFromTopLanguage');
-        document.getElementById("cssSkill").classList.add('slideOutTopLanguage');
-        document.getElementById("javascriptSkill").classList.remove('appearFromTopLanguage');
-        document.getElementById("javascriptSkill").classList.add('slideOutTopLanguage');
-        document.getElementById("phpSkill").classList.remove('appearFromTopLanguage');
-        document.getElementById("phpSkill").classList.add('slideOutTopLanguage');
-        document.getElementById("bootstrapSkill").classList.remove('appearFromTopLanguage');
-        document.getElementById("bootstrapSkill").classList.add('slideOutTopLanguage');
-        document.getElementById("symfonySkill").classList.remove('appearFromTopLanguage');
-        document.getElementById("symfonySkill").classList.add('slideOutTopLanguage');
-        document.getElementById("wordpressSkill").classList.remove('appearFromTopLanguage');
-        document.getElementById("wordpressSkill").classList.add('slideOutTopLanguage');
-        document.getElementById("mysqlSkill").classList.remove('appearFromTopLanguage');
-        document.getElementById("mysqlSkill").classList.add('slideOutTopLanguage');
-        document.getElementById("adobexdSkill").classList.remove('appearFromTopLanguage');
-        document.getElementById("adobexdSkill").classList.add('slideOutTopLanguage');
-        document.getElementById("figmaSkill").classList.remove('appearFromTopLanguage');
-        document.getElementById("figmaSkill").classList.add('slideOutTopLanguage');
-        document.getElementById("vscodeSkill").classList.remove('appearFromTopLanguage');
-        document.getElementById("vscodeSkill").classList.add('slideOutTopLanguage');
+        html.innerHTML = `<img id="htmlLogo" src="public/assets/img/html5.svg" alt="HTML5" class="imgCapacity">`;
+        css.innerHTML = `<img id="cssLogo" src="public/assets/img/css3.svg" alt="CSS3" class="imgCapacity">`;
+        javascript.innerHTML = `<img id="javascriptLogo" src="public/assets/img/javascript.svg" alt="javascript" class="imgCapacity">`;
+        php.innerHTML = `<img id="phpLogo" src="public/assets/img/php.svg" alt="php" class="imgCapacity">`;
+        bootstrap5.innerHTML = `<img id="bootstrapLogo" src="public/assets/img/bootstrap.svg" alt="bootstrap" class="imgCapacity">`;
+        symfony.innerHTML = `<img id="symfonyLogo" src="public/assets/img/symfony.svg" alt="symfony" class="imgCapacity">`;
+        wordpress.innerHTML = `<img id="wordpressLogo" src="public/assets/img/wordpress.svg" alt="wordpress" class="imgCapacity">`;
+        mysql.innerHTML = `<img id="mysqlLogo" src="public/assets/img/mysql.svg" alt="mysql" class="imgCapacity">`;
+        adobexd.innerHTML = `<img id="adobexdLogo" src="public/assets/img/adobexd.png" alt="adobexd" class="imgCapacity">`;
+        figma.innerHTML = `<img id="figmaLogo" src="public/assets/img/figma.png" alt="figma" class="imgCapacity">`;
+        vscode.innerHTML = `<img id="vscodeLogo" src="public/assets/img/vscode.svg" alt="vscode" class="imgCapacity">`;
+        
     })
 })
