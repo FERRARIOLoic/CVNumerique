@@ -21,7 +21,7 @@
         <nav id="navbar" class="fixed-top navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-3 col-md-0  align-self-center">
+                    <div class="navbarHide col-3 col-md-0  align-self-center">
                         <a class="navbar-brand" href="#top"><i class="text-light fa-solid fa-house-chimney"></i></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -65,10 +65,14 @@
             <div id="boxName" class="col-10 img-thumbnail borderRadius25px">
                 <div class="row">
                     <div class="col-12 col-md-6 text-center align-self-center">
-                        <div class="titleCategory p-3 align-self-center"><h1>FERRARIO Loïc</h1></div>
+                        <div class="titleCategory p-3 align-self-center">
+                            <h1>FERRARIO Loïc</h1>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6 text-center align-self-center">
-                        <div class="titleCategory p-3"><h2>Développeur Web</h2></div>
+                        <div class="titleCategory p-3">
+                            <h2>Développeur Web</h2>
+                        </div>
                     </div>
                 </div>
 
@@ -96,7 +100,7 @@
 
         <!-- PARCOURS -->
         <div class="row bg-gradiant bg-opacity-10 justify-content-center py-5" id="parcours">
-            <div id="boxParcours" class="col-10  img-thumbnail borderRadius25px">
+            <div id="boxParcours" class="col-10  img-thumbnail borderRadius25px pb-4">
                 <div class="titleCategory p-3">Mon parcours</div>
                 <div class="row">
                     <div class="col-12 col-md-6 order-3 order-md-1">
@@ -248,118 +252,117 @@
             <div id="boxCompetences" class="col-10 img-thumbnail borderRadius25px">
                 <div class="titleCategory p-3">Mes compétences</div>
                 <div class="row text-center m-3 py-3">
-                    <div class="col-4 col-md pt-3 pt-md-0">
-                        <div id="language" data-value="html" class="row h-100 pt-3 pt-md-0">
+                    <div class="col-4 col-md-2 pt-3 pt-md-0 my-3">
+                        <div id="language" data-value="html" class="row h-100 pt-3 pt-md-0 text-center">
                             <div id="html" class="col-12 align-self-center text-center logoImg">
                                 <img id="htmlLogo" src="public/assets/img/html5.svg" alt="HTML5" class="imgCapacity">
                             </div>
-                            <div class="col-12 text-center align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 HTML5
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md pt-3 pt-md-0">
+                    <div class="col-4 col-md-2 pt-3 pt-md-0 my-3">
                         <div id="language" data-value="css" class="row h-100 pt-3 pt-md-0">
                             <div id="css" class="col-12 align-self-center text-center logoImg">
                                 <img id="cssLogo" src="public/assets/img/css3.svg" alt="CSS3" class="imgCapacity">
                             </div>
-                            <div class="col-12 text-center align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 CSS3
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md pt-3 pt-md-0">
+                    <div class="col-4 col-md-2 pt-3 pt-md-0 my-3">
                         <div id="language" data-value="javascript" class="row h-100 pt-3 pt-md-0">
                             <div id="javascript" class="col-12 align-self-center text-center logoImg">
                                 <img id="javascriptLogo" src="public/assets/img/javascript.svg" alt="Javascript"
                                     class="imgCapacity">
                             </div>
-                            <div class="col-12 text-center align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 Javascript
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md pt-3 pt-md-0">
+                    <div class="col-4 col-md-2 pt-3 pt-md-0 my-3">
                         <div id="language" data-value="php" class="row h-100 pt-3 pt-md-0">
                             <div id="php" class="col-12 align-self-center text-center logoImg">
                                 <img id="phpLogo" src="public/assets/img/php.svg" alt="PHP" class="imgCapacity">
                             </div>
-                            <div class="col-12 text-center align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 PHP
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md pt-3 pt-md-0">
+                    <div class="col-4 col-md-2 pt-3 pt-md-0 my-3">
                         <div id="language" data-value="bootstrap" class="row h-100 pt-3 pt-md-0">
                             <div id="bootstrap5" class="col-12 align-self-center text-center logoImg">
                                 <img id="bootstrapLogo" src="public/assets/img/bootstrap.svg" alt="Bootstrap"
                                     class="imgCapacity">
                             </div>
-                            <div class="col-12 text-center align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 Bootstrap
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md pt-3 pt-md-0">
+                    <div class="col-4 col-md-2 pt-3 pt-md-0 my-3">
                         <div id="language" data-value="symfony" class="row h-100 pt-3 pt-md-0">
                             <div id="symfony" class="col-12 align-self-center text-center logoImg">
                                 <img id="symfonyLogo" src="public/assets/img/symfony.svg" alt="Symfony"
                                     class="imgCapacity">
                             </div>
-                            <div class="col-12 text-center align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 Symfony
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md pt-3 pt-md-0">
+                    <div class="col-4 col-md-2 pt-3 pt-md-0 my-3">
                         <div id="language" data-value="wordpress" class="row h-100 pt-3 pt-md-0">
                             <div id="wordpress" class="col-12 align-self-center text-center logoImg">
                                 <img id="wordpressLogo" src="public/assets/img/wordpress.svg" alt="Wordpress"
                                     class="imgCapacity">
                             </div>
-                            <div class="col-12 text-center align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 Wordpress
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md pt-3 pt-md-0">
+                    <div class="col-4 col-md-2 pt-3 pt-md-0 my-3">
                         <div id="language" data-value="mysql" class="row h-100 pt-3 pt-md-0">
                             <div id="mysql" class="col-12 align-self-center text-center logoImg">
                                 <img id="mysqlLogo" src="public/assets/img/mysql.svg" alt="MySQL" class="imgCapacity">
                             </div>
-                            <div class="col-12 text-center align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 MySQL
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md pt-3 pt-md-0">
+                    <div class="col-4 col-md-2 pt-3 pt-md-0 my-3">
                         <div id="language" data-value="adobexd" class="row h-100 pt-3 pt-md-0">
                             <div id="adobexd" class="col-12 align-self-center text-center logoImg">
-                                <img id="adobexdLogo" src="public/assets/img/adobexd.png" alt="Adobe XD"
-                                    class="imgCapacity">
+                                <img id="adobexdLogo" src="public/assets/img/adobexd.svg" alt="Adobe XD" class="imgCapacity">
                             </div>
-                            <div class="col-12 text-center align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 Adobe XD
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md pt-3 pt-md-0">
+                    <div class="col-4 col-md-2 pt-3 pt-md-0 my-3">
                         <div id="language" data-value="figma" class="row h-100 pt-3 pt-md-0">
                             <div id="figma" class="col-12 align-self-center text-center logoImg">
-                                <img id="figmaLogo" src="public/assets/img/figma.png" alt="Figma" class="imgCapacity">
+                                <img id="figmaLogo" src="public/assets/img/figma.svg" alt="Figma" class="imgCapacity">
                             </div>
-                            <div class="col-12 text-center align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 Figma
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 col-md pt-3 pt-md-0">
+                    <div class="col-4 col-md-2 pt-3 pt-md-0 my-3">
                         <div id="language" data-value="vscode" class="row h-100 pt-3 pt-md-0">
                             <div id="vscode" class="col-12 align-self-center text-center logoImg">
                                 <img id="vscodeLogo" src="public/assets/img/vscode.svg" alt="VSCode"
                                     class="imgCapacity">
                             </div>
-                            <div class="col-12 text-center align-self-center">
+                            <div class="col-12 text-center align-self-end">
                                 VSCode
                             </div>
                         </div>
@@ -375,8 +378,8 @@
             <div id="boxRealisations" class="col-10  img-thumbnail borderRadius25px">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="titleCategory p-3">Réalisations...</div>
-                    <div class="row text-center m-3 py-3">
-                        <div class="col-12 ">
+                    <div class="row text-center m-3 py-2">
+                        <div class="col-12 py-3">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1" title="Astuces"></button>
@@ -405,8 +408,10 @@
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
                                             <p class="fs-2 appearFromTopMenu1">Astuces</p>
-                                            <p class="fw-bold appearFromTopMenu1">Projet personnel de 2015 à 2017</p>
-                                            <p class="fw-bold px-3 appearFromTopMenu1">Site de E-learning des boutiques
+                                            <p class="fw-bold appearFromTopMenu1 h-100">Projet personnel de 2015 à 2017
+                                            </p>
+                                            <p class="fw-bold px-3 appearFromTopMenu1 h-100">Site de E-learning des
+                                                boutiques
                                                 Save depuis 2017</p>
                                             <p class=" appearFromTopMenu1">HTML5, CSS3, PHP4->PHP7</p>
                                             <p class=" appearFromTopMenu1"><i>Réalisé en autodidacte avant la
@@ -422,8 +427,9 @@
                                                 alt="Exercice HTML CSS, réalisation de cards en version responsive">
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                            <p class="fs-2 appearFromTopMenu1">Les Cards</p>
-                                            <p class="fw-bold appearFromTopMenu1">Réalisation de cartes en responsive
+                                            <p class="fs-2 appearFromTopMenu1 h-100">Les Cards</p>
+                                            <p class="fw-bold appearFromTopMenu1 h-100">Réalisation de cartes en
+                                                responsive
                                             </p>
                                             <p class="appearFromTopMenu1">HTML5, CSS3</p>
                                             <p class="appearFromTopMenu1"><i>Réalisé en avril</i></p>
@@ -438,8 +444,8 @@
                                                 alt="Exercice de maquettage - Réalisation d'un lecteur audio en version desktop">
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                            <p class="fs-2 appearFromTopMenu1">Le maquettage</p>
-                                            <p class="fw-bold appearFromTopMenu1">Réalisation de la maquette d'un
+                                            <p class="fs-2 appearFromTopMenu1 h-100">Le maquettage</p>
+                                            <p class="fw-bold appearFromTopMenu1 h-100">Réalisation de la maquette d'un
                                                 lecteur audio en version
                                                 Desktop
                                             </p>
@@ -456,12 +462,12 @@
                                                 alt="Exercice javascript - Réalisation d'un Shifumi en javascript">
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                            <p class="fs-2 appearFromTopMenu1">Le Javascript</p>
-                                            <p class="fw-bold appearFromTopMenu1">Réalisation d'un Shifumi
+                                            <p class="fs-2 appearFromTopMenu1 h-100">Le Javascript</p>
+                                            <p class="fw-bold appearFromTopMenu1 h-100">Réalisation d'un Shifumi
                                             </p>
-                                            <p class=" appearFromTopMenu1">HTML, CSS, Javascript</p>
-                                            <p class=" appearFromTopMenu1"><i>Réalisé en mai</i></p>
-                                            <p class=" appearFromTopMenu1"><a target="_blank"
+                                            <p class="appearFromTopMenu1">HTML, CSS, Javascript</p>
+                                            <p class="appearFromTopMenu1"><i>Réalisé en mai</i></p>
+                                            <p class="appearFromTopMenu1"><a target="_blank"
                                                     href="https://ferrarioloic.github.io/Shifumi/">Aller
                                                     jouer</a>
                                             </p>
@@ -476,13 +482,14 @@
                                                 alt="Exercice sur les API - récupération et affichage de données depuis l'API de TMDB">
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                            <p class="fs-2 appearFromTopMenu1">Les API</p>
-                                            <p class="fw-bold appearFromTopMenu1">Traitement des données depuis l'API de
+                                            <p class="fs-2 appearFromTopMenu1 h-100">Les API</p>
+                                            <p class="fw-bold appearFromTopMenu1 h-100">Traitement des données depuis
+                                                l'API de
                                                 TMDB
                                             </p>
-                                            <p class=" appearFromTopMenu1">HTML, CSS, Javascript</p>
-                                            <p class=" appearFromTopMenu1"><i>Réalisé en mai</i></p>
-                                            <p class=" appearFromTopMenu1"><a target="_blank"
+                                            <p class="appearFromTopMenu1">HTML, CSS, Javascript</p>
+                                            <p class="appearFromTopMenu1"><i>Réalisé en mai</i></p>
+                                            <p class="appearFromTopMenu1"><a target="_blank"
                                                     href="https://ferrarioloic.github.io/TMMDB/">Consulter
                                                     la
                                                     page</a></p>
@@ -497,8 +504,9 @@
                                                 alt="Exercice sur Wordpress - Création d'un projet sur le thème de notre choix">
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                            <p class="fs-2 appearFromTopMenu1">Wordpress</p>
-                                            <p class="fw-bold appearFromTopMenu1">Création d'un projet Wordpress sur le
+                                            <p class="fs-2 appearFromTopMenu1 h-100">Wordpress</p>
+                                            <p class="fw-bold appearFromTopMenu1 h-100">Création d'un projet Wordpress
+                                                sur le
                                                 thème de notre
                                                 choix
                                             </p>
@@ -517,8 +525,9 @@
                                                 alt="Exercice sur Wordpress - Création d'un projet sur le thème de notre choix">
                                         </div>
                                         <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                            <p class="fs-2 appearFromTopMenu1">Le E-commerce</p>
-                                            <p class="fw-bold appearFromTopMenu1">Création d'un projet de E commerce en
+                                            <p class="fs-2 appearFromTopMenu1 h-100">Le E-commerce</p>
+                                            <p class="fw-bold appearFromTopMenu1 h-100">Création d'un projet de E
+                                                commerce en
                                                 "OnePage"
                                             </p>
                                             <p class=" appearFromTopMenu1">HTML, CSS, Javascript</p>
@@ -562,30 +571,39 @@
         <div class="row bg-gradiant bg-opacity-10 justify-content-center py-5" id="contact">
             <div id="boxMore" class="col-10 img-thumbnail borderRadius25px">
                 <div class="titleCategory p-3">Me contacter</div>
-                <div class="row m-3 py-3 text-center">
+                <div class="row py-3 text-center">
                     <div class="col-12 col-md-3 p-2 align-self-center">
                         <a target="_blank" href="tel:+33 6 82 61 43 74">
-                            <lord-icon src="https://cdn.lordicon.com/hcndxtmn.json" trigger="hover"
-                                class="searchImg m-2" alt="Me contacter par téléphone"
-                                title="me contacter par téléphone">
-                            </lord-icon><span class="contact">06.82.61.43.74</span>
+                            <span>
+                                <lord-icon src="https://cdn.lordicon.com/hcndxtmn.json" trigger="hover"
+                                    class="contactImg m-2" alt="Me contacter par téléphone"
+                                    title="me contacter par téléphone">
+                                </lord-icon>
+                            </span>
+                            <p class="contact fs-5">06.82.61.43.74</p>
                         </a>
                     </div>
                     <div class="col-12 col-md-3 p-2 align-self-center">
                         <a target="_blank" href="mailto:ferrarioloic.web@gmail.com">
-                            <lord-icon src="https://cdn.lordicon.com/ricptrwi.json" trigger="hover"
-                                class="searchImg m-2" alt="Envoyer un mail" title="M'envoyer un mail">
-                            </lord-icon>
-                            <span class="contact">ferrarioloic.web@gmail.com</span>
+                            <span>
+                                <lord-icon src="https://cdn.lordicon.com/ricptrwi.json" trigger="hover"
+                                    class="contactImg m-2" alt="Envoyer un mail" title="M'envoyer un mail">
+                                </lord-icon>
+                            </span>
+                            <p class="contact fs-5">ferrarioloic.web@gmail.com</p>
                         </a>
                     </div>
                     <div class="col-12 col-md-3 p-2 align-self-center">
-                        <a target="_blank" href="https://www.linkedin.com/in/FERRARIOloic"><img class="searchImg m-2"
-                                src="public/assets/img/linkedin.png">FERRARIOloic</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/FERRARIOloic">
+                            <span><img class="contactImg m-2" src="public/assets/img/linkedin.png"></span>
+                            <p class="fs-5">FERRARIOloic</p>
+                        </a>
                     </div>
                     <div class="col-12 col-md-3 p-2 align-self-center">
-                        <a target="_blank" href="https://github.com/FERRARIOLoic"><img class="searchImg m-2"
-                                src="public/assets/img/github.png">FERRARIOLoic</a>
+                        <a target="_blank" href="https://github.com/FERRARIOLoic">
+                            <span><img class="contactImg m-2" src="public/assets/img/github.png"></span>
+                            <p class="fs-5">FERRARIOLoic</p>
+                        </a>
                     </div>
                 </div>
                 <div class="row">

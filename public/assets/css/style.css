@@ -86,7 +86,8 @@ body {
   text-decoration: none;
   color: rgb(72, 0, 94);
 }
-.nav-link:hover{
+.nav-link:hover,
+a:hover {
   color: rgb(195, 0, 255);
 }
 
@@ -423,6 +424,7 @@ body {
   box-shadow:rgb(200, 203, 200, 0.3) 5px 5px 5px;
 }
 
+
 .textPresentation {
   animation: AppearFromTop 1s ease 0.5s 1 normal both;
 }
@@ -443,10 +445,6 @@ body {
   animation: scaleInFwd 1s ease 0s 1 normal both;
 }
 
-
-.logoImg {
-  height:70px;
-}
 
 .fadeOutCenter {
   animation: fadeOutCenter 0.5s ease 0s 1 normal both;
@@ -864,6 +862,10 @@ body {
 
 @media screen and (max-width:576px) {
 
+  #boxRealisations {
+    height:100%;
+  }
+
   @keyframes appearFromTopPresentation {
     0% {
       opacity: 0;
@@ -934,7 +936,8 @@ body {
   }
 
   .imgCapacity {
-    width: 80%;
+    width: 20%;
+    /* height:60%; */
   }
 
   .progress {
@@ -954,6 +957,9 @@ body {
 
 @media screen and (min-width:576px) {
 
+  .navbarHide {
+    display:none;
+  }
   @keyframes appearFromTopPresentation {
     0% {
       opacity: 0;
@@ -1032,7 +1038,7 @@ body {
   }
 
   .imgCapacity {
-    width: 60%;
+    width: 40%;
   }
 
   .progress {
@@ -1059,6 +1065,10 @@ a {
 .searchImg {
   width: 25px;
   height: 25px;
+}
+.contactImg {
+  width: 30px;
+  height: 30px;
 }
 
 .contact {

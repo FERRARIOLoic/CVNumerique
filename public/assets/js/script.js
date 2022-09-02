@@ -524,19 +524,19 @@ language.forEach(element => {
     })
 })
 
-language.forEach(element => {
-    element.addEventListener('mouseout', () => {
-        html.innerHTML = `<img id="htmlLogo" src="public/assets/img/html5.svg" alt="HTML5" class="imgCapacity">`;
-        css.innerHTML = `<img id="cssLogo" src="public/assets/img/css3.svg" alt="CSS3" class="imgCapacity">`;
-        javascript.innerHTML = `<img id="javascriptLogo" src="public/assets/img/javascript.svg" alt="javascript" class="imgCapacity">`;
-        php.innerHTML = `<img id="phpLogo" src="public/assets/img/php.svg" alt="php" class="imgCapacity">`;
-        bootstrap5.innerHTML = `<img id="bootstrapLogo" src="public/assets/img/bootstrap.svg" alt="bootstrap" class="imgCapacity">`;
-        symfony.innerHTML = `<img id="symfonyLogo" src="public/assets/img/symfony.svg" alt="symfony" class="imgCapacity">`;
-        wordpress.innerHTML = `<img id="wordpressLogo" src="public/assets/img/wordpress.svg" alt="wordpress" class="imgCapacity">`;
-        mysql.innerHTML = `<img id="mysqlLogo" src="public/assets/img/mysql.svg" alt="mysql" class="imgCapacity">`;
-        adobexd.innerHTML = `<img id="adobexdLogo" src="public/assets/img/adobexd.png" alt="adobexd" class="imgCapacity">`;
-        figma.innerHTML = `<img id="figmaLogo" src="public/assets/img/figma.png" alt="figma" class="imgCapacity">`;
-        vscode.innerHTML = `<img id="vscodeLogo" src="public/assets/img/vscode.svg" alt="vscode" class="imgCapacity">`;
+// language.forEach(element => {
+//     element.addEventListener('mouseout', () => {
+//         html.innerHTML = `<img id="htmlLogo" src="public/assets/img/html5.svg" alt="HTML5" class="imgCapacity">`;
+//         css.innerHTML = `<img id="cssLogo" src="public/assets/img/css3.svg" alt="CSS3" class="imgCapacity">`;
+//         javascript.innerHTML = `<img id="javascriptLogo" src="public/assets/img/javascript.svg" alt="javascript" class="imgCapacity">`;
+//         php.innerHTML = `<img id="phpLogo" src="public/assets/img/php.svg" alt="php" class="imgCapacity">`;
+//         bootstrap5.innerHTML = `<img id="bootstrapLogo" src="public/assets/img/bootstrap.svg" alt="bootstrap" class="imgCapacity">`;
+//         symfony.innerHTML = `<img id="symfonyLogo" src="public/assets/img/symfony.svg" alt="symfony" class="imgCapacity">`;
+//         wordpress.innerHTML = `<img id="wordpressLogo" src="public/assets/img/wordpress.svg" alt="wordpress" class="imgCapacity">`;
+//         mysql.innerHTML = `<img id="mysqlLogo" src="public/assets/img/mysql.svg" alt="mysql" class="imgCapacity">`;
+//         adobexd.innerHTML = `<img id="adobexdLogo" src="public/assets/img/adobexd.png" alt="adobexd" class="imgCapacity">`;
+//         figma.innerHTML = `<img id="figmaLogo" src="public/assets/img/figma.png" alt="figma" class="imgCapacity">`;
+//         vscode.innerHTML = `<img id="vscodeLogo" src="public/assets/img/vscode.svg" alt="vscode" class="imgCapacity">`;
         
-    })
-})
+//     })
+// })
