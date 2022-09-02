@@ -13,8 +13,10 @@ body {
 }
 
 .imgProfile {
-  color: #0F4C81;
-  box-shadow: 0px 1px 10px;
+  /* color: #0F4C81; */
+  border-radius:45px;
+  /* box-shadow: 0px 3px 5px; */
+  /* background-color: lightgreen; */
 }
 
 .navbar {
@@ -932,8 +934,11 @@ a:hover {
   }
 
   .imgProfile {
-    width: 100%;
+    width: 70%;
   }
+  .navbar-light .navbar-toggler {
+    border:none;
+}
 
   .imgCapacity {
     width: 20%;
@@ -1028,7 +1033,7 @@ a:hover {
   }
 
   .imgProfile {
-    width: 50%;
+    width: 100%;
   }
 
   #realisations,

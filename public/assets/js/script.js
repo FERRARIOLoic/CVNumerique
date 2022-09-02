@@ -446,7 +446,7 @@ language.forEach(element => {
                 document.getElementById("bootstrapLogo").classList.add('fadeOutCenter');
                 console.log('test');
                 bootstrap5.innerHTML = `
-                    <div id="bootstrapImg" class="progress-circle small text-center" data-value="40" id="jauge_2">
+                    <div id="bootstrapImg" class="progress-circle small text-center" data-value="35" id="jauge_2">
                         <div class="progress-masque">
                             <div class="progress-barre"></div>
                             <div class="progress-sup50"></div>
