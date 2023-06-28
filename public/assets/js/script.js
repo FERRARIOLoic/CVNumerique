@@ -176,8 +176,26 @@ document.addEventListener('scroll', function () {
 let btnMenuChoose = document.querySelectorAll('#btnMenuChoose');
 
 btnMenuChoose.forEach(element => {
+    element.onmouseover = (event) => {
+
+        const id_navbar = event.target.dataset.value;
+        const action_navbar = `btnMenuChoose_${id_navbar}`;
+        console.log(id_navbar)
+
+
+        switch (action_navbar) {
+            //?------------- AAA ---------//
+            case 'presentation':
+                document.getElementById(action_navbar).classList.add('cars_action_show');
+
+                break;
+            case 'parcours':
+                document.getElementById("btnMenuChoose").classList.add('bg-primary');
+                break;
+        }
+    }
+
     element.addEventListener('click', () => {
-        // console.log(element.dataset.value);
 
         //fonction while case
         switch (element.dataset.value) {
@@ -192,19 +210,9 @@ btnMenuChoose.forEach(element => {
                 document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
                 textPresentation.innerHTML = `
                 <span class="textPresentation">
-                Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
-                développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
-                autodidacte
-                <br>
-                Après 7 années de pratique, dont 5 ans professionnellement, je
-                souhaite
-                désormais en faire mon activité principale
-                <br>
-                Afin d'actualiser mes connaissances et d'avoir un
-                parcours d'apprentissage professionnel, j'ai entrepris une formation de développeur Web / Web Mobile au
-                sein de La Manu Amiens
-                <br>
-                En reconversion professionnelle, je recherche donc un emploi de Développeur Web / Web Mobile Full Stack, Front End, Back End
+                Passionné d'informatique et curieux de nature, j'ai créé et développe depuis 6 ans le site de formation interne de l'entreprise pour laquelle j'exerce en parallèle le métier de Technicien SAV Mobile. 
+                Initialement autodidacte, j'ai entrepris une formation de Développeur Web / Web Mobile au sein de la Manu d'Amiens afin d'actualiser mes connaissances et me perfectionner en HTML, CSS, Javascript, PHP, Bootstrap...
+                Mon objectif est d'exercer désormais ce métier de développeur web à temps complet
                 </span>
                 `;
                 break;
@@ -224,19 +232,12 @@ boxPresentation.addEventListener('mouseover', () => {
     document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
     textPresentation.innerHTML = `
     <span  class="textPresentation">
-        Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
-        développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
-        autodidacte
-        <br>
-        Après 7 années de pratique, dont 5 ans professionnellement, je
-        souhaite
-        désormais en faire mon activité principale
-        <br>
-        Afin d'actualiser mes connaissances et d'avoir un
-        parcours d'apprentissage professionnel, j'ai entrepris une formation de développeur Web / Web Mobile au
-        sein de La Manu Amiens
-        <br>
-        En reconversion professionnelle, je recherche donc un emploi de Développeur Web / Web Mobile Full Stack, Front End, Back End
+    Passionné d'informatique et curieux de nature, j'ai créé et développe depuis 6 ans le site de formation interne de l'entreprise pour laquelle j'exerce en parallèle le métier de Technicien SAV Mobile.</span>
+<br>
+    <span  class="textPresentation">
+    Initialement autodidacte, j'ai entrepris une formation de Développeur Web / Web Mobile au sein de la Manu d'Amiens afin d'actualiser mes connaissances et me perfectionner en HTML, CSS, Javascript, PHP, Bootstrap...
+    </p>
+    Mon objectif est d'exercer désormais ce métier de développeur web à temps complet
         </span>
         `;
 })
@@ -401,7 +402,7 @@ language.forEach(element => {
             case 'html':
                 document.getElementById("htmlLogo").classList.add('fadeOutCenter');
                 html.innerHTML = `
-                    <div id="htmlImg" class="progress-circle small text-center" data-value="45" id="jauge_2">
+                    <div id="htmlImg" class="progress-circle small justify-content-center" data-value="70" id="jauge_2">
                         <div class="progress-masque">
                             <div class="progress-barre"></div>
                             <div class="progress-sup50"></div>
@@ -412,7 +413,7 @@ language.forEach(element => {
             case 'css':
                 document.getElementById("cssLogo").classList.add('fadeOutCenter');
                 css.innerHTML = `
-                    <div id="cssImg" class="progress-circle small text-center" data-value="30" id="jauge_2">
+                    <div id="cssImg" class="progress-circle small text-center" data-value="60" id="jauge_2">
                         <div class="progress-masque">
                             <div class="progress-barre"></div>
                             <div class="progress-sup50"></div>
@@ -423,7 +424,7 @@ language.forEach(element => {
             case 'javascript':
                 document.getElementById("javascriptLogo").classList.add('fadeOutCenter');
                 javascript.innerHTML = `
-                    <div id="javascriptImg" class="progress-circle small text-center" data-value="25" id="jauge_2">
+                    <div id="javascriptImg" class="progress-circle small text-center" data-value="30" id="jauge_2">
                         <div class="progress-masque">
                             <div class="progress-barre"></div>
                             <div class="progress-sup50"></div>
@@ -434,7 +435,7 @@ language.forEach(element => {
             case 'php':
                 document.getElementById("phpLogo").classList.add('fadeOutCenter');
                 php.innerHTML = `
-                    <div id="phpImg" class="progress-circle small text-center" data-value="40" id="jauge_2">
+                    <div id="phpImg" class="progress-circle small text-center" data-value="55" id="jauge_2">
                         <div class="progress-masque">
                             <div class="progress-barre"></div>
                             <div class="progress-sup50"></div>
@@ -446,7 +447,7 @@ language.forEach(element => {
                 document.getElementById("bootstrapLogo").classList.add('fadeOutCenter');
                 console.log('test');
                 bootstrap5.innerHTML = `
-                    <div id="bootstrapImg" class="progress-circle small text-center" data-value="35" id="jauge_2">
+                    <div id="bootstrapImg" class="progress-circle small text-center" data-value="45" id="jauge_2">
                         <div class="progress-masque">
                             <div class="progress-barre"></div>
                             <div class="progress-sup50"></div>
@@ -457,7 +458,7 @@ language.forEach(element => {
             case 'symfony':
                 document.getElementById("symfonyLogo").classList.add('fadeOutCenter');
                 symfony.innerHTML = `
-                    <div id="symfonyImg" class="progress-circle small text-center" data-value="20" id="jauge_2">
+                    <div id="symfonyImg" class="progress-circle small justify-content-center" data-value="20" id="jauge_2">
                         <div class="progress-masque">
                             <div class="progress-barre"></div>
                             <div class="progress-sup50"></div>
@@ -468,7 +469,7 @@ language.forEach(element => {
             case 'wordpress':
                 document.getElementById("wordpressLogo").classList.add('fadeOutCenter');
                 wordpress.innerHTML = `
-                    <div id="wordpressImg" class="progress-circle small text-center" data-value="25" id="jauge_2">
+                    <div id="wordpressImg" class="progress-circle small text-center" data-value="50" id="jauge_2">
                         <div class="progress-masque">
                             <div class="progress-barre"></div>
                             <div class="progress-sup50"></div>
@@ -479,7 +480,7 @@ language.forEach(element => {
             case 'mysql':
                 document.getElementById("mysqlLogo").classList.add('fadeOutCenter');
                 mysql.innerHTML = `
-                    <div id="mysqlImg" class="progress-circle small text-center" data-value="30" id="jauge_2">
+                    <div id="mysqlImg" class="progress-circle small text-center" data-value="65" id="jauge_2">
                         <div class="progress-masque">
                             <div class="progress-barre"></div>
                             <div class="progress-sup50"></div>
@@ -524,19 +525,19 @@ language.forEach(element => {
     })
 })
 
-// language.forEach(element => {
-//     element.addEventListener('mouseout', () => {
-//         html.innerHTML = `<img id="htmlLogo" src="public/assets/img/html5.svg" alt="HTML5" class="imgCapacity">`;
-//         css.innerHTML = `<img id="cssLogo" src="public/assets/img/css3.svg" alt="CSS3" class="imgCapacity">`;
-//         javascript.innerHTML = `<img id="javascriptLogo" src="public/assets/img/javascript.svg" alt="javascript" class="imgCapacity">`;
-//         php.innerHTML = `<img id="phpLogo" src="public/assets/img/php.svg" alt="php" class="imgCapacity">`;
-//         bootstrap5.innerHTML = `<img id="bootstrapLogo" src="public/assets/img/bootstrap.svg" alt="bootstrap" class="imgCapacity">`;
-//         symfony.innerHTML = `<img id="symfonyLogo" src="public/assets/img/symfony.svg" alt="symfony" class="imgCapacity">`;
-//         wordpress.innerHTML = `<img id="wordpressLogo" src="public/assets/img/wordpress.svg" alt="wordpress" class="imgCapacity">`;
-//         mysql.innerHTML = `<img id="mysqlLogo" src="public/assets/img/mysql.svg" alt="mysql" class="imgCapacity">`;
-//         adobexd.innerHTML = `<img id="adobexdLogo" src="public/assets/img/adobexd.png" alt="adobexd" class="imgCapacity">`;
-//         figma.innerHTML = `<img id="figmaLogo" src="public/assets/img/figma.png" alt="figma" class="imgCapacity">`;
-//         vscode.innerHTML = `<img id="vscodeLogo" src="public/assets/img/vscode.svg" alt="vscode" class="imgCapacity">`;
-        
-//     })
-// })
+language.forEach(element => {
+    element.addEventListener('mouseout', () => {
+        html.innerHTML = `<img id="htmlLogo" src="public/assets/img/html5.svg" alt="HTML5" class="imgCapacity">`;
+        css.innerHTML = `<img id="cssLogo" src="public/assets/img/css3.svg" alt="CSS3" class="imgCapacity">`;
+        javascript.innerHTML = `<img id="javascriptLogo" src="public/assets/img/javascript.svg" alt="javascript" class="imgCapacity">`;
+        php.innerHTML = `<img id="phpLogo" src="public/assets/img/php.svg" alt="php" class="imgCapacity">`;
+        bootstrap5.innerHTML = `<img id="bootstrapLogo" src="public/assets/img/bootstrap.svg" alt="bootstrap" class="imgCapacity">`;
+        symfony.innerHTML = `<img id="symfonyLogo" src="public/assets/img/symfony.svg" alt="symfony" class="imgCapacity">`;
+        wordpress.innerHTML = `<img id="wordpressLogo" src="public/assets/img/wordpress.svg" alt="wordpress" class="imgCapacity">`;
+        mysql.innerHTML = `<img id="mysqlLogo" src="public/assets/img/mysql.svg" alt="mysql" class="imgCapacity">`;
+        adobexd.innerHTML = `<img id="adobexdLogo" src="public/assets/img/adobexd.svg" alt="adobexd" class="imgCapacity">`;
+        figma.innerHTML = `<img id="figmaLogo" src="public/assets/img/figma.svg" alt="figma" class="imgCapacity">`;
+        vscode.innerHTML = `<img id="vscodeLogo" src="public/assets/img/vscode.svg" alt="vscode" class="imgCapacity">`;
+
+    })
+})
