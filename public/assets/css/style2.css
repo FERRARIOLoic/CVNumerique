@@ -33,8 +33,8 @@ main {
 
 
 
-/*------------- MAX WIDTH 576px ---------*/
-@media screen and (max-width:576px) {
+/*------------- MAX WIDTH 850px ---------*/
+@media screen and (max-width:850px) {
 
     .title_name {
         font-size: 25px;
@@ -54,8 +54,8 @@ main {
 
 }
 
-/*------------- MIN WIDTH 576px ---------*/
-@media screen and (min-width:576px) {
+/*------------- MIN WIDTH 850px ---------*/
+@media screen and (min-width:850px) {
 
     .title_name {
         font-size: 40px;
