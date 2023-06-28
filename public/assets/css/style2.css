@@ -27,32 +27,50 @@ main {
 }
 
 .photo_profile {
-
-    width:fit-content;
-    max-width:100%;
+    width: fit-content;
+    max-width: 100%;
 }
 
 
 
 /*------------- MAX WIDTH 576px ---------*/
 @media screen and (max-width:576px) {
-    
+
     .title_name {
         font-size: 25px;
     }
+
     .title_job {
         font-size: 16px;
     }
-    
+
+    .font_menu_navbar {
+        font-size: 10px;
+    }
+
+    .photo_profile {
+        border-radius: 4px;
+    }
+
 }
+
 /*------------- MIN WIDTH 576px ---------*/
 @media screen and (min-width:576px) {
-    
+
     .title_name {
         font-size: 40px;
     }
+
     .title_job {
         font-size: 30px;
     }
-    
+
+    .font_menu_navbar {
+        font-size: 15px;
+    }
+
+    .photo_profile {
+        border-radius: 8px;
+    }
+
 }
