@@ -49,6 +49,9 @@ main {
     font-size:10px;
 }
 
+.img_small {
+    max-height:30px;
+}
 
 
 /*------------- MAX WIDTH 840px - SMALL ---------*/

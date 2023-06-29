@@ -64,9 +64,10 @@ soft_skills.addEventListener('mouseout', () => {
 
 //------------- PHOTO --------//
 photo_profile.addEventListener('click', () => {
-    profile_card.classList.remove('scale-in-hor-right', 'bg-light');
-    profile_card.classList.remove('scale-out-hor-right', 'bg-light');
-    profile_card.classList.add('scale-out-hor-right');
+    profile_card.classList.remove('scale-out-hor-right','scale-in-hor-right', 'bg-light','col-12','order-2','order-lg-2');
+    profile_card.classList.add('scale-out-hor-right', 'bg-light','col-4','order-1','order-lg-1');
+    menu_card.classList.remove('col-12');
+    menu_card.classList.add('col-8','order-2','order-lg-2');
     profile_card.addEventListener('animationend', function () {
         profile_card.innerHTML = `
         <img src="public/assets/img/loic.jpg" class="photo_profile" alt="Ma photo">
@@ -78,9 +79,10 @@ photo_profile.addEventListener('click', () => {
 
 //------------- TRAINING --------//
 title_training.addEventListener('click', () => {
-    profile_card.classList.remove('scale-in-hor-right', 'bg-light');
-    profile_card.classList.remove('scale-out-hor-right', 'bg-light');
-    profile_card.classList.add('scale-out-hor-right', 'bg-light');
+    profile_card.classList.remove('scale-out-hor-right','scale-in-hor-right', 'bg-light','col-4','order-1','order-lg-1');
+    profile_card.classList.add('scale-out-hor-right', 'bg-light','col-12','order-2','order-lg-1');
+    menu_card.classList.remove('col-8','order-2');
+    menu_card.classList.add('col-12','order-1','order-lg-2');
     profile_card.addEventListener('animationend', function () {
         profile_card.innerHTML = `
         <div class="row justify-content-center">
@@ -104,9 +106,10 @@ title_training.addEventListener('click', () => {
 
 //------------- ABOUT ---------//
 about.addEventListener('click', () => {
-    profile_card.classList.remove('scale-in-hor-right', 'bg-light');
-    profile_card.classList.remove('scale-out-hor-right', 'bg-light');
-    profile_card.classList.add('scale-out-hor-right', 'bg-light');
+    profile_card.classList.remove('scale-out-hor-right','scale-in-hor-right', 'bg-light','col-4','order-1','order-lg-1');
+    profile_card.classList.add('scale-out-hor-right', 'bg-light','col-12','order-2','order-lg-1');
+    menu_card.classList.remove('col-8','order-2');
+    menu_card.classList.add('col-12','order-1','order-lg-2');
     profile_card.addEventListener('animationend', function () {
         profile_card.innerHTML = `
     <div class="row  justify-content-center">
@@ -133,15 +136,17 @@ about.addEventListener('click', () => {
         profile_card.classList.remove('scale-out-hor-right', 'bg-light');
         profile_card.classList.add('scale-in-hor-right', 'bg-light');
         document.getElementById("about").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+        main.innerHTML =``;
     });
 });
 
 
 //------------- JOBS ---------//
 jobs.addEventListener('click', () => {
-    profile_card.classList.remove('scale-in-hor-right', 'bg-light');
-    profile_card.classList.remove('scale-out-hor-right', 'bg-light');
-    profile_card.classList.add('scale-out-hor-right', 'bg-light');
+    profile_card.classList.remove('scale-out-hor-right','scale-in-hor-right', 'bg-light','col-4','order-1','order-lg-1');
+    profile_card.classList.add('scale-out-hor-right', 'bg-light','col-12','order-2','order-lg-1');
+    menu_card.classList.remove('col-8','order-2');
+    menu_card.classList.add('col-12','order-1','order-lg-2');
     profile_card.addEventListener('animationend', function () {
         profile_card.innerHTML = `
         <div class="row">
@@ -306,9 +311,10 @@ jobs.addEventListener('click', () => {
 
 //------------- TRAININGS ---------//
 trainings.addEventListener('click', () => {
-    profile_card.classList.remove('scale-in-hor-right', 'bg-light');
-    profile_card.classList.remove('scale-out-hor-right', 'bg-light');
-    profile_card.classList.add('scale-out-hor-right', 'bg-light');
+    profile_card.classList.remove('scale-out-hor-right','scale-in-hor-right', 'bg-light','col-4','order-1','order-lg-1');
+    profile_card.classList.add('scale-out-hor-right', 'bg-light','col-12','order-2','order-lg-1');
+    menu_card.classList.remove('col-8','order-2');
+    menu_card.classList.add('col-12','order-1','order-lg-2');
     profile_card.addEventListener('animationend', function () {
         profile_card.innerHTML = `
         <div class="row">
@@ -459,46 +465,361 @@ trainings.addEventListener('click', () => {
 
 //------------- SKILLS ---------//
 skills.addEventListener('click', () => {
-    profile_card.classList.remove('scale-in-hor-right', 'bg-light');
-    profile_card.classList.remove('scale-out-hor-right', 'bg-light');
-    profile_card.classList.add('scale-out-hor-right', 'bg-light');
+    profile_card.classList.remove('scale-out-hor-right','scale-in-hor-right', 'bg-light','col-4','order-1','order-lg-1');
+    profile_card.classList.add('scale-out-hor-right', 'bg-light','col-12','order-2','order-lg-1');
+    menu_card.classList.remove('col-8','order-2');
+    menu_card.classList.add('col-12','order-1','order-lg-2');
     profile_card.addEventListener('animationend', function () {
         profile_card.innerHTML = `
         <div class="row">
             <div class="col-12 border-bottom border-2 border_blue fs-3">
                 Compétences
             </div>
-            <div class="col-12">
-                <div class="row d-flex justify-content-center border-bottom border_blue py-4">
-                    <div class="col-2 align-self-center ">
-                        <img src="public/assets/img/2022.jpg" class="date_rotate"
-                            alt="2022 - Développeur Web / Web mobile">
+            <div class="row justify-content-evenly">
+                <div class="col-3 text-center p-3 font_card_small">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="public/assets/img/html5.svg" class="" alt="HTML5">
+                        </div>
+                        <div class="col-12">
+                            HTML5
+                        </div>
                     </div>
-                    <div class="col-10 py-2">
-                        <div class="row text-start">
-                            <div class="col-12 fw-bold">
-                                Développeur Web / Web Mobile
+                </div>
+                <div class="col-3 text-center p-3 font_card_small">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="public/assets/img/css3.svg" class="" alt="CSS3">
+                        </div>
+                        <div class="col-12">
+                            CSS3
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 text-center p-3 font_card_small">
+                    <img src="public/assets/img/javascript.svg" class="" alt="Javascript">
+                    Javascript
+                </div>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="col-3 text-center p-3 font_card_small align-self-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="public/assets/img/php.svg" class="" alt="PHP">
+                        </div>
+                        <div class="col-12">
+                            PHP
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 text-center p-3 font_card_small align-self-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="public/assets/img/mysql.svg" class="" alt="MySQL">
+                        </div>
+                        <div class="col-12">
+                            MySQL
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="col-3 text-center p-3 font_card_small align-self-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="public/assets/img/bootstrap.svg" class="" alt="Bootstrap">
+                        </div>
+                        <div class="col-12">
+                            Bootstrap
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 text-center p-3 font_card_small align-self-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="public/assets/img/wordpress.svg" class="" alt="Wordpress">
+                        </div>
+                        <div class="col-12">
+                            Wordpress
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+        profile_card.classList.remove('scale-out-hor-right', 'bg-light');
+        profile_card.classList.add('scale-in-hor-right', 'bg-light');
+        document.getElementById("jobs").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+    });
+});
+
+
+
+//------------- HOBBIES ---------//
+hobbies.addEventListener('click', () => {
+    profile_card.classList.remove('scale-out-hor-right','scale-in-hor-right', 'bg-light','col-4','order-1','order-lg-1');
+    profile_card.classList.add('scale-out-hor-right', 'bg-light','col-12','order-2','order-lg-1');
+    menu_card.classList.remove('col-8','order-2');
+    menu_card.classList.add('col-12','order-1','order-lg-2');
+    profile_card.addEventListener('animationend', function () {
+        profile_card.innerHTML = `
+        <div class="row">
+            <div class="col-12 border-bottom border-2 border_blue fs-3">
+                Centres d'intérêt
+            </div>
+            <div class="col-12 pt-5">
+                Dessin
+            </div>
+            <div class="col-12 pt-3">
+                Bricolage
+            </div>
+            <div class="col-12 pt-3">
+                Lecture
+            </div>
+        </div>
+    `;
+
+        profile_card.classList.remove('scale-out-hor-right', 'bg-light');
+        profile_card.classList.add('scale-in-hor-right', 'bg-light');
+        document.getElementById("jobs").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+    });
+});
+
+
+
+
+
+
+//------------- SOFT SKILLS ---------//
+soft_skills.addEventListener('click', () => {
+    profile_card.classList.remove('scale-out-hor-right','scale-in-hor-right', 'bg-light','col-4','order-1','order-lg-1');
+    profile_card.classList.add('scale-out-hor-right', 'bg-light','col-12','order-2','order-lg-1');
+    menu_card.classList.remove('col-8','order-2');
+    menu_card.classList.add('col-12','order-1','order-lg-2');
+    profile_card.addEventListener('animationend', function () {
+        profile_card.innerHTML = `
+        <div class="row">
+            <div class="col-12 border-bottom border-2 border_blue fs-3">
+                Centres d'intérêt
+            </div>
+            <div class="col-12 pt-5">
+                Autonome
+            </div>
+            <div class="col-12 pt-3">
+                Force de proposition
+            </div>
+            <div class="col-12 pt-3">
+                Rigoureux
+            </div>
+            <div class="col-12 pt-3">
+                Sens du collectif
+            </div>
+        </div>
+    `;
+
+        profile_card.classList.remove('scale-out-hor-right', 'bg-light');
+        profile_card.classList.add('scale-in-hor-right', 'bg-light');
+        document.getElementById("jobs").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+    });
+});
+
+
+
+
+
+
+//------------- ACHIEVEMENT ---------//
+achievement.addEventListener('click', () => {
+    profile_card.classList.remove('scale-out-hor-right','scale-in-hor-right', 'bg-light','col-4','order-1','order-lg-1');
+    profile_card.classList.add('scale-out-hor-right', 'bg-light','col-12','order-2','order-lg-1');
+    menu_card.classList.remove('col-8','order-2');
+    menu_card.classList.add('col-12','order-1','order-lg-2');
+    profile_card.addEventListener('animationend', function () {
+        profile_card.innerHTML = `
+        <div class="row">
+            <div class="col-12 border-bottom border-2 border_blue fs-3">
+                Réalisations
+            </div>
+            <div class="col-12">
+                <div class="row py-3 border-bottom border_blue">
+                    <div class="col-12 fw-bold fs-5">
+                        <a target="_blank" href="https://astuces.save.co/">Astuces</a>
+                    </div>
+                    <div class="col-12 pb-3 align-self-center">
+                        <div class="row">
+                            <div class="col-12">
+                                Site de E-learning de la société Save
+                            </div>
+                            <div class="col-12">
+                                Réalisé en autodidacte depuis 2015
                             </div>
                             <div class="col-12 fst-italic font_card_small">
-                                La Manu, Amiens
+                                Technologies utilisées : HTML5, CSS3 PHP7, MySQL
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-center border-bottom border_blue py-4">
-                    <div class="col-2 align-self-center">
-                        <img src="public/assets/img/2002.jpg" class="date_rotate"
-                            alt="2002 - Baccalauréat Sciences et techniques de laboratoire (spécialité Biochimie, Génie biologique)">
+                <div class="row py-3 border-bottom border_blue">
+                    <div class="col-12 fs-5 fw-bold">
+                        <a target="_blank" href="https://monptittrucenbois.legtux.org/accueil.html">Mon P'tit Truc En Bois</a>
                     </div>
-                    <div class="col-10 py-2">
-                        <div class="row text-start">
-                            <div class="col-12 fw-bold">
-                            Baccalauréat Sciences et techniques de laboratoire<br><span class="font_card_small">(spécialité Biochimie Génie biologique)</span>
+                    <div class="col-12 align-self-center">
+                        <div class="row">
+                            <div class="col-12">
+                                Site de vente de produits en bois fabriqués à la main
+                            </div>
+                            <div class="col-12">
+                                Réalisé en 2022 pour M. Gérard VUE
                             </div>
                             <div class="col-12 fst-italic font_card_small">
-                                Sainet Marie de Nevers, Toulouse
+                                Technologies utilisées : HTML5, CSS3, Javascript, Bootstrap, PHP8, MySQL
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row py-3 border-bottom border_blue">
+                    <div class="col-12 fs-5 fw-bold">
+                        <a target="_blank" href="https://www.prouzel.fr/">Mairie de Prouzel</a>
+                    </div>
+                    <div class="col-12 pb-3 align-self-center">
+                        <div class="row">
+                            <div class="col-12">
+                                Site de la Mairie de Prouzel
+                            </div>
+                            <div class="col-12">
+                                Réalisé en 2022 en partenariat avec Somme Numérique
+                            </div>
+                            <div class="col-12 fst-italic font_card_small">
+                                Technologies utilisées : Wordpress
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+        profile_card.classList.remove('scale-out-hor-right', 'bg-light');
+        profile_card.classList.add('scale-in-hor-right', 'bg-light');
+        document.getElementById("jobs").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+    });
+});
+
+
+
+
+
+//------------- PROFILE ---------//
+profile.addEventListener('click', () => {
+    profile_card.classList.remove('scale-out-hor-right','scale-in-hor-right', 'bg-light','col-4','order-1','order-lg-1');
+    profile_card.classList.add('scale-out-hor-right', 'bg-light','col-12','order-2','order-lg-1');
+    menu_card.classList.remove('col-8','order-2');
+    menu_card.classList.add('col-12','order-1','order-lg-2');
+    profile_card.addEventListener('animationend', function () {
+        profile_card.innerHTML = `
+        <div class="row">
+            <div class="col-12 border-bottom border-2 border_blue fs-3">
+                Profil
+            </div>
+            <div class="col-12">
+                <div class="row pt-5 border-bottom border_blue">
+                    <div class="col-4 align-self-start text-end fw-bold">
+                        Langues
+                    </div>
+                    <div class="col-8 pb-4 align-self-center text-start">
+                        <div class="row">
+                            <div class="col-12">
+                                Français (langue maternelle)
+                            </div>
+                            <div class="col-12">
+                                Anglais (avancé)
+                            </div>
+                            <div class="col-12">
+                                Espagnol (usuel)
+                            </div>
+                            <div class="col-12">
+                                Italien (bases)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row py-4 border-bottom border_blue">
+                    <div class="col-4 align-self-start text-end fw-bold">
+                        Permis
+                    </div>
+                    <div class="col-8 align-self-center text-start">
+                        B et véhicule personnel
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+        profile_card.classList.remove('scale-out-hor-right', 'bg-light');
+        profile_card.classList.add('scale-in-hor-right', 'bg-light');
+        document.getElementById("jobs").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+    });
+});
+
+
+
+
+
+
+
+
+//------------- CONTACTS ---------//
+contact.addEventListener('click', () => {
+    profile_card.classList.remove('scale-out-hor-right','scale-in-hor-right', 'bg-light','col-4','order-1','order-lg-1');
+    profile_card.classList.add('scale-out-hor-right', 'bg-light','col-12','order-2','order-lg-1');
+    menu_card.classList.remove('col-8','order-2');
+    menu_card.classList.add('col-12','order-1','order-lg-2');
+    profile_card.addEventListener('animationend', function () {
+        profile_card.innerHTML = `
+        <div class="row">
+            <div class="col-12 border-bottom border-2 border_blue fs-3">
+                Contacts
+            </div>
+            <div class="col-12 pt-5">
+                <div class="row pt-5">
+                    <div class="col-4 align-self-center text-end">
+                        <img src="public/assets/img/phone.png" class="img_small" alt="Me contacter par téléphone">
+                    </div>
+                    <div class="col-8 align-self-center text-start">
+                        <a target="_blank" href="tel:+33 6 82 61 43 74">
+                            06.82.61.43.74
+                        </a>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-4 align-self-center text-end">
+                        <img src="public/assets/img/mail.png" class="img_small" alt="Me contacter par mail">
+                    </div>
+                    <div class="col-8 align-self-center text-start">
+                        <a target="_blank" href="mailto:ferrarioloic.web@gmail.com">
+                            ferrarioloic.web@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-4 align-self-center text-end">
+                        <img src="public/assets/img/linkedin.png" class="img_small" alt="Me contacter par LinkedIn">
+                    </div>
+                    <div class="col-8 align-self-center text-start">
+                        <a target="_blank" href="https://www.linkedin.com/in/FERRARIOloic">
+                            FERRARIOloic
+                        </a>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-4 align-self-center text-end">
+                        <img src="public/assets/img/github.png" class="img_small" alt="Voir mon GitHub">
+                    </div>
+                    <div class="col-8 align-self-center text-start">
+                        <a target="_blank" href="https://github.com/FERRARIOLoic">
+                            FERRARIOloic
+                        </a>
                     </div>
                 </div>
             </div>
