@@ -18,45 +18,45 @@ window.onscroll = function () {
 
 //------------- ADDEVENTLISTENER ONMOUSEOVER ---------//
 about.addEventListener('mouseover', () => {
-    document.getElementById("about").classList.add('ShadowScaleCenter', 'bg-light');
+    document.getElementById("about").classList.add('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 about.addEventListener('mouseout', () => {
-    document.getElementById("about").classList.remove('ShadowScaleCenter', 'bg-light');
+    document.getElementById("about").classList.remove('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 
 jobs.addEventListener('mouseover', () => {
-    document.getElementById("jobs").classList.add('ShadowScaleCenter', 'bg-light');
+    document.getElementById("jobs").classList.add('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 jobs.addEventListener('mouseout', () => {
-    document.getElementById("jobs").classList.remove('ShadowScaleCenter', 'bg-light');
+    document.getElementById("jobs").classList.remove('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 
 trainings.addEventListener('mouseover', () => {
-    document.getElementById("trainings").classList.add('ShadowScaleCenter', 'bg-light');
+    document.getElementById("trainings").classList.add('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 trainings.addEventListener('mouseout', () => {
-    document.getElementById("trainings").classList.remove('ShadowScaleCenter', 'bg-light');
+    document.getElementById("trainings").classList.remove('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 
 skills.addEventListener('mouseover', () => {
-    document.getElementById("skills").classList.add('ShadowScaleCenter', 'bg-light');
+    document.getElementById("skills").classList.add('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 skills.addEventListener('mouseout', () => {
-    document.getElementById("skills").classList.remove('ShadowScaleCenter', 'bg-light');
+    document.getElementById("skills").classList.remove('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 
 hobbies.addEventListener('mouseover', () => {
-    document.getElementById("hobbies").classList.add('ShadowScaleCenter', 'bg-light');
+    document.getElementById("hobbies").classList.add('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 hobbies.addEventListener('mouseout', () => {
-    document.getElementById("hobbies").classList.remove('ShadowScaleCenter', 'bg-light');
+    document.getElementById("hobbies").classList.remove('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 
 soft_skills.addEventListener('mouseover', () => {
-    document.getElementById("soft_skills").classList.add('ShadowScaleCenter', 'bg-light');
+    document.getElementById("soft_skills").classList.add('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 soft_skills.addEventListener('mouseout', () => {
-    document.getElementById("soft_skills").classList.remove('ShadowScaleCenter', 'bg-light');
+    document.getElementById("soft_skills").classList.remove('ShadowScaleCenter', 'bg-light','scale-up-center');
 });
 
 
@@ -72,7 +72,7 @@ photo_profile.addEventListener('click', () => {
         <img src="public/assets/img/loic.jpg" class="photo_profile" alt="Ma photo">
     `;
     profile_card.classList.remove('scale-out-hor-right', 'bg-light');
-    profile_card.classList.add('scale-in-hor-right', 'bg-light');
+    profile_card.classList.add('scale-in-hor-right');
     });
 });
 
@@ -84,7 +84,7 @@ about.addEventListener('click', () => {
     profile_card.addEventListener('animationend', function () {
         profile_card.innerHTML = `
     <div class="row  justify-content-center">
-        <div class="col-11 border-bottom border-2 border_blue fs-4 py-3">
+        <div class="col-11 border-bottom border-2 border_blue fs-4 py-2">
             A propos de moi
         </div>
         <div class="col-12 py-2">
@@ -106,6 +106,7 @@ about.addEventListener('click', () => {
     `;
     profile_card.classList.remove('scale-out-hor-right', 'bg-light');
     profile_card.classList.add('scale-in-hor-right', 'bg-light');
+    document.getElementById("about").classList.remove('ShadowScaleCenter', 'bg-light','scale-up-center');
     });
 });
 
@@ -140,6 +141,7 @@ jobs.addEventListener('click', () => {
     `;
     profile_card.classList.remove('scale-out-hor-right', 'bg-light');
     profile_card.classList.add('scale-in-hor-right', 'bg-light');
+    document.getElementById("jobs").classList.remove('ShadowScaleCenter', 'bg-light','scale-up-center');
     });
 });
 
