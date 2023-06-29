@@ -76,6 +76,24 @@ photo_profile.addEventListener('click', () => {
     });
 });
 
+//------------- TRAINING --------//
+title_training.addEventListener('click', () => {
+    profile_card.classList.remove('scale-in-hor-right', 'bg-light');
+    profile_card.classList.remove('scale-out-hor-right', 'bg-light');
+    profile_card.classList.add('scale-out-hor-right');
+    profile_card.addEventListener('animationend', function () {
+        profile_card.innerHTML = `
+        <div class="row  justify-content-center">
+            <div class="col-11 border-bottom border-2 border_blue fs-5 py-2">
+            RNCP 31114, Niveau 5, Bac+2
+            </div>
+        </div>
+    `;
+    profile_card.classList.remove('scale-out-hor-right', 'bg-light');
+    profile_card.classList.add('scale-in-hor-right');
+    });
+});
+
 //------------- ABOUT ---------//
 about.addEventListener('click', () => {
     profile_card.classList.remove('scale-in-hor-right', 'bg-light');

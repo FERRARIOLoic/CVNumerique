@@ -31,7 +31,6 @@ main {
     max-width: 100%;
 }
 #profile_card {
-    max-height:500px;
     overflow: hidden;
 }
 
@@ -45,7 +44,7 @@ main {
 
 
 
-/*------------- MAX WIDTH 840px ---------*/
+/*------------- MAX WIDTH 840px - SMALL ---------*/
 @media screen and (max-width:840px) {
 
     .title_name {
@@ -55,9 +54,13 @@ main {
     .title_job {
         font-size: 16px;
     }
+    #profile_card {
+        overflow: hidden;
+    }
 
     .title_date {
         font-size: 15px;
+        text-align: left;
     }
 
     .font_menu_navbar {
@@ -69,12 +72,13 @@ main {
     }
 
     .photo_date {
-        max-width:100%;
+        transform: rotate(90deg);
+        width:200%;
     }
 
 }
 
-/*------------- MIN WIDTH 840px ---------*/
+/*------------- MIN WIDTH 840px - BIG ---------*/
 @media screen and (min-width:840px) {
 
     .title_name {
@@ -83,6 +87,9 @@ main {
 
     .title_job {
         font-size: 30px;
+    }
+    #profile_card {
+        height:500px;
     }
 
     .title_date {
