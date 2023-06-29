@@ -45,6 +45,13 @@ skills.addEventListener('mouseout', () => {
     document.getElementById("skills").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
 });
 
+soft_skills.addEventListener('mouseover', () => {
+    document.getElementById("soft_skills").classList.add('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+});
+soft_skills.addEventListener('mouseout', () => {
+    document.getElementById("soft_skills").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+});
+
 hobbies.addEventListener('mouseover', () => {
     document.getElementById("hobbies").classList.add('ShadowScaleCenter', 'bg-light', 'scale-up-center');
 });
@@ -52,11 +59,25 @@ hobbies.addEventListener('mouseout', () => {
     document.getElementById("hobbies").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
 });
 
-soft_skills.addEventListener('mouseover', () => {
-    document.getElementById("soft_skills").classList.add('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+achievement.addEventListener('mouseover', () => {
+    document.getElementById("achievement").classList.add('ShadowScaleCenter', 'bg-light', 'scale-up-center');
 });
-soft_skills.addEventListener('mouseout', () => {
-    document.getElementById("soft_skills").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+achievement.addEventListener('mouseout', () => {
+    document.getElementById("achievement").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+});
+
+profile.addEventListener('mouseover', () => {
+    document.getElementById("profile").classList.add('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+});
+profile.addEventListener('mouseout', () => {
+    document.getElementById("profile").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+});
+
+contact.addEventListener('mouseover', () => {
+    document.getElementById("contact").classList.add('ShadowScaleCenter', 'bg-light', 'scale-up-center');
+});
+contact.addEventListener('mouseout', () => {
+    document.getElementById("contact").classList.remove('ShadowScaleCenter', 'bg-light', 'scale-up-center');
 });
 
 
@@ -670,7 +691,7 @@ achievement.addEventListener('click', () => {
                                 Site de vente de produits en bois fabriqués à la main
                             </div>
                             <div class="col-12">
-                                Réalisé en 2022 pour M. Gérard VUE
+                                Réalisé en 2022
                             </div>
                             <div class="col-12 fst-italic font_card_small">
                                 Technologies utilisées : HTML5, CSS3, Javascript, Bootstrap, PHP8, MySQL

@@ -35,10 +35,6 @@ main {
     overflow: hidden;
 }
 
-.navbar {
-    border: 0 0 5px 0;
-}
-
 .border_blue {
     border-color: #004AAD !important;
 }
@@ -61,6 +57,9 @@ main {
     font-style: italic;
 }
 
+.text_shadow {
+    text-shadow: #004AAD 1px 0 10px;
+}
 
 /*------------- MAX WIDTH 840px - SMALL ---------*/
 @media screen and (max-width:840px) {
@@ -83,7 +82,7 @@ main {
     }
 
     .font_menu_navbar {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .photo_profile {
@@ -117,7 +116,7 @@ main {
     }
 
     .font_menu_navbar {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .photo_profile {
@@ -131,6 +130,63 @@ main {
 
 }
 
+/**
+* ----------------------------------------
+* animation vibrate2
+* ----------------------------------------
+*/
+.vibrate2_0 {
+    animation: vibrate2 2s linear 0.4s infinite alternate both;
+}
+.vibrate2_1 {
+    animation: vibrate2 2s linear 0.8s infinite alternate both;
+}
+.vibrate2_2 {
+    animation: vibrate2 2s linear 1s infinite alternate both;
+}
+.vibrate2_3 {
+    animation: vibrate2 2s linear 1.3s infinite alternate both;
+}
+.vibrate2_4 {
+    animation: vibrate2 2s linear 1.5s infinite alternate both;
+}
+.vibrate2_5 {
+    animation: vibrate2 2s linear 1.8s infinite alternate both;
+}
+.vibrate2_6 {
+    animation: vibrate2 2s linear 2.3s infinite alternate both;
+}
+.vibrate2_7 {
+    animation: vibrate2 2s linear 2.6s infinite alternate both;
+}
+.vibrate2_8 {
+    animation: vibrate2 2s linear 2.8s infinite alternate both;
+}
+@keyframes vibrate2 {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(3px, -3px);
+	}
+
+	40% {
+		transform: translate(3px, 3px);
+	}
+
+	60% {
+		transform: translate(-3px, 3px);
+	}
+
+	80% {
+		transform: translate(-3px, -3px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
+}
 
 
 /**
