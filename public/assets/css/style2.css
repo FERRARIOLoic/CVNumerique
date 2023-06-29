@@ -41,6 +41,13 @@ main {
 .border_blue {
     border-color: #004AAD !important;
 }
+.date_rotate {
+    transform: rotate(90deg);
+    width:250%;
+}
+.font_card_small {
+    font-size:10px;
+}
 
 
 
