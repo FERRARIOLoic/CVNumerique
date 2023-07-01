@@ -665,7 +665,7 @@ achievement.addEventListener('click', () => {
             <div class="col-12">
                 <div class="row py-3 border-bottom border_blue">
                     <div class="col-12 fw-bold fs-5">
-                        <a target="_blank" href="https://astuces.save.co/">Astuces</a>
+                        <a target="_blank" href="https://astuces.save.co?origin=cv">Astuces</a>
                     </div>
                     <div class="col-12 pb-3 align-self-center">
                         <div class="row">
