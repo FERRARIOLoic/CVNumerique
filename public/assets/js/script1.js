@@ -191,7 +191,7 @@ btnMenuChoose.forEach(element => {
                 document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
                 document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
                 textPresentation.innerHTML = `
-                <span id="BoxTextPresentation" class="titleName">
+                <span id="BoxTextPresentation">
                 Passionné d'informatique et curieux de nature, j'ai créé et développe depuis 6 ans le site de formation interne de l'entreprise pour laquelle j'exerce en parallèle le métier de Technicien SAV Mobile. 
 
                 Initialement autodidacte, j'ai entrepris une formation de Développeur Web / Web Mobile au sein de la Manu d'Amiens afin d'actualiser mes connaissances et me perfectionner en HTML, CSS, Javascript, PHP, Bootstrap...
@@ -216,25 +216,21 @@ boxPresentation.addEventListener('mouseover', () => {
     document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
     textPresentation.innerHTML = `
     <span class="textPresentation">
-        Passionné de nouvelles technologies et curieux de tout, le monde de l'informatique et du
-        développement web m'a donc naturellement attiré et je me suis formé en HTML / PHP en
-        autodidacte
-        <br>
-        Après 7 années de pratique, dont 5 ans professionnellement, je
-        souhaite
-        désormais en faire mon activité principale
-        <br>
-        Afin d'actualiser mes connaissances et d'avoir un
-        parcours d'apprentissage professionnel, j'ai entrepris une formation de développeur Web / Web Mobile au
-        sein de La Manu Amiens
-        <br>
-        En reconversion professionnelle, je recherche donc un emploi de Développeur Web / Web Mobile Full Stack, Front End, Back End
-        </span>
+    Passionné d'informatique et curieux de nature, j'ai créé et développe depuis 6 ans le site de formation interne de l'entreprise pour laquelle j'exerce en parallèle le métier de Technicien SAV Mobile. 
+
+    Initialement autodidacte, j'ai entrepris une formation de Développeur Web / Web Mobile au sein de la Manu d'Amiens afin d'actualiser mes connaissances et me perfectionner en HTML, CSS, Javascript, PHP, Bootstrap...
+    
+    Mon objectif est d'exercer désormais ce métier de développeur web à temps complet
+    </span>
         `;
 })
 boxPresentation.addEventListener('mouseout', () => {
     document.getElementById("textPresentation").classList.add('slideOutTopPresentation');
     document.getElementById("textPresentation").classList.remove('appearFromTopPresentation');
+    textPresentation.innerHTML = `
+    <span class="textPresentation">
+    Passionné d'informatique et curieux de nature...
+    </span>`;
 })
 
 
