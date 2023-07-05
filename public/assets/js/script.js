@@ -25,152 +25,152 @@ window.onscroll = function () {
 //     );
 // }
 
-const boxPresentation = document.querySelector('#boxPresentation');
-document.addEventListener('scroll', function () {
-    if (isInViewport(boxPresentation)) {
-        document.getElementById("boxPresentation").classList.add('fadeInCenter');
-        document.getElementById("boxPresentation").classList.remove('fadeOutCenter');
-    }
-    else {
+// const boxPresentation = document.querySelector('#boxPresentation');
+// document.addEventListener('scroll', function () {
+//     if (isInViewport(boxPresentation)) {
+//         document.getElementById("boxPresentation").classList.add('fadeInCenter');
+//         document.getElementById("boxPresentation").classList.remove('fadeOutCenter');
+//     }
+//     else {
 
-        document.getElementById("boxPresentation").classList.remove('fadeInCenter');
-        document.getElementById("boxPresentation").classList.add('fadeOutCenter');
+//         document.getElementById("boxPresentation").classList.remove('fadeInCenter');
+//         document.getElementById("boxPresentation").classList.add('fadeOutCenter');
 
-    }
-}, {
-    passive: true
-});
+//     }
+// }, {
+//     passive: true
+// });
 
-const boxParcours = document.querySelector('#boxParcours');
-document.addEventListener('scroll', function () {
-    if (isInViewport(boxParcours)) {
-        document.getElementById("boxParcours").classList.add('fadeInCenter');
-        document.getElementById("boxParcours").classList.remove('fadeOutCenter');
-        document.getElementById("parcoursFormations").classList.add('appearFromTop');
-        document.getElementById("parcoursExperiences").classList.add('appearFromTop');
-        document.getElementById("school1").classList.add('appearFromRight1');
-        document.getElementById("schoolDate1").classList.add('appearFromBottom');
-        document.getElementById("job1").classList.add('appearFromLeft2');
-        document.getElementById("jobDate1").classList.add('appearFromBottom1');
-        document.getElementById("job2").classList.add('appearFromLeft3');
-        document.getElementById("jobDate2").classList.add('appearFromBottom2');
-        document.getElementById("job3").classList.add('appearFromLeft4');
-        document.getElementById("jobDate3").classList.add('appearFromBottom3');
-        document.getElementById("school2").classList.add('appearFromRight5');
-        document.getElementById("schoolDate2").classList.add('appearFromBottom4');
-        document.getElementById("school3").classList.add('appearFromRight6');
-        document.getElementById("schoolDate3").classList.add('appearFromBottom5');
-    }
-    else {
+// const boxParcours = document.querySelector('#boxParcours');
+// document.addEventListener('scroll', function () {
+//     if (isInViewport(boxParcours)) {
+//         document.getElementById("boxParcours").classList.add('fadeInCenter');
+//         document.getElementById("boxParcours").classList.remove('fadeOutCenter');
+//         document.getElementById("parcoursFormations").classList.add('appearFromTop');
+//         document.getElementById("parcoursExperiences").classList.add('appearFromTop');
+//         document.getElementById("school1").classList.add('appearFromRight1');
+//         document.getElementById("schoolDate1").classList.add('appearFromBottom');
+//         document.getElementById("job1").classList.add('appearFromLeft2');
+//         document.getElementById("jobDate1").classList.add('appearFromBottom1');
+//         document.getElementById("job2").classList.add('appearFromLeft3');
+//         document.getElementById("jobDate2").classList.add('appearFromBottom2');
+//         document.getElementById("job3").classList.add('appearFromLeft4');
+//         document.getElementById("jobDate3").classList.add('appearFromBottom3');
+//         document.getElementById("school2").classList.add('appearFromRight5');
+//         document.getElementById("schoolDate2").classList.add('appearFromBottom4');
+//         document.getElementById("school3").classList.add('appearFromRight6');
+//         document.getElementById("schoolDate3").classList.add('appearFromBottom5');
+//     }
+//     else {
 
-        document.getElementById("boxParcours").classList.remove('fadeInCenter');
-        document.getElementById("boxParcours").classList.add('fadeOutCenter');
-        document.getElementById("parcoursFormations").classList.remove('appearFromTop');
-        document.getElementById("parcoursExperiences").classList.remove('appearFromTop');
-        document.getElementById("school1").classList.remove('appearFromRight1');
-        document.getElementById("schoolDate1").classList.remove('appearFromBottom');
-        document.getElementById("job1").classList.remove('appearFromLeft2');
-        document.getElementById("jobDate1").classList.remove('appearFromBottom1');
-        document.getElementById("job2").classList.remove('appearFromLeft3');
-        document.getElementById("jobDate2").classList.remove('appearFromBottom2');
-        document.getElementById("job3").classList.remove('appearFromLeft4');
-        document.getElementById("jobDate3").classList.remove('appearFromBottom3');
-        document.getElementById("school2").classList.remove('appearFromRight5');
-        document.getElementById("schoolDate2").classList.remove('appearFromBottom4');
-        document.getElementById("school3").classList.remove('appearFromRight6');
-        document.getElementById("schoolDate3").classList.remove('appearFromBottom5');
+//         document.getElementById("boxParcours").classList.remove('fadeInCenter');
+//         document.getElementById("boxParcours").classList.add('fadeOutCenter');
+//         document.getElementById("parcoursFormations").classList.remove('appearFromTop');
+//         document.getElementById("parcoursExperiences").classList.remove('appearFromTop');
+//         document.getElementById("school1").classList.remove('appearFromRight1');
+//         document.getElementById("schoolDate1").classList.remove('appearFromBottom');
+//         document.getElementById("job1").classList.remove('appearFromLeft2');
+//         document.getElementById("jobDate1").classList.remove('appearFromBottom1');
+//         document.getElementById("job2").classList.remove('appearFromLeft3');
+//         document.getElementById("jobDate2").classList.remove('appearFromBottom2');
+//         document.getElementById("job3").classList.remove('appearFromLeft4');
+//         document.getElementById("jobDate3").classList.remove('appearFromBottom3');
+//         document.getElementById("school2").classList.remove('appearFromRight5');
+//         document.getElementById("schoolDate2").classList.remove('appearFromBottom4');
+//         document.getElementById("school3").classList.remove('appearFromRight6');
+//         document.getElementById("schoolDate3").classList.remove('appearFromBottom5');
 
-    }
-}, {
-    passive: true
-});
-
-
-const boxCompetences = document.querySelector('#boxCompetences');
-document.addEventListener('scroll', function () {
-    if (isInViewport(boxCompetences)) {
-        document.getElementById("boxCompetences").classList.add('fadeInCenter');
-        document.getElementById("boxCompetences").classList.remove('fadeOutBack');
-        document.getElementById("html").classList.add('appearFromTop1');
-        document.getElementById("htmlImg").classList.add('appearFromTop1');
-        document.getElementById("css").classList.add('appearFromTop2');
-        document.getElementById("cssImg").classList.add('appearFromTop2');
-        document.getElementById("js").classList.add('appearFromTop3');
-        document.getElementById("jsImg").classList.add('appearFromTop3');
-        document.getElementById("bootstrap").classList.add('appearFromTop4');
-        document.getElementById("bootstrapImg").classList.add('appearFromTop4');
-        document.getElementById("mysql").classList.add('appearFromTop5');
-        document.getElementById("mysqlImg").classList.add('appearFromTop5');
-        document.getElementById("php").classList.add('appearFromTop6');
-        document.getElementById("phpImg").classList.add('appearFromTop6');
-        document.getElementById("wordpress").classList.add('appearFromTop7');
-        document.getElementById("wordpressImg").classList.add('appearFromTop7');
-        document.getElementById("vscode").classList.add('appearFromTop8');
-        document.getElementById("vscodeImg").classList.add('appearFromTop8');
-        document.getElementById("symfony").classList.add('appearFromTop9');
-        document.getElementById("symfonyImg").classList.add('appearFromTop9');
-    }
-    else {
-
-        document.getElementById("boxCompetences").classList.remove('fadeInCenter');
-        document.getElementById("boxCompetences").classList.add('fadeOutBack');
-        document.getElementById("html").classList.remove('appearFromTop1');
-        document.getElementById("htmlImg").classList.remove('appearFromTop1');
-        document.getElementById("css").classList.remove('appearFromTop2');
-        document.getElementById("cssImg").classList.remove('appearFromTop2');
-        document.getElementById("js").classList.remove('appearFromTop3');
-        document.getElementById("jsImg").classList.remove('appearFromTop3');
-        document.getElementById("bootstrap").classList.remove('appearFromTop4');
-        document.getElementById("bootstrapImg").classList.remove('appearFromTop4');
-        document.getElementById("mysql").classList.remove('appearFromTop5');
-        document.getElementById("mysqlImg").classList.remove('appearFromTop5');
-        document.getElementById("php").classList.remove('appearFromTop6');
-        document.getElementById("phpImg").classList.remove('appearFromTop6');
-        document.getElementById("wordpress").classList.remove('appearFromTop7');
-        document.getElementById("wordpressImg").classList.remove('appearFromTop7');
-        document.getElementById("vscode").classList.remove('appearFromTop8');
-        document.getElementById("vscodeImg").classList.remove('appearFromTop8');
-        document.getElementById("symfony").classList.remove('appearFromTop9');
-        document.getElementById("symfonyImg").classList.remove('appearFromTop9');
-
-    }
-}, {
-    passive: true
-});
+//     }
+// }, {
+//     passive: true
+// });
 
 
-const boxRealisations = document.querySelector('#boxRealisations');
-document.addEventListener('scroll', function () {
-    if (isInViewport(boxRealisations)) {
-        document.getElementById("boxRealisations").classList.add('fadeInCenter');
-        document.getElementById("boxRealisations").classList.remove('fadeOutCenter');
-    }
-    else {
+// const boxCompetences = document.querySelector('#boxCompetences');
+// document.addEventListener('scroll', function () {
+//     if (isInViewport(boxCompetences)) {
+//         document.getElementById("boxCompetences").classList.add('fadeInCenter');
+//         document.getElementById("boxCompetences").classList.remove('fadeOutBack');
+//         document.getElementById("html").classList.add('appearFromTop1');
+//         document.getElementById("htmlImg").classList.add('appearFromTop1');
+//         document.getElementById("css").classList.add('appearFromTop2');
+//         document.getElementById("cssImg").classList.add('appearFromTop2');
+//         document.getElementById("js").classList.add('appearFromTop3');
+//         document.getElementById("jsImg").classList.add('appearFromTop3');
+//         document.getElementById("bootstrap").classList.add('appearFromTop4');
+//         document.getElementById("bootstrapImg").classList.add('appearFromTop4');
+//         document.getElementById("mysql").classList.add('appearFromTop5');
+//         document.getElementById("mysqlImg").classList.add('appearFromTop5');
+//         document.getElementById("php").classList.add('appearFromTop6');
+//         document.getElementById("phpImg").classList.add('appearFromTop6');
+//         document.getElementById("wordpress").classList.add('appearFromTop7');
+//         document.getElementById("wordpressImg").classList.add('appearFromTop7');
+//         document.getElementById("vscode").classList.add('appearFromTop8');
+//         document.getElementById("vscodeImg").classList.add('appearFromTop8');
+//         document.getElementById("symfony").classList.add('appearFromTop9');
+//         document.getElementById("symfonyImg").classList.add('appearFromTop9');
+//     }
+//     else {
 
-        document.getElementById("boxRealisations").classList.remove('fadeInCenter');
-        document.getElementById("boxRealisations").classList.add('fadeOutCenter');
+//         document.getElementById("boxCompetences").classList.remove('fadeInCenter');
+//         document.getElementById("boxCompetences").classList.add('fadeOutBack');
+//         document.getElementById("html").classList.remove('appearFromTop1');
+//         document.getElementById("htmlImg").classList.remove('appearFromTop1');
+//         document.getElementById("css").classList.remove('appearFromTop2');
+//         document.getElementById("cssImg").classList.remove('appearFromTop2');
+//         document.getElementById("js").classList.remove('appearFromTop3');
+//         document.getElementById("jsImg").classList.remove('appearFromTop3');
+//         document.getElementById("bootstrap").classList.remove('appearFromTop4');
+//         document.getElementById("bootstrapImg").classList.remove('appearFromTop4');
+//         document.getElementById("mysql").classList.remove('appearFromTop5');
+//         document.getElementById("mysqlImg").classList.remove('appearFromTop5');
+//         document.getElementById("php").classList.remove('appearFromTop6');
+//         document.getElementById("phpImg").classList.remove('appearFromTop6');
+//         document.getElementById("wordpress").classList.remove('appearFromTop7');
+//         document.getElementById("wordpressImg").classList.remove('appearFromTop7');
+//         document.getElementById("vscode").classList.remove('appearFromTop8');
+//         document.getElementById("vscodeImg").classList.remove('appearFromTop8');
+//         document.getElementById("symfony").classList.remove('appearFromTop9');
+//         document.getElementById("symfonyImg").classList.remove('appearFromTop9');
 
-    }
-}, {
-    passive: true
-});
+//     }
+// }, {
+//     passive: true
+// });
 
 
-const boxMore = document.querySelector('#boxMore');
-document.addEventListener('scroll', function () {
-    if (isInViewport(boxMore)) {
-        document.getElementById("boxMore").classList.add('fadeInCenter');
-        document.getElementById("boxMore").classList.remove('fadeOutCenter');
-    }
-    else {
+// const boxRealisations = document.querySelector('#boxRealisations');
+// document.addEventListener('scroll', function () {
+//     if (isInViewport(boxRealisations)) {
+//         document.getElementById("boxRealisations").classList.add('fadeInCenter');
+//         document.getElementById("boxRealisations").classList.remove('fadeOutCenter');
+//     }
+//     else {
 
-        document.getElementById("boxMore").classList.remove('fadeInCenter');
-        document.getElementById("boxMore").classList.add('fadeOutCenter');
+//         document.getElementById("boxRealisations").classList.remove('fadeInCenter');
+//         document.getElementById("boxRealisations").classList.add('fadeOutCenter');
 
-    }
-}, {
-    passive: true
-});
+//     }
+// }, {
+//     passive: true
+// });
+
+
+// const boxMore = document.querySelector('#boxMore');
+// document.addEventListener('scroll', function () {
+//     if (isInViewport(boxMore)) {
+//         document.getElementById("boxMore").classList.add('fadeInCenter');
+//         document.getElementById("boxMore").classList.remove('fadeOutCenter');
+//     }
+//     else {
+
+//         document.getElementById("boxMore").classList.remove('fadeInCenter');
+//         document.getElementById("boxMore").classList.add('fadeOutCenter');
+
+//     }
+// }, {
+//     passive: true
+// });
 
 
 let btnMenuChoose = document.querySelectorAll('#btnMenuChoose');
@@ -206,7 +206,7 @@ btnMenuChoose.forEach(element => {
                 document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
                 document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
                 document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
-                document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
+                // document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
                 document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
                 textPresentation.innerHTML = `
                 <span class="textPresentation">
@@ -228,7 +228,7 @@ boxPresentation.addEventListener('mouseover', () => {
     document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
     document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
     document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
-    document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
+    // document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
     document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
     textPresentation.innerHTML = `
     <span  class="textPresentation">
@@ -263,13 +263,16 @@ btnChoose.forEach(element => {
                 document.getElementById("jobWorkVue1").classList.remove('slideOutTop1');
                 jobWorkVue1.innerHTML = `
                 <div id="job1Text" class="jobWorkVue px-md-2">
-                    <i>Diagnostics, réparations, reprogrammations de smartphones,
-                    tablettes, accessoires <br>(agréments Samsung, Huawei,
-                    Xiaomi, Apple)
-                    <br>Conception, développement et gestion du
-                    site
-                    de
-                    formation des boutiques</i>
+                <div class="row">
+                    <div class="col-12">
+                        <i>Conception, développement et gestion du site de formation des boutiques
+                    </div>
+                    <div class="col-12">
+                        Création de formation pour les nouveaux produits, mise à jour de la liste des appareils, du référentiel des pièces...
+                    </div>
+                    <div class="col-12">
+                        Mise en place d'outils logiciels d'assistance des techniciens</i>
+                    </div>
                 </div>
                 `;
                 break;
@@ -280,13 +283,13 @@ btnChoose.forEach(element => {
                 document.getElementById("jobWorkVue2").classList.remove('slideOutTop1');
                 jobWorkVue2.innerHTML = `
                 <div id="job2Text" class="jobWorkVue px-2">
-                <div class="row">
-                    <div class="col-12">
-                        <i>Diagnostics, réparations, reprogrammations de smartphones,
-                        tablettes,
-                        accessoires (agréments Samsung, Sony, Nokia, Huaweï)</i>
+                    <div class="row">
+                        <div class="col-12">
+                            <i>Diagnostics, réparations, reprogrammations de smartphones,
+                            tablettes,
+                            accessoires (agréments Samsung, Sony, Nokia, Huaweï)</i>
+                        </div>
                     </div>
-                </div>
                 </div>
                 `;
                 break;
@@ -323,21 +326,21 @@ btnChoose.forEach(element => {
                 </div>
                 `;
                 break;
-            case 'school2':
-                document.getElementById("school2Img").classList.remove('shakeVertical');
-                document.getElementById("school2Img").classList.add('flipScaleUp');
-                document.getElementById("jobWorkVueS2").classList.add('appearFromTop');
-                document.getElementById("jobWorkVueS2").classList.remove('slideOutTop1');
-                jobWorkVueS2.innerHTML = `
-                <div id="school2Text" class="jobWorkVue px-2">
-                    <div class="row">
-                        <div class="col-12 tet-end">
-                            <i>Apprentissage de la programmation en C#</i>
-                        </div>
-                    </div>
-                </div>
-                `;
-                break;
+            // case 'school2':
+            //     document.getElementById("school2Img").classList.remove('shakeVertical');
+            //     document.getElementById("school2Img").classList.add('flipScaleUp');
+            //     document.getElementById("jobWorkVueS2").classList.add('appearFromTop');
+            //     document.getElementById("jobWorkVueS2").classList.remove('slideOutTop1');
+            //     jobWorkVueS2.innerHTML = `
+            //     <div id="school2Text" class="jobWorkVue px-2">
+            //         <div class="row">
+            //             <div class="col-12 tet-end">
+            //                 <i>Apprentissage de la programmation en C#</i>
+            //             </div>
+            //         </div>
+            //     </div>
+            //     `;
+            //     break;
             case 'school3':
                 document.getElementById("school3Img").classList.remove('shakeVertical');
                 document.getElementById("school3Img").classList.add('flipScaleUp');
@@ -367,21 +370,21 @@ btnChoose.forEach(element => {
         document.getElementById("job3Img").classList.add('shakeVertical');
         document.getElementById("school1Img").classList.remove('flipScaleUp');
         document.getElementById("school1Img").classList.add('shakeVertical');
-        document.getElementById("school2Img").classList.remove('flipScaleUp');
-        document.getElementById("school2Img").classList.add('shakeVertical');
+        // document.getElementById("school2Img").classList.remove('flipScaleUp');
+        // document.getElementById("school2Img").classList.add('shakeVertical');
         document.getElementById("school3Img").classList.remove('flipScaleUp');
         document.getElementById("school3Img").classList.add('shakeVertical');
         document.getElementById("jobWorkVue1").classList.remove('appearFromTop');
         document.getElementById("jobWorkVue2").classList.remove('appearFromTop');
         document.getElementById("jobWorkVue3").classList.remove('appearFromTop');
         document.getElementById("jobWorkVueS1").classList.remove('appearFromTop');
-        document.getElementById("jobWorkVueS2").classList.remove('appearFromTop');
+        // document.getElementById("jobWorkVueS2").classList.remove('appearFromTop');
         document.getElementById("jobWorkVueS3").classList.remove('appearFromTop');
         document.getElementById("jobWorkVue1").classList.add('slideOutTop1');
         document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
         document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
         document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
-        document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
+        // document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
         document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
     })
 })

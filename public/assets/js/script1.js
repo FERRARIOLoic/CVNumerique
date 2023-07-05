@@ -248,13 +248,7 @@ btnChoose.forEach(element => {
                 document.getElementById("jobWorkVue1").classList.remove('slideOutTop1');
                 jobWorkVue1.innerHTML = `
                 <div id="job1Text" class="jobWorkVue px-md-2">
-                    <i>Diagnostics, réparations, reprogrammations de smartphones,
-                    tablettes, accessoires <br>(agréments Samsung, Huawei,
-                    Xiaomi, Apple)
-                    <br>Conception, développement et gestion du
-                    site
-                    de
-                    formation des boutiques</i>
+                    Conception, développement et gestion du site de formation des boutiques</i>
                 </div>
                 `;
                 break;

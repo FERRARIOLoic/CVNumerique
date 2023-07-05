@@ -107,6 +107,7 @@ body {
   justify-content: flex-end;
 }
 
+
 /**
  * ----------------------------------------
  * animation flicker-4
@@ -116,158 +117,210 @@ body {
   -webkit-animation: flicker-4 4s linear 1s infinite both;
   animation: flicker-4 4s linear 1s infinite both;
 }
+
 @-webkit-keyframes flicker-4 {
+
   0%,
   100% {
     opacity: 1;
   }
+
   31.98% {
     opacity: 1;
   }
+
   32% {
     opacity: 0;
   }
+
   32.8% {
     opacity: 0;
   }
+
   32.82% {
     opacity: 1;
   }
+
   34.98% {
     opacity: 1;
   }
+
   35% {
     opacity: 0;
   }
+
   35.7% {
     opacity: 0;
   }
+
   35.72% {
     opacity: 1;
   }
+
   36.98% {
     opacity: 1;
   }
+
   37% {
     opacity: 0;
   }
+
   37.6% {
     opacity: 0;
   }
+
   37.62% {
     opacity: 1;
   }
+
   67.98% {
     opacity: 1;
   }
+
   68% {
     opacity: 0;
   }
+
   68.4% {
     opacity: 0;
   }
+
   68.42% {
     opacity: 1;
   }
+
   95.98% {
     opacity: 1;
   }
+
   96% {
     opacity: 0;
   }
+
   96.7% {
     opacity: 0;
   }
+
   96.72% {
     opacity: 1;
   }
+
   98.98% {
     opacity: 1;
   }
+
   99% {
     opacity: 0;
   }
+
   99.6% {
     opacity: 0;
   }
+
   99.62% {
     opacity: 1;
   }
 }
+
 @keyframes flicker-4 {
+
   0%,
   100% {
     opacity: 1;
   }
+
   31.98% {
     opacity: 1;
   }
+
   32% {
     opacity: 0;
   }
+
   32.8% {
     opacity: 0;
   }
+
   32.82% {
     opacity: 1;
   }
+
   34.98% {
     opacity: 1;
   }
+
   35% {
     opacity: 0;
   }
+
   35.7% {
     opacity: 0;
   }
+
   35.72% {
     opacity: 1;
   }
+
   36.98% {
     opacity: 1;
   }
+
   37% {
     opacity: 0;
   }
+
   37.6% {
     opacity: 0;
   }
+
   37.62% {
     opacity: 1;
   }
+
   67.98% {
     opacity: 1;
   }
+
   68% {
     opacity: 0;
   }
+
   68.4% {
     opacity: 0;
   }
+
   68.42% {
     opacity: 1;
   }
+
   95.98% {
     opacity: 1;
   }
+
   96% {
     opacity: 0;
   }
+
   96.7% {
     opacity: 0;
   }
+
   96.72% {
     opacity: 1;
   }
+
   98.98% {
     opacity: 1;
   }
+
   99% {
     opacity: 0;
   }
+
   99.6% {
     opacity: 0;
   }
+
   99.62% {
     opacity: 1;
   }
@@ -869,7 +922,24 @@ body {
 
 
 
+
+
+
+
+
+/*------------- MEDIA MAX 576 ---------*/
 @media screen and (max-width:576px) {
+
+  .imgDateJob {
+    max-width: 250%;
+    transform: rotate(90deg);
+  }
+
+  .imgDateTraining {
+    max-width: 250%;
+    transform: rotate(-90deg);
+    margin-left:-50px;
+  }
 
   @keyframes appearFromTopPresentation {
     0% {
@@ -906,7 +976,7 @@ body {
   #btnChoose {
     background-color: #ffffff6e;
     box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 10px 10px 0px;
+    /* border-radius: 0px 10px 10px 0px; */
     margin: 5px;
     width: 95%;
   }
@@ -937,11 +1007,6 @@ body {
     width: 100%;
   }
 
-  #realisations,
-  #carouselExampleCaptions {
-    /* height: 100%; */
-  }
-
   .imgCapacity {
     max-width: 60%;
   }
@@ -961,6 +1026,18 @@ body {
 }
 
 @media screen and (min-width:576px) {
+
+  .imgDateJob {
+    text-align: center;
+    max-height: 300px;
+    max-width: 70%;
+  }
+
+  .imgDateTraining {
+    text-align: center;
+    max-height: 300px;
+    max-width: 70%;
+  }
 
   @keyframes appearFromTopPresentation {
     0% {
@@ -997,7 +1074,7 @@ body {
   #btnChoose {
     background-color: #ffffff6e;
     box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 10px 10px 0px;
+    /* border-radius: 0px 10px 10px 0px; */
     margin: 5px;
     width: 80%;
   }
@@ -1077,7 +1154,7 @@ a {
 }
 
 .titleCategory {
-  font-size: 2.3rem;
+  font-size: 2rem;
   /* letter-spacing: 2px; */
   -webkit-transform: scaleY(0.8);
   transform: scaleY(0.8);
@@ -5802,4 +5879,12 @@ div[role="progressbar"]::before {
   /*-- pour effet shadow intérieur --*/
   border-radius: 50%;
   box-shadow: 0 0 .5em rgba(0, 0, 0, .5) inset;
+}
+
+.borderJob {
+  border-radius: 0 10px 10px 0;
+}
+
+.borderTraining {
+  border-radius: 10px 0 0 10px;
 }
