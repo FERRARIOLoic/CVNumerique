@@ -67,7 +67,7 @@ btn_navbar_choose.forEach(eachTableElement => {
 html5_div.addEventListener('mouseover', () => {
     html5_img.classList.add('scale_out_horizontal_center');
     html5_img.addEventListener('animationend', function () {
-        html5_img.src = "/public/assets/img/icons/html5_grey.png";
+        html5_img.src = "public/assets/img/icons/html5_grey.png";
         html5_img.classList.remove('scale_out_horizontal_center');
         html5_img.classList.add('scale_in_horizontal_center');
     });
@@ -76,7 +76,7 @@ html5_div.addEventListener('mouseout', () => {
     html5_img.classList.remove('scale_in_horizontal_center');
     html5_img.classList.add('scale_out_horizontal_center');
     html5_img.addEventListener('animationend', function () {
-        html5_img.src = "/public/assets/img/icons/html5.svg";
+        html5_img.src = "public/assets/img/icons/html5.svg";
         html5_img.classList.add('scale_in_horizontal_center');
     });
 });
@@ -85,7 +85,7 @@ html5_div.addEventListener('mouseout', () => {
 css3_div.addEventListener('mouseover', () => {
     css3_img.classList.add('scale_out_horizontal_center');
     css3_img.addEventListener('animationend', function () {
-        css3_img.src = "/public/assets/img/icons/css3_grey.png";
+        css3_img.src = "public/assets/img/icons/css3_grey.png";
         css3_img.classList.remove('scale_out_horizontal_center');
         css3_img.classList.add('scale_in_horizontal_center');
     });
@@ -94,7 +94,7 @@ css3_div.addEventListener('mouseout', () => {
     css3_img.classList.remove('scale_in_horizontal_center');
     css3_img.classList.add('scale_out_horizontal_center');
     css3_img.addEventListener('animationend', function () {
-        css3_img.src = "/public/assets/img/icons/css3.svg";
+        css3_img.src = "public/assets/img/icons/css3.svg";
         css3_img.classList.add('scale_in_horizontal_center');
     });
 });
@@ -103,7 +103,7 @@ css3_div.addEventListener('mouseout', () => {
 javascript_div.addEventListener('mouseover', () => {
     javascript_img.classList.add('scale_out_horizontal_center');
     javascript_img.addEventListener('animationend', function () {
-        javascript_img.src = "/public/assets/img/icons/javascript_grey.png";
+        javascript_img.src = "public/assets/img/icons/javascript_grey.png";
         javascript_img.classList.remove('scale_out_horizontal_center');
         javascript_img.classList.add('scale_in_horizontal_center');
     });
@@ -112,7 +112,7 @@ javascript_div.addEventListener('mouseout', () => {
     javascript_img.classList.remove('scale_in_horizontal_center');
     javascript_img.classList.add('scale_out_horizontal_center');
     javascript_img.addEventListener('animationend', function () {
-        javascript_img.src = "/public/assets/img/icons/javascript.svg";
+        javascript_img.src = "public/assets/img/icons/javascript.svg";
         javascript_img.classList.add('scale_in_horizontal_center');
     });
 });
@@ -121,7 +121,7 @@ javascript_div.addEventListener('mouseout', () => {
 php8_div.addEventListener('mouseover', () => {
     php8_img.classList.add('scale_out_horizontal_center');
     php8_img.addEventListener('animationend', function () {
-        php8_img.src = "/public/assets/img/icons/php8_grey.png";
+        php8_img.src = "public/assets/img/icons/php8_grey.png";
         php8_img.classList.remove('scale_out_horizontal_center');
         php8_img.classList.add('scale_in_horizontal_center');
     });
@@ -130,7 +130,7 @@ php8_div.addEventListener('mouseout', () => {
     php8_img.classList.remove('scale_in_horizontal_center');
     php8_img.classList.add('scale_out_horizontal_center');
     php8_img.addEventListener('animationend', function () {
-        php8_img.src = "/public/assets/img/icons/php8.svg";
+        php8_img.src = "public/assets/img/icons/php8.svg";
         php8_img.classList.add('scale_in_horizontal_center');
     });
 });
@@ -139,7 +139,7 @@ php8_div.addEventListener('mouseout', () => {
 bootstrap_div.addEventListener('mouseover', () => {
     bootstrap_img.classList.add('scale_out_horizontal_center');
     bootstrap_img.addEventListener('animationend', function () {
-        bootstrap_img.src = "/public/assets/img/icons/bootstrap_grey.png";
+        bootstrap_img.src = "public/assets/img/icons/bootstrap_grey.png";
         bootstrap_img.classList.remove('scale_out_horizontal_center');
         bootstrap_img.classList.add('scale_in_horizontal_center');
     });
@@ -148,7 +148,7 @@ bootstrap_div.addEventListener('mouseout', () => {
     bootstrap_img.classList.remove('scale_in_horizontal_center');
     bootstrap_img.classList.add('scale_out_horizontal_center');
     bootstrap_img.addEventListener('animationend', function () {
-        bootstrap_img.src = "/public/assets/img/icons/bootstrap.svg";
+        bootstrap_img.src = "public/assets/img/icons/bootstrap.svg";
         bootstrap_img.classList.add('scale_in_horizontal_center');
     });
 });
@@ -157,7 +157,7 @@ bootstrap_div.addEventListener('mouseout', () => {
 wordpress_div.addEventListener('mouseover', () => {
     wordpress_img.classList.add('scale_out_horizontal_center');
     wordpress_img.addEventListener('animationend', function () {
-        wordpress_img.src = "/public/assets/img/icons/wordpress_grey.png";
+        wordpress_img.src = "public/assets/img/icons/wordpress_grey.png";
         wordpress_img.classList.remove('scale_out_horizontal_center');
         wordpress_img.classList.add('scale_in_horizontal_center');
     });
@@ -166,7 +166,7 @@ wordpress_div.addEventListener('mouseout', () => {
     wordpress_img.classList.remove('scale_in_horizontal_center');
     wordpress_img.classList.add('scale_out_horizontal_center');
     wordpress_img.addEventListener('animationend', function () {
-        wordpress_img.src = "/public/assets/img/icons/wordpress.svg";
+        wordpress_img.src = "public/assets/img/icons/wordpress.svg";
         wordpress_img.classList.add('scale_in_horizontal_center');
     });
 });
@@ -175,7 +175,7 @@ wordpress_div.addEventListener('mouseout', () => {
 mysql_div.addEventListener('mouseover', () => {
     mysql_img.classList.add('scale_out_horizontal_center');
     mysql_img.addEventListener('animationend', function () {
-        mysql_img.src = "/public/assets/img/icons/mysql_grey.png";
+        mysql_img.src = "public/assets/img/icons/mysql_grey.png";
         mysql_img.classList.remove('scale_out_horizontal_center');
         mysql_img.classList.add('scale_in_horizontal_center');
     });
@@ -184,7 +184,7 @@ mysql_div.addEventListener('mouseout', () => {
     mysql_img.classList.remove('scale_in_horizontal_center');
     mysql_img.classList.add('scale_out_horizontal_center');
     mysql_img.addEventListener('animationend', function () {
-        mysql_img.src = "/public/assets/img/icons/mysql.svg";
+        mysql_img.src = "public/assets/img/icons/mysql.svg";
         mysql_img.classList.add('scale_in_horizontal_center');
     });
 });
