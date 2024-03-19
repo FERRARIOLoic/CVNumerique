@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
@@ -31,14 +30,19 @@ a:hover {
   letter-spacing: 5px;
 }
 
+.marge_top {
+  margin-top: 120px;
+}
+
 .img_profile {
   width: 100%;
-  box-shadow: 0px 1px 10px;
+  /* box-shadow: 0px 1px 10px; */
   border-radius: 10px;
 }
 
 .img_small {
-  width: 50%;
+  max-height: 50px;
+  max-width: 50px;
 }
 
 .img_20px {
@@ -98,7 +102,7 @@ footer {
 
 
 .navbarScrollShow {
-  animation: animShowNavbar 0.5s ease 0s 1 normal forwards;
+  animation: animShowNavbar 0.2s ease 0s 1 normal forwards;
 }
 
 @keyframes animHideNavbar {
@@ -163,7 +167,8 @@ footer {
 }
 
 .bg_blue {
-  background-color: rgb(15, 76, 129,0.1);}
+  background-color: rgb(15, 76, 129, 0.1);
+}
 
 .imgSmall {
   width: 100%;
@@ -191,4 +196,156 @@ footer {
 .carousel-control-next,
 .carousel-control-prev {
   align-items: end;
+}
+
+
+
+
+/*------------- ANIMATIONS ---------*/
+.shake_bottom {
+  animation: shake_bottom 0.5s ease 0s 1 normal both;
+}
+
+@keyframes shake_bottom {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 100%;
+  }
+
+  10% {
+    transform: rotate(2deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+
+  80% {
+    transform: rotate(-2deg);
+  }
+
+  90% {
+    transform: rotate(2deg);
+  }
+}
+
+.rotate_center {
+  -webkit-animation: rotate_center 0.6s ease-in-out both;
+  animation: rotate_center 0.6s ease-in-out both;
+}
+
+@-webkit-keyframes rotate_center {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+
+.jello_horizontal {
+  animation: jello_horizontal 0.5s ease 0s 1 normal both;
+}
+
+@keyframes jello_horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse_heartbeat {
+  animation: pulse_heartbeat 0.8s ease 0s 1 normal both;
+}
+@keyframes pulse_heartbeat {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(1.2);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.9);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(1.1);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+
+.scale_out_horizontal_center {
+  animation: scale_out_horizontal_center 0.3s ease 0s 1 normal both;
+}
+
+@keyframes scale_out_horizontal_center {
+  0% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+.scale_in_horizontal_center {
+  animation: scale_in_horizontal_center 0.3s ease 0s 1 normal both;
+}
+
+@keyframes scale_in_horizontal_center {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
 }
