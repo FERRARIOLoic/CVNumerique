@@ -63,6 +63,22 @@ btn_navbar_choose.forEach(eachTableElement => {
 });
 
 
+//------------- PHOTO ---------//
+photo.addEventListener('mouseover', () => {
+    photo_img.classList.remove('shadow_drop_center_reverse');
+    photo_img.classList.add('shadow_drop_center');
+    photo_img.addEventListener('animationend', function () {
+        photo_img.classList.add('shadow_drop_center');
+    });
+});
+photo.addEventListener('mouseout', () => {
+    photo_img.classList.add('shadow_drop_center_reverse');
+    photo_img.addEventListener('animationend', function () {
+        photo_img.classList.remove('shadow_drop_center');
+        photo_img.classList.remove('shadow_drop_center_reverse');
+    });
+});
+
 //------------- HTML5 ---------//
 html5_div.addEventListener('mouseover', () => {
     html5_img.classList.add('scale_out_horizontal_center');

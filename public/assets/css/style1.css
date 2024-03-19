@@ -54,8 +54,6 @@ a:hover {
 }
 
 .navbar {
-  /* background-position: center center; */
-  /* background-attachment: ; */
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../img/);
@@ -202,6 +200,36 @@ footer {
 
 
 /*------------- ANIMATIONS ---------*/
+.shadow_drop_center {
+	-webkit-animation: shadow_drop_center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow_drop_center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes shadow_drop_center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}.shadow_drop_center_reverse {
+	-webkit-animation: shadow_drop_center_reverse 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+	        animation: shadow_drop_center_reverse 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+}
+@keyframes shadow_drop_center_reverse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+
+
 .shake_bottom {
   animation: shake_bottom 0.5s ease 0s 1 normal both;
 }
@@ -244,7 +272,7 @@ footer {
   animation: rotate_center 0.6s ease-in-out both;
 }
 
-@-webkit-keyframes rotate_center {
+@keyframes rotate_center {
   0% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
