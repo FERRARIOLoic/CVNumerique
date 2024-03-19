@@ -205,33 +205,6 @@ btnMenuChoose.forEach(element => {
 })
 
 
-boxPresentation.addEventListener('mouseover', () => {
-    document.getElementById("textPresentation").classList.remove('slideOutTopPresentation');
-    document.getElementById("textPresentation").classList.add('appearFromTopPresentation');
-    document.getElementById("jobWorkVue1").classList.add('slideOutTop1');
-    document.getElementById("jobWorkVue2").classList.add('slideOutTop1');
-    document.getElementById("jobWorkVue3").classList.add('slideOutTop1');
-    document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
-    document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
-    document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
-    textPresentation.innerHTML = `
-    <span class="textPresentation">
-    Passionné d'informatique et curieux de nature, j'ai créé et développe depuis 6 ans le site de formation interne de l'entreprise pour laquelle j'exerce en parallèle le métier de Technicien SAV Mobile. 
-
-    Initialement autodidacte, j'ai entrepris une formation de Développeur Web / Web Mobile au sein de la Manu d'Amiens afin d'actualiser mes connaissances et me perfectionner en HTML, CSS, Javascript, PHP, Bootstrap...
-    
-    Mon objectif est d'exercer désormais ce métier de développeur web à temps complet
-    </span>
-        `;
-})
-boxPresentation.addEventListener('mouseout', () => {
-    document.getElementById("textPresentation").classList.add('slideOutTopPresentation');
-    document.getElementById("textPresentation").classList.remove('appearFromTopPresentation');
-    textPresentation.innerHTML = `
-    <span class="textPresentation">
-    Passionné d'informatique et curieux de nature...
-    </span>`;
-})
 
 
 

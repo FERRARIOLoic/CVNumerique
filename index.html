@@ -9,7 +9,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-1YQ7QTEP75');
     </script>
 
@@ -22,523 +21,602 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel="shortcut icon" type="image/jpg" href="public/assets/img/loic_carre.jpg" />
     <link rel='icon' type='image/x-icon' href='public/assets/img/icons/loic_carre.jpg'>
-    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel='stylesheet' href='public/assets/css/style1.css'>
     <title>Mon CV Numérique</title>
 </head>
 
 <body>
-    <header id="site-header">
-        <nav id="navbar"
-            class="fixed-top navbar navbar-expand-lg navbar-light bg-white shadow border-bottom border-3 border-primary">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-9 offset-md-1 col-md-10 ">
-                        <div class="row align-self-center">
-                            <div class="col-12 col-md-6 text-center titleName align-self-center">
-                                Loïc FERRARIO
-                            </div>
-                            <div class="col-12 col-md-6 text-center titleJob align-self-center"
-                                title="RNCP 31114, Niveau 5, Bac+2">
-                                Développeur Web / Web Mobile
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3 col-md-1  align-self-center">
-                        <a class="navbar-brand" href="#top"><i class="text-light fa-solid fa-house-chimney"></i></a>
-                        <button class="navbar-toggler bg_toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                </div>
-                <div class="row collapse navbar-collapse " id="navbarSupportedContent">
-                    <div id="btnMenuChoose" data-value="presentation" class="col-12 col-md-2 fadeFromTop1">
-                        <a class="nav-link" href="#presentation">&Agrave; propos de moi</a>
-                    </div>
-                    <div id="btnMenuChoose" data-value="parcours" class="col-12 col-md-2 fadeFromTop2">
-                        <a class="nav-link" href="#parcours">Mon parcours</a>
-                    </div>
-                    <div id="btnMenuChoose" data-value="competences" class="col-12 col-md-2 fadeFromTop3">
-                        <a class="nav-link" href="#competences">Mes compétences</a>
-                    </div>
-                    <div id="btnMenuChoose" data-value="realisations" class="col-12 col-md-2 fadeFromTop4">
-                        <a class="nav-link" href="#realisations">Mes réalisations</a>
-                    </div>
-                    <div id="btnMenuChoose" data-value="more" class="col-12 col-md-2 fadeFromTop5">
-                        <a class="nav-link" href="#more">Un peu plus...</a>
-                    </div>
-                    <div id="btnMenuChoose" data-value="contact" class="col-12 col-md-2 fadeFromTop6">
-                        <a class="nav-link" href="#contact">Me contacter</a>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fs-2 px-3">FERRARIO Loïc</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse align-self-end px-3" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about_me">
+                            <button class="btn btn_navbar">&Agrave; propos de moi</button>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#my_way" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <button class="btn btn_navbar">mon parcours</button>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#jobs">Expériences professionnelles</a></li>
+                            <li><a class="dropdown-item" href="#training">Formations</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Autres expériences</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#skills">
+                            <button class="btn btn_navbar">Compétences</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#achievements">
+                            <button class="btn btn_navbar">Mes réalisations</button>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#more_about_me" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn_navbar">Un peu plus...</button>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#hobbies">Centres d'interêts</a></li>
+                            <li><a class="dropdown-item" href="#soft_skills">Soft Skills</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">
+                            <button class="btn btn_navbar">Me contacter</button>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div id="btnMenuInfo" class="col-12 text-end text-md-center"></div>
-        </nav>
-    </header>
-
+        </div>
+    </nav>
 
 
 
     <main id="site-content" role="main" class="container-fluid">
-
-        <!-- PRESENTATION -->
-        <div id="presentation" class=" row justify-content-center py-5">
-            <div id="boxPresentation" class="col-11 bg-light">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-12 col-lg-11 box">
                 <div class="row">
-                    <div class="col-12 titleCategory border-3 border-bottom border-primary">
-                        &Agrave; PROPOS DE MOI
-                    </div>
-                </div>
-                <div id="boxPresentationDown" class="row m-3 py-3">
-                    <div class="col-12 offset-md-1 col-md-10 align-self-center">
-                        <div class="col text-center pb-3">
-                            <span>
-                                <h4>"&Agrave; coeur vaillant rien d'impossible"</h4> Jacques Coeur
-                            </span>
-                        </div>
-                        <div id="textPresentation">
-                            <span id="BoxTextPresentation" class="">
-                                Passionné d'informatique et curieux de nature...
-                            </span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- PARCOURS -->
-        <div id="parcours" class="row justify-content-center py-5">
-            <div id="boxParcours" class="col-11 bg-light">
-                <div class="row">
-                    <div class="col-12 titleCategory border-3 border-bottom border-primary">
-                        MON PARCOURS
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 order-3 order-md-1">
-                        <div class="row m-3 py-3">
-                            <div class="container-fluid">
-                                <div id="parcoursFormations" class="col-12 text-center fs-3">Formations</div>
+                    <div class="col-12 col-lg-3 order-2 order-lg-1">
+                        <div class="row pe-0 pe-lg-5">
+                            <div class="col-4 col-lg-12 mb-5 d-flex align-self-center">
+                                <img class="img_profile" src="/public/assets/img/loic_full.jpg">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 order-1 order-md-2">
-                        <div class="row m-3 py-3">
-                            <div class="container-fluid">
-                                <div id="parcoursExperiences" class="col-12 text-center fs-3">Expériences
-                                    professionnelles</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 order-4 order-md-3">
-                        <div class="row">
-                            <div class=" col-10 col-md-5 px-2 text-end">
-                                <div class="row btnChooseRight">
-                                    <div id="btnChoose" data-value="school1" class="col-12 text-end pt-3 borderTraining">
-                                        <p id="school1"><strong>Développeur Web / Web Mobile</strong>
-                                            <br><i>La Manu, Amiens</i>
-                                            <img id="school1Img" class="imgSmall shakeVertical"
-                                                src="public/assets/img/down-arrow.png"
-                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
-                                        </p>
-                                        <div id="jobWorkVueS1" class="jobWorkVue p-wrapper align-self-center ">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="schoolDate1" class="col-2 col-md-2 job1 text-start py-2 align-self-center">
-                                <img src="public/assets/img/2022_left.png" class="imgDateTraining" alt="2022">
-                            </div>
-                            <div class="col-5"></div>
-                        </div>
-                    </div>
-                    <div class="col-12 order-2 order-md-4">
-                        <div class="row">
-                            <div class="col-0 col-lg-5"></div>
-                            <div id="jobDate1" class="col-2 col-md-2 job1 text-end py-2 align-self-center">
-                                <img src="public/assets/img/2017_today.png" class="imgDateJob" alt="2017 à aujourd'hui">
-                            </div>
-                            <div class=" col-10 col-md-5 px-2">
+                            <div class="col-8 col-lg-12 mb-5">
                                 <div class="row">
-                                    <div id="btnChoose" data-value="job1" class="col-12 pt-3 borderJob">
-                                        <p id="job1">
-                                            <strong>Développeur Web / Responsable E-learning</strong>
-                                            <br>
-                                            <img id="job1Img" class="imgSmall shakeVertical"
-                                                src="public/assets/img/down-arrow.png"
-                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
-                                            <i>Point Services Mobiles / Save</i>
-                                        </p>
-                                        <div id="jobWorkVue1" class="jobWorkVue p-wrapper align-self-center">
-                                        </div>
+                                    <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
+                                        CONTACT
+                                    </div>
+                                    <div class="col-12 pt-2 align-self-center" alt="Me contacter par téléphone"
+                                        title="Me contacter par téléphone">
+                                        <img class="img_20px" src="/public/assets/img/phone.png">
+                                        <a class="align-self-center ps-2" href="tel:0682614374">06.82.61.43.74</a>
+                                    </div>
+                                    <div class="col-12 pt-2 align-self-center" alt="Me contacter par mail"
+                                        title="Me contacter par mail">
+                                        <img class="img_20px" src="/public/assets/img/mail.png">
+                                        <a class="align-self-center ps-2"
+                                            href="mailto:ferrarioloic@gmail.com">ferrarioloic@gmail.com</a>
+                                    </div>
+                                    <div class="col-12 pt-2 align-self-center" alt="Me contacter sur LinkedIn"
+                                        title="Me contacter sur LinkedIn">
+                                        <img class="img_20px" src="/public/assets/img/linkedin.png">
+                                        <a class="align-self-center ps-2" target="_blank"
+                                            href="https://www.linkedin.com/in/FERRARIOloic">FERRARIOloic</a>
+                                    </div>
+                                    <div class="col-12 pt-2 align-self-center" alt="Voir ma page GitHub"
+                                        title="Voir ma page GitHub">
+                                        <img class="img_20px" src="/public/assets/img/github.png">
+                                        <a class="align-self-center ps-2" target="_blank"
+                                            href="https://github.com/FERRARIOLoic">FERRARIOLoic</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col_0 col-lg-5"></div>
-                            <div id="jobDate2" class="col-2 col-md-2 job1 text-end py-2 align-self-center">
-                                <img src="public/assets/img/2012_today.png" class="imgDateJob" alt="2012 à aujourd'hui">
-                            </div>
-                            <div class=" col-10 col-md-5 px-2">
+                            <div class="col-12 mb-5">
                                 <div class="row">
-                                    <div id="btnChoose" data-value="job2" class="col-12 pt-3 borderJob">
-                                        <p id="job2"><strong>Technicien SAV en Téléphonie mobile</strong>
-                                            <br>
-                                            <img id="job2Img" class="imgSmall shakeVertical"
-                                                src="public/assets/img/down-arrow.png"
-                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
-                                            <i>Point Services Mobiles / Save</i>
-                                        </p>
-                                        <div id="jobWorkVue2" class="jobWorkVue p-wrapper align-self-center ">
+                                    <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
+                                        PROFIL
+                                    </div>
+                                    <div class="col-12 pt-1">
+                                        <div class="row">
+                                            <div class="col-4 fs-5 align-self-center fw-bold">
+                                                Langues
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        Français (maternel)
+                                                    </div>
+                                                    <div class="col-12">
+                                                        Anglais (avancé)
+                                                    </div>
+                                                    <div class="col-12">
+                                                        Espagnol (courant)
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-0 col-lg-5"></div>
-                            <div id="jobDate3" class="col-2 col-md-2 job1 text-end py-2 align-self-center">
-                                <img src="public/assets/img/2011_2012.png" class="imgDateJob" alt="2011 à 2012">
-                            </div>
-                            <div class=" col-10 col-md-5 px-2">
-                                <div class="row">
-                                    <div id="btnChoose" data-value="job3" class="col-12 pt-3 borderJob">
-                                        <p id="job3"><strong>Responsable SAV en Informatique</strong>
-                                            <br>
-                                            <img id="job3Img" class="imgSmall shakeVertical"
-                                                src="public/assets/img/down-arrow.png"
-                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
-                                            <i>XXB Consulting</i>
-                                        </p>
-                                        <div id="jobWorkVue3" class="jobWorkVue p-wrapper align-self-center ">
+                                    <div class="col-12 pt-1">
+                                        <div class="row border-top border_blue">
+                                            <div class="col-12 pt-1 text-center">
+                                                Permis B et véhicule personnel
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 order-5 order-md-5">
+
+
+
+                    <div class="col-12 col-lg-9 order-1 order-lg-2">
+
                         <div class="row">
-                            <!--
-                            <div class=" col-10 col-md-5 px-2 text-end">
-                                <div class="row btnChooseRight">
-                                    <div id="btnChoose" data-value="school2" class="col-12 pt-3">
-                                        <p id="school2"><strong>Programmeur Système</strong>
-                                            <br><i>Educatel</i>
-                                            <img id="school2Img" class="imgSmall shakeVertical"
-                                                src="public/assets/img/down-arrow.png"
-                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
-                                        </p>
-                                        <div id="jobWorkVueS2" class="jobWorkVue p-wrapper align-self-center ">
+                            <div class="col-12 pb-5 fs-1 fw-bold text-center title">
+                                D&Eacute;VELOPPEUR WEB / WEB MOBILE
+                            </div>
+                        </div>
+
+                        <!------------- ABOUT ME ---------->
+                        <div id="about_me" class="row">
+                            <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
+                                &Agrave; PROPOS DE MOI
+                            </div>
+                            <div class="col-12 py-lg-3">
+                                <div class="row">
+                                    <div class="col-12 py-2">
+                                        Passionné d'informatique et curieux de nature, j'ai créé et développe le site de
+                                        l'entreprise tout en exerçant les métiers de technicien SAV Mobile et
+                                        Développeur Web/Web mobile
+                                    </div>
+                                    <div class="col-12 py-2">
+                                        Initialement autodidacte, j'ai entrepris une formation de Développeur Web / Web
+                                        Mobile au sein de la Manu d'Amiens afin d'actualiser mes connaissances
+                                    </div>
+                                    <div class="col-12 py-2">
+                                        Cela m'a permis de me perfectionner en HTML, CSS, Javascript, PHP, Bootstrap...
+                                    </div>
+                                    <div class="col-12 py-2">
+                                        Riche de cette expérience, je souhaite à présent m’orienter exclusivement vers
+                                        les métiers de l'informatique
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!------------- MY WAY ---------->
+                        <div id="my_way" class="row mt-5">
+                            <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
+                                MON PARCOURS
+                            </div>
+                            <div class="col-12 px-5 py-3">
+                                <div class="row mt-3">
+                                    <div id="jobs" class="col-12">
+                                        <div class="row">
+                                            <div
+                                                class="col-12 pb-1 fs-5 fst-italic border-bottom border-2 border_blue fw-bold">
+                                                EXPERIENCES PROFESSIONNELLES
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row py-2">
+                                                    <div class="col-6 col-lg-2 text-start text-lg-end">
+                                                        <img class="imgXSmall" src="/public/assets/img/2012_today.png">
+                                                    </div>
+                                                    <div class="col-12 col-lg-10">
+                                                        <div class="row">
+                                                            <div class="col-12 align-self-center fs-4 fw-bold">
+                                                                Développeur Web /
+                                                                Responsable E-learning</div>
+                                                            <div class="col-12 fst-italic">Save Store, Amiens</div>
+                                                            <div class="col-12 px-5">Création du site de E-learning
+                                                                <br>Support technique du site, mises à jour,
+                                                                améliorations
+                                                                <br>Conception et mise en ligne de tutoriels conformes
+                                                                constructeurs
+                                                                <br>Création d'outils de gestions (stocks, prises de
+                                                                commandes) et
+                                                                d'assistances techniques
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-3">
+                                                            <div class="col-12 align-self-center fs-4 fw-bold">
+                                                                Technicien SAV en Téléphonie Mobile</div>
+                                                            <div class="col-12 fst-italic">Save Store, Amiens</div>
+                                                            <div class="col-12 px-5">Accueil et prise en charge de la
+                                                                clientèle
+                                                                <br>Réparation de smartphones, tablettes, accessoires
+                                                                (agréments Samsung, Sony, Huawei, Xiaomi, Apple)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2 mt-5">
+                                                    <div class="col-6 col-lg-2 text-start text-lg-end">
+                                                        <img class="imgXSmall" src="/public/assets/img/2011_2012.png">
+                                                    </div>
+                                                    <div class="col-12 col-lg-10">
+                                                        <div class="row">
+                                                            <div class="col-12 align-self-center fs-4 fw-bold">
+                                                                Responsable SAV en Informatique</div>
+                                                            <div class="col-12 fst-italic">XXB Consulting, Perpignan
+                                                            </div>
+                                                            <div class="col-12 px-5">Accueil et prise en charge de la
+                                                                clientèle
+                                                                <br>Assemblage, Réparation d'ordinateures fixes et
+                                                                portables
+                                                                <br>Désinfection de virus, Optimisations
+                                                                <br>Création de supports de dépannage, restauration,
+                                                                sauvegarde
+                                                                <br>Installation, paramétrage d'équipements Numéricâble
+                                                                (Modem, routeur...)
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="trainings" class="col-12 mt-5">
+                                        <div class="row">
+                                            <div
+                                                class="col-12 pb-1 fs-5 fst-italic border-bottom border-2 border_blue fw-bold">
+                                                FORMATIONS
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row py-2">
+                                                    <div class="col-6 col-lg-2 text-start text-lg-end">
+                                                        <img class="imgXSmall" src="/public/assets/img/2022.jpg">
+                                                    </div>
+                                                    <div class="col-12 col-lg-10">
+                                                        <div class="row">
+                                                            <div class="col-12 align-self-center fs-4 fw-bold">Formation
+                                                                Web /
+                                                                Web Mobile</div>
+                                                            <div class="col-12 fst-italic">La Manu, Amiens</div>
+                                                            <div class="col-12 px-5">Bac+2, RNCP 31114 (niveau 5)</div>
+                                                            <div class="col-12 px-5">Perfectionnement en language HTML5,
+                                                                CSS3, PHP8
+                                                            </div>
+                                                            <div class="col-12">Apprentissage des langages HTML5, CSS3,
+                                                                Javascript, PHP8</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row py-2 mt-5">
+                                                    <div class="col-6 col-lg-2 text-start text-lg-end">
+                                                        <img class="imgXSmall" src="/public/assets/img/2002.jpg">
+                                                    </div>
+                                                    <div class="col-12 col-lg-10">
+                                                        <div class="row">
+                                                            <div class="col-12 align-self-center fs-4"><span
+                                                                    class="fw-bold">Baccalauréat Science et Techniques
+                                                                    de Laboratoire</span> <span
+                                                                    class="fst-italic fs-6">(spécialité Biochimie Génie
+                                                                    Biologique)</div></span>
+                                                            <div class="col-12 fst-italic">Sainte Marie de Nevers,
+                                                                Toulouse</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="schoolDate2" class="col-2 col-md-2 job1 text-center fs-5 py-2 align-self-center">
-                                2006
+                        </div>
+
+
+
+                        <!------------- SKILLS ---------->
+                        <div id="skills" class="row mt-5">
+                            <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
+                                MES COMP&Eacute;TENCES
                             </div>
-                            <div class="col-5"></div>
-                        -->
-                            <div class="col-10 col-md-5 px-2 pb-3 text-end">
-                                <div class="row btnChooseRight">
-                                    <div id="btnChoose" data-value="school3" class="col-12 pt-3 borderTraining">
-                                        <p id="school3"><strong>Baccalauréat STL</strong> (Science et Techniques de
-                                            Laboratoires)
-                                            <br><i>Sainte Marie de Nevers, Toulouse</i>
-                                            <img id="school3Img" id="school3Img" class="imgSmall shakeVertical"
-                                                src="public/assets/img/down-arrow.png"
-                                                alt="Afficher plus d'informations" title="Afficher plus d'informations">
-                                        </p>
-                                        <div id="jobWorkVueS3" class="jobWorkVue p-wrapper align-self-center ">
+                            <div class="col-12 py-3">
+                                <div class="row d-flex justify-content-evenly">
+                                    <div class="col-4 col-lg py-2 text-center">
+                                        <div class="row">
+                                            <div class="col-12 py-1">
+                                                HTML5
+                                            </div>
+                                            <div class="col-12">
+                                                <img class="img_small" src="/public/assets/img/html5.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg py-2 text-center">
+                                        <div class="row">
+                                            <div class="col-12 py-1">
+                                                CSS3
+                                            </div>
+                                            <div class="col-12">
+                                                <img class="img_small" src="/public/assets/img/css3.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg py-2 text-center">
+                                        <div class="row">
+                                            <div class="col-12 py-1">
+                                                Javascript
+                                            </div>
+                                            <div class="col-12">
+                                                <img class="img_small" src="/public/assets/img/javascript.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg py-2 text-center">
+                                        <div class="row">
+                                            <div class="col-12 py-1">
+                                                PHP 8
+                                            </div>
+                                            <div class="col-12 align-self-center">
+                                                <img class="img_small" src="/public/assets/img/php.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg py-2 text-center">
+                                        <div class="row">
+                                            <div class="col-12 py-1">
+                                                Bootstrap
+                                            </div>
+                                            <div class="col-12 align-self-center">
+                                                <img class="img_small" src="/public/assets/img/bootstrap.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg py-2 text-center">
+                                        <div class="row">
+                                            <div class="col-12 py-1">
+                                                Wordpress
+                                            </div>
+                                            <div class="col-12 align-self-center">
+                                                <img class="img_small" src="/public/assets/img/wordpress.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-lg py-2 text-center">
+                                        <div class="row">
+                                            <div class="col-12 py-1">
+                                                MySQL
+                                            </div>
+                                            <div class="col-12 align-self-center">
+                                                <img class="img_small" src="/public/assets/img/mysql.png">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="schoolDate3" class="col-2 col-md-2 job1 text-start py-2 align-self-center">
-                                <img src="public/assets/img/2002_left.png" class="imgDateTraining" alt="2002">
-                            </div>
-                            <div class="col-5"></div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
+                        <!------------- ACHIEVEMENTS ---------->
+                        <div id="achievements" class="row mt-5">
+                            <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
+                                MES R&Eacute;ALISATIONS
+                            </div>
+                            <div class="col-12 py-3">
+                                <div id="carouselExampleCaptions" class="carousel slide row">
+                                    <div class="carousel-inner col-12">
+                                        <!--- ASTUCES -->
+                                        <div class="carousel-item active">
+                                            <div class="row d-flex justify-content-evenly py-3 text-center">
+                                                <div class="col-12 col-lg-8">
+                                                    <img src="/public/assets/img/astucesPreview.jpg"
+                                                        class="d-block w-100" alt="Astuces - Réalisé en autodidacte">
+                                                </div>
+                                                <div class="col-12 col-lg-3">
+                                                    <div class="row h-100">
+                                                        <div class="col-12 text-center fs-3 fw-bold py-2">Astuces</div>
+                                                        <div class="col-12">
+                                                            Site de formation des boutiques de la société Save
+                                                        </div>
+                                                        <div class="col-12 fst-italic py-2 text-center align-self-end">
+                                                            Réalisé en autodidacte
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row d-flex justify-content-center mt-3">
+                                                <div class="col-6 carousel-caption d-none d-md-block ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row d-flex justify-content-evenly py-3 text-center">
+                                                <div class="col-12 py-3 col-lg-8">
+                                                    <img src="/public/assets/img/shifumiHyena.jpg" class="d-block w-100"
+                                                        alt="ShifumiHyena - Shifumi en Javascript">
+                                                </div>
+                                                <div class="col-12 col-lg-3">
+                                                    <div class="row h-100">
+                                                        <div class="col-12 text-center fs-3 fw-bold py-2">ShifumiHyena
+                                                        </div>
+                                                        <div class="col-12 py-2">
+                                                            Réalisation d'un Shifumi en Javascript
+                                                        </div>
+                                                        <div class="col-12 fst-italic py-2 text-center align-self-end">
+                                                            <a target="_blank" class="fw-bold"
+                                                                href="https://ferrarioloic.github.io/Shifumi/">Faire une
+                                                                partie</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row d-flex justify-content-center mt-3">
+                                                <div class="col-6 carousel-caption d-none d-md-block ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row d-flex justify-content-evenly py-3 text-center">
+                                                <div class="col-12 py-3 col-lg-8"><img
+                                                        src="/public/assets/img/wordpressDoudouDoc.jpg"
+                                                        class="d-block w-100" alt="DoudouDoc - réalisé en wordpress">
+                                                </div>
+                                                <div class="col-12 col-lg-3">
+                                                    <div class="row h-100">
+                                                        <div class="col-12 text-center fs-3 fw-bold py-2">DoudouDoc
+                                                        </div>
+                                                        <div class="col-12 py-2">
+                                                            Réalisation d'un site en Wordpress, thème de notre
+                                                            choix
 
-        <div id="competences" class="row justify-content-center py-5">
-            <div id="boxCompetences" class="col-11 bg-light">
-                <div class="row">
-                    <div class="col-12 titleCategory border-3 border-bottom border-primary">
-                        MES COMP&Eacute;TENCES
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-evenly m-3 py-3">
-                    <div class="col-4 col-md-1 pt-3 pt-md-0 my-3">
-                        <div id="language" data-value="html" class="row h-100 pt-3 pt-md-0 text-center">
-                            <div id="html" class="col-12 d-flex justify-content-center">
-                                <img id="htmlLogo" src="public/assets/img/html5.svg" alt="HTML5" class="imgCapacity">
-                            </div>
-                            <div class="col-12 d-flex justify-content-center align-self-end">
-                                HTML5
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md-1 pt-3 pt-md-0 my-3">
-                        <div id="language" data-value="css" class="row h-100 pt-3 pt-md-0 text-center">
-                            <div id="css" class="col-12 d-flex justify-content-center logoImg">
-                                <img id="cssLogo" src="public/assets/img/css3.svg" alt="CSS3" class="imgCapacity">
-                            </div>
-                            <div class="col-12 d-flex justify-content-center align-self-end">
-                                CSS3
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md-1 pt-3 pt-md-0 my-3">
-                        <div id="language" data-value="javascript" class="row h-100 pt-3 pt-md-0">
-                            <div id="javascript" class="col-12 d-flex justify-content-center logoImg">
-                                <img id="javascriptLogo" src="public/assets/img/javascript.svg" alt="Javascript"
-                                    class="imgCapacity">
-                            </div>
-                            <div class="col-12 d-flex justify-content-center align-self-end">
-                                Javascript
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md-1 pt-3 pt-md-0 my-3">
-                        <div id="language" data-value="php" class="row h-100 pt-3 pt-md-0">
-                            <div id="php" class="col-12 d-flex justify-content-center logoImg">
-                                <img id="phpLogo" src="public/assets/img/php.svg" alt="PHP" class="imgCapacity">
-                            </div>
-                            <div class="col-12 d-flex justify-content-center align-self-end">
-                                PHP
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md-1 pt-3 pt-md-0 my-3">
-                        <div id="language" data-value="bootstrap" class="row h-100 pt-3 pt-md-0">
-                            <div id="bootstrap5" class="col-12 d-flex justify-content-center logoImg">
-                                <img id="bootstrapLogo" src="public/assets/img/bootstrap.svg" alt="Bootstrap"
-                                    class="imgCapacity">
-                            </div>
-                            <div class="col-12 d-flex justify-content-center align-self-end">
-                                Bootstrap
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md-1 pt-3 pt-md-0 my-3">
-                        <div id="language" data-value="symfony" class="row h-100 pt-3 pt-md-0">
-                            <div id="symfony" class="col-12 d-flex justify-content-center logoImg">
-                                <img id="symfonyLogo" src="public/assets/img/symfony.svg" alt="Symfony"
-                                    class="imgCapacity">
-                            </div>
-                            <div class="col-12 d-flex justify-content-center align-self-end">
-                                Symfony
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md-1 pt-3 pt-md-0 my-3">
-                        <div id="language" data-value="wordpress" class="row h-100 pt-3 pt-md-0">
-                            <div id="wordpress" class="col-12 d-flex justify-content-center logoImg">
-                                <img id="wordpressLogo" src="public/assets/img/wordpress.svg" alt="Wordpress"
-                                    class="imgCapacity">
-                            </div>
-                            <div class="col-12 d-flex justify-content-center align-self-end">
-                                Wordpress
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md-1 pt-3 pt-md-0 my-3">
-                        <div id="language" data-value="mysql" class="row h-100 pt-3 pt-md-0">
-                            <div id="mysql" class="col-12 d-flex justify-content-center logoImg">
-                                <img id="mysqlLogo" src="public/assets/img/mysql.svg" alt="MySQL" class="imgCapacity">
-                            </div>
-                            <div class="col-12 d-flex justify-content-center align-self-end">
-                                MySQL
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md-1 pt-3 pt-md-0 my-3">
-                        <div id="language" data-value="adobexd" class="row h-100 pt-3 pt-md-0">
-                            <div id="adobexd" class="col-12 d-flex justify-content-center logoImg">
-                                <img id="adobexdLogo" src="public/assets/img/adobexd.svg" alt="Adobe XD"
-                                    class="imgCapacity">
-                            </div>
-                            <div class="col-12 d-flex justify-content-center align-self-end">
-                                Adobe XD
+                                                        </div>
+                                                        <div class="col-12 fst-italic py-2 text-center align-self-end">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row d-flex justify-content-center mt-3">
+                                                <div class="col-6 carousel-caption d-none d-md-block ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row d-flex justify-content-evenly py-3 text-center">
+                                                <div class="col-12 py-3 col-lg-8"><img
+                                                        src="/public/assets/img/mairie_prouzel.jpg"
+                                                        class="d-block w-100"
+                                                        alt="Mairie de Prouzel - réalisé en wordpress">
+                                                </div>
+                                                <div class="col-12 col-lg-3">
+                                                    <div class="row h-100">
+                                                        <div class="col-12 text-center fs-3 fw-bold py-2">Mairie de
+                                                            Prouzel</div>
+                                                        <div class="col-12 py-2">
+                                                            Réalisation du site de la mairie de Prouzel en partenariat
+                                                            avec Somme Numérique
+                                                        </div>
+                                                        <div class="col-12 fst-italic py-2 text-center align-self-end">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row d-flex justify-content-center mt-3">
+                                                <div class="col-6 carousel-caption d-none d-md-block ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row d-flex justify-content-evenly py-3 text-center">
+                                                <div class="col-12 py-3 col-lg-8"><img
+                                                        src="/public/assets/img/monptittrucenbois.jpg"
+                                                        class="d-block w-100"
+                                                        alt="Mon P'tit Truc en Bois - Dossier de projet de formation">
+                                                </div>
+                                                <div class="col-12 col-lg-3">
+                                                    <div class="row h-100">
+                                                        <div class="col-12 text-center fs-3 fw-bold py-2">Mon P'tit Truc
+                                                            En Bois</div>
+                                                        <div class="col-12 py-2">
+                                                            Dossier de projet de formation
+                                                            <br>Refonte complète du site
+                                                        </div>
+                                                        <div class="col-12 fst-italic py-2 text-center align-self-end">
+                                                            <a target="_blank" class="fw-bold"
+                                                                href="https://monptittrucenbois.legtux.org/">Consulter
+                                                                le site</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row d-flex justify-content-center mt-3">
+                                                <div class="col-6 carousel-caption d-none d-md-block ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselExampleCaptions"
+                                                data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        </div>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-4 col-md-1 pt-3 pt-md-0 my-3">
-                        <div id="language" data-value="figma" class="row h-100 pt-3 pt-md-0">
-                            <div id="figma" class="col-12 d-flex justify-content-center">
-                                <img id="figmaLogo" src="public/assets/img/figma.svg" alt="Figma" class="imgCapacity">
-                            </div>
-                            <div class="col-12 d-flex justify-content-center align-self-end">
-                                Figma
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 col-md-1 pt-3 pt-md-0 my-3">
-                        <div id="language" data-value="vscode" class="row h-100 pt-3 pt-md-0">
-                            <div id="vscode" class="col-12 d-flex justify-content-center logoImg">
-                                <img id="vscodeLogo" src="public/assets/img/vscode.svg" alt="VSCode"
-                                    class="imgCapacity">
-                            </div>
-                            <div class="col-12 d-flex justify-content-center align-self-end">
-                                VSCode
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
-
-        <!-- CENTRES D'INTERET -->
-        <div class="row justify-content-center py-5" id="realisations">
-            <div id="boxRealisations" class="col-11 bg-light">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="row">
-                        <div class="col-12 titleCategory border-3 border-bottom border-primary">
-                            MES R&Eacute;ALISATIONS
-                        </div>
-                    </div>
-                    <div class="row text-center m-3 py-3">
-                        <div class="col-12 ">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1" title="Astuces"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                    aria-label="Slide 2" title="ShifumiHyena"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                    aria-label="Slide 3" title="DoudouDoc"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                                    aria-label="Slide 4" title="Mairie de Prouzel"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                                    aria-label="Slide 5" title="Mon P'titTruc En Bois"></button>
-                            </div>
-                            <div class="carousel-inner text-center">
-                                <div class="carousel-item active">
+                        <!------------- MORE ABOUT ME ---------->
+                        <div class="col-12 py-3">
+                            <div id="hobbies" class="row mt-3">
+                                <div class="col-12 col-lg-6 pe-lg-5">
                                     <div class="row">
-                                        <div class="col-12 offset-md-1 col-md-6 p-3 text-center">
-                                            <img src="public/assets/img/astucesPreview.jpg"
-                                                class="imgRealisations d-block  text-center borderRadius25px"
-                                                alt="Astuces, création en autodidacte">
+                                        <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
+                                            CENTRES D'INTERETS
                                         </div>
-                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                            <p class="fs-2 appearFromTopMenu1">Astuces</p>
-                                            <p class="fw-bold appearFromTopMenu1">Projet personnel de 2015 à 2017</p>
-                                            <p class="fw-bold px-3 appearFromTopMenu1">Site de E-learning des boutiques
-                                                Save depuis 2017</p>
-                                            <p class=" appearFromTopMenu1">HTML5, CSS3, PHP7</p>
-                                            <p class=" appearFromTopMenu1"><i>Réalisé en autodidacte avant la
-                                                    formation</i></p>
-                                            <p class=" appearFromTopMenu1 flicker-4"><a target="_blank"
-                                                    class="flicker-4 fw-bold fs-5"
-                                                    href="https://astuces.save.co?origin=cv">Consulter le site</a>
-                                            </p>
-
+                                        <div class="col-12">
+                                            <div class="row d-flex justify-content-evenly">
+                                                <div class="col-6 text-center pt-2">Dessin</div>
+                                                <div class="col-6 text-center pt-2">Bricolage</div>
+                                                <div class="col-6 text-center pt-2">Lecture</div>
+                                                <div class="col-6 text-center pt-2">Photographie</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
+                                <div class="col-12 col-lg-6 ps-lg-5">
                                     <div class="row">
-                                        <div class="col-12 offset-md-1 col-md-6 p-3">
-                                            <img src="public/assets/img/shifumiHyena.jpg"
-                                                class="imgRealisations d-block text-center borderRadius25px"
-                                                alt="Exercice javascript - Réalisation d'un Shifumi en javascript">
+                                        <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
+                                            SOFT SKILLS
                                         </div>
-                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                            <p class="fs-2 appearFromTopMenu1">ShifumiHyena</p>
-                                            <p class="fw-bold appearFromTopMenu1">Réalisation d'un Shifumi
-                                            </p>
-                                            <p class=" appearFromTopMenu1">HTML, CSS, Javascript</p>
-                                            <p class=" appearFromTopMenu1"><i>Réalisé en formation (mai 2022)</i></p>
-                                            <p class=" appearFromTopMenu1"><a target="_blank"
-                                                    class="flicker-4 fw-bold fs-5"
-                                                    href="https://ferrarioloic.github.io/Shifumi/">Aller
-                                                    jouer</a>
-                                            </p>
+                                        <div class="col-12">
+                                            <div class="row d-flex justify-content-evenly">
+                                                <div class="col-6 pt-2 text-center">Autonome</div>
+                                                <div class="col-6 pt-2 text-center">Force de proposition</div>
+                                                <div class="col-6 pt-2 text-center">Rigoureux</div>
+                                                <div class="col-6 pt-2 text-center">Sens du collectif</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
+                                <div class="col-12 py-3 ps-5">
                                     <div class="row">
-                                        <div class="col-12 offset-md-1 col-md-6 p-3">
-                                            <img src="public/assets/img/wordpressDoudouDoc.jpg"
-                                                class="imgRealisations d-block text-center borderRadius25px"
-                                                alt="Exercice sur Wordpress - Création d'un projet sur le thème de notre choix">
-                                        </div>
-                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                            <p class="fs-2 appearFromTopMenu1">Wordpress - DoudouDoc</p>
-                                            <p class="fw-bold appearFromTopMenu1">Création d'un projet Wordpress sur le
-                                                thème de notre
-                                                choix
-                                            </p>
-                                            <p class=" appearFromTopMenu1">HTML, CSS, Javascript</p>
-                                            <p class=" appearFromTopMenu1"><i>Réalisé en formation (mai 2022)</i></p>
+                                        <div class="col-12 py-2">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="row align-self-center">
-                                        <div class="col-12 offset-md-1 col-md-6 p-3 align-self-center">
-                                            <img src="public/assets/img/mairie_prouzel.jpg"
-                                                class="imgRealisations d-block borderRadius25px"
-                                                alt="Création du site de la mairie de Prouzel">
-                                        </div>
-                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                            <p class="fs-2 appearFromTopMenu1">Mairie de Prouzel</p>
-                                            <p class="fw-bold appearFromTopMenu1">Réalisation du site la mairie de
-                                                Prouzel
-                                                <br><span class="fst-italic">En partenariat avec Somme Numérique</span>
-
-                                            </p>
-                                            <p class=" appearFromTopMenu1">Wordpress</p>
-                                            <p class=" appearFromTopMenu1"><i>Réalisé en 2022</i></p>
-                                            <p class=" appearFromTopMenu1"><a target="_blank"
-                                                    class="flicker-4 fw-bold fs-5"
-                                                    href="https://www.prouzel.fr/">Consulter le site</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row align-self-center">
-                                        <div class="col-12 offset-md-1 col-md-6 p-3 align-self-center">
-                                            <img src="public/assets/img/monptittrucenbois.jpg"
-                                                class="imgRealisations d-block borderRadius25px"
-                                                alt="Mon P'tit Truc En Bois - Refonte complète du site d'origine, dossier de projet de ma formation">
-                                        </div>
-                                        <div class="col-12 col-md-4 pt-1 pb-5 align-self-center">
-                                            <p class="fs-2 appearFromTopMenu1">Mon P'tit Truc En Bois</p>
-                                            <p class="fw-bold appearFromTopMenu1">Refonte complète du site
-                                            </p>
-                                            <p class=" appearFromTopMenu1">HTML, CSS, Javascript, PHP, MySQL</p>
-                                            <p class=" appearFromTopMenu1"><i>Réalisé en 2022</i></p>
-                                            <p class=" appearFromTopMenu1"><a target="_blank"
-                                                    class="flicker-4 fw-bold fs-5"
-                                                    href="https://monptittrucenbois.legtux.org/">Consulter le site</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
                             </div>
-                            <button class="carousel-control-prev h-100" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next h-100" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -546,84 +624,23 @@
         </div>
 
 
-
-
-        <div id="more" class="row justify-content-center py-5">
-            <div id="boxMore" class="col-11 bg-light">
-                <div class="row">
-                    <div class="col-12 titleCategory border-3 border-bottom border-primary">
-                        UN PEU PLUS
-                    </div>
-                </div>
-                <div class="row m-3 py-3 text-center">
-                    <div class="col-6 col-md-3 p-2">Dessin</div>
-                    <div class="col-6 col-md-3 p-2">Création</div>
-                    <div class="col-6 col-md-3 p-2">Bricolage</div>
-                    <div class="col-6 col-md-3 p-2">Photographie</div>
-                </div>
-                <div class="row">
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center py-5" id="contact">
-            <div id="boxMore" class="col-11 bg-light">
-                <div class="row">
-                    <div class="col-12 titleCategory border-3 border-bottom border-primary">
-                        ME CONTACTER
-                    </div>
-                </div>
-                <div class="row m-3 py-3 text-center">
-                    <div class="col-12 col-md-3 p-2">
-                        <a target="_blank" href="tel:+33 6 82 61 43 74">
-                            <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-                            <lord-icon src="https://cdn.lordicon.com/hcndxtmn.json" trigger="hover"
-                                class="searchImg m-2" alt="Me contacter par téléphone"
-                                title="me contacter par téléphone">
-                            </lord-icon><span class="contact align-self-center">06.82.61.43.74</span>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-3 p-2">
-                        <a target="_blank" href="mailto:ferrarioloic.web@gmail.com">
-                            <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-                            <lord-icon src="https://cdn.lordicon.com/ricptrwi.json" trigger="hover"
-                                class="searchImg m-2" alt="Envoyer un mail" title="M'envoyer un mail">
-                            </lord-icon>
-                            <span class="contact align-self-center">ferrarioloic.web@gmail.com</span>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-3 p-2">
-                        <a target="_blank" href="https://www.linkedin.com/in/FERRARIOloic"><img class="searchImg m-2"
-                                src="public/assets/img/linkedin.png">
-                            <span class="contact align-self-center">FERRARIOloic</span></a>
-                    </div>
-                    <div class="col-12 col-md-3 p-2">
-                        <a target="_blank" href="https://github.com/FERRARIOLoic"><img class="searchImg m-2"
-                                src="public/assets/img/github.png">
-                            <span class="contact align-self-center">FERRARIOLoic</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                </div>
-            </div>
-        </div>
     </main>
 
-    <footer id="site-footer" class="container-fluid">
+    <footer id="site-footer" class="container-fluid fixed-bottom">
         <div class="row bg-gradient bg-opacity-50">
             <div class="col-12 col-md-8  align-self-center">
                 <div class="row">
-                    <div class="col-md copyright">&#169;FERRARIOLoic-2022/2023</div>
+                    <div class="col-md copyright">&#169;FERRARIOLoic-2022/2024</div>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <script src='public/assets/js/script1.js'></script>
 
-    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js'
-        integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p'
-        crossorigin='anonymous'></script>
-    <script src='public/assets/js/script.js'></script>
 </body>
 
 </html>

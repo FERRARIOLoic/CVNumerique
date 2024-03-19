@@ -244,6 +244,7 @@ boxPresentation.addEventListener('mouseover', () => {
 boxPresentation.addEventListener('mouseout', () => {
     document.getElementById("textPresentation").classList.add('slideOutTopPresentation');
     document.getElementById("textPresentation").classList.remove('appearFromTopPresentation');
+    textPresentation.innerHTML = ``;
 })
 
 
@@ -386,6 +387,13 @@ btnChoose.forEach(element => {
         document.getElementById("jobWorkVueS1").classList.add('slideOutTop1');
         // document.getElementById("jobWorkVueS2").classList.add('slideOutTop1');
         document.getElementById("jobWorkVueS3").classList.add('slideOutTop1');
+        jobWorkVue1.innerHTML = ``;
+        jobWorkVue2.innerHTML = ``;
+        jobWorkVue3.innerHTML = ``;
+        jobWorkVues1.innerHTML = ``;
+        // jobWorkVues2.innerHTML = ``;
+        jobWorkVues3.innerHTML = ``;
+
     })
 })
 
