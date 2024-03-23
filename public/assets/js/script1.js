@@ -64,18 +64,32 @@ btn_navbar_choose.forEach(eachTableElement => {
 
 
 //------------- PHOTO ---------//
-photo.addEventListener('mouseover', () => {
-    photo_img.classList.remove('shadow_drop_center_reverse');
-    photo_img.classList.add('shadow_drop_center');
-    photo_img.addEventListener('animationend', function () {
-        photo_img.classList.add('shadow_drop_center');
+photo_mobile.addEventListener('mouseover', () => {
+    photo_img_mobile.classList.remove('shadow_drop_center_reverse');
+    photo_img_mobile.classList.add('shadow_drop_center');
+    photo_img_mobile.addEventListener('animationend', function () {
+        photo_img_mobile.classList.add('shadow_drop_center');
     });
 });
-photo.addEventListener('mouseout', () => {
-    photo_img.classList.add('shadow_drop_center_reverse');
-    photo_img.addEventListener('animationend', function () {
-        photo_img.classList.remove('shadow_drop_center');
-        photo_img.classList.remove('shadow_drop_center_reverse');
+photo_mobile.addEventListener('mouseout', () => {
+    photo_img_mobile.classList.add('shadow_drop_center_reverse');
+    photo_img_mobile.addEventListener('animationend', function () {
+        photo_img_mobile.classList.remove('shadow_drop_center');
+        photo_img_mobile.classList.remove('shadow_drop_center_reverse');
+    });
+});
+photo_wide.addEventListener('mouseover', () => {
+    photo_img_wide.classList.remove('shadow_drop_center_reverse');
+    photo_img_wide.classList.add('shadow_drop_center');
+    photo_img_wide.addEventListener('animationend', function () {
+        photo_img_wide.classList.add('shadow_drop_center');
+    });
+});
+photo_wide.addEventListener('mouseout', () => {
+    photo_img_wide.classList.add('shadow_drop_center_reverse');
+    photo_img_wide.addEventListener('animationend', function () {
+        photo_img_wide.classList.remove('shadow_drop_center');
+        photo_img_wide.classList.remove('shadow_drop_center_reverse');
     });
 });
 
@@ -191,7 +205,7 @@ wordpress_div.addEventListener('mouseout', () => {
 mysql_div.addEventListener('mouseover', () => {
     mysql_img.classList.add('scale_out_horizontal_center');
     mysql_img.addEventListener('animationend', function () {
-        mysql_img.src = "public/assets/img/icons/mysql_grey.png";
+        mysql_img.src = "public/assets/img/icons/mysql_dolphin_grey.png";
         mysql_img.classList.remove('scale_out_horizontal_center');
         mysql_img.classList.add('scale_in_horizontal_center');
     });
@@ -200,7 +214,7 @@ mysql_div.addEventListener('mouseout', () => {
     mysql_img.classList.remove('scale_in_horizontal_center');
     mysql_img.classList.add('scale_out_horizontal_center');
     mysql_img.addEventListener('animationend', function () {
-        mysql_img.src = "public/assets/img/icons/mysql.svg";
+        mysql_img.src = "public/assets/img/icons/mysql_dolphin.png";
         mysql_img.classList.add('scale_in_horizontal_center');
     });
 });
@@ -229,5 +243,31 @@ contact_github.addEventListener('mouseover', () => {
     contact_github_img.classList.add('pulse_heartbeat');
     contact_github_img.addEventListener('animationend', function () {
         contact_github_img.classList.remove('pulse_heartbeat');
+    });
+});
+
+
+contact_phone_sidebar.addEventListener('mouseover', () => {
+    contact_phone_img_sidebar.classList.add('shake_bottom');
+    contact_phone_img_sidebar.addEventListener('animationend', function () {
+        contact_phone_img_sidebar.classList.remove('shake_bottom');
+    });
+});
+contact_email_sidebar.addEventListener('mouseover', () => {
+    contact_email_img_sidebar.classList.add('rotate_center');
+    contact_email_img_sidebar.addEventListener('animationend', function () {
+        contact_email_img_sidebar.classList.remove('rotate_center');
+    });
+});
+contact_linkedin_sidebar.addEventListener('mouseover', () => {
+    contact_linkedin_img_sidebar.classList.add('jello_horizontal');
+    contact_linkedin_img_sidebar.addEventListener('animationend', function () {
+        contact_linkedin_img_sidebar.classList.remove('jello_horizontal');
+    });
+});
+contact_github_sidebar.addEventListener('mouseover', () => {
+    contact_github_img_sidebar.classList.add('pulse_heartbeat');
+    contact_github_img_sidebar.addEventListener('animationend', function () {
+        contact_github_img_sidebar.classList.remove('pulse_heartbeat');
     });
 });

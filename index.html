@@ -30,44 +30,44 @@
 <body>
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand text-white fs-2 px-3" href="#photo">FERRARIO Loïc</a>
+            <a class="navbar-brand text-white fs-2 px-3 align-self-center" href="#photo">FERRARIO Loïc</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse align-self-end px-3" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li id="btn_navbar" class="nav-item">
+            <div class="collapse navbar-collapse align-self-center px-3" id="navbarSupportedContent">
+                <div class="row w-100 text-center">
+                    <!--- ABOUT ME -->
+                    <div id="btn_navbar" class=" py-2 col-6 col-md-4 col-lg-2 text-center align-self-center">
                         <a class="nav-link text-white" href="#about_me">
-                            <button class="btn btn_navbar" data-btn="about_me">&Agrave; propos de moi</button>
+                            <button class="btn btn_navbar" data-btn="about_me">&Agrave; propos...</button>
                         </a>
-                    </li>
-                    <li id="my_way_navbar" class="nav-item dropdown">
+                    </div>
+                    <!--- MY WAY -->
+                    <div id="btn_navbar" class=" py-2 col-6 col-md-4 col-lg-2 dropdown text-center align-self-center">
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <button class="btn btn_navbar">mon parcours</button>
+                            <button class="btn btn_navbar align-self-center">Parcours <img class="img20px"
+                                    src="public/assets/img/icons/down-arrow.png"></button>
                         </a>
-                        <ul id="btn_navbar" id="btn_navbar_my_way" class="dropdown-menu">
+                        <ul id="btn_navbar" id="btn_navbar_my_way" class="dropdown-menu justify-content-center">
                             <li><a class="dropdown-item" data-btn="jobs" href="#jobs">Expériences professionnelles</a>
                             </li>
                             <li><a class="dropdown-item" data-btn="training" href="#training">Formations</a></li>
                         </ul>
-                    </li>
-                    <li id="btn_navbar" class="nav-item">
+                    </div>
+                    <!--- SKILLS -->
+                    <div id="btn_navbar" class=" py-2 col-6 col-md-4 col-lg-2 text-center align-self-center">
                         <a class="nav-link text-white" href="#skills">
                             <button class="btn btn_navbar" data-btn="skills">Compétences</button>
                         </a>
-                    </li>
-                    <li id="btn_navbar" class="nav-item">
-                        <a class="nav-link text-white" href="#achievements">
-                            <button class="btn btn_navbar" data-btn="achievements">Mes réalisations</button>
-                        </a>
-                    </li>
-                    <li id="btn_navbar" class="nav-item dropdown">
+                    </div>
+                    <div id="btn_navbar" class=" py-2 col-6 col-md-4 col-lg-2 text-center align-self-center dropdown">
                         <a class="nav-link dropdown-toggle" href="#more_about_me" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <button class="btn btn_navbar">Un peu plus...</button>
+                            <button class="btn btn_navbar">Un peu plus... <img class="img20px"
+                                    src="public/assets/img/icons/down-arrow.png"></button>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#hobbies" data-btn="hobbies">Centres d'interêts</a></li>
@@ -77,13 +77,18 @@
                             </li>
                             <li><a class="dropdown-item" href="#profile" data-btn="profile">Profil</a></li>
                         </ul>
-                    </li>
-                    <li id="btn_navbar" class="nav-item">
+                    </div>
+                    <div id="btn_navbar" class=" py-2 col-6 col-md-4 col-lg-2 text-center align-self-center">
+                        <a class="nav-link text-white" href="#achievements">
+                            <button class="btn btn_navbar" data-btn="achievements">Réalisations</button>
+                        </a>
+                    </div>
+                    <div id="btn_navbar" class=" py-2 col-6 col-md-4 col-lg-2 text-center align-self-center">
                         <a class="nav-link text-white" href="#contact">
                             <button class="btn btn_navbar" data-btn="contact">Me contacter</button>
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -94,44 +99,154 @@
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-lg-11 box">
                 <div class="row">
+                    <div class="col-12 pb-5 fw-bold text-center title">
+                        D&Eacute;VELOPPEUR WEB / WEB MOBILE
+                        <br>GESTIONNAIRE R&Eacute;SEAU
+                    </div>
+                    <div id="photo_wide" class="col-12 d-lg-none mb-5">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-10">
+                                <img id="photo_img_wide" class="img_profile img_profile_wide"
+                                    src="public/assets/img/photo/loic_full.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!------------- SIDE PAGE -->
                     <div class="col-12 col-lg-3 order-2 order-lg-1">
                         <div class="row pe-0 pe-lg-5">
-                            <div id="photo" class="col-4 col-lg-12 mb-5 d-flex align-self-center">
-                                <img id="photo_img" class="img_profile" src="public/assets/img/photo/loic_full.jpg">
+                            <div id="photo_mobile"
+                                class="col-12 col-lg-12 mb-5 d-flex align-self-center d-none d-lg-block">
+                                <img id="photo_img_mobile" class="img_profile img_profile_mobile"
+                                    src="public/assets/img/photo/loic_full.jpg">
                             </div>
-                            <div class="col-8 col-lg-12 mb-5">
-                                <div id="contact" class="row">
-                                    <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
-                                        CONTACT
+
+
+                            <!------------- SKILLS ---------->
+                            <div class="col-12 mt-5">
+                                <div id="skills" class="row">
+                                    <div class="col-12 pb-1 fs-4 border-bottom border-2 border_blue fw-bold">
+                                        COMP&Eacute;TENCES
                                     </div>
-                                    <div id="contact_phone" class="col-12 pt-2 align-self-center" alt="Me contacter par téléphone"
-                                        title="Me contacter par téléphone">
-                                        <img id="contact_phone_img" class="img_20px" src="public/assets/img/icons/contact/phone.png">
-                                        <a class="align-self-center ps-2" href="tel:0682614374">06.82.61.43.74</a>
-                                    </div>
-                                    <div id="contact_email" class="col-12 pt-2 align-self-center" alt="Me contacter par mail"
-                                        title="Me contacter par mail">
-                                        <img id="contact_email_img" class="img_20px" src="public/assets/img/icons/contact/mail.png">
-                                        <a class="align-self-center ps-2"
-                                            href="mailto:ferrarioloic@gmail.com">ferrarioloic@gmail.com</a>
-                                    </div>
-                                    <div id="contact_linkedin" class="col-12 pt-2 align-self-center" alt="Me contacter sur LinkedIn"
-                                        title="Me contacter sur LinkedIn">
-                                        <img id="contact_linkedin_img" class="img_20px" src="public/assets/img/icons/contact/linkedin.png">
-                                        <a class="align-self-center ps-2" target="_blank"
-                                            href="https://www.linkedin.com/in/FERRARIOloic">FERRARIOloic</a>
-                                    </div>
-                                    <div id="contact_github" class="col-12 pt-2 align-self-center" alt="Voir ma page GitHub"
-                                        title="Voir ma page GitHub">
-                                        <img id="contact_github_img" class="img_20px" src="public/assets/img/icons/contact/github.png">
-                                        <a class="align-self-center ps-2" target="_blank"
-                                            href="https://github.com/FERRARIOLoic">FERRARIOLoic</a>
+                                    <div class="col-12 py-3">
+                                        <div class="row d-flex justify-content-evenly">
+                                            <div id="html5_div" class="col-3 col-lg-4 py-2 text-center">
+                                                <div class="row h-100">
+                                                    <div class="col-12 align-self-center">
+                                                        <img id="html5_img" class="imgXXSmall"
+                                                            src="public/assets/img/icons/html5.svg">
+                                                    </div>
+                                                    <div class="col-12 align-self-end">
+                                                        HTML5
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="css3_div" class="col-3 col-lg-4 py-2 text-center">
+                                                <div class="row h-100">
+                                                    <div class="col-12 align-self-center">
+                                                        <img id="css3_img" class="imgXXSmall"
+                                                            src="public/assets/img/icons/css3.svg">
+                                                    </div>
+                                                    <div class="col-12 align-self-end">
+                                                        CSS3
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="javascript_div" class="col-3 col-lg-4 py-2 text-center">
+                                                <div class="row h-100">
+                                                    <div class="col-12 align-self-center">
+                                                        <img id="javascript_img" class="imgXXSmall"
+                                                            src="public/assets/img/icons/javascript.svg">
+                                                    </div>
+                                                    <div class="col-12 align-self-end">
+                                                        Javascript
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="php8_div" class="col-3 col-lg-4 py-2 text-center">
+                                                <div class="row h-100">
+                                                    <div class="col-12 align-self-center">
+                                                        <img id="php8_img" class="imgXXSmall"
+                                                            src="public/assets/img/icons/php8.svg">
+                                                    </div>
+                                                    <div class="col-12 align-self-end">
+                                                        PHP 8
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="bootstrap_div" class="col-3 col-lg-4 py-2 text-center">
+                                                <div class="row h-100">
+                                                    <div class="col-12 align-self-center">
+                                                        <img id="bootstrap_img" class="imgXXSmall"
+                                                            src="public/assets/img/icons/bootstrap.svg">
+                                                    </div>
+                                                    <div class="col-12 align-self-end">
+                                                        Bootstrap
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="wordpress_div" class="col-3 col-lg-4 py-2 text-center">
+                                                <div class="row h-100">
+                                                    <div class="col-12 align-self-center">
+                                                        <img id="wordpress_img" class="imgXXSmall"
+                                                            src="public/assets/img/icons/wordpress.svg">
+                                                    </div>
+                                                    <div class="col-12 align-self-end">
+                                                        Wordpress
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="mysql_div" class="col-3 col-lg-4 py-2 text-center">
+                                                <div class="row h-100">
+                                                    <div class="col-12 align-self-center">
+                                                        <img id="mysql_img" class="imgXXSmall"
+                                                            src="public/assets/img/icons/mysql_dolphin.png">
+                                                    </div>
+                                                    <div class="col-12 align-self-end">
+                                                        MySQL
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="profile" class="col-12 mb-5">
+                            <div class="col-12 mt-5">
+                                <div id="hobbies" class="row py-2">
+                                    <div class="col-12 pb-1 fs-4 border-bottom border-2 border_blue fw-bold">
+                                        CENTRES D'INTERETS
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row d-flex justify-content-evenly">
+                                            <div class="col-6 text-center pt-2">Dessin</div>
+                                            <div class="col-6 text-center pt-2">Bricolage</div>
+                                            <div class="col-6 text-center pt-2">Lecture</div>
+                                            <div class="col-6 text-center pt-2">Photographie</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <div id="soft_skills" class="row py-2">
+                                    <div class="col-12 pb-1 fs-4 border-bottom border-2 border_blue fw-bold">
+                                        SOFT SKILLS
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row d-flex justify-content-evenly">
+                                            <div class="col-6 col-lg-4 pt-2 text-center">Autonome</div>
+                                            <div class="col-6 col-lg-8 pt-2 text-center">Force de proposition</div>
+                                            <div class="col-6 col-lg-4 pt-2 text-center">Rigoureux</div>
+                                            <div class="col-6 col-lg-8 pt-2 text-center">Sens du collectif</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!------------- PROFILE -->
+                            <div id="profile" class="col-12 mt-5">
                                 <div class="row">
-                                    <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
+                                    <div class="col-12 pb-1 fs-4 border-bottom border-2 border_blue fw-bold">
                                         PROFIL
                                     </div>
                                     <div class="col-12 pt-1">
@@ -163,40 +278,78 @@
                                     </div>
                                 </div>
                             </div>
+
+
+                            <div id="contact" class="col-12 mt-5 marge_bottom">
+                                <div class="row">
+                                    <div class="col-12 pb-1 fs-4 border-bottom border-2 border_blue fw-bold">
+                                        CONTACT
+                                    </div>
+                                    <div id="contact_phone_sidebar" class="col-12 py-1 py-lg-2 align-self-center"
+                                        alt="Me contacter par téléphone" title="Me contacter par téléphone">
+                                        <img id="contact_phone_img_sidebar" class="img15px"
+                                            src="public/assets/img/icons/contact/phone.png">
+                                        <a class="align-self-center ps-2 align-self-center"
+                                            href="tel:0682614374">06.82.61.43.74</a>
+                                    </div>
+                                    <div id="contact_email_sidebar" class="col-12 py-1 py-lg-2 align-self-center"
+                                        alt="Me contacter par mail" title="Me contacter par mail">
+                                        <img id="contact_email_img_sidebar" class="img15px"
+                                            src="public/assets/img/icons/contact/mail.png">
+                                        <a class="align-self-center ps-2"
+                                            href="mailto:ferrarioloic@gmail.com">ferrarioloic@gmail.com</a>
+                                    </div>
+                                    <div id="contact_linkedin_sidebar" class="col-12 py-1 py-lg-2 align-self-center"
+                                        alt="Me contacter sur LinkedIn" title="Me contacter sur LinkedIn">
+                                        <img id="contact_linkedin_img_sidebar" class="img15px"
+                                            src="public/assets/img/icons/contact/linkedin.png">
+                                        <a class="align-self-center ps-2" target="_blank"
+                                            href="https://www.linkedin.com/in/FERRARIOloic">FERRARIOloic</a>
+                                    </div>
+                                    <div id="contact_github_sidebar" class="col-12 py-1 py-lg-2 align-self-center"
+                                        alt="Voir ma page GitHub" title="Voir ma page GitHub">
+                                        <img id="contact_github_img_sidebar" class="img15px"
+                                            src="public/assets/img/icons/contact/github.png">
+                                        <a class="align-self-center ps-2" target="_blank"
+                                            href="https://github.com/FERRARIOLoic">FERRARIOLoic</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
 
 
-                    <div class="col-12 col-lg-9 order-1 order-lg-2">
 
-                        <div class="row">
-                            <div class="col-12 pb-5 fs-1 fw-bold text-center title">
-                                D&Eacute;VELOPPEUR WEB / WEB MOBILE
-                            </div>
-                        </div>
+
+                    <!------------- MASTER PAGE -->
+                    <div class="col-12 col-lg-9 order-1 order-lg-2">
 
                         <!------------- ABOUT ME ---------->
                         <div id="about_me" class="row">
                             <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
-                                &Agrave; PROPOS DE MOI
+                                &Agrave; PROPOS...
                             </div>
                             <div class="col-12 py-lg-3">
                                 <div class="row">
                                     <div class="col-12 py-2">
-                                        Passionné d'informatique et curieux de nature, j'ai créé et développe le site de
+                                        Passionné d'informatique et curieux de nature, j'ai créé et développe le
+                                        site de
                                         l'entreprise tout en exerçant les métiers de technicien SAV Mobile et
                                         Développeur Web/Web mobile
                                     </div>
                                     <div class="col-12 py-2">
-                                        Initialement autodidacte, j'ai entrepris une formation de Développeur Web / Web
+                                        Initialement autodidacte, j'ai entrepris une formation de Développeur Web /
+                                        Web
                                         Mobile au sein de la Manu d'Amiens afin d'actualiser mes connaissances
                                     </div>
                                     <div class="col-12 py-2">
-                                        Cela m'a permis de me perfectionner en HTML, CSS, Javascript, PHP, Bootstrap...
+                                        Cela m'a permis de me perfectionner en HTML, CSS, Javascript, PHP,
+                                        Bootstrap...
                                     </div>
                                     <div class="col-12 py-2">
-                                        Riche de cette expérience, je souhaite à présent m’orienter exclusivement vers
+                                        Riche de cette expérience, je souhaite à présent m’orienter exclusivement
+                                        vers
                                         les métiers de l'informatique
                                     </div>
                                 </div>
@@ -207,7 +360,7 @@
                         <!------------- MY WAY ---------->
                         <div id="my_way" class="row mt-5">
                             <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
-                                MON PARCOURS
+                                PARCOURS
                             </div>
                             <div class="col-12 px-5 py-3">
                                 <div class="row mt-3">
@@ -220,7 +373,8 @@
                                             <div class="col-12">
                                                 <div class="row py-2">
                                                     <div class="col-6 col-lg-2 text-start text-lg-end">
-                                                        <img class="imgXSmall" src="public/assets/img/years/2012_today.png">
+                                                        <img class="imgXSmall"
+                                                            src="public/assets/img/years/2012_today.png">
                                                     </div>
                                                     <div class="col-12 col-lg-10">
                                                         <div class="row">
@@ -231,7 +385,8 @@
                                                             <div class="col-12 px-5">Création du site de E-learning
                                                                 <br>Support technique du site, mises à jour,
                                                                 améliorations
-                                                                <br>Conception et mise en ligne de tutoriels conformes
+                                                                <br>Conception et mise en ligne de tutoriels
+                                                                conformes
                                                                 constructeurs
                                                                 <br>Création d'outils de gestions (stocks, prises de
                                                                 commandes) et
@@ -242,9 +397,11 @@
                                                             <div class="col-12 align-self-center fs-4 fw-bold">
                                                                 Technicien SAV en Téléphonie Mobile</div>
                                                             <div class="col-12 fst-italic">Save Store, Amiens</div>
-                                                            <div class="col-12 px-5">Accueil et prise en charge de la
+                                                            <div class="col-12 px-5">Accueil et prise en charge de
+                                                                la
                                                                 clientèle
-                                                                <br>Réparation de smartphones, tablettes, accessoires
+                                                                <br>Réparation de smartphones, tablettes,
+                                                                accessoires
                                                                 (agréments Samsung, Sony, Huawei, Xiaomi, Apple)
                                                             </div>
                                                         </div>
@@ -252,7 +409,8 @@
                                                 </div>
                                                 <div class="row py-2 mt-5">
                                                     <div class="col-6 col-lg-2 text-start text-lg-end">
-                                                        <img class="imgXSmall" src="public/assets/img/years/2011_2012.png">
+                                                        <img class="imgXSmall"
+                                                            src="public/assets/img/years/2011_2012.png">
                                                     </div>
                                                     <div class="col-12 col-lg-10">
                                                         <div class="row">
@@ -260,14 +418,16 @@
                                                                 Responsable SAV en Informatique</div>
                                                             <div class="col-12 fst-italic">XXB Consulting, Perpignan
                                                             </div>
-                                                            <div class="col-12 px-5">Accueil et prise en charge de la
+                                                            <div class="col-12 px-5">Accueil et prise en charge de
+                                                                la
                                                                 clientèle
                                                                 <br>Assemblage, Réparation d'ordinateures fixes et
                                                                 portables
                                                                 <br>Désinfection de virus, Optimisations
                                                                 <br>Création de supports de dépannage, restauration,
                                                                 sauvegarde
-                                                                <br>Installation, paramétrage d'équipements Numéricâble
+                                                                <br>Installation, paramétrage d'équipements
+                                                                Numéricâble
                                                                 (Modem, routeur...)
                                                             </div>
                                                         </div>
@@ -285,16 +445,19 @@
                                             <div class="col-12">
                                                 <div class="row py-2">
                                                     <div class="col-6 col-lg-2 text-start text-lg-end">
-                                                        <img class="imgXSmall" src="public/assets/img/years/2022.jpg">
+                                                        <img class="imgXSmall" src="public/assets/img/years/2022.png">
                                                     </div>
                                                     <div class="col-12 col-lg-10">
                                                         <div class="row">
-                                                            <div class="col-12 align-self-center fs-4 fw-bold">Formation
+                                                            <div class="col-12 align-self-center fs-4 fw-bold">
+                                                                Formation
                                                                 Web /
                                                                 Web Mobile</div>
                                                             <div class="col-12 fst-italic">La Manu, Amiens</div>
-                                                            <div class="col-12 px-5">Bac+2, RNCP 31114 (niveau 5)</div>
-                                                            <div class="col-12 px-5">Apprentissage des languages HTML5,
+                                                            <div class="col-12 px-5">Bac+2, RNCP 31114 (niveau 5)
+                                                            </div>
+                                                            <div class="col-12 px-5">Apprentissage des languages
+                                                                HTML5,
                                                                 CSS3, PHP8, Javascript, Bootstrap, MySQL...
                                                             </div>
                                                         </div>
@@ -302,7 +465,7 @@
                                                 </div>
                                                 <div class="row py-2 mt-5">
                                                     <div class="col-6 col-lg-2 text-start text-lg-end">
-                                                        <img class="imgXSmall" src="public/assets/img/years/2002.jpg">
+                                                        <img class="imgXSmall" src="public/assets/img/years/2002.png">
                                                     </div>
                                                     <div class="col-12 col-lg-10">
                                                         <div class="row">
@@ -311,8 +474,8 @@
                                                                 de Laboratoire</div>
                                                             <div class="col-12 fst-italic">Sainte Marie de Nevers,
                                                                 Toulouse</div>
-                                                                <div class="col-12 px-5">Spécialité Biochimie Génie
-                                                                    Biologique</div>
+                                                            <div class="col-12 px-5">Spécialité Biochimie Génie
+                                                                Biologique</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -325,92 +488,10 @@
 
 
 
-                        <!------------- SKILLS ---------->
-                        <div id="skills" class="row mt-5">
-                            <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
-                                MES COMP&Eacute;TENCES
-                            </div>
-                            <div class="col-12 py-3">
-                                <div class="row d-flex justify-content-evenly">
-                                    <div id="html5_div" class="col-4 col-lg py-2 text-center">
-                                        <div class="row h-100">
-                                            <div class="col-12 align-self-center">
-                                                <img id="html5_img" class="img_small" src="public/assets/img/icons/html5.svg">
-                                            </div>
-                                            <div class="col-12 align-self-end">
-                                                HTML5
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="css3_div" class="col-4 col-lg py-2 text-center">
-                                        <div class="row h-100">
-                                            <div class="col-12 align-self-center">
-                                                <img id="css3_img" class="img_small" src="public/assets/img/icons/css3.svg">
-                                            </div>
-                                            <div class="col-12 align-self-end">
-                                                CSS3
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="javascript_div" class="col-4 col-lg py-2 text-center">
-                                        <div class="row h-100">
-                                            <div class="col-12 align-self-center">
-                                                <img id="javascript_img" class="img_small" src="public/assets/img/icons/javascript.svg">
-                                            </div>
-                                            <div class="col-12 align-self-end">
-                                                Javascript
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="php8_div" class="col-4 col-lg py-2 text-center">
-                                        <div class="row h-100">
-                                            <div class="col-12 align-self-center">
-                                                <img id="php8_img" class="img_small" src="public/assets/img/icons/php8.svg">
-                                            </div>
-                                            <div class="col-12 align-self-end">
-                                                PHP 8
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="bootstrap_div" class="col-4 col-lg py-2 text-center">
-                                        <div class="row h-100">
-                                            <div class="col-12 align-self-center">
-                                                <img id="bootstrap_img" class="img_small" src="public/assets/img/icons/bootstrap.svg">
-                                            </div>
-                                            <div class="col-12 align-self-end">
-                                                Bootstrap
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="wordpress_div" class="col-4 col-lg py-2 text-center">
-                                        <div class="row h-100">
-                                            <div class="col-12 align-self-center">
-                                                <img id="wordpress_img" class="img_small" src="public/assets/img/icons/wordpress.svg">
-                                            </div>
-                                            <div class="col-12 align-self-end">
-                                                Wordpress
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="mysql_div" class="col-4 col-lg py-2 text-center">
-                                        <div class="row h-100">
-                                            <div class="col-12 align-self-center">
-                                                <img id="mysql_img" class="img_small" src="public/assets/img/icons/mysql.svg">
-                                            </div>
-                                            <div class="col-12 align-self-end">
-                                                MySQL
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
                         <!------------- ACHIEVEMENTS ---------->
-                        <div id="achievements" class="row mt-5">
+                        <div id="achievements" class="row my-5">
                             <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
-                                MES R&Eacute;ALISATIONS
+                                R&Eacute;ALISATIONS
                             </div>
                             <div class="col-12 py-3">
                                 <div id="carouselExampleCaptions" class="carousel slide row">
@@ -422,14 +503,22 @@
                                                     <img src="public/assets/img/visuals/astucesPreview.jpg"
                                                         class="d-block w-100" alt="Astuces - Réalisé en autodidacte">
                                                 </div>
-                                                <div class="col-12 col-lg-3">
+                                                <div class="col-12 col-lg-3 pb-3 pb-lg-0">
                                                     <div class="row h-100">
-                                                        <div class="col-12 text-center fs-3 fw-bold py-2">Astuces</div>
+                                                        <div class="col-12 text-center fs-3 fw-bold py-2">Astuces
+                                                        </div>
                                                         <div class="col-12">
                                                             Site de formation des boutiques de la société Save
                                                         </div>
-                                                        <div class="col-12 fst-italic py-2 text-center align-self-end">
+                                                        <div
+                                                            class="col-12 fst-italic py-2 text-center text-lg-start align-self-center">
                                                             Réalisé en autodidacte
+                                                        </div>
+                                                        <div
+                                                            class="col-12 fst-italic py-2 text-center text-lg-start align-self-end">
+                                                            <a target="_blank" class="fw-bold"
+                                                                href="https://astuces.save.co/?origin=cv">Consulter le
+                                                                site</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -442,19 +531,23 @@
                                         <div class="carousel-item">
                                             <div class="row d-flex justify-content-evenly py-3 text-center">
                                                 <div class="col-12 py-3 col-lg-8">
-                                                    <img src="public/assets/img/visuals/shifumiHyena.jpg" class="d-block w-100"
+                                                    <img src="public/assets/img/visuals/shifumiHyena.jpg"
+                                                        class="d-block w-100"
                                                         alt="ShifumiHyena - Shifumi en Javascript">
                                                 </div>
-                                                <div class="col-12 col-lg-3">
+                                                <div class="col-12 col-lg-3 pb-3 pb-lg-0">
                                                     <div class="row h-100">
-                                                        <div class="col-12 text-center fs-3 fw-bold py-2">ShifumiHyena
+                                                        <div class="col-12 text-center fs-3 fw-bold py-2">
+                                                            ShifumiHyena
                                                         </div>
                                                         <div class="col-12 py-2">
                                                             Réalisation d'un Shifumi en Javascript
                                                         </div>
-                                                        <div class="col-12 fst-italic py-2 text-center align-self-end">
+                                                        <div
+                                                            class="col-12 fst-italic py-2 text-center text-lg-start align-self-end">
                                                             <a target="_blank" class="fw-bold"
-                                                                href="https://ferrarioloic.github.io/Shifumi/">Faire une
+                                                                href="https://ferrarioloic.github.io/Shifumi/">Faire
+                                                                une
                                                                 partie</a>
                                                         </div>
                                                     </div>
@@ -471,14 +564,13 @@
                                                         src="public/assets/img/visuals/wordpressDoudouDoc.jpg"
                                                         class="d-block w-100" alt="DoudouDoc - réalisé en wordpress">
                                                 </div>
-                                                <div class="col-12 col-lg-3">
+                                                <div class="col-12 col-lg-3 pb-3 pb-lg-0">
                                                     <div class="row h-100">
                                                         <div class="col-12 text-center fs-3 fw-bold py-2">DoudouDoc
                                                         </div>
                                                         <div class="col-12 py-2">
                                                             Réalisation d'un site en Wordpress, thème de notre
                                                             choix
-
                                                         </div>
                                                         <div class="col-12 fst-italic py-2 text-center align-self-end">
                                                         </div>
@@ -493,19 +585,24 @@
                                         <div class="carousel-item">
                                             <div class="row d-flex justify-content-evenly py-3 text-center">
                                                 <div class="col-12 py-3 col-lg-8"><img
-                                                        src="public/assets/img/visuals/mairie_prouzel.jpg" class="d-block w-100"
+                                                        src="public/assets/img/visuals/mairie_prouzel.jpg"
+                                                        class="d-block w-100"
                                                         alt="Mairie de Prouzel - réalisé en wordpress">
                                                 </div>
-                                                <div class="col-12 col-lg-3">
+                                                <div class="col-12 col-lg-3 pb-3 pb-lg-0">
                                                     <div class="row h-100">
                                                         <div class="col-12 text-center fs-3 fw-bold py-2">Mairie de
                                                             Prouzel</div>
                                                         <div class="col-12 py-2">
-                                                            Réalisation du site de la mairie de Prouzel en partenariat
+                                                            Réalisation du site de la mairie de Prouzel en
+                                                            partenariat
                                                             avec Somme Numérique
                                                         </div>
-                                                        <div class="col-12 fst-italic py-2 text-center align-self-end">
-
+                                                        <div
+                                                            class="col-12 fst-italic py-2 text-center text-lg-start align-self-end">
+                                                            <a target="_blank" class="fw-bold"
+                                                                href="https://www.prouzel.fr/">Consulter le site
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -517,20 +614,22 @@
                                         </div>
                                         <div class="carousel-item">
                                             <div class="row d-flex justify-content-evenly py-3 text-center">
-                                                <div class="col-12 py-3 col-lg-8"><img
-                                                        src="public/assets/img/visuals/monptittrucenbois.jpg"
+                                                <div class="col-12 py-3 col-lg-8">
+                                                    <img src="public/assets/img/visuals/monptittrucenbois.jpg"
                                                         class="d-block w-100"
                                                         alt="Mon P'tit Truc en Bois - Dossier de projet de formation">
                                                 </div>
-                                                <div class="col-12 col-lg-3">
+                                                <div class="col-12 col-lg-3 pb-3 pb-lg-0">
                                                     <div class="row h-100">
-                                                        <div class="col-12 text-center fs-3 fw-bold py-2">Mon P'tit Truc
+                                                        <div class="col-12 text-center fs-3 fw-bold py-2">Mon P'tit
+                                                            Truc
                                                             En Bois</div>
                                                         <div class="col-12 py-2">
                                                             Dossier de projet de formation
                                                             <br>Refonte complète du site
                                                         </div>
-                                                        <div class="col-12 fst-italic py-2 text-center align-self-end">
+                                                        <div
+                                                            class="col-12 fst-italic py-2 text-center text-lg-start align-self-end">
                                                             <a target="_blank" class="fw-bold"
                                                                 href="https://monptittrucenbois.legtux.org/">Consulter
                                                                 le site</a>
@@ -545,9 +644,9 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-
                                         <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"
+                                            title="Voir le précédent">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
@@ -565,47 +664,11 @@
                                                 data-bs-slide-to="4" aria-label="Slide 5"></button>
                                         </div>
                                         <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                            data-bs-target="#carouselExampleCaptions" data-bs-slide="next"
+                                            title="Voir le suivant">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!------------- MORE ABOUT ME ---------->
-                        <div class="col-12 py-3">
-                            <div class="row mt-3 mb-5">
-                                <div class="col-12 col-lg-6 pe-lg-5">
-                                    <div id="hobbies" class="row py-2">
-                                        <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
-                                            CENTRES D'INTERETS
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="row d-flex justify-content-evenly">
-                                                <div class="col-6 text-center pt-2">Dessin</div>
-                                                <div class="col-6 text-center pt-2">Bricolage</div>
-                                                <div class="col-6 text-center pt-2">Lecture</div>
-                                                <div class="col-6 text-center pt-2">Photographie</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-6 ps-lg-5">
-                                    <div id="soft_skills" class="row py-2">
-                                        <div class="col-12 pb-1 fs-3 border-bottom border-2 border_blue fw-bold">
-                                            SOFT SKILLS
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="row d-flex justify-content-evenly">
-                                                <div class="col-6 pt-2 text-center">Autonome</div>
-                                                <div class="col-6 pt-2 text-center">Force de proposition</div>
-                                                <div class="col-6 pt-2 text-center">Rigoureux</div>
-                                                <div class="col-6 pt-2 text-center">Sens du collectif</div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -618,11 +681,37 @@
 
     </main>
 
-    <footer id="site-footer" class="container-fluid fixed-bottom">
+    <footer id="footer" class="container-fluid fixed-bottom">
         <div class="row bg-gradient bg-opacity-50">
-            <div class="col-12 col-md-8  align-self-center">
+            <div class="col-12 col-lg-4 align-self-center text-center text-lg-start copyright order-2 order-lg-1">
+                &#169;FERRARIOLoic-2022/2024
+            </div>
+            <div class="col-12 col-lg-8 order-1 order-lg-2">
                 <div class="row">
-                    <div class="col-md copyright">&#169;FERRARIOLoic-2022/2024</div>
+                    <div id="contact_phone" class="col-6 col-lg-3 py-1 py-lg-2 align-self-center"
+                        alt="Me contacter par téléphone" title="Me contacter par téléphone">
+                        <img id="contact_phone_img" class="img15px" src="public/assets/img/icons/contact/phone.png">
+                        <a class="align-self-center ps-2 text-white fs-7 " href="tel:0682614374">06.82.61.43.74</a>
+                    </div>
+                    <div id="contact_email" class="col-6 col-lg-3 py-1 py-lg-2 align-self-center"
+                        alt="Me contacter par mail" title="Me contacter par mail">
+                        <img id="contact_email_img" class="img15px" src="public/assets/img/icons/contact/mail.png">
+                        <a class="align-self-center ps-2 text-white fs-7 "
+                            href="mailto:ferrarioloic@gmail.com">ferrarioloic@gmail.com</a>
+                    </div>
+                    <div id="contact_linkedin" class="col-6 col-lg-3 py-1 py-lg-2 align-self-center"
+                        alt="Me contacter sur LinkedIn" title="Me contacter sur LinkedIn">
+                        <img id="contact_linkedin_img" class="img15px"
+                            src="public/assets/img/icons/contact/linkedin.png">
+                        <a class="align-self-center ps-2 text-white fs-7 " target="_blank"
+                            href="https://www.linkedin.com/in/FERRARIOloic">FERRARIOloic</a>
+                    </div>
+                    <div id="contact_github" class="col-6 col-lg-3 py-1 py-lg-2 align-self-center"
+                        alt="Voir ma page GitHub" title="Voir ma page GitHub">
+                        <img id="contact_github_img" class="img15px" src="public/assets/img/icons/contact/github.png">
+                        <a class="align-self-center ps-2 text-white fs-7 " target="_blank"
+                            href="https://github.com/FERRARIOLoic">FERRARIOLoic</a>
+                    </div>
                 </div>
             </div>
         </div>
