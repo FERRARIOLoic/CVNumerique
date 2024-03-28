@@ -68,6 +68,16 @@ a:hover {
     letter-spacing: 0px;
     line-height: 30px;
   }
+
+  .imgXSmall {
+    width: 80%;
+    max-height: 80%;
+  }
+
+  .imgXXSmall {
+    width: 70%;
+    max-height: 70%;
+  }
 }
 
 @media screen AND (min-width:376px) and (max-width:1024px) {
@@ -77,13 +87,33 @@ a:hover {
     line-height: 35px;
   }
 
+  .imgXSmall {
+    width: 80%;
+    max-height: 80%;
+  }
+
+  .imgXXSmall {
+    width: 100%;
+    max-height: 100%;
+  }
+
 }
 
 @media screen AND (min-width:1025px) {
   .title {
-    font-size: 40px;
+    font-size: 50px;
     letter-spacing: 5px;
     line-height: 45px;
+  }
+
+  .imgXSmall {
+    width: 80%;
+    max-height: 80%;
+  }
+
+  .imgXXSmall {
+    width: 70%;
+    max-height: 70%;
   }
 }
 
@@ -200,15 +230,6 @@ footer {
   max-height: 100%;
 }
 
-.imgXSmall {
-  width: 80%;
-  max-height: 80%;
-}
-
-.imgXXSmall {
-  width: 70%;
-  max-height: 70%;
-}
 
 .img25px {
   max-width: 25px;
