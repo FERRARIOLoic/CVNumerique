@@ -113,6 +113,7 @@ html5_div.addEventListener('mouseout', () => {
 
 //------------- CSS3 ---------//
 css3_div.addEventListener('mouseover', () => {
+    css3_img.classList.remove('scale_in_horizontal_center');
     css3_img.classList.add('scale_out_horizontal_center');
     css3_img.addEventListener('animationend', function () {
         css3_img.src = "public/assets/img/icons/css3_grey.png";
@@ -221,6 +222,7 @@ mysql_div.addEventListener('mouseout', () => {
 
 
 
+//------------- CONTACT ---------//
 contact_phone.addEventListener('mouseover', () => {
     contact_phone_img.classList.add('shake_bottom');
     contact_phone_img.addEventListener('animationend', function () {
