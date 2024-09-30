@@ -76,7 +76,7 @@ a:hover {
 
 @media screen AND (max-width:375px) {
   .title {
-    font-size: 25px;
+    font-size: 23px;
     letter-spacing: 0px;
     line-height: 30px;
   }
@@ -124,8 +124,8 @@ a:hover {
 
 @media screen AND (min-width:376px) and (max-width:1024px) {
   .title {
-    font-size: 30px;
-    letter-spacing: 3px;
+    font-size: 50px;
+    letter-spacing: 0px;
     line-height: 35px;
   }
 
@@ -141,23 +141,27 @@ a:hover {
   .title_category {
     color: white;
     background-color: #308d9b;
-    border-radius: 5px 25px 5px 5px
+    border-radius: 25px 25px 5px 5px
   }
   
   .title_subcategory {
     color: white;
     background-color: #FF6F61;
-    border-radius: 5px 25px 5px 5px
+    border-radius: 25px 25px 5px 5px
   }
   .title_category_down {
     background-color: rgba(176, 190, 197, 0.2);
-    border-radius: 0 0 5px 25px;
+    border-radius: 0 0 25px 25px;
+  }
+  .title_category_down_unset {
+    background-color: rgba(176, 190, 197, 0.1);
+    border-radius: 0 0 25px 25px;
   }
   
   .title_category_unset {
     color: white;
     background-color: #308d9b;
-    border-radius: 25px 5px 0 0;
+    border-radius: 25px 25px 0 0;
   }
 
   .box_date {
@@ -223,7 +227,7 @@ footer {
 }
 
 .dropdown-menu {
-  background-color: #cf7264;
+  background-color: #FF6F61;
 }
 
 .dropdown-item {
@@ -286,7 +290,7 @@ footer {
 }
 
 .btn_navbar:hover {
-  background-color: #0F4C81;
+  background-color: #FF6F61;
   color: white;
 }
 
