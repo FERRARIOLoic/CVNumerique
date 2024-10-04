@@ -1,61 +1,17 @@
-html,
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    background: #021517;
-    color: #a0bbbd;
-
-    font-family: 'Montserrat', Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
-    font-weight: 400;
-    font-size: 21px;
-    -webkit-font-smoothing: antialiased;
-    background-image: url("/public/assets/img/photo/loic.jpg");
-    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    font-size: 15px;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-    margin: 0;
-    padding: 0.25em 0;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 1.875em;
-    font-weight: normal;
-}
-
-h3 {
-    font-size: 1.5em;
-    color: #FF6F61 !important;
-    font-weight: 700 !important;
-    font-size: 30px !important;
-}
-
-
-section {
-    display: table;
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 100vh;
-
-    /* padding: 75px 15px; */
-}
-
-section div.Wrapper {
-    display: table-cell;
-    vertical-align: middle;
-}
 
 canvas {
     position: fixed;
@@ -65,110 +21,6 @@ canvas {
     height: 100%;
 
     z-index: 0;
-}
-
-section h3,
-section p,
-section code {
-    display: block;
-    width: 98%;
-    max-width: 680px;
-    margin: 0 auto;
-    padding: 0 0 25px 0;
-
-    line-height: 1.4em;
-    color: inherit;
-}
-
-section h3 {
-    /* margin: 45px auto 0 auto; */
-}
-
-section p span {
-    display: inline-block;
-    position: relative;
-    top: -2px;
-    padding: 0 5px;
-
-    background: #689396;
-
-    font-family: monospace;
-    font-size: 14px;
-    color: #fff;
-}
-
-section code {
-    padding: 15px;
-
-    background: #689396;
-    color: #fff;
-    font-size: 14px;
-}
-
-section code span {
-    opacity: 0.6;
-}
-
-section.Intro {
-    color: #a0bbbd;
-}
-
-section.Intro h2 {
-    color: rgba(160, 187, 189, 0.8);
-}
-
-section.About {
-    color: white;
-    background: #308d9b;
-}
-
-section.Examples {
-    background: #fff;
-    color: #689396;
-}
-
-section.Skills {
-    background: #f8f9fa;
-    color: #689396;
-}
-
-section.Achievements {
-    background: #308d9b;
-    color: #689396;
-}
-
-section.MoreInformation {
-    background: #fff;
-    color: #689396;
-}
-
-.CenterAlign {
-    text-align: center;
-}
-
-div.Wrapper {
-    position: relative;
-    width: 96%;
-    max-width: 680px;
-    margin: 0 auto;
-
-    z-index: 1;
-}
-
-div.MouseScroll {
-    position: absolute;
-    left: 50%;
-    bottom: 25px;
-    width: 100px;
-    height: 100px;
-    margin: 0 0 0 -50px;
-
-    z-index: 2;
-}
-
-path.MouseScroll--chevron {
-    animation: ChevronAnimation 3s ease infinite;
-    transform: translateY(3px)
 }
 
 [data-slideInLeft].visible,
@@ -237,7 +89,8 @@ a:hover {
     font-weight: 700;
 }
 
-.title {
+.title, 
+.title_2 {
     color: #308d9b;
 }
 
@@ -245,22 +98,46 @@ a:hover {
     color: #FF6F61 !important;
 }
 
+.bg_blue {
+    background-color: #308d9b;
+    color: white;
+}
 
 .img15px {
     max-height: 15px;
 }
 
+.img_fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about {
+    min-height: 100vh;
+    height: 100vh;
+}
 
 
 @media screen AND (max-width:375px) {
-    body {
-        background-image: url("/public/assets/img/photo/loic.jpg") no-repeat center center fixed;
-    }
 
     .title {
-        font-size: 23px;
+        position:relative;
+        font-size: 50px;
         letter-spacing: 0px;
-        line-height: 30px;
+        line-height: 50px;
+        color: white;
+        top:-100px;
+        text-align:center;
+    }
+    .title_2 {
+        position:relative;
+        font-size: 25px;
+        letter-spacing: 0px;
+        line-height: 50px;
+        color: white;
+        top:-100px;
+        text-align:center;
     }
 
     .imgXSmall {
@@ -308,26 +185,37 @@ a:hover {
     section {
         /* max-height: 50% !important; */
     }
+
     section.Intro {
-        min-height:80vh !important;
+        min-height: 80vh !important;
     }
-    section.About, 
+
+    section.About,
     section.Examples {
-        min-height:100% !important;
-        height:150% !important;
+        min-height: 100% !important;
+        height: 150% !important;
     }
 }
 
 @media screen AND (min-width:376px) and (max-width:1024px) {
-    body {
-        background-image: url("/public/assets/img/photo/loic.jpg");
-        background-size:contain;
-    }
+
     .title {
+        position:relative;
         font-size: 50px;
         letter-spacing: 0px;
         line-height: 50px;
-        color:white;
+        color: white;
+        top:-100px;
+        text-align:center;
+    }
+    .title_2 {
+        position:relative;
+        font-size: 25px;
+        letter-spacing: 0px;
+        line-height: 50px;
+        color: white;
+        top:-100px;
+        text-align:center;
     }
 
     .imgXSmall {
@@ -375,24 +263,34 @@ a:hover {
     section {
         /* max-height: 50% !important; */
     }
+
     section.Intro {
-        min-height:80vh !important;
+        min-height: 80vh !important;
     }
-    section.About, 
+
+    section.About,
     section.Examples,
     section.Skills,
     section.Achievements,
     section.MoreInformation {
-        min-height:150% !important;
-        height:100% !important;
+        min-height: 150% !important;
+        height: 100% !important;
     }
 }
 
 @media screen AND (min-width:1025px) {
+    
     .title {
+        position:relative;
+        font-size: 70px;
+        letter-spacing: 0px;
+        line-height: 50px;
+    }
+    .title_2 {
+        position:relative;
         font-size: 50px;
-        letter-spacing: 5px;
-        line-height: 25px;
+        letter-spacing: 0px;
+        line-height: 50px;
     }
 
     .imgXSmall {
@@ -442,6 +340,9 @@ a:hover {
     }
 }
 
+.border-start, .border-top, .border-bottom {
+    border-width:2px !important;
+}
 
 /*------------- CAROUSEL ---------*/
 
