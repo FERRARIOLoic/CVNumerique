@@ -1812,3 +1812,74 @@
   });
 });
 //# sourceMappingURL=ScrollTrigger.js.map?945a845231bcfd009389
+
+
+
+jQuery(function () {
+  $(function () {
+    $(window).scroll(function () { //Fonction appelée quand on descend la page
+      if ($(this).scrollTop() > 500) {  // Quand on est à 200pixels du haut de page,
+        $('#scrollUp').css('right', '20px');
+        document.getElementById("scrollUp").classList.add('bounce_in_right');
+      } else {
+        $('#scrollUp').removeAttr('style'); // Enlève les attributs CSS affectés par javascript
+        document.getElementById("scrollUp").classList.remove('bounce_in_right');
+      }
+    });
+  });
+});
+
+
+
+
+//------------- CONTACT ---------//
+contact_phone.addEventListener('mouseover', () => {
+  contact_phone_img_scroll.classList.add('shake_bottom');
+  contact_phone_img_scroll.addEventListener('animationend', function () {
+      contact_phone_img_scroll.classList.remove('shake_bottom');
+  });
+});
+contact_email.addEventListener('mouseover', () => {
+  contact_email_img_scroll.classList.add('rotate_center');
+  contact_email_img_scroll.addEventListener('animationend', function () {
+      contact_email_img_scroll.classList.remove('rotate_center');
+  });
+});
+contact_linkedin.addEventListener('mouseover', () => {
+  contact_linkedin_img_scroll.classList.add('jello_horizontal');
+  contact_linkedin_img_scroll.addEventListener('animationend', function () {
+      contact_linkedin_img_scroll.classList.remove('jello_horizontal');
+  });
+});
+contact_github.addEventListener('mouseover', () => {
+  contact_github_img_scroll.classList.add('pulse_heartbeat');
+  contact_github_img_scroll.addEventListener('animationend', function () {
+      contact_github_img_scroll.classList.remove('pulse_heartbeat');
+  });
+});
+
+
+contact_phone_sidebar.addEventListener('mouseover', () => {
+  contact_phone_img_sidebar.classList.add('shake_bottom');
+  contact_phone_img_sidebar.addEventListener('animationend', function () {
+      contact_phone_img_sidebar.classList.remove('shake_bottom');
+  });
+});
+contact_email_sidebar.addEventListener('mouseover', () => {
+  contact_email_img_sidebar.classList.add('rotate_center');
+  contact_email_img_sidebar.addEventListener('animationend', function () {
+      contact_email_img_sidebar.classList.remove('rotate_center');
+  });
+});
+contact_linkedin_sidebar.addEventListener('mouseover', () => {
+  contact_linkedin_img_sidebar.classList.add('jello_horizontal');
+  contact_linkedin_img_sidebar.addEventListener('animationend', function () {
+      contact_linkedin_img_sidebar.classList.remove('jello_horizontal');
+  });
+});
+contact_github_sidebar.addEventListener('mouseover', () => {
+  contact_github_img_sidebar.classList.add('pulse_heartbeat');
+  contact_github_img_sidebar.addEventListener('animationend', function () {
+      contact_github_img_sidebar.classList.remove('pulse_heartbeat');
+  });
+});
