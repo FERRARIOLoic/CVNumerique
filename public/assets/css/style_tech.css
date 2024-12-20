@@ -397,6 +397,13 @@ a:hover {
 
 /*------------- CAROUSEL ---------*/
 
+
+
+.carousel {
+    height:450px !important;
+    align-content: center
+  }
+
 .carousel-indicators .active {
     background-color: #FF6F61 !important;
 }
